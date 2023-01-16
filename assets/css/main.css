@@ -281,6 +281,32 @@ body {
   .nav__list .menu-item:hover::after {
     width: 100%;
   }
+  .nav__list .menu-item-177, .nav__list .menu-item-186 {
+    position: relative;
+  }
+  .nav__list .menu-item-177:hover .sub-menu, .nav__list .menu-item-186:hover .sub-menu {
+    display: block;
+  }
+  .nav__list .sub-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #fbfefb;
+  }
+  .nav__list .sub-menu .menu-item {
+    width: 100%;
+  }
+  .nav__list .sub-menu .menu-item::after {
+    display: none;
+  }
+  .nav__list .sub-menu .menu-item:hover a {
+    transform: translateX(3px);
+  }
+  .nav__list .sub-menu .menu-item a {
+    transition: transform 0.1s;
+    padding: 1em;
+  }
   .nav__list a {
     display: block;
     padding: 0.7em;
