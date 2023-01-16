@@ -9,7 +9,7 @@
     <div class="container">
         <div class="footer__boxes">
             <div class="footer__box">
-                <a href="index.html" class="footer__logo">
+                <a href="http://azardishop.local/" class="footer__logo">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt=""
                         class="footer__img">
                 </a>
