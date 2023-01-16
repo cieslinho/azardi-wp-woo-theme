@@ -1,0 +1,233 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: $bg-color;
+  padding: 0 1em;
+  width: 100%;
+  &__logo {
+    width: 150px;
+    a {
+      display: block;
+    }
+  }
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
+  &__top,
+  &__top-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__top {
+    &-socials {
+      display: flex;
+      padding: 0.5em;
+      a {
+        display: block;
+        margin-right: 0.5em;
+        color: $hover-color;
+      }
+      i {
+        font-size: 2.5rem;
+      }
+    }
+    &-info {
+      font-size: 1.4rem;
+      a {
+        color: $dark-color;
+      }
+      p {
+        margin-right: 0.25em;
+      }
+    }
+  }
+  &__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__tools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      margin: 0.25em;
+      padding: 0.25em;
+      color: $text-color;
+      i {
+        font-size: 1.7rem;
+      }
+    }
+  }
+  &__btn {
+    z-index: 50;
+    border: none;
+    background: none;
+    padding: 0.5em;
+    &-box {
+      position: relative;
+      width: 30px;
+      height: 25px;
+    }
+    &-bars {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: width 0.3s;
+      background-color: $hover-color;
+      height: 2px;
+      &::after,
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: width 0.3s;
+        background-color: $hover-color;
+        width: 100%;
+        height: 2px;
+        content: "";
+      }
+      & {
+        width: 80%;
+      }
+      &::after {
+        top: 8px;
+        width: 55%;
+      }
+      &::before {
+        top: 16px;
+        width: 70%;
+      }
+    }
+  }
+
+  &__btn-bars.btn--active {
+    &,
+    &::after,
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .nav {
+    &__overlay {
+      position: absolute;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+      width: 100vw;
+      height: 100vh;
+    }
+    &__overlay.overlay--active {
+      visibility: visible;
+      opacity: 1;
+    }
+    &__list {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      flex-direction: column;
+      justify-content: center;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+      box-shadow: -5px 0 20px $text-color;
+      background-color: $bg-color;
+      width: 65vw;
+      height: 100vh;
+      .menu-item {
+        display: block;
+        transition: background-color 0.2s;
+        &:hover {
+          background-color: rgba($color: $dark-color, $alpha: 0.1);
+        }
+      }
+      a {
+        display: block;
+        border-bottom: 1px solid rgba($color: $dark-color, $alpha: 0.4);
+        padding: 1em;
+        color: $text-color;
+      }
+    }
+    &__list.list--active {
+      transform: translateX(0);
+    }
+    &__motto {
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-bottom: 1px solid $dark-color;
+      font-size: 1.5rem;
+      white-space: nowrap;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .nav {
+    padding: 0 1.5em;
+    &__top {
+      &-info {
+        font-size: 1.5rem;
+      }
+    }
+    &__btn {
+      display: none;
+    }
+    &__navbar {
+      justify-content: flex-start;
+    }
+    &__logo {
+      margin-right: 4em;
+    }
+    &__list {
+      display: block;
+      .menu-item {
+        display: inline-block;
+        position: relative;
+        transition: background-color 0.2s;
+        &::after {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          transition: width 0.5s ease;
+          background-color: $text-color;
+          width: 0;
+          height: 2px;
+          content: "";
+        }
+        &:hover {
+          background-color: rgba($color: $dark-color, $alpha: 0.1);
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+      a {
+        // font-weight: 600;
+        display: block;
+        padding: 0.7em;
+        color: $text-color;
+      }
+    }
+    &__motto {
+      display: none;
+    }
+    &__tools {
+      margin-left: auto;
+      a {
+        display: block;
+        i {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

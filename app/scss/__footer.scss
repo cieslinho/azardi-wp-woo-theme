@@ -1,0 +1,140 @@
+.footer {
+  &__boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 1em;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+    &-address {
+      display: flex;
+      flex-direction: column;
+      .menu-item {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid transparent;
+        padding: 0 0 0.5em 0;
+        width: 100%;
+        color: $text-color;
+        &:hover {
+          border-bottom: 1px solid $text-color;
+          &:first-child {
+            border-bottom: 1px solid transparent;
+          }
+        }
+        i {
+          margin-right: 0.5em;
+        }
+      }
+    }
+    &-title {
+      margin-bottom: 0.5em;
+      color: $text-color;
+      font-weight: 800;
+      font-size: 1.8rem;
+    }
+    .menu-item {
+      margin-bottom: 0.25em;
+
+      a {
+        display: block;
+        border-bottom: 1px solid transparent;
+        padding: 0.5em;
+        width: 100%;
+        color: $text-color;
+        &:hover {
+          border-bottom: 1px solid $text-color;
+        }
+      }
+    }
+  }
+  &__logo {
+    margin-bottom: 1em;
+    width: 150px;
+  }
+  &__motto {
+    margin-bottom: 1em;
+    line-height: 150%;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__text {
+    margin-bottom: 0.25em;
+    margin-left: 0.5em;
+    color: $text-color;
+  }
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &-text {
+      text-align: center;
+    }
+    &-link {
+      position: relative;
+      transition: color 0.3s;
+      padding: 0 0.15em;
+      color: $text-color;
+      &:hover {
+        color: $white-color;
+      }
+      &:hover::after {
+        height: 100%;
+      }
+      &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -5;
+        transition: height 0.3s;
+        background-color: $text-color;
+        width: 100%;
+        height: 1px;
+        content: "";
+      }
+    }
+    &-span {
+      visibility: hidden;
+      margin: 0 0.5em;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .footer {
+    &__bottom {
+      flex-direction: row;
+      &-span {
+        visibility: visible;
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  .footer {
+    &__boxes {
+      flex-direction: row;
+      justify-content: center;
+    }
+    &__box {
+      margin-right: 2.5em;
+      margin-bottom: 0;
+      &:first-child {
+        margin-right: auto;
+        width: 35%;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      &-title {
+        font-size: 1.9rem;
+      }
+    }
+    .menu-item {
+      margin-bottom: 0.5em;
+    }
+  }
+}

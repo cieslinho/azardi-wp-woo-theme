@@ -1,0 +1,72 @@
+.header {
+	position: relative;
+	height: 70vh;
+	&__slider {
+		display: flex;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+	&__slide {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		transform: translateX(0);
+		transition: opacity 0.5s;
+		overflow: hidden;
+		&::before {
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 100%;
+			background-color: rgba($color: $text-color, $alpha: 0.25);
+		}
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	&__info {
+		margin: 0 1em;
+		padding: 1em 2em;
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		bottom: 50px;
+		left: 0;
+		background-color: rgba($color: $text-color, $alpha: 0.45);
+		&-title {
+			font-size: 2.5rem;
+			margin-bottom: 0.25em;
+			color: $white-color;
+		}
+		&-description {
+			font-size: 1.5rem;
+			margin-bottom: 0.8em;
+			color: $gray-color;
+		}
+		&-btn {
+			font-size: 1.4rem;
+			@include btn-outline;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.header {
+		&__info {
+			&-title {
+				font-size: 3.3rem;
+			}
+			&-description {
+				font-size: 1.8rem;
+			}
+			&-btn {
+				font-size: 1.5rem;
+			}
+		}
+	}
+}

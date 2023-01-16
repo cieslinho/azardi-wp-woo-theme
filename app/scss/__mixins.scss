@@ -1,0 +1,11 @@
+@mixin btn-outline {
+	padding: 0.5em 1.5em;
+	background-color: transparent;
+	border: 2px solid $white-color;
+	color: $white-color;
+	transition: background-color 0.2s, color 0.2s;
+	&:hover {
+		background-color: $white-color;
+		color: $text-color;
+	}
+}
