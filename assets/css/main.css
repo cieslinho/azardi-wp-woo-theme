@@ -187,6 +187,21 @@ body {
   width: 100%;
 }
 
+@media (max-width: 375px) {
+  .nav__list .menu-item a {
+    padding: 0.5em;
+    font-size: 1.5rem;
+  }
+  .nav__list ul.sub-menu.sub-menu-active {
+    visibility: visible;
+    opacity: 1;
+    max-height: 80px;
+  }
+  .nav__list .menu-item .menu-item-btn {
+    padding: 0.5em;
+    font-size: 1.5rem;
+  }
+}
 @media (max-width: 992px) {
   .nav__overlay {
     position: absolute;
@@ -222,10 +237,43 @@ body {
   .nav__list .menu-item:hover {
     background-color: rgba(51, 53, 51, 0.1);
   }
+  .nav__list .menu-item-177, .nav__list .menu-item-186 {
+    position: relative;
+  }
+  .nav__list .menu-item-177 a, .nav__list .menu-item-186 a {
+    width: 100%;
+  }
+  .nav__list .menu-item-btn {
+    position: absolute;
+    top: 0;
+    right: 1px;
+    border: none;
+    background: none;
+    padding: 0.8em;
+    font-size: 1.6rem;
+  }
+  .nav__list .menu-item-btn:hover {
+    background-color: #fbfefb;
+  }
+  .nav__list .sub-menu {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: max-height 0.2s, opacity 0.2s;
+    box-shadow: inset 0px 1px 20px -10px;
+    width: 100%;
+    max-height: 0;
+    overflow-y: scroll;
+  }
+  .nav__list .sub-menu.sub-menu-active {
+    visibility: visible;
+    opacity: 1;
+    max-height: 115px;
+  }
   .nav__list a {
     display: block;
     border-bottom: 1px solid rgba(51, 53, 51, 0.4);
-    padding: 1em;
+    padding: 0.8em;
     color: #202020;
   }
   .nav__list.list--active {
@@ -274,6 +322,9 @@ body {
     width: 0;
     height: 2px;
     content: "";
+  }
+  .nav__list .menu-item-btn {
+    display: none;
   }
   .nav__list .menu-item:hover {
     background-color: rgba(51, 53, 51, 0.1);
@@ -353,11 +404,11 @@ body {
 }
 .header__info-btn {
   font-size: 1.4rem;
-  padding: 0.5em 1.5em;
-  background-color: transparent;
-  border: 2px solid #f4f3ee;
-  color: #f4f3ee;
   transition: background-color 0.2s, color 0.2s;
+  border: 2px solid #f4f3ee;
+  background-color: transparent;
+  padding: 0.5em 1.5em;
+  color: #f4f3ee;
 }
 .header__info-btn:hover {
   background-color: #f4f3ee;
@@ -616,11 +667,11 @@ body {
   bottom: 20px;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 0.5em 1.5em;
-  background-color: transparent;
-  border: 2px solid #f4f3ee;
-  color: #f4f3ee;
   transition: background-color 0.2s, color 0.2s;
+  border: 2px solid #f4f3ee;
+  background-color: transparent;
+  padding: 0.5em 1.5em;
+  color: #f4f3ee;
   z-index: 35;
 }
 .products__btn:hover {
