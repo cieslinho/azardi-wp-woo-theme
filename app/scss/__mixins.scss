@@ -1,11 +1,23 @@
 @mixin btn-outline {
-	padding: 0.5em 1.5em;
-	background-color: transparent;
-	border: 2px solid $white-color;
-	color: $white-color;
 	transition: background-color 0.2s, color 0.2s;
+	border: 2px solid $white-color;
+	background-color: transparent;
+	padding: 0.5em 1.5em;
+	color: $white-color;
 	&:hover {
 		background-color: $white-color;
 		color: $text-color;
+	}
+}
+@mixin nav-btn {
+	position: absolute;
+	top: 0;
+	right: 1px;
+	border: none;
+	background: none;
+	padding: 0.8em;
+	font-size: 1.6rem;
+	&:hover {
+		background-color: $bg-color;
 	}
 }

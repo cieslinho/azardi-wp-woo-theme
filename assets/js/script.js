@@ -1,5 +1,15 @@
 const navBtn = document.querySelector('.nav__btn')
 const navItem = document.querySelectorAll('.menu-item')
+const menuItemDropdown = document.querySelectorAll('.menu-item-has-children')
+
+const createButton = () => {
+	menuItemDropdown.forEach(menuItem => {
+		const newBtn = document.createElement('button')
+		newBtn.textContent = '+'
+		newBtn.classList.add('menu-item-btn')
+		menuItem.appendChild(newBtn)
+	})
+}
 
 const handleNav = () => {
 	const navMenu = document.querySelector('.nav__list')
@@ -24,6 +34,25 @@ const handleNav = () => {
 	closeOverlay()
 }
 
+const handleDropdown = () => {
+	const dropdownMenuFirst = document.querySelector('.menu-item-177')
+	const dropdownMenuSecond = document.querySelector('.menu-item-186')
+	const submenuFirst = dropdownMenuFirst.querySelector('.sub-menu')
+	const submenuSecond = dropdownMenuSecond.querySelector('.sub-menu')
+	const dropdownBtnFirst = dropdownMenuFirst.querySelector('.menu-item-btn')
+	const dropdownBtnSecond = dropdownMenuSecond.querySelector('.menu-item-btn')
+	dropdownBtnFirst.addEventListener('click', () => {
+		submenuFirst.classList.toggle('sub-menu-active')
+	})
+	dropdownBtnSecond.addEventListener('click', () => {
+		submenuSecond.classList.toggle('sub-menu-active')
+	})
+
+	// showDropdown()
+	console.log(dropdownMenuFirst)
+	console.log(dropdownMenuSecond)
+}
+
 const handleSlider = () => {
 	let slideIndex = 0
 	showSlides()
@@ -42,4 +71,6 @@ const handleSlider = () => {
 	}
 }
 handleSlider()
+createButton()
+handleDropdown()
 navBtn.addEventListener('click', handleNav)
