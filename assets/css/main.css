@@ -225,6 +225,18 @@ body {
     max-width: 500px;
   }
 }
+.woocommerce .woocommerce-breadcrumb a {
+  color: #202020;
+}
+.woocommerce .woocommerce-breadcrumb a:hover {
+  border-bottom: 1px solid #202020;
+}
+
+@media (min-width: 768px) {
+  .woocommerce .woocommerce-breadcrumb {
+    font-size: 1.8rem;
+  }
+}
 .categories__boxes {
   display: flex;
   flex-direction: column;
