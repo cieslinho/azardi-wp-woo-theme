@@ -59,7 +59,8 @@ get_header()
                 </div>
             </div>
         </header>
-        
+
         <?php
 
 wc_get_template( 'archive-product.php' );
+
