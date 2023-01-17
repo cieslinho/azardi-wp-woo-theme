@@ -258,6 +258,37 @@
 						width: 100%;
 					}
 				}
+				&-177,
+				&-186 {
+					position: relative;
+					&:hover {
+						.sub-menu {
+							display: block;
+						}
+					}
+				}
+			}
+			.sub-menu {
+				display: none;
+				position: absolute;
+				top: 40px;
+				left: 0;
+				background-color: $bg-color;
+				.menu-item {
+					width: 100%;
+					&::after {
+						display: none;
+					}
+					&:hover {
+						a {
+							transform: translateX(3px);
+						}
+					}
+					a {
+						transition: transform 0.1s;
+						padding: 1em;
+					}
+				}
 			}
 			a {
 				// font-weight: 600;
