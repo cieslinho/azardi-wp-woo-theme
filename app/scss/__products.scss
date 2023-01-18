@@ -111,21 +111,6 @@
 	}
 }
 
-.shop__layout {
-	//   display: flex;
-	//   justify-content: center;
-	//   align-items: center;
-	ul.products {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		li.product {
-			margin: 1em !important;
-			width: 100% !important;
-		}
-	}
-}
-
 @media (min-width: 768px) {
 	.products {
 		&__boxes {
@@ -150,15 +135,6 @@
 			&-title,
 			&-price {
 				font-size: 1.8rem;
-			}
-		}
-	}
-	.shop__layout {
-		// justify-content: flex-start;
-		ul.products {
-			flex-direction: row;
-			li.product {
-				width: 33.3%;
 			}
 		}
 	}
