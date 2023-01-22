@@ -57,3 +57,13 @@ function azardi_config(){
 
 add_action('after_setup_theme', 'azardi_config', 0);
 require get_template_directory() . '/inc/wc-modifications.php';
+
+if( function_exists('acf_add_options_page') ) {
+  acf_add_options_page( array( 
+    'page_title' => 'Ustawienia globalne',
+    'menu_title' => 'Ustawienia globalne',
+    'menu_slug'  => 'global-settings',
+    'capability' => 'edit_posts',
+    'icon_url'   => 'dashicons-admin-tools'
+  ) );
+}

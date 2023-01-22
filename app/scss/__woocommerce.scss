@@ -1,4 +1,7 @@
 .woocommerce {
+  @include container();
+  margin-top: 20px;
+
   .woocommerce-breadcrumb {
     margin: 1.5em 0;
     a {
