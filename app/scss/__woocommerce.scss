@@ -26,10 +26,6 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		li.product {
-			margin: 1em !important;
-			width: 100% !important;
-		}
 	}
 }
 
@@ -44,9 +40,9 @@
 		// justify-content: flex-start;
 		ul.products {
 			flex-direction: row;
-			li.product {
-				width: 33.3%;
-			}
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			align-items: stretch;
 		}
 	}
 }
