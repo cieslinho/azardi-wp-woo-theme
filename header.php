@@ -41,7 +41,7 @@
                         <div class="nav__btn-bars"></div>
                     </div>
                 </button>
-                <a href="http://azardishop.local/" class="nav__logo">
+                <a href="<?php echo get_home_url(); ?>" class="nav__logo">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Azardi - Odrkyj Piękno Sypialni, Azardi Logo" class="nav__img">
                 </a>
                 <ul class="nav__list">
@@ -60,7 +60,7 @@
                     <a href="">
                         <i class='bx bx-user'></i>
                     </a>
-                    <a href="">
+                    <a href="<?php echo wc_get_cart_url(); ?>">
                         <i class='bx bx-cart'></i>
                     </a>
                 </div>
