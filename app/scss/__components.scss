@@ -1,33 +1,33 @@
 .container {
-	margin: 0 auto;
-	padding: 0 1em;
-	max-width: 1600px;
-	width: 100%;
+  margin: 0 auto;
+  padding: 0 1em;
+  width: 100%;
+  max-width: 1600px;
 }
 
 .section-title {
-	position: relative;
-	margin: 1em;
-	&::after {
-		position: absolute;
-		content: '';
-		left: -10px;
-		bottom: 0;
-		width: 2px;
-		height: 100%;
-		background-color: $dark-color;
-	}
+  position: relative;
+  margin: 1em;
+
+  @include respond(tablet) {
+    font-size: 2.8rem;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+    background-color: $dark-color;
+    width: 2px;
+    height: 100%;
+    content: "";
+  }
 }
 
 .section-padding {
-	padding: 1em 0;
-}
+  padding: 1em 0;
 
-@media (min-width: 768px) {
-	.section-padding {
-		padding: 4em 1em;
-	}
-	.section-title {
-		font-size: 2.8rem;
-	}
+  @include respond(tablet) {
+    padding: 4em 1em;
+  }
 }
