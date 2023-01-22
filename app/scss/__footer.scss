@@ -4,14 +4,27 @@
     flex-direction: column;
     justify-content: flex-start;
     margin-bottom: 1em;
+
+    @include respond(desktop) {
+      flex-direction: row;
+      justify-content: center;
+    }
   }
+
   &__box {
     display: flex;
     flex-direction: column;
     margin-bottom: 0.5em;
+
+    @include respond(desktop) {
+      margin-right: 2.5em;
+      margin-bottom: 0;
+    }
+
     &-address {
       display: flex;
       flex-direction: column;
+
       .menu-item {
         display: flex;
         align-items: center;
@@ -19,25 +32,49 @@
         padding: 0 0 0.5em 0;
         width: 100%;
         color: $text-color;
+
         &:hover {
           border-bottom: 1px solid $text-color;
+
           &:first-child {
             border-bottom: 1px solid transparent;
+
+            @include respond(desktop) {
+              margin-right: auto;
+              width: 35%;
+            }
           }
         }
+
         i {
           margin-right: 0.5em;
         }
       }
     }
+
     &-title {
       margin-bottom: 0.5em;
       color: $text-color;
       font-weight: 800;
       font-size: 1.8rem;
+
+      @include respond(desktop) {
+        font-size: 1.9rem;
+      }
     }
+
+    &:last-child {
+      @include respond(desktop) {
+        margin-right: 0;
+      }
+    }
+
     .menu-item {
       margin-bottom: 0.25em;
+
+      @include respond(desktop) {
+        margin-bottom: 0.5em;
+      }
 
       a {
         display: block;
@@ -51,40 +88,54 @@
       }
     }
   }
+
   &__logo {
     margin-bottom: 1em;
     width: 150px;
   }
+
   &__motto {
     margin-bottom: 1em;
     line-height: 150%;
   }
+
   &__img {
     width: 100%;
   }
+
   &__text {
     margin-bottom: 0.25em;
     margin-left: 0.5em;
     color: $text-color;
   }
+
   &__bottom {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include respond(tablet) {
+      flex-direction: row;
+    }
+
     &-text {
       text-align: center;
     }
+
     &-link {
       position: relative;
       transition: color 0.3s;
       padding: 0 0.15em;
       color: $text-color;
+
       &:hover {
         color: $white-color;
       }
+
       &:hover::after {
         height: 100%;
       }
+
       &::after {
         position: absolute;
         bottom: 0;
@@ -97,44 +148,14 @@
         content: "";
       }
     }
+
     &-span {
       visibility: hidden;
       margin: 0 0.5em;
-    }
-  }
-}
-@media (min-width: 768px) {
-  .footer {
-    &__bottom {
-      flex-direction: row;
-      &-span {
+
+      @include respond(tablet) {
         visibility: visible;
       }
-    }
-  }
-}
-@media (min-width: 992px) {
-  .footer {
-    &__boxes {
-      flex-direction: row;
-      justify-content: center;
-    }
-    &__box {
-      margin-right: 2.5em;
-      margin-bottom: 0;
-      &:first-child {
-        margin-right: auto;
-        width: 35%;
-      }
-      &:last-child {
-        margin-right: 0;
-      }
-      &-title {
-        font-size: 1.9rem;
-      }
-    }
-    .menu-item {
-      margin-bottom: 0.5em;
     }
   }
 }
