@@ -1,0 +1,42 @@
+li.product {
+	margin: 1em !important;
+	border-bottom: 1px solid $text-color;
+	width: 100% !important;
+	max-width: 340px;
+	a {
+		display: flex;
+		flex-direction: column;
+		&:hover {
+			img {
+				transform: scale(0.98);
+			}
+		}
+		span.onsale {
+			margin: 0 !important;
+			border-radius: 0;
+			background-color: $dark-color;
+			padding: 0.8em !important;
+			min-width: 90px;
+			min-height: 0;
+			line-height: 0;
+			text-transform: uppercase;
+		}
+		img {
+			transition: transform 0.3s;
+		}
+		p {
+			display: none;
+		}
+		h2 {
+			color: $text-color;
+			font-weight: 700;
+			font-size: 2rem !important;
+			text-transform: uppercase;
+		}
+		span.price {
+			color: $hover-color !important;
+			font-weight: 400 !important;
+			font-size: 1.8rem !important;
+		}
+	}
+}
