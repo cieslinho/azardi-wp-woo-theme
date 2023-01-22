@@ -27,6 +27,17 @@
   }
 }
 
+@mixin container() {
+  margin: 0 auto;
+  padding: 0 1em;
+  width: 100%;
+  max-width: 1600px;
+
+  @include respond(tablet) {
+    padding: 4em 1em;
+  }
+}
+
 @mixin btn-outline {
   transition: background-color 0.2s, color 0.2s;
   border: 2px solid $white-color;

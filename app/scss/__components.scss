@@ -1,8 +1,5 @@
 .container {
-  margin: 0 auto;
-  padding: 0 1em;
-  width: 100%;
-  max-width: 1600px;
+  @include container();
 }
 
 .section-title {
@@ -21,13 +18,5 @@
     width: 2px;
     height: 100%;
     content: "";
-  }
-}
-
-.section-padding {
-  padding: 1em 0;
-
-  @include respond(tablet) {
-    padding: 4em 1em;
   }
 }
