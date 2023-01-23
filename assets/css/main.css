@@ -433,6 +433,67 @@ li.product a span.price {
   color: #202020;
 }
 
+.blog__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  .blog__cards {
+    flex-direction: row;
+  }
+}
+.blog__card {
+  position: relative;
+  margin: 1em;
+  width: 100%;
+  max-width: 400px;
+  min-height: 300px;
+  overflow: hidden;
+}
+@media only screen and (min-width: 768px) {
+  .blog__card {
+    width: 25%;
+  }
+}
+.blog__card::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(51, 53, 51, 0.3);
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+.blog__card-bottom {
+  position: absolute;
+  bottom: 0;
+  z-index: 15;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0.5em;
+  width: 100%;
+}
+.blog__card-title {
+  margin-bottom: 0.5em;
+  color: #f4f3ee;
+}
+.blog__card-date {
+  color: #e5e5e5;
+}
+.blog__card-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -5;
+  transition: transform 0.3s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blog__card:hover .blog__card-img {
+  transform: scale(1.05);
+}
+
 .categories__boxes {
   display: flex;
   flex-direction: column;

@@ -42,20 +42,30 @@ get_header();
  
             <section class="blog section-padding">
                 <div class="container">
+                    <h2 class="section-title">Blog</h2>
+                    <div class="blog__cards">
                     <?php 
                     if (have_posts()):
                         while (have_posts()): the_post();
                         ?>
-                        <article class="blog__article">
-                            <h2 class="blog__title"><?php the_title(); ?></h2>
-                            <div class="blog__content"><?php the_content(); ?></div>
-                        </article>
+                        
+                        <a class="blog__card" href="<?php echo the_permalink(); ?>">
+<div class="blog__card-bottom">                      
+      <h2 class="blog__card-title"><?php the_title(); ?></h2>
+                        <p class="blog__card-date"><?php echo get_the_date(); ?></p></div>
+                        <img class="blog__card-img"
+                src="<?php the_post_thumbnail_url(); ?>">
+                   
+
+                    </a>
                         <?php
                     endwhile;
                 else:
             ?>
                             <p>Brak postów do wyświetlenia.</p>
                             <?php endif; ?>
+                            </div>
+                            </div>
                 </div>
             </section>
         </main>
