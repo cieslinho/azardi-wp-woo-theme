@@ -1,0 +1,47 @@
+.cooperation {
+	&__boxes {
+		display: flex;
+		flex-direction: column;
+		margin: 1em;
+	}
+	&__box {
+		margin-bottom: 1em;
+		&-title {
+			margin-bottom: 0.5em;
+			color: $dark-color;
+			@include respond(tablet) {
+				font-size: 2rem;
+			}
+		}
+		&-text {
+			margin-bottom: 0.25em;
+			color: $text-color;
+			line-height: 150%;
+			a {
+				color: $text-color;
+				font-weight: 700;
+				&:hover {
+					border-bottom: 1px solid $text-color;
+				}
+			}
+		}
+		&-list {
+			margin-top: 0.5em;
+
+			&-item {
+				display: flex;
+				position: relative;
+				align-items: baseline;
+				margin-bottom: 0.25em;
+				color: $text-color;
+				&::before {
+					position: relative;
+					margin-right: 0.5em;
+					content: '+';
+					font-weight: 700;
+					font-size: 1.7rem;
+				}
+			}
+		}
+	}
+}

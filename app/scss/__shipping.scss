@@ -1,0 +1,31 @@
+.shipping {
+	&__list {
+		display: flex;
+		flex-direction: column;
+		margin: 1em;
+		&-text {
+			margin-top: 1em;
+			color: $dark-color;
+			font-weight: 700;
+			line-height: 150%;
+			@include respond(tablet) {
+				font-size: 2rem;
+			}
+		}
+		&-item {
+			position: relative;
+			margin: 1em 0em 0em 1em;
+			padding-left: 2em;
+			color: $text-color;
+			&::before {
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+				content: '+';
+				font-weight: 700;
+				font-size: 1.7rem;
+			}
+		}
+	}
+}
