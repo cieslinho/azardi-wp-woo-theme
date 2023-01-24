@@ -307,6 +307,53 @@ li.product a span.price {
   font-size: 1.8rem !important;
 }
 
+.cooperation__boxes {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+}
+.cooperation__box {
+  margin-bottom: 1em;
+}
+.cooperation__box-title {
+  margin-bottom: 0.5em;
+  color: #333533;
+}
+@media only screen and (min-width: 768px) {
+  .cooperation__box-title {
+    font-size: 2rem;
+  }
+}
+.cooperation__box-text {
+  margin-bottom: 0.25em;
+  color: #202020;
+  line-height: 150%;
+}
+.cooperation__box-text a {
+  color: #202020;
+  font-weight: 700;
+}
+.cooperation__box-text a:hover {
+  border-bottom: 1px solid #202020;
+}
+.cooperation__box-list {
+  margin-top: 0.5em;
+}
+.cooperation__box-list-item {
+  display: flex;
+  position: relative;
+  align-items: baseline;
+  margin-bottom: 0.25em;
+  color: #202020;
+}
+.cooperation__box-list-item::before {
+  position: relative;
+  margin-right: 0.5em;
+  content: "+";
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
 .product .summary {
   color: #202020;
 }
