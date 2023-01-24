@@ -1,0 +1,53 @@
+.privacy {
+	&__boxes {
+		margin: 1em;
+	}
+	&__list {
+		margin-bottom: 1em;
+		line-height: 150%;
+		list-style-type: decimal;
+		&-text {
+			color: $dark-color;
+			font-weight: 700;
+			line-height: 150%;
+			a {
+				color: $text-color;
+				&:hover {
+					border-bottom: 1px solid $text-color;
+				}
+			}
+			@include respond(tablet) {
+				font-size: 2rem;
+			}
+		}
+
+		&-item {
+			position: relative;
+			margin-top: 1em;
+			margin-left: 2em;
+			color: $text-color;
+			a {
+				color: $text-color;
+				font-weight: 700;
+				&:hover {
+					border-bottom: 1px solid $text-color;
+				}
+			}
+		}
+	}
+	&__sublist {
+		&-item {
+			position: relative;
+			margin-top: 0.5em;
+			margin-left: 3em;
+			&::before {
+				position: absolute;
+				top: -2px;
+				left: -20px;
+				content: '+';
+				font-weight: 700;
+				font-size: 1.7rem;
+			}
+		}
+	}
+}
