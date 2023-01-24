@@ -1,21 +1,13 @@
 <section class="products section-padding">
             <div class="container">
                 <div class="products__boxes">
-                    <div class="products__box">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Łózko-dreniane-aranż_29064_maly-RGB.jpeg" alt="" class="products__img">
-                        <p class="products__text">Salon</p>
-                        <a href="product-category/meble/salon/" class="products__btn">Sprawdź</a>
-                    </div>
-                    <div class="products__box">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Łózko-dreniane-aranż_29064_maly-RGB.jpeg" alt="" class="products__img">
-                        <p class="products__text">Sypialnia</p>
-                        <a href="product-category/meble/sypialnia/" class="products__btn">Sprawdź</a>
-                    </div>
-                    <div class="products__box">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Łózko-dreniane-aranż_29064_maly-RGB.jpeg" alt="" class="products__img">
-                        <p class="products__text">Dodatki</p>
-                        <a href="product-category/meble/dodatki/" class="products__btn">Sprawdź</a>
-                    </div>
+                    <?php foreach( $attributes['categories'] as $category ) : ?>
+                        <div class="products__box">
+                            <img src="<?php echo esc_url( $category['image']['url'] ); ?>" alt="<?php echo esc_attr( $category['image']['alt'] ); ?>" class="products__img">
+                            <p class="products__text"><?php echo esc_html( $category['title'] ); ?></p>
+                            <a href="<?php echo esc_url( $category['link'] ); ?>" class="products__btn">Sprawdź</a>
+                        </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </section>

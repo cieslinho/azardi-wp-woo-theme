@@ -5,41 +5,34 @@
 get_header();
 ?>
 <main>
-<header class="header">
+    <header class="header">
             <div class="header__slider">
                 <div class="header__slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/A3_2952.jpeg" alt="Łóżko Azardi">
+                    <img src="<?php echo esc_url( get_field('slide-1-image', 'option')['url'] ); ?>" alt="<?php echo esc_attr( get_field('slide-1-image', 'option')['alt'] ); ?>">
                     <div class="header__info">
-                        <h2 class="header__info-title">Łóżko Aron</h2>
-                        <p class="header__info-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Neque ullam
-                            cumque eius repellat laborum repudiandae?</p>
-                        <a href="#" class="header__info-btn">Sprawdź</a>
+                        <h2 class="header__info-title"><?php echo esc_html( get_field('slide-1-title', 'option') ); ?></h2>
+                        <p class="header__info-description"><?php echo esc_html( get_field('slide-1-text', 'option') ); ?></p>
+                        <a href="<?php echo esc_url( get_field('slide-1-link', 'options')['url'] ); ?>" class="header__info-btn">Sprawdź</a>
                     </div>
                 </div>
                 <div class="header__slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/AR_carmen_2313_low_res.jpeg" alt="Łóżko Cypr">
+                    <img src="<?php echo esc_url( get_field('slide-2-image', 'option')['url'] ); ?>" alt="<?php echo esc_attr( get_field('slide-2-image', 'option')['alt'] ); ?>">
                     <div class="header__info">
-                        <h2 class="header__info-title">Łóżko Cypr</h2>
-                        <p class="header__info-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Neque ullam
-                            cumque eius repellat laborum repudiandae?</p>
-                        <a href="#" class="header__info-btn">Sprawdź</a>
+                        <h2 class="header__info-title"><?php echo esc_html( get_field('slide-2-title', 'option') ); ?></h2>
+                        <p class="header__info-description"><?php echo esc_html( get_field('slide-2-text', 'option') ); ?></p>
+                        <a href="<?php echo esc_url( get_field('slide-2-link', 'options')['url'] ); ?>" class="header__info-btn">Sprawdź</a>
                     </div>
                 </div>
                 <div class="header__slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Łózko-dreniane-aranż_29064_maly-RGB.jpeg" alt="Łóżko Honey">
+                    <img src="<?php echo esc_url( get_field('slide-3-image', 'option')['url'] ); ?>" alt="<?php echo esc_attr( get_field('slide-3-image', 'option')['alt'] ); ?>">
                     <div class="header__info">
-                        <h2 class="header__info-title">Łóżko Honey</h2>
-                        <p class="header__info-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Neque ullam
-                            cumque eius repellat laborum repudiandae?</p>
-                        <a href="#" class="header__info-btn">Sprawdź</a>
+                        <h2 class="header__info-title"><?php echo esc_html( get_field('slide-3-title', 'option') ); ?></h2>
+                        <p class="header__info-description"><?php echo esc_html( get_field('slide-3-text', 'option') ); ?></p>
+                        <a href="<?php echo esc_url( get_field('slide-3-link', 'options')['url'] ); ?>" class="header__info-btn">Sprawdź</a>
                     </div>
                 </div>
             </div>
         </header>
- 
             <section class="blog section-padding">
                 <div class="container">
                     <h2 class="section-title">Blog</h2>
