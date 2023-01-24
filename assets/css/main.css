@@ -541,6 +541,38 @@ li.product a span.price {
   transform: scale(1.05);
 }
 
+.shipping__list {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+}
+.shipping__list-text {
+  margin-top: 1em;
+  color: #333533;
+  font-weight: 700;
+  line-height: 150%;
+}
+@media only screen and (min-width: 768px) {
+  .shipping__list-text {
+    font-size: 2rem;
+  }
+}
+.shipping__list-item {
+  position: relative;
+  margin: 1em 0em 0em 1em;
+  padding-left: 2em;
+  color: #202020;
+}
+.shipping__list-item::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  content: "+";
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
 .contact__boxes {
   display: flex;
   flex-direction: column;
