@@ -1,0 +1,114 @@
+.product {
+	.summary {
+		color: $text-color;
+	}
+	p.price {
+		color: $dark-color !important;
+	}
+	.woocommerce-variation-price {
+		span {
+			color: $dark-color !important;
+		}
+	}
+	.woocommerce-variation-availability {
+		p {
+			color: $dark-color !important;
+		}
+	}
+	span.onsale {
+		margin: 0 !important;
+		border-radius: 0;
+		background-color: $dark-color;
+		padding: 0.8em !important;
+		min-width: 90px;
+		min-height: 0;
+		line-height: 0;
+		text-transform: uppercase;
+	}
+	table.variations {
+		tbody {
+			display: flex;
+			flex-direction: column;
+			tr {
+				display: flex;
+				justify-content: space-between;
+				align-items: baseline;
+				border-bottom: 1px solid $dark-color;
+				padding: 0 0.5em;
+				width: 100%;
+				td,
+				th {
+					padding: 1em 0 !important;
+					line-height: 2em !important;
+					text-transform: uppercase;
+				}
+				th {
+					width: 50%;
+					text-align: left;
+					label {
+						font-size: 1.4rem;
+					}
+				}
+				td {
+					width: 50%;
+					select {
+						@include btn-product;
+						cursor: pointer;
+						padding: 0.5em 0.25em;
+						width: 100% !important;
+						text-transform: uppercase;
+					}
+					a {
+						border-bottom: 1px solid gray;
+						color: gray;
+					}
+				}
+			}
+		}
+	}
+	.single_variation_wrap {
+		display: flex;
+		flex-direction: column;
+		.woocommerce-variation-add-to-cart {
+			display: flex;
+			flex-direction: column;
+			.quantity {
+				margin: 1em 0 !important;
+				.qty {
+					padding: 0.5em;
+					min-width: 25%;
+					max-width: 30%;
+					input {
+						border: 1px solid gray;
+						border-radius: 0 !important;
+					}
+				}
+			}
+			.wp-element-button {
+				@include btn-product;
+				padding: 1em;
+				text-transform: uppercase;
+			}
+			button.alt.disabled {
+				background-color: $dark-color;
+			}
+		}
+	}
+}
+.woocommerce-Tabs-panel {
+	h2 {
+		margin-bottom: 1em;
+		color: $text-color;
+	}
+	p {
+		margin-bottom: 0.5em;
+		color: $text-color;
+		line-height: 150%;
+	}
+}
+
+.related.products {
+	h2 {
+		color: $text-color;
+	}
+}
