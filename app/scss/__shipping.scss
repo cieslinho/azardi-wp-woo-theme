@@ -5,6 +5,7 @@
 		margin: 1em;
 		&-text {
 			margin-top: 1em;
+			color: $dark-color;
 			font-weight: 700;
 			line-height: 150%;
 			@include respond(tablet) {
@@ -15,6 +16,7 @@
 			position: relative;
 			margin: 1em 0em 0em 1em;
 			padding-left: 2em;
+			color: $text-color;
 			&::before {
 				position: absolute;
 				top: 50%;
