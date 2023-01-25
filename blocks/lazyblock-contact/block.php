@@ -2,8 +2,8 @@
     <div class="container">
         <h2 class="section-title">Kontakt</h2>
         <div class="contact__boxes">
-<div class="contact__box contact__box-left">
-<div class="contact__box">
+            <div class="contact__box contact__box-left">
+                <div class="contact__box">
                 <div class="contact__box-icons">
                 <i class='bx bxs-phone'></i>
                 <p class="contact__box-text">Infolinia</p>
@@ -26,11 +26,14 @@
                 <div class="contact__box-bottom">
                 <a  class="contact__box-btn" href="mailto:biuro@azardi.pl">biuro@azardi.pl</a>
                 <p class="contact__box-text">
-                Lub wypełnij formularz poniżej. Nasi eksperci odpowiedzą na twoją wiadomość w możliwie najszybszym czasie.
+                Lub wypełnij formularz kontaktowy. Nasi eksperci odpowiedzą na twoją wiadomość w możliwie najszybszym czasie.
                 </p>
                 </div>
             </div>
-</div>
+            <div class="contact__box contact__box-map-desktop">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.828861244121!2d17.987917415917103!3d51.22222823933426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47107500e55ea879%3A0x599579f6f1006203!2sAZARDI%20-%20Producent%20%C5%81%C3%B3%C5%BCek%20i%20Materacy%20Mrocze%C5%84!5e0!3m2!1spl!2spl!4v1674660055529!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
             <div class="contact__box contact__box-right">
                 <form action="" method="post" class="contact__form">
                     <div class="contact__form-top">
@@ -51,6 +54,9 @@
                     <button class="contact__form-btn" type="submit">wyślij</button>
                     </div>
                 </form>
+            </div>
+            <div class="contact__box contact__box-map-mobile">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.828861244121!2d17.987917415917103!3d51.22222823933426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47107500e55ea879%3A0x599579f6f1006203!2sAZARDI%20-%20Producent%20%C5%81%C3%B3%C5%BCek%20i%20Materacy%20Mrocze%C5%84!5e0!3m2!1spl!2spl!4v1674660055529!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>

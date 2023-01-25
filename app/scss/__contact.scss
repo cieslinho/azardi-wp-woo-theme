@@ -20,6 +20,24 @@
 				width: 55%;
 			}
 		}
+		&-map-mobile,
+		&-map-desktop {
+			iframe {
+				width: 100%;
+			}
+		}
+		&-map-mobile {
+			margin-top: 1em;
+			@include respond(tablet) {
+				display: none;
+			}
+		}
+		&-map-desktop {
+			display: none;
+			@include respond(tablet) {
+				display: block;
+			}
+		}
 		&-icons {
 			display: flex;
 			align-items: flex-start;
