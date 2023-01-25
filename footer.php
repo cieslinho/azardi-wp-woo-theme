@@ -8,7 +8,7 @@
 <footer class="footer section-padding">
     <div class="container">
         <div class="footer__boxes">
-            <div class="footer__box">
+            <div class="footer__box footer__box--first">
                 <a href="<?php echo get_home_url(); ?>" class="footer__logo">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt=""
                         class="footer__img">

@@ -1,13 +1,11 @@
 .footer {
   &__boxes {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr;
     margin-bottom: 1em;
 
     @include respond(desktop) {
-      flex-direction: row;
-      justify-content: center;
+      grid-template-columns: 4fr 1fr 1fr 1fr;
     }
   }
 
@@ -17,8 +15,13 @@
     margin-bottom: 0.5em;
 
     @include respond(desktop) {
+      margin-top: 2em;
       margin-right: 2.5em;
       margin-bottom: 0;
+    }
+
+    &--first {
+      margin-top: unset;
     }
 
     &-address {
@@ -79,7 +82,7 @@
       a {
         display: block;
         border-bottom: 1px solid transparent;
-        padding: 0.5em;
+        padding-block: 0.3em;
         width: 100%;
         color: $text-color;
         &:hover {
@@ -104,8 +107,7 @@
   }
 
   &__text {
-    margin-bottom: 0.25em;
-    margin-left: 0.5em;
+    padding-bottom: 0.3em;
     color: $text-color;
   }
 
