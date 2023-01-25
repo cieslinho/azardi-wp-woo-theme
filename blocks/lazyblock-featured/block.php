@@ -21,7 +21,7 @@ $query = new WP_Query( $args );
                     </div>
                     <div class="featured__product-box">
                         <p class="featured__product-description"><?php the_title(); ?></p>
-                        <p class="featured__product-title">XXX</p>
+                        <p class="featured__product-title"><?php echo get_the_terms( $post->ID, 'product_cat' )[0]->name; ?></p>
                         <p class="featured__product-price"><?php echo $product->get_price_html(); ?></p>
                     </div>
                 </a>
