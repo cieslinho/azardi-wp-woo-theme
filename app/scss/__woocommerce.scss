@@ -1,46 +1,46 @@
 .woocommerce {
-  @include container();
-  margin-top: 20px;
+	@include container();
+	margin-top: 20px;
 
-  .woocommerce-breadcrumb {
-    margin: 1.5em 0;
-    a {
-      color: $text-color;
-      &:hover {
-        border-bottom: 1px solid $text-color;
-      }
-    }
-  }
-  .woocommerce-ordering {
-    float: left;
+	.woocommerce-breadcrumb {
+		margin: 1.5em 0;
+		a {
+			color: $text-color;
+			&:hover {
+				border-bottom: 1px solid $text-color;
+			}
+		}
+	}
+	.woocommerce-ordering {
+		float: left;
 
-    @include respond(tablet) {
-      float: right;
-      margin-bottom: 1.5em;
-    }
+		@include respond(tablet) {
+			float: right;
+			margin-bottom: 1.5em;
+		}
 
-    select.orderby {
-      padding: 0.4em 0.8em;
-      color: #333533;
-      font-family: "Roboto", sans-serif;
-    }
-  }
-  .woocommerce-result-count {
-    display: none;
-  }
+		select.orderby {
+			padding: 0.4em 0.8em;
+			color: #333533;
+			font-family: 'Roboto', sans-serif;
+		}
+	}
+	.woocommerce-result-count {
+		display: none;
+	}
 }
 
 .shop__layout {
-  ul.products {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	ul.products {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
-    @include respond(tablet) {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      align-items: stretch;
-    }
-  }
+		@include respond(tablet) {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			align-items: stretch;
+		}
+	}
 }
