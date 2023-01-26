@@ -100,9 +100,6 @@
 		border-bottom: 1px solid $dark-color;
 		padding-bottom: 1em;
 		@include respond(tablet) {
-			// flex-direction: row;
-			justify-content: space-between;
-			// align-items: center;
 			&::before,
 			&::after {
 				display: none !important;
@@ -114,14 +111,14 @@
 				padding: 0.5em;
 				min-width: 25%;
 				max-width: 30%;
-				input {
-					border: 1px solid gray;
-					border-radius: 0 !important;
-				}
 				@include respond(tablet) {
 					width: 100%;
 					min-width: 100%;
 					max-width: 100%;
+				}
+				input {
+					border: 1px solid gray;
+					border-radius: 0 !important;
 				}
 			}
 		}
