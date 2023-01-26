@@ -9,9 +9,18 @@
 		flex-direction: column;
 		margin-top: 2em;
 		margin-bottom: 1em;
+		@include respond(tablet) {
+			display: flex;
+			flex-direction: row;
+			margin-top: 0;
+		}
 		li {
 			margin-bottom: 1em;
-
+			@include respond(tablet) {
+				margin-right: 1em;
+				margin-bottom: 0;
+				padding: 0;
+			}
 			a {
 				display: block;
 				transition: border-left 0.2s, color 0.2s;
@@ -20,52 +29,38 @@
 				padding-left: 1em;
 				width: 100%;
 				color: $text-color;
+				@include respond(tablet) {
+					transition: border-bottom 0.2s, color 0.2s;
+					border-bottom: 2px solid transparent;
+					border-left: none;
+					padding: 0.5em;
+				}
 			}
 			&:hover a {
 				border-left: 2px solid $dark-color;
 				color: $dark-color;
+				@include respond(tablet) {
+					border-bottom: 2px solid $dark-color;
+					border-left: none;
+					color: $dark-color;
+				}
 			}
 		}
 		.woocommerce-MyAccount-navigation-link--customer-logout:hover a {
 			border-left: 2px solid red;
 			color: red;
+			@include respond(tablet) {
+				border-bottom: 2px solid red;
+				border-left: none;
+				color: red;
+			}
 		}
 		li.is-active {
 			a {
 				border-left: 2px solid $dark-color;
 				color: $dark-color;
 				font-weight: 700;
-			}
-		}
-	}
-	@include respond(tablet) {
-		ul {
-			display: flex;
-			flex-direction: row;
-			margin-top: 0;
-			li {
-				margin-right: 1em;
-				margin-bottom: 0;
-				padding: 0;
-				a {
-					transition: border-bottom 0.2s, color 0.2s;
-					border-bottom: 2px solid transparent;
-					border-left: none;
-					padding: 0.5em;
-				}
-				&:hover a {
-					border-bottom: 2px solid $dark-color;
-					border-left: none;
-					color: $dark-color;
-				}
-			}
-			.woocommerce-MyAccount-navigation-link--customer-logout:hover a {
-				border-bottom: 2px solid red;
-				border-left: none;
-				color: red;
-			}
-			li.is-active {
-				a {
+				@include respond(tablet) {
 					border-bottom: 2px solid $dark-color;
 					border-left: none;
 					color: $dark-color;
@@ -77,6 +72,9 @@
 }
 .woocommerce-MyAccount-content {
 	margin: 1em 0 3em 0;
+	@include respond(tablet) {
+		margin: 3em 0 1em 0;
+	}
 	p {
 		margin-bottom: 0.5em;
 		color: $text-color;
@@ -84,8 +82,5 @@
 			border-bottom: 1px solid $dark-color;
 			color: $dark-color;
 		}
-	}
-	@include respond(tablet) {
-		margin: 3em 0 1em 0;
 	}
 }
