@@ -1,0 +1,109 @@
+.woocommerce-notices-wrapper {
+	margin-top: 5.5em;
+	ul.woocommerce-error {
+		border-top-color: red;
+		li {
+			color: $text-color;
+			a.showlogin {
+				transition: color 0.2s, border-bottom 0.2s;
+				border-bottom: 1px solid $dark-color;
+				color: $text-color;
+				&:hover {
+					border-bottom: 1px solid black;
+					color: $dark-color;
+				}
+			}
+		}
+	}
+	@include respond(tablet) {
+		margin-top: 3em;
+	}
+}
+
+.u-columns.col2-set {
+	display: flex;
+	flex-direction: column;
+	@include respond(tablet) {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.u-column1.col-1,
+	.u-column2.col-2 {
+		h2 {
+			color: $dark-color;
+		}
+		.woocommerce-form {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			border: 2px solid $gray-color;
+			border-bottom-width: 3px;
+			border-bottom-color: $dark-color;
+			border-radius: 0;
+			&-login {
+				p.form-row:nth-child(3) {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					align-items: stretch;
+					button {
+						@include btn-product;
+						margin-right: 0;
+						padding: 0.5em 1em;
+						font-size: 1.6rem;
+					}
+					&::before,
+					&::after {
+						display: none;
+					}
+				}
+				p.lost_password {
+					a {
+						transition: color 0.2s, border-bottom 0.2s;
+						border-bottom: 1px solid $dark-color;
+						color: $text-color;
+						&:hover {
+							border-bottom: 1px solid black;
+							color: $dark-color;
+						}
+					}
+				}
+			}
+			&-register {
+				p.form-row:nth-child(4) {
+					button {
+						@include btn-product;
+						padding: 0.5em 1em;
+						width: 100%;
+						font-size: 1.6rem;
+					}
+
+					&::before,
+					&::after {
+						display: none;
+					}
+				}
+			}
+			&-login,
+			&-register {
+				p {
+					margin-block: 0.5em;
+					padding: 0;
+					color: $text-color;
+					font-size: 1.5rem;
+				}
+				input {
+					border: 1px solid $gray-color;
+					padding: 0.5em;
+					font-family: 'Roboto', sans-serif;
+					&:focus {
+						border: 1px solid $dark-color;
+					}
+				}
+				label {
+					margin-block: 0.2em;
+				}
+			}
+		}
+	}
+}
