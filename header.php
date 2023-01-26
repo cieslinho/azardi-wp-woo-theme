@@ -46,18 +46,18 @@
                 </a>
                 <ul class="nav__list">
                     <?php wp_nav_menu(
-                    array(
-                        'theme_location' => 'azardi_main_menu'
-                    )
-                    );
+                            array(
+                                'theme_location' => 'azardi_main_menu'
+                            )
+                        );
                     ?>
-                        <p class="nav__motto">„Odkryj Piękno Sypialni”</p>
+                    <p class="nav__motto">„Odkryj Piękno Sypialni”</p>
                 </ul>
                 <div class="nav__tools">
-                    <a href="">
-                        <i class='bx bx-search'></i>
-                    </a>
-                    <a href="">
+                    <div class="nav__search">
+                        <?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
+                    </div>
+                    <a href="/moje-konto">
                         <i class='bx bx-user'></i>
                     </a>
                     <a href="<?php echo wc_get_cart_url(); ?>">
