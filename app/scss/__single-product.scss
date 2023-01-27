@@ -94,6 +94,43 @@
 			}
 		}
 	}
+	form.cart {
+		display: flex;
+		flex-direction: column;
+		border-bottom: 1px solid $dark-color;
+		padding-bottom: 1em;
+		@include respond(tablet) {
+			&::before,
+			&::after {
+				display: none !important;
+			}
+		}
+		.quantity {
+			margin: 1em 0 !important;
+			.qty {
+				padding: 0.5em;
+				min-width: 25%;
+				max-width: 30%;
+				@include respond(tablet) {
+					width: 100%;
+					min-width: 100%;
+					max-width: 100%;
+				}
+				input {
+					border: 1px solid gray;
+					border-radius: 0 !important;
+				}
+			}
+		}
+		.wp-element-button {
+			@include btn-product;
+			padding: 1em;
+			text-transform: uppercase;
+		}
+		button.alt.disabled {
+			background-color: $dark-color;
+		}
+	}
 }
 .woocommerce-Tabs-panel {
 	h2 {
