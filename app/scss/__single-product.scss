@@ -138,9 +138,40 @@
 		color: $text-color;
 	}
 	p {
-		margin-bottom: 0.5em;
+		margin-block: 0.5em;
 		color: $text-color;
 		line-height: 150%;
+		img {
+			@include respond(tablet) {
+				max-width: 60%;
+			}
+		}
+	}
+	ul {
+		line-height: 150%;
+
+		li {
+			position: relative;
+			margin-top: 0.5em;
+			margin-left: 2em;
+			color: $text-color;
+			&::before {
+				position: absolute;
+				top: -2px;
+				left: -20px;
+				content: '+';
+				font-weight: 700;
+				font-size: 1.7rem;
+			}
+		}
+	}
+	ol {
+		line-height: 150%;
+		li {
+			margin-top: 0.5em;
+			margin-left: 2em;
+			color: $text-color;
+		}
 	}
 }
 
