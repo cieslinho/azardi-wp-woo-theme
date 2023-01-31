@@ -39,8 +39,8 @@ function azardi_config(){
     )
   );
   add_theme_support('woocommerce', array(
-    'thumbnails_image_width' => 255,
-    'single_image_width' => 255,
+    'thumbnails_image_width' => 200,
+    'single_image_width' => 1024,
     'product_grid' => array(
       'default_rows' => 10,
       'min_rows' => 1,
