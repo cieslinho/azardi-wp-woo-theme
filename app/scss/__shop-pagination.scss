@@ -1,0 +1,10 @@
+.woocommerce-pagination {
+	ul.page-numbers {
+		li a.page-numbers {
+			color: $text-color;
+		}
+		li span.current {
+			color: $dark-color !important;
+		}
+	}
+}
