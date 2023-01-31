@@ -1,0 +1,19 @@
+.product_meta {
+	span.posted_in,
+	span.tagged_as {
+		display: block;
+		margin-bottom: 0.5em;
+		color: $dark-color;
+		font-size: 1.5rem;
+		a {
+			display: inline-block;
+			margin: 0.15em;
+			border-radius: 5px;
+			background-color: $dark-color;
+			padding: 0.2em 0.5em;
+			color: $bg-color;
+			font-size: 1.3rem;
+			white-space: nowrap;
+		}
+	}
+}
