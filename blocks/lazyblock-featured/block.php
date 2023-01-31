@@ -1,3 +1,7 @@
+<?php 
+error_reporting(E_ERROR | E_PARSE);
+?>
+
 <?php $args = array(
     'post_type'           => 'product',
     'posts_per_page'      => $products,
