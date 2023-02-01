@@ -1,0 +1,22 @@
+.woocommerce-products-header {
+	margin-top: 3.5em;
+
+	@include respond(tablet) {
+		margin-top: 1em;
+	}
+
+	.term-description {
+		border-bottom: 2px solid $dark-color;
+		background-color: rgba($color: $gray-color, $alpha: 0.5);
+		padding: 1em;
+
+		p {
+			margin-bottom: 0.5em;
+			color: $text-color;
+			line-height: 150%;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

@@ -53,10 +53,6 @@ const handleDropdown = () => {
 	dropdownBtnThird.addEventListener('click', () => {
 		submenuThird.classList.toggle('sub-menu-active')
 	})
-
-	// showDropdown()
-	console.log(dropdownMenuFirst)
-	console.log(dropdownMenuSecond)
 }
 
 const handleSlider = () => {
@@ -76,7 +72,8 @@ const handleSlider = () => {
 		setTimeout(showSlides, 3000) // Change image every 2 seconds
 	}
 }
-handleSlider()
+
 createButton()
 handleDropdown()
 navBtn.addEventListener('click', handleNav)
+handleSlider()
