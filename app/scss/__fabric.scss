@@ -1,0 +1,29 @@
+.fabric {
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  border: 1px solid $text-color;
+  background-color: $bg-color;
+  padding: 20px;
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+
+  &--hidden {
+    display: none;
+  }
+
+  &__heading {
+    margin-block: 40px;
+  }
+
+  &__container {
+    margin-block: 20px;
+  }
+
+  &__image {
+    cursor: pointer;
+    width: 200px;
+  }
+}

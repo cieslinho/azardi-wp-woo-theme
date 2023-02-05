@@ -67,3 +67,169 @@ if( function_exists('acf_add_options_page') ) {
     'icon_url'   => 'dashicons-admin-tools'
   ) );
 }
+
+add_action('woocommerce_before_add_to_cart_button','wdm_add_custom_fields');
+/**
+ * Adds custom field for Product
+ * @return [type] [description]
+ */
+function wdm_add_custom_fields()
+{
+
+    global $product;
+
+    ob_start();
+
+    if( 
+      get_the_terms( $product->ID, 'product_cat' )[0]->name === "Łóżka" || 
+      get_the_terms( $product->ID, 'product_cat' )[1]->name === "Łóżka" || 
+      get_the_terms( $product->ID, 'product_cat' )[2]->name === "Łóżka" 
+      ) :
+    ?>
+        <div class="wdm-custom-fields">
+            <input type="hidden" name="wdm_name" id="wdm_name" value="Brak" />
+        </div>
+        <style>
+          .tabs {
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            border-bottom: 1px solid black;
+          }
+
+          .tab {
+            cursor: pointer;
+            padding: 10px;
+          }
+
+          .tab.active {
+            background-color: #CCC;
+          }
+
+          .tab:hover {
+            background-color: #AAA;
+          }
+
+          .tab-content {
+            margin-left: 20px;
+            margin-right: 20px;
+          }
+
+          [data-tab-content] {
+            display: none;
+          }
+
+          .active[data-tab-content] {
+            display: block;
+          }
+        </style>
+        <div class="fabric fabric--hidden">
+          <h3 class="fabric__heading">Wybierz tkaninę:</h3>
+          <ul class="tabs">
+            <li data-tab-target="#fabric-boss" class="active tab">Tkaniny Boss</li>
+            <li data-tab-target="#fabric-vena" class="tab">Tkaniny Vena</li>
+            <li data-tab-target="#about" class="tab">About</li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="fabric-boss" data-tab-content class="active">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Boss/Boss_01.jpg" ?>" alt="Tkanina Boss" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Boss/Boss_02.jpg" ?>" alt="Tkanina Boss" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Boss/Boss_03.jpg" ?>" alt="Tkanina Boss" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Boss/Boss_04.jpg" ?>" alt="Tkanina Boss" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Boss/Boss_05.jpg" ?>" alt="Tkanina Boss" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Boss/Boss_06.jpg" ?>" alt="Tkanina Boss" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Boss/Boss_07.jpg" ?>" alt="Tkanina Boss" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Boss/Boss_08.jpg" ?>" alt="Tkanina Boss" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Boss/Boss_09.jpg" ?>" alt="Tkanina Boss" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Boss/Boss_10.jpg" ?>" alt="Tkanina Boss" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Boss/Boss_11.jpg" ?>" alt="Tkanina Boss" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Boss/Boss_12.jpg" ?>" alt="Tkanina Boss" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Boss/Boss_13.jpg" ?>" alt="Tkanina Boss" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Boss/Boss_14.jpg" ?>" alt="Tkanina Boss" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Boss/Boss_15.jpg" ?>" alt="Tkanina Boss" data-fabric-group="grupa1" loading="lazy">
+            </div>
+            <div id="fabric-vena" data-tab-content>
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-01.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-02.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-03.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-04.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-05.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-06.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-07.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-08.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-09.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-10.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
+            </div>
+            <div id="about" data-tab-content>
+              <h1>About</h1>
+              <p>Let me tell you about me</p>
+            </div>
+          </div>
+        </div>
+        <script src="<?php echo get_template_directory_uri() . "/assets/js/fabric.js" ?>"></script>
+        <div class="clear"></div>
+    <?php
+    endif;
+
+    $content = ob_get_contents();
+    ob_end_flush();
+
+    return $content;
+}
+
+add_filter('woocommerce_add_cart_item_data','wdm_add_item_data',10,3);
+
+/**
+ * Add custom data to Cart
+ * @param  [type] $cart_item_data [description]
+ * @param  [type] $product_id     [description]
+ * @param  [type] $variation_id   [description]
+ * @return [type]                 [description]
+ */
+function wdm_add_item_data($cart_item_data, $product_id, $variation_id)
+{
+    if(isset($_REQUEST['wdm_name']))
+    {
+        $cart_item_data['wdm_name'] = sanitize_text_field($_REQUEST['wdm_name']);
+    }
+
+    return $cart_item_data;
+}
+
+add_filter('woocommerce_get_item_data','wdm_add_item_meta',10,2);
+
+/**
+ * Display information as Meta on Cart page
+ * @param  [type] $item_data [description]
+ * @param  [type] $cart_item [description]
+ * @return [type]            [description]
+ */
+function wdm_add_item_meta($item_data, $cart_item)
+{
+
+    if(array_key_exists('wdm_name', $cart_item))
+    {
+        $custom_details = $cart_item['wdm_name'];
+
+        $item_data[] = array(
+            'key'   => 'Tkanina-ID',
+            'value' => $custom_details
+        );
+    }
+
+    return $item_data;
+}
+
+add_action( 'woocommerce_checkout_create_order_line_item', 'wdm_add_custom_order_line_item_meta',10,4 );
+
+function wdm_add_custom_order_line_item_meta($item, $cart_item_key, $values, $order)
+{
+
+    if(array_key_exists('wdm_name', $values))
+    {
+        $item->add_meta_data('_wdm_name',$values['wdm_name']);
+    }
+}
