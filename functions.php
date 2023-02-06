@@ -68,7 +68,7 @@ if( function_exists('acf_add_options_page') ) {
   ) );
 }
 
-add_action('woocommerce_before_add_to_cart_button','wdm_add_custom_fields');
+// add_action('woocommerce_before_add_to_cart_button','wdm_add_custom_fields');
 /**
  * Adds custom field for Product
  * @return [type] [description]
@@ -130,6 +130,7 @@ function wdm_add_custom_fields()
           <ul class="tabs">
             <li data-tab-target="#fabric-boss" class="active tab">Tkaniny Boss</li>
             <li data-tab-target="#fabric-vena" class="tab">Tkaniny Vena</li>
+            <li data-tab-target="#fabric-ronda" class="tab">Tkaniny Ronda</li>
             <li data-tab-target="#about" class="tab">About</li>
           </ul>
 
@@ -163,6 +164,18 @@ function wdm_add_custom_fields()
               <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-09.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
               <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-10.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
             </div>
+            <div id="fabric-ronda" data-tab-content>
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-01.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-02.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-03.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-04.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-05.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-06.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-07.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-08.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-09.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-10.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
+            </div>
             <div id="about" data-tab-content>
               <h1>About</h1>
               <p>Let me tell you about me</p>
@@ -180,7 +193,7 @@ function wdm_add_custom_fields()
     return $content;
 }
 
-add_filter('woocommerce_add_cart_item_data','wdm_add_item_data',10,3);
+// add_filter('woocommerce_add_cart_item_data','wdm_add_item_data',10,3);
 
 /**
  * Add custom data to Cart
@@ -199,7 +212,7 @@ function wdm_add_item_data($cart_item_data, $product_id, $variation_id)
     return $cart_item_data;
 }
 
-add_filter('woocommerce_get_item_data','wdm_add_item_meta',10,2);
+// add_filter('woocommerce_get_item_data','wdm_add_item_meta',10,2);
 
 /**
  * Display information as Meta on Cart page
@@ -223,7 +236,7 @@ function wdm_add_item_meta($item_data, $cart_item)
     return $item_data;
 }
 
-add_action( 'woocommerce_checkout_create_order_line_item', 'wdm_add_custom_order_line_item_meta',10,4 );
+// add_action( 'woocommerce_checkout_create_order_line_item', 'wdm_add_custom_order_line_item_meta',10,4 );
 
 function wdm_add_custom_order_line_item_meta($item, $cart_item_key, $values, $order)
 {
