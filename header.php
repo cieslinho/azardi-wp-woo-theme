@@ -32,7 +32,7 @@
                 </div>
                 <div class="nav__top-info">
                     <p>Zadzwoń do doradcy:</p>
-                    <a href="tel:+537895760">+48 537 895 760</a>
+                    <a href="tel:+48884822444">+48 884 822 444</a>
                 </div>
             </div>
             <div class="nav__navbar">
