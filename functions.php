@@ -56,6 +56,7 @@ function azardi_config(){
 }
 
 add_action('after_setup_theme', 'azardi_config', 0);
+add_theme_support( 'title-tag' );
 require get_template_directory() . '/inc/wc-modifications.php';
 
 if( function_exists('acf_add_options_page') ) {
