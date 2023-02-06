@@ -22,9 +22,9 @@
                         <i class='bx bxs-map'></i>
                         Mroczeń 93, 63-604 Baranów
                     </p>
-                    <a class="footer__link menu-item" href="mailto:biuro@azardi.art">
+                    <a class="footer__link menu-item" href="mailto:kontakt@azardi.pl">
                         <i class='bx bxs-envelope'></i>
-                        biuro@azardi.art
+                        kontakt@azardi.pl
                     </a>
                     <a class="footer__link menu-item" href="tel:+48 790 231 122">
                         <i class='bx bxs-phone'></i>

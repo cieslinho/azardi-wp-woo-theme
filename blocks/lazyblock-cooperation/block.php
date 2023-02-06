@@ -15,7 +15,7 @@ Firma Azardi oferuje produkty tworzone z myślą o pasjonatach aranżacji wnętr
     <div class="cooperation__box">
     <h3 class="cooperation__box-title">Dystrybutorzy</h3>
 <p class="cooperation__box-text">Prowadzisz własny salon/sklep lub masz zamiar go otworzyć. Chciałbyś wzbogacić swoją ofertę naszymi produktami?</p>
-<p class="cooperation__box-text">Napisz do nas: <a href="mailto:biuro@azardi.art">biuro@azardi.art</a></p>
+<p class="cooperation__box-text">Napisz do nas: <a href="mailto:kontakt@azardi.pl">kontakt@azardi.pl</a></p>
     </div>
     <div class="cooperation__box">
     <h3 class="cooperation__box-title">Hotele, Pensjonaty, Apartamenty, Restauracje, Kawiarnie, Bary...</h3>

@@ -24,7 +24,7 @@
                 <p class="contact__box-text">Wolisz do nas napisać? Nie ma problemu! Wyślij swoje zapytanie na adres:</p>
                 </div>
                 <div class="contact__box-bottom">
-                <a  class="contact__box-btn" href="mailto:biuro@azardi.pl">biuro@azardi.pl</a>
+                <a  class="contact__box-btn" href="mailto:kontakt@azardi.pl">kontakt@azardi.pl</a>
                 <p class="contact__box-text">
                 Lub wypełnij formularz kontaktowy. Nasi eksperci odpowiedzą na twoją wiadomość w możliwie najszybszym czasie.
                 </p>

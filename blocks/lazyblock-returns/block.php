@@ -11,7 +11,7 @@
                 <p class="returns__box-text">Reklamacje prosimy kierować w formie pisemnej na adres:</p>
                 <p class="returns__box-text">Azardi S.C.</p>
                 <p class="returns__box-text">Mroczeń 93, 63-604 Baranów</p>
-                <p class="returns__box-text">lub adres e-mail: <a href="mailto:biuro@azardi.art">biuro@azardi.art</a></p>
+                <p class="returns__box-text">lub adres e-mail: <a href="mailto:kontakt@azardi.pl">kontakt@azardi.pl</a></p>
             </div>
             <ul class="returns__box returns__list">
                 <li class="returns__box-text returns__list-item">Mogą Państwo skorzystać z <a href="<?php echo get_template_directory_uri(); ?>/assets/files/reklamacja.pdf">wzoru reklamacji</a>, ale nie jest to warunkiem rozpatrzenia reklamacji.</li>
