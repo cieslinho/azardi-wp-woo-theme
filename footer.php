@@ -82,7 +82,7 @@
                 Copyright &copy; AZARDI All rights reserved 
             </p>
             <p class="footer__bottom-text"> <span class="footer__bottom-span">|</span>Realizacja: 
-                <a href="www.cieslaszymon.pl" class="footer__bottom-link">Cieśla Szymon</a>
+                <a href="https://www.cieslaszymon.pl" class="footer__bottom-link">Cieśla Szymon</a>
             </p>
         </div>
 
