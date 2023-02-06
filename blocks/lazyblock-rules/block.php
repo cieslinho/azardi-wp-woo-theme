@@ -58,7 +58,7 @@ Faktura VAT imienna lub na firmę będzie zawierać dane, które Klient poda pod
                 <li class="rules__list-item">Reklamacje rozpatrywane będą na podstawie przesłanego za pośrednictwem Internetu wypełnionego formularza reklamacji znajdującego się na stronie <a href="/">azardi.pl</a> lub na podstawie pisemnego oświadczenia Klienta. Reklamacje rozpatrywane będą w ciągu 14 dni od daty otrzymania zgłoszenia reklamacji przez <b>„Azardi sklep internetowy”</b>.
                 </li>
                 <li class="rules__list-item">W przypadku uzasadnionej reklamacji, wadliwy towar zostanie naprawiony lub wymieniony na nowy, pod warunkiem, że wada ma charakter istotny.</li>
-                <li class="rules__list-item">Reklamacje zgłaszane w formie pisemnej należy przesłać pocztą na adres:  <b>Dział obsługi klienta Azardi ul. Mroczeń 93, 63-604 Baranów</b> lub drogą mailową na adres <a href="mailto:biuro@azardi.pl">biuro@azardi.pl</a></li>
+                <li class="rules__list-item">Reklamacje zgłaszane w formie pisemnej należy przesłać pocztą na adres:  <b>Dział obsługi klienta Azardi ul. Mroczeń 93, 63-604 Baranów</b> lub drogą mailową na adres <a href="mailto:kontakt@azardi.pl">kontakt@azardi.pl</a></li>
                 <li class="rules__list-item">W pisemnym, podpisanym przez reklamującego, oświadczeniu należy podać:</li>
                 <ul class="rules__sublist">
                     <li class="rules__sublist-item">Imię i nazwisko</li>
@@ -71,7 +71,7 @@ Faktura VAT imienna lub na firmę będzie zawierać dane, które Klient poda pod
                 Dział Reklamacji maksymalnie w ciągu 14 dni od dnia otrzymania reklamacji rozpatrzy zasadność reklamacji. Informacja o przyjęciu lub odrzuceniu reklamacji zostanie przesłana Klientowi (będącemu konsumentem) na adres podany w formularzu reklamacyjnym. Jeśli reklamacja zostanie uznana pracownik Działu Reklamacji skontaktuje się z Klientem w celu ustalenia terminu i trybu likwidacji szkody.
                 </li>
                 <li class="rules__list-item">
-                Wszelkie wątpliwości związane z reklamacjami można wyjaśniać pod adresem e-mail <a href="mailto:biuro@azardi.pl">biuro@azardi.pl</a> lub pod numerem telefonu <a href="tel:+48884822444">+48 884 822 444</a>.</li>
+                Wszelkie wątpliwości związane z reklamacjami można wyjaśniać pod adresem e-mail <a href="mailto:kontakt@azardi.pl">kontakt@azardi.pl</a> lub pod numerem telefonu <a href="tel:+48884822444">+48 884 822 444</a>.</li>
             </ol>
             <ol class="rules__box rules__list">
                 <p class="rules__list-text">4. Ochrona danych osobowych.</p>
