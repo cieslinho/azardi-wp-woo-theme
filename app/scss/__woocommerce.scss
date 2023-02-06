@@ -12,6 +12,9 @@
 			text-decoration: underline;
 		}
 	}
+	.woocommerce-error {
+		background-color: $white-color;
+	}
 
 	form .form-row input.input-text {
 		border: 1px solid gray;
