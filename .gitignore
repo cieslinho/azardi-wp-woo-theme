@@ -1,5 +1,6 @@
 node_modules
 assets/css/*
-assets/js/*
+assets/js/script.js
+assets/js/script-min.js
 .DS_Store
 assets/.DS_Store
