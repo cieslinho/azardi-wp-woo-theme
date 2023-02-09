@@ -173,19 +173,21 @@
 			color: $text-color;
 		}
 	}
-	table {
-		margin-block: 1em;
-		width: 100%;
-		max-width: 840px;
-		tbody {
-			tr {
-				display: flex;
-				justify-content: space-between;
-				margin-bottom: 1em;
-				border-bottom: 2px solid $dark-color;
-			}
-			td {
-				padding: 0.5em;
+	&--description {
+		table {
+			margin-block: 1em;
+			width: 100%;
+			max-width: 840px;
+			tbody {
+				tr {
+					display: flex;
+					justify-content: space-between;
+					margin-bottom: 1em;
+					border-bottom: 2px solid $dark-color;
+				}
+				td {
+					padding: 0.5em;
+				}
 			}
 		}
 	}
