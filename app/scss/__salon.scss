@@ -1,0 +1,48 @@
+.salon {
+	&__boxes {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		@include respond(tablet) {
+			flex-direction: row;
+		}
+	}
+	&__box {
+		margin: 1em;
+		&-info {
+			@include respond(tablet) {
+				width: 40%;
+			}
+			i {
+				margin-right: 0.25em;
+				font-size: 1.8rem;
+			}
+		}
+		&-title {
+			margin-bottom: 0.5em;
+			color: $dark-color;
+		}
+		&-text {
+			margin-bottom: 0.5em;
+			color: $text-color;
+		}
+		&-link {
+			display: block;
+			margin-bottom: 0.5em;
+			border-bottom: 1px solid transparent;
+			color: $dark-color;
+			font-weight: 700;
+			&:hover {
+				border-bottom: 1px solid $dark-color;
+			}
+		}
+		&-map {
+			iframe {
+				width: 100%;
+			}
+			@include respond(tablet) {
+				width: 60%;
+			}
+		}
+	}
+}
