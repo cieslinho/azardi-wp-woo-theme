@@ -128,6 +128,7 @@
 .woocommerce input.button {
 	background-color: #333533;
 	color: $white-color;
+	@include btn-product;
 }
 
 .woocommerce #respond input#submit,
