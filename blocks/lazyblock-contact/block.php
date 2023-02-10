@@ -35,22 +35,22 @@
             </div>
         </div>
             <div class="contact__box contact__box-right">
-                <form action="" method="post" class="contact__form">
+                <form action="<?php echo get_template_directory_uri(); ?>/mail.php" method="post" class="contact__form">
                     <div class="contact__form-top">
                     <label for="name" class="contact__form-label">Imię i nazwisko:</label>
-                    <input type="text" class="contact__form-input" id="name">
+                    <input name="name" type="text" class="contact__form-input" id="name" required>
                     <label for="email" class="contact__form-label">Adres e-mail:</label>
-                    <input type="email" class="contact__form-input" id="email">
+                    <input name="email" type="email" class="contact__form-input" id="email" required>
                     </div>
                     <div class="contact__form-middle">
                     <label for="mobile" class="contact__form-label">Telefon:</label>
-                    <input type="tel" class="contact__form-input" id="mobile">
+                    <input name="mobile" type="tel" class="contact__form-input" id="mobile" required>
                     <label for="subject" class="contact__form-label">Temat:</label>
-                    <input type="text" class="contact__form-input" id="subject">
+                    <input name="subject" type="text" class="contact__form-input" id="subject" required>
                     </div>
                     <div class="contact__form-bottom">
                     <label for="message" class="contact__form-label">Treść wiadomości:</label>
-                    <textarea name="message" id="message" cols="30" rows="10" class="contact__form-textarea"></textarea>
+                    <textarea name="message" id="message" cols="30" rows="10" required class="contact__form-textarea"></textarea>
                     <button class="contact__form-btn" type="submit">wyślij</button>
                     </div>
                 </form>
