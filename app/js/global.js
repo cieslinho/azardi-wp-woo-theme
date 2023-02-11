@@ -36,7 +36,7 @@ const handleNav = () => {
 
 const handleDropdown = () => {
 	const dropdownMenuFirst = document.querySelector('.menu-item-177')
-	const dropdownMenuSecond = document.querySelector('.menu-item-186')
+	const dropdownMenuSecond = document.querySelector('.menu-item-192')
 	const dropdownMenuThird = document.querySelector('.menu-item-365')
 	const dropdownMenuFourth = document.querySelector('.menu-item-6839')
 	const submenuFirst = dropdownMenuFirst.querySelector('.sub-menu')
@@ -58,6 +58,15 @@ const handleDropdown = () => {
 	})
 	dropdownBtnFourth.addEventListener('click', () => {
 		submenuFourth.classList.toggle('sub-menu-active')
+	})
+}
+
+const handleMultiDropdown = () => {
+	const ulMainMenu = document.querySelector('#menu-top-menu')
+	const dropdownMenuItem = ulMainMenu.querySelector('#menu-item-186')
+	const submenu = dropdownMenuItem.querySelector('.sub-menu')
+	dropdownMenuItem.lastChild.addEventListener('click', () => {
+		submenu.classList.toggle('sub-menu-active')
 	})
 }
 
@@ -83,5 +92,6 @@ const handleSlider = () => {
 
 createButton()
 handleDropdown()
+handleMultiDropdown()
 navBtn.addEventListener('click', handleNav)
 handleSlider()

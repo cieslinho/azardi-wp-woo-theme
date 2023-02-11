@@ -194,7 +194,8 @@
 				&-177,
 				&-186,
 				&-365,
-				&-6839 {
+				&-6839,
+				&-192 {
 					position: relative;
 					a {
 						width: 100%;
@@ -290,6 +291,36 @@
 					position: relative;
 					&:hover {
 						.sub-menu {
+							display: block;
+						}
+					}
+				}
+				&-186 {
+					.menu-item-192 {
+						display: inline-block;
+						position: relative;
+						transition: background-color 0.2s;
+						.sub-menu {
+							display: none;
+							position: absolute;
+							top: 0;
+							left: 90px;
+							background-color: $bg-color;
+							.menu-item {
+								width: 100%;
+								min-width: 120px;
+								&:hover {
+									a {
+										transform: translateX(6px);
+									}
+								}
+								a {
+									transition: transform 0.1s;
+									padding: 1em;
+								}
+							}
+						}
+						&:hover .sub-menu {
 							display: block;
 						}
 					}
