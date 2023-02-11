@@ -122,6 +122,16 @@
 	height: 35px;
 }
 
+.woocommerce-cart-form__cart-item.cart_item {
+	td.product-thumbnail {
+		a {
+			img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+				width: 120px;
+			}
+		}
+	}
+}
+
 .woocommerce #respond input#submit,
 .woocommerce a.button,
 .woocommerce button.button,
