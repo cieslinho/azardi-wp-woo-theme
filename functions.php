@@ -114,7 +114,7 @@ function wdm_add_custom_fields()
               <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Boss/Boss_12.jpg" ?>" alt="Tkanina Boss" data-fabric-group="grupa1" loading="lazy">
               <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Boss/Boss_13.jpg" ?>" alt="Tkanina Boss" data-fabric-group="grupa1" loading="lazy">
               <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Boss/Boss_14.jpg" ?>" alt="Tkanina Boss" data-fabric-group="grupa1" loading="lazy">
-              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Boss/Boss_15.jpg" ?>" alt="Tkanina Boss" data-fabric-group="grupa1" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Boss/boss_15.jpg" ?>" alt="Tkanina Boss" data-fabric-group="grupa1" loading="lazy">
             </div>
                 <li data-tab-target="#fabric-velvet" class="fabric__tab">Tkaniny Magic Velvet</li>
                 <div id="fabric-velvet" data-tab-content>
