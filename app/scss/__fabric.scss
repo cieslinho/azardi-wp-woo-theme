@@ -1,29 +1,94 @@
 .fabric {
-  position: fixed;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 999;
-  border: 1px solid $text-color;
-  background-color: $bg-color;
-  padding: 20px;
-  width: 100%;
-  max-width: 1000px;
-  text-align: center;
+	position: fixed;
+	top: 0;
+	right: 0;
+	transform: translateX(0);
+	visibility: visible;
+	z-index: 999;
+	transition: transform 0.3s;
+	box-shadow: -1px 0 20px $text-color;
+	background-color: $bg-color;
+	width: 45vw;
+	height: 100vh;
+	@include respond(tablet) {
+		width: 35vw;
+	}
+	@include respond(desktop-small) {
+		width: 25vw;
+	}
+	&__tabs {
+		display: none;
+		flex-direction: column;
+		margin: 0;
+		box-shadow: inset 0px 1px 20px -10px;
+		padding: 0;
+		max-height: 300px;
+		overflow-y: auto;
+		list-style-type: none;
+	}
+	&__tabs.show-tabs {
+		display: flex;
+	}
+	&__tab {
+		transition: background-color 0.3s;
+		cursor: pointer;
+		border-bottom: 1px solid rgba($color: $dark-color, $alpha: 0.4);
+		padding: 0.8em;
+		&:hover {
+			background-color: rgba($color: $dark-color, $alpha: 0.1);
+		}
+	}
+	&__submenu {
+		&-item {
+			position: relative;
+			transition: background-color 0.3s;
+			border-bottom: 1px solid rgba($color: $dark-color, $alpha: 0.4);
+			// cursor: pointer;
+			padding: 0.8em;
+			&:hover {
+				background-color: rgba($color: $dark-color, $alpha: 0.1);
+			}
+		}
+		&-btn {
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			cursor: pointer;
+			padding: 0.8em;
+			&:hover {
+				background-color: $bg-color;
+			}
+		}
+	}
+	&__tab.active {
+		background-color: rgba($color: $dark-color, $alpha: 0.1);
+	}
+	&--hidden {
+		transform: translateX(100%);
+		visibility: hidden;
+	}
 
-  &--hidden {
-    display: none;
-  }
+	&__heading {
+		margin-block: 40px;
+		margin-left: 0.8em;
+	}
 
-  &__heading {
-    margin-block: 40px;
-  }
+	&__container {
+		margin-block: 20px;
+	}
 
-  &__container {
-    margin-block: 20px;
-  }
+	&__image {
+		cursor: pointer;
+		width: 33.3%;
+		height: 90px !important;
+	}
+	[data-tab-content] {
+		display: none;
+	}
 
-  &__image {
-    cursor: pointer;
-    width: 200px;
-  }
+	.active[data-tab-content] {
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
