@@ -80,8 +80,27 @@
 
 	&__image {
 		cursor: pointer;
-		width: 33.3%;
-		height: 90px !important;
+		width: 100%;
+		height: 100% !important;
+		&-box {
+			position: relative;
+			z-index: 200;
+			width: 33.3%;
+			height: 90px;
+		}
+		&-title {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			background-color: rgba($color: $dark-color, $alpha: 0.4);
+			padding: 0.3em;
+			width: 100%;
+			color: $white-color;
+			font-size: 1.45rem;
+			text-align: center;
+			text-shadow: 0 0 5px $text-color;
+		}
 	}
 	[data-tab-content] {
 		display: none;
