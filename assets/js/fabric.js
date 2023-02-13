@@ -1,87 +1,115 @@
-const fabricSelect = document.querySelector('#pa_tkanina')
-const fabricModal = document.querySelector('.fabric')
-const fabricImages = document.querySelectorAll('.fabric__image')
-const fabricHiddenInput = document.querySelector('#wdm_name')
-const resetVariations = document.querySelector('.reset_variations')
+const fabricSelect = document.querySelector("#pa_tkanina");
+const fabricModal = document.querySelector(".fabric");
+const fabricImages = document.querySelectorAll(".fabric__image");
+const fabricHiddenInput = document.querySelector("#wdm_name");
+const resetVariations = document.querySelector(".reset_variations");
+const containerSelect = document.querySelector("#pa_pojemnik");
+const frameSelect = document.querySelector("#pa_stelaz");
 
-if (resetVariations) resetVariations.click()
+if (containerSelect && frameSelect) {
+  frameSelect.value = "";
+  fabricSelect.value = "";
+  containerSelect.value = "";
 
-fabricSelect.addEventListener('click', () => {
-	fabricSelect.setAttribute('disabled', 'disabled')
-	fabricModal.classList.toggle('fabric--hidden')
-})
+  containerSelect.addEventListener("change", () => {
+    if (
+      containerSelect.value === "dwupozycyjny" ||
+      containerSelect.value === "zwykly"
+    ) {
+      frameSelect.value = "elastyczny";
+      frameSelect.setAttribute("disabled", "disabled");
+    } else {
+      frameSelect.value = "";
+      frameSelect.removeAttribute("disabled");
+    }
+  });
+}
 
-fabricImages.forEach(image =>
-	image.addEventListener('click', () => {
-		const filename = image.src.replace(/^.*[\\\/]/, '')
-		const imageFabricGroup = image.getAttribute('data-fabric-group')
-		fabricModal.classList.toggle('fabric--hidden')
-		fabricHiddenInput.value = filename.replace('.jpg', '')
-		fabricSelect.value = imageFabricGroup
-		fabricSelect.removeAttribute('disabled')
-	})
-)
+fabricSelect.addEventListener("click", () => {
+  fabricSelect.setAttribute("disabled", "disabled");
+  fabricModal.classList.toggle("fabric--hidden");
+});
 
-const tabs = document.querySelectorAll('[data-tab-target]')
-const tabContents = document.querySelectorAll('[data-tab-content]')
+fabricImages.forEach((image) =>
+  image.addEventListener("click", () => {
+    const filename = image.src.replace(/^.*[\\\/]/, "");
+    const imageFabricGroup = image.getAttribute("data-fabric-group");
+    fabricModal.classList.toggle("fabric--hidden");
+    fabricSelect.value = imageFabricGroup;
+    fabricSelect.removeAttribute("disabled");
+  })
+);
 
-tabs.forEach(tab => {
-	tab.addEventListener('click', () => {
-		const target = document.querySelector(tab.dataset.tabTarget)
-		tabContents.forEach(tabContent => {
-			tabContent.classList.remove('active')
-		})
-		tabs.forEach(tab => {
-			tab.classList.remove('active')
-		})
-		tab.classList.add('active')
-		target.classList.add('active')
-	})
-})
+const tabs = document.querySelectorAll("[data-tab-target]");
+const tabContents = document.querySelectorAll("[data-tab-content]");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const target = document.querySelector(tab.dataset.tabTarget);
+    tabContents.forEach((tabContent) => {
+      tabContent.classList.remove("active");
+    });
+    tabs.forEach((tab) => {
+      tab.classList.remove("active");
+    });
+    tab.classList.add("active");
+    target.classList.add("active");
+  });
+});
 
 const checkTab = () => {
-	const allMenus = document.querySelectorAll('.fabric__tabs')
-	allMenus.forEach(menu => {
-		if (menu.classList.contains('show-tabs')) {
-		} else {
-			tabContents.forEach(tabContent => {
-				tabContent.classList.remove('active')
-			})
-		}
-	})
-}
+  const allMenus = document.querySelectorAll(".fabric__tabs");
+  allMenus.forEach((menu) => {
+    if (menu.classList.contains("show-tabs")) {
+    } else {
+      tabContents.forEach((tabContent) => {
+        tabContent.classList.remove("active");
+      });
+    }
+  });
+};
 
 const handleFabricDropdown = () => {
-	const fabricSubmenuBtnFirst = document.querySelector('#fabric__submenu-btn-1')
-	const fabricSubmenuBtnSecond = document.querySelector('#fabric__submenu-btn-2')
-	const fabricSubmenuBtnThird = document.querySelector('#fabric__submenu-btn-3')
-	const fabricSubmenuBtnFourth = document.querySelector('#fabric__submenu-btn-4')
-	const fabricSubmenuBtnFifth = document.querySelector('#fabric__submenu-btn-5')
-	const fabricSubMenuFirst = document.querySelector('#fabric__tabs-1')
-	const fabricSubMenuSecond = document.querySelector('#fabric__tabs-2')
-	const fabricSubMenuThird = document.querySelector('#fabric__tabs-3')
-	const fabricSubMenuFourth = document.querySelector('#fabric__tabs-4')
-	const fabricSubMenuFifth = document.querySelector('#fabric__tabs-5')
-	fabricSubmenuBtnFirst.addEventListener('click', () => {
-		fabricSubMenuFirst.classList.toggle('show-tabs')
-		checkTab()
-	})
-	fabricSubmenuBtnSecond.addEventListener('click', () => {
-		fabricSubMenuSecond.classList.toggle('show-tabs')
-		checkTab()
-	})
-	fabricSubmenuBtnThird.addEventListener('click', () => {
-		fabricSubMenuThird.classList.toggle('show-tabs')
-		checkTab()
-	})
-	fabricSubmenuBtnFourth.addEventListener('click', () => {
-		fabricSubMenuFourth.classList.toggle('show-tabs')
-		checkTab()
-	})
-	fabricSubmenuBtnFifth.addEventListener('click', () => {
-		fabricSubMenuFifth.classList.toggle('show-tabs')
-		checkTab()
-	})
-}
+  const fabricSubmenuBtnFirst = document.querySelector(
+    "#fabric__submenu-btn-1"
+  );
+  const fabricSubmenuBtnSecond = document.querySelector(
+    "#fabric__submenu-btn-2"
+  );
+  const fabricSubmenuBtnThird = document.querySelector(
+    "#fabric__submenu-btn-3"
+  );
+  const fabricSubmenuBtnFourth = document.querySelector(
+    "#fabric__submenu-btn-4"
+  );
+  const fabricSubmenuBtnFifth = document.querySelector(
+    "#fabric__submenu-btn-5"
+  );
+  const fabricSubMenuFirst = document.querySelector("#fabric__tabs-1");
+  const fabricSubMenuSecond = document.querySelector("#fabric__tabs-2");
+  const fabricSubMenuThird = document.querySelector("#fabric__tabs-3");
+  const fabricSubMenuFourth = document.querySelector("#fabric__tabs-4");
+  const fabricSubMenuFifth = document.querySelector("#fabric__tabs-5");
+  fabricSubmenuBtnFirst.addEventListener("click", () => {
+    fabricSubMenuFirst.classList.toggle("show-tabs");
+    checkTab();
+  });
+  fabricSubmenuBtnSecond.addEventListener("click", () => {
+    fabricSubMenuSecond.classList.toggle("show-tabs");
+    checkTab();
+  });
+  fabricSubmenuBtnThird.addEventListener("click", () => {
+    fabricSubMenuThird.classList.toggle("show-tabs");
+    checkTab();
+  });
+  fabricSubmenuBtnFourth.addEventListener("click", () => {
+    fabricSubMenuFourth.classList.toggle("show-tabs");
+    checkTab();
+  });
+  fabricSubmenuBtnFifth.addEventListener("click", () => {
+    fabricSubMenuFifth.classList.toggle("show-tabs");
+    checkTab();
+  });
+};
 
-handleFabricDropdown()
+handleFabricDropdown();
