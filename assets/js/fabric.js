@@ -35,6 +35,7 @@ fabricImages.forEach((image) =>
     const filename = image.src.replace(/^.*[\\\/]/, "");
     const imageFabricGroup = image.getAttribute("data-fabric-group");
     fabricModal.classList.toggle("fabric--hidden");
+    fabricHiddenInput.value = filename.replace(/\.[^/.]+$/, "");
     fabricSelect.value = imageFabricGroup;
     fabricSelect.removeAttribute("disabled");
   })

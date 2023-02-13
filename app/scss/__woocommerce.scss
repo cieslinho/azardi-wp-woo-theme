@@ -165,9 +165,7 @@
   color: $white-color;
 }
 
-.woocommerce-error,
-.woocommerce-info,
-.woocommerce-message {
+.shop__layout .woocommerce-message {
   @include respond(tablet) {
     padding: 1em 2em 0em 3.5em;
   }
@@ -182,5 +180,14 @@
   @include respond(tablet) {
     position: relative;
     top: -8px;
+  }
+}
+
+.woocommerce-thankyou-order-received {
+  margin-top: 100px;
+  margin-bottom: 20px;
+
+  @include respond(desktop) {
+    margin-top: 50px;
   }
 }
