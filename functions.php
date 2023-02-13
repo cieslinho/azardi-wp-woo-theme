@@ -357,14 +357,14 @@ function wdm_add_custom_fields()
             <ul class="fabric__tabs" id="fabric__tabs-3">
                 <li data-tab-target="#fabric-baloo" class="fabric__tab">Tkaniny Baloo</li>
                 <div id="fabric-baloo" data-tab-content>
-              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Baloo/Baloo 2071.jpeg" ?>" alt="Tkanina Baloo" data-fabric-group="grupa3" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Baloo/baloo 2071.jpeg" ?>" alt="Tkanina Baloo" data-fabric-group="grupa3" loading="lazy">
               <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Baloo/Baloo 2072.jpeg" ?>" alt="Tkanina Baloo" data-fabric-group="grupa3" loading="lazy">
               <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Baloo/Baloo 2073.jpeg" ?>" alt="Tkanina Baloo" data-fabric-group="grupa3" loading="lazy">
               <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Baloo/Baloo 2074.jpeg" ?>" alt="Tkanina Baloo" data-fabric-group="grupa3" loading="lazy">
               <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Baloo/Baloo 2075.jpeg" ?>" alt="Tkanina Baloo" data-fabric-group="grupa3" loading="lazy">
               <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Baloo/Baloo 2076.jpeg" ?>" alt="Tkanina Baloo" data-fabric-group="grupa3" loading="lazy">
               <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Baloo/Baloo 2077.jpeg" ?>" alt="Tkanina Baloo" data-fabric-group="grupa3" loading="lazy">
-              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Baloo/Baloo 2078.jpeg" ?>" alt="Tkanina Baloo" data-fabric-group="grupa3" loading="lazy">
+              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Baloo/baloo 2078.jpeg" ?>" alt="Tkanina Baloo" data-fabric-group="grupa3" loading="lazy">
               <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Baloo/Baloo 2079.jpeg" ?>" alt="Tkanina Baloo" data-fabric-group="grupa3" loading="lazy">
               <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Baloo/Baloo 2080.jpeg" ?>" alt="Tkanina Baloo" data-fabric-group="grupa3" loading="lazy">
               <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Baloo/Baloo 2081.jpeg" ?>" alt="Tkanina Baloo" data-fabric-group="grupa3" loading="lazy">
