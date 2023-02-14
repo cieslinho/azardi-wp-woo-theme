@@ -37,24 +37,18 @@ const handleNav = () => {
 const handleDropdown = () => {
 	const dropdownMenuFirst = document.querySelector('.menu-item-177')
 	const dropdownMenuSecond = document.querySelector('.menu-item-192')
-	const dropdownMenuThird = document.querySelector('.menu-item-365')
 	const dropdownMenuFourth = document.querySelector('.menu-item-6839')
 	const submenuFirst = dropdownMenuFirst.querySelector('.sub-menu')
 	const submenuSecond = dropdownMenuSecond.querySelector('.sub-menu')
-	const submenuThird = dropdownMenuThird.querySelector('.sub-menu')
 	const submenuFourth = dropdownMenuFourth.querySelector('.sub-menu')
 	const dropdownBtnFirst = dropdownMenuFirst.querySelector('.menu-item-btn')
 	const dropdownBtnSecond = dropdownMenuSecond.querySelector('.menu-item-btn')
-	const dropdownBtnThird = dropdownMenuThird.querySelector('.menu-item-btn')
 	const dropdownBtnFourth = dropdownMenuFourth.querySelector('.menu-item-btn')
 	dropdownBtnFirst.addEventListener('click', () => {
 		submenuFirst.classList.toggle('sub-menu-active')
 	})
 	dropdownBtnSecond.addEventListener('click', () => {
 		submenuSecond.classList.toggle('sub-menu-active')
-	})
-	dropdownBtnThird.addEventListener('click', () => {
-		submenuThird.classList.toggle('sub-menu-active')
 	})
 	dropdownBtnFourth.addEventListener('click', () => {
 		submenuFourth.classList.toggle('sub-menu-active')
