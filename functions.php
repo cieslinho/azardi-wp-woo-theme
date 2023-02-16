@@ -84,7 +84,10 @@ function wdm_add_custom_fields()
     if( 
       get_the_terms( $product->ID, 'product_cat' )[0]->name === "Łóżka" || 
       get_the_terms( $product->ID, 'product_cat' )[1]->name === "Łóżka" || 
-      get_the_terms( $product->ID, 'product_cat' )[2]->name === "Łóżka" 
+      get_the_terms( $product->ID, 'product_cat' )[2]->name === "Łóżka" ||
+      get_the_terms( $product->ID, 'product_cat' )[0]->name === "Meble" ||
+      get_the_terms( $product->ID, 'product_cat' )[1]->name === "Meble" ||
+      get_the_terms( $product->ID, 'product_cat' )[2]->name === "Meble" 
       ) :
     ?>
         <div class="wdm-custom-fields">
