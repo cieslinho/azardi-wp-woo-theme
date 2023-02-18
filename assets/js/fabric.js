@@ -92,6 +92,6 @@ document.querySelectorAll(".fabric__submenu-item").forEach((element, index) =>
     document
       .querySelector("#fabric__tabs-" + (index + 1))
       .classList.toggle("show-tabs");
-    toggleTag();
+    toggleTab();
   })
 );
