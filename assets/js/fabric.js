@@ -52,6 +52,9 @@ fabricImages.forEach((image) =>
     fabricHiddenInput.value = filename.replace(/\.[^/.]+$/, "");
     fabricSelect.value = imageFabricGroup;
     fabricSelect.removeAttribute("disabled");
+    document
+      .querySelector(".variations_form")
+      .dispatchEvent(new CustomEvent("check_variations"));
   })
 );
 
