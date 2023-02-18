@@ -6,6 +6,13 @@ const resetVariations = document.querySelector(".reset_variations");
 const containerSelect = document.querySelector("#pa_pojemnik");
 const frameSelect = document.querySelector("#pa_stelaz");
 
+let isSafari =
+  navigator.vendor &&
+  navigator.vendor.indexOf("Apple") > -1 &&
+  navigator.userAgent &&
+  navigator.userAgent.indexOf("CriOS") == -1 &&
+  navigator.userAgent.indexOf("FxiOS") == -1;
+
 if (containerSelect && frameSelect) {
   frameSelect.value = "";
   fabricSelect.value = "";
@@ -25,10 +32,17 @@ if (containerSelect && frameSelect) {
   });
 }
 
-fabricSelect.addEventListener("click", () => {
-  fabricSelect.setAttribute("disabled", "disabled");
-  fabricModal.classList.toggle("fabric--hidden");
-});
+if (isSafari) {
+  fabricSelect.addEventListener("change", () => {
+    fabricSelect.setAttribute("disabled", "disabled");
+    fabricModal.classList.toggle("fabric--hidden");
+  });
+} else {
+  fabricSelect.addEventListener("click", () => {
+    fabricSelect.setAttribute("disabled", "disabled");
+    fabricModal.classList.toggle("fabric--hidden");
+  });
+}
 
 fabricImages.forEach((image) =>
   image.addEventListener("click", () => {
