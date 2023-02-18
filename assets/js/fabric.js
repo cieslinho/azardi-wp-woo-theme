@@ -75,7 +75,7 @@ tabs.forEach((tab) => {
   });
 });
 
-const checkTab = () => {
+const toggleTab = () => {
   const allMenus = document.querySelectorAll(".fabric__tabs");
   allMenus.forEach((menu) => {
     if (menu.classList.contains("show-tabs")) {
@@ -87,47 +87,11 @@ const checkTab = () => {
   });
 };
 
-const handleFabricDropdown = () => {
-  const fabricSubmenuBtnFirst = document.querySelector(
-    "#fabric__submenu-btn-1"
-  );
-  const fabricSubmenuBtnSecond = document.querySelector(
-    "#fabric__submenu-btn-2"
-  );
-  const fabricSubmenuBtnThird = document.querySelector(
-    "#fabric__submenu-btn-3"
-  );
-  const fabricSubmenuBtnFourth = document.querySelector(
-    "#fabric__submenu-btn-4"
-  );
-  const fabricSubmenuBtnFifth = document.querySelector(
-    "#fabric__submenu-btn-5"
-  );
-  const fabricSubMenuFirst = document.querySelector("#fabric__tabs-1");
-  const fabricSubMenuSecond = document.querySelector("#fabric__tabs-2");
-  const fabricSubMenuThird = document.querySelector("#fabric__tabs-3");
-  const fabricSubMenuFourth = document.querySelector("#fabric__tabs-4");
-  const fabricSubMenuFifth = document.querySelector("#fabric__tabs-5");
-  fabricSubmenuBtnFirst.addEventListener("click", () => {
-    fabricSubMenuFirst.classList.toggle("show-tabs");
-    checkTab();
-  });
-  fabricSubmenuBtnSecond.addEventListener("click", () => {
-    fabricSubMenuSecond.classList.toggle("show-tabs");
-    checkTab();
-  });
-  fabricSubmenuBtnThird.addEventListener("click", () => {
-    fabricSubMenuThird.classList.toggle("show-tabs");
-    checkTab();
-  });
-  fabricSubmenuBtnFourth.addEventListener("click", () => {
-    fabricSubMenuFourth.classList.toggle("show-tabs");
-    checkTab();
-  });
-  fabricSubmenuBtnFifth.addEventListener("click", () => {
-    fabricSubMenuFifth.classList.toggle("show-tabs");
-    checkTab();
-  });
-};
-
-handleFabricDropdown();
+document.querySelectorAll(".fabric__submenu-item").forEach((element, index) =>
+  element.addEventListener("click", () => {
+    document
+      .querySelector("#fabric__tabs-" + (index + 1))
+      .classList.toggle("show-tabs");
+    toggleTag();
+  })
+);
