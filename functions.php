@@ -4,7 +4,7 @@
  */
 
 if ( ! defined( '_S_VERSION' ) ) {
-  define( 'S_VERSION', '1.0.0' );
+  define( 'S_VERSION', '2.0.0' );
 }
 
 
