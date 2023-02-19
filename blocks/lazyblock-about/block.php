@@ -18,17 +18,17 @@
                 <div class="about__card">
                     <h4 class="about__card-title">Inspiracje i porady</h4>
                     <i class='bx bx-help-circle' ></i>
-                    <p class="about__card-text">Tworzymy spersonalizowane projekty zarówno mebli, jak i elementów tapicerowanych w twoim domu. Zadzwoń do nas a stworzymy projekt specjalnie dla Ciebie!</p>
+                    <p class="about__card-text">Tworzymy spersonalizowane projekty zarówno mebli, jak i elementów tapicerowanych w Twoim domu. Zadzwoń do nas a stworzymy projekt specjalnie dla Ciebie!</p>
                 </div>
                 <div class="about__card">
                     <h4 class="about__card-title">Szybka dostawa</h4>
                     <i class='bx bx-package' ></i>
-                    <p class="about__card-text">Wiemy, że nikt nie lubi czekać, dlatego staramy się w jak najszybszym terminie dostarczyć twój produkt do Ciebie</p>
+                    <p class="about__card-text">Wiemy, że nikt nie lubi czekać, dlatego staramy się w jak najszybszym terminie dostarczyć Twój produkt do Ciebie</p>
                 </div>
                 <div class="about__card">
                     <h4 class="about__card-title">Wybór</h4>
                     <i class='bx bx-cog' ></i>
-                    <p class="about__card-text">Posiadamy olbrzymią gamę materiałów i kolorów. Jesteśmy w stanie również sprowadzić twój upragniony materiał, by spełnić twoje wymagania</p>
+                    <p class="about__card-text">Posiadamy olbrzymią gamę materiałów i kolorów. Jesteśmy w stanie również sprowadzić Twój upragniony materiał, by spełnić Twoje wymagania</p>
                 </div>
                 <div class="about__card">
                     <h4 class="about__card-title">Precyzja</h4>
