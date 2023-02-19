@@ -81,6 +81,10 @@ function wdm_add_custom_fields()
 
     ob_start();
 
+    
+error_reporting(E_ERROR | E_PARSE);
+
+
     if( 
       get_the_terms( $product->ID, 'product_cat' )[0]->name === "Łóżka" || 
       get_the_terms( $product->ID, 'product_cat' )[1]->name === "Łóżka" || 
