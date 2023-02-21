@@ -4,7 +4,7 @@
  */
 
 if ( ! defined( '_S_VERSION' ) ) {
-  define( 'S_VERSION', '2.0.0' );
+  define( 'S_VERSION', '2.1.0' );
 }
 
 
@@ -12,8 +12,8 @@ function azardi_scripts() {
   /**
    *  Main styles 
   */
-  wp_register_style( 'main-css', get_template_directory_uri() . '/assets/css/main.css', [], false, 'all' );
-	wp_register_script( 'main-js', get_template_directory_uri() . '/assets/js/script-min.js', [], filemtime( get_template_directory() . '/assets/js/script-min.js' ), true );
+  wp_register_style( 'main-css', get_template_directory_uri() . '/assets/css/main.css', [], 2.1, false, 'all' );
+	wp_register_script( 'main-js', get_template_directory_uri() . '/assets/js/script-min.js', [], 2.1, filemtime( get_template_directory() . '/assets/js/script-min.js' ), true );
   
   wp_enqueue_style( 'main-css' );
 	wp_enqueue_script( 'main-js' );
