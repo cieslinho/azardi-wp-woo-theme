@@ -69,6 +69,19 @@ if( function_exists('acf_add_options_page') ) {
   ) );
 }
 
+// function my_content( $content) {
+//   $content = '<p class="custom-info">W celu skonfigurowania produktu uzupełnij wszystkie pola</p>';
+
+//   return $content;
+// }
+
+// add_filter('woocommerce_short_description', 'my_content', 10, 2);
+
+add_action('woocommerce_before_add_to_cart_button', 'variable_info');
+function variable_info(){
+  echo '<p class="custom-info">W celu skonfigurowania produktu uzupełnij wszystkie pola</p>';
+}
+
 add_action('woocommerce_before_add_to_cart_button','wdm_add_custom_fields');
 /**
  * Adds custom field for Product
