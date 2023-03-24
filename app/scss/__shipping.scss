@@ -27,5 +27,24 @@
 				font-size: 1.7rem;
 			}
 		}
+
+		&-mail {
+			color: $text-color;
+			font-weight: 700;
+
+			&:hover {
+				border-bottom: 1px solid $dark-color;
+			}
+		}
+	}
+	&__bank {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5em;
+
+		&-company,
+		&-number {
+			margin-top: 1em;
+		}
 	}
 }

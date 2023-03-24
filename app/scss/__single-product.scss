@@ -57,6 +57,14 @@
 						padding: 0.5em 0.25em;
 						width: 100% !important;
 						text-transform: uppercase;
+						background-color: $white-color;
+						border: 2px solid $dark-color;
+						color: $text-color;
+
+						// &:hover {
+						// 	background-color: $dark-color;
+						// 	color: $white-color;
+						// }
 					}
 					a {
 						border-bottom: 1px solid gray;

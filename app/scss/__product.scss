@@ -36,7 +36,30 @@ li.product {
 		span.price {
 			color: $hover-color !important;
 			font-weight: 400 !important;
-			font-size: 1.8rem !important;
+			font-size: 1.6rem !important;
+			span.woocommerce-Price-amount.amount {
+				font-size: 1.9rem;
+				font-weight: 700;
+			}
 		}
 	}
+}
+
+button.single_add_to_cart_button.button.alt.wp-element-button.disabled.wc-variation-selection-needed,
+button.single_add_to_cart_button.button.alt.wp-element-button {
+	background-color: $dark-color !important;
+	color: $white-color !important;
+	border: 2px solid $dark-color !important;
+
+	&:hover {
+		background-color: $white-color !important;
+		color: $text-color !important;
+	}
+}
+
+a.button.wc-forward.wp-element-button {
+	background-color: $white-color !important;
+	color: $text-color !important;
+	text-decoration: none;
+	border: none;
 }
