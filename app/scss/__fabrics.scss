@@ -41,7 +41,7 @@
 		}
 
 		&-list {
-			display: flex;
+			display: none;
 			flex-direction: column;
 			margin: 0;
 			// box-shadow: inset 0px 1px 20px -10px;
@@ -49,6 +49,10 @@
 			max-height: 300px;
 			overflow-y: auto;
 			list-style-type: none;
+		}
+
+		&-list.show-list {
+			display: flex;
 		}
 
 		&-name {
@@ -64,14 +68,22 @@
 		}
 
 		&-images {
-			display: flex;
-			flex-wrap: wrap;
+			display: none;
 
 			&-box {
 				position: relative;
 				width: 33.3%;
 				height: 90px;
 			}
+		}
+
+		[data-tab-content] {
+			display: none;
+		}
+
+		.active[data-tab-content] {
+			display: flex;
+			flex-wrap: wrap;
 		}
 
 		&-link {
