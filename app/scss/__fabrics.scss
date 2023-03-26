@@ -111,4 +111,38 @@
 			text-shadow: 0 0 5px #202020;
 		}
 	}
+	&__btns {
+		.fabric__tab {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.fabrics__specification {
+			&-mobile {
+				color: $text-color;
+				font-size: 2.5rem;
+				padding: 0.25em;
+				margin-right: 0.25em;
+
+				@include respond(mobile-max) {
+					display: none;
+				}
+			}
+
+			&-desktop {
+				display: none;
+				padding: 0.4em 0.8em;
+				border: 2px solid $dark-color;
+				color: $bg-color;
+				background-color: $dark-color;
+				text-transform: uppercase;
+				font-size: 1.4rem;
+
+				@include respond(mobile-max) {
+					display: block;
+				}
+			}
+		}
+	}
 }

@@ -12,7 +12,13 @@
               <a class="fabric__submenu-btn" id="fabric__submenu-btn-1">+</a>
             </li>
             <ul class="fabric__tabs" id="fabric__tabs-1">
-                <li data-tab-target="#fabric-boss" class="fabric__tab">Tkaniny Boss</li>
+                <div class="fabrics__btns">
+                  <li data-tab-target="#fabric-boss" class="fabric__tab">Tkaniny Boss
+                    <a href="<?php echo get_template_directory_uri() . "/assets/files/boss.pdf" ?>" class="fabrics__specification fabrics__specification-mobile"> <i class='bx bx-info-circle' ></i></a></a>
+                    <a href="<?php echo get_template_directory_uri() . "/assets/files/boss.pdf" ?>" class="fabrics__specification fabrics__specification-desktop">specyfikacja</a>
+                  </li>
+                  
+                </div>
                 <div id="fabric-boss" data-tab-content class="fabrics__accordion-images">
                 <div class="fabric__image-box">
                 <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Boss/Boss_01.jpg" ?>" data-lightbox="image-1" data-title="Boss 01">
@@ -106,7 +112,13 @@
                 </div>
 
             </div>
-                <li data-tab-target="#fabric-velvet" class="fabric__tab">Tkaniny Magic Velvet</li>
+            <div class="fabrics__btns">
+              <li data-tab-target="#fabric-velvet" class="fabric__tab">Tkaniny Magic Velvet
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/magic_velvet_karta_techniczna_datasheet_compressed.pdf" ?>" class="fabrics__specification fabrics__specification-mobile">
+                  <i class='bx bx-info-circle' ></i></a>
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/magic_velvet_karta_techniczna_datasheet_compressed.pdf" ?>" class="fabrics__specification fabrics__specification-desktop">specyfikacja</a>
+              </li>
+            </div>
                 <div id="fabric-velvet" data-tab-content>
                   <div class="fabric__image-box">
                   <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Magic-Velvet/Magic-Velvet-2203.jpeg" ?>" data-lightbox="image-2" data-title="Magic Velvet 2203">
@@ -181,7 +193,13 @@
                   <p class="fabric__image-title">2297</p>
                   </div>
             </div>
-                <li data-tab-target="#fabric-monolith" class="fabric__tab">Tkaniny Monolith</li>
+            <div class="fabrics__btns">
+              <li data-tab-target="#fabric-monolith" class="fabric__tab">Tkaniny Monolith
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/Monolith - karta produktowa.pdf" ?>" class="fabrics__specification fabrics__specification-mobile">
+                  <i class='bx bx-info-circle' ></i></a>
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/Monolith - karta produktowa.pdf" ?>" class="fabrics__specification fabrics__specification-desktop">specyfikacja</a>
+              </li>
+            </div>
                 <div id="fabric-monolith" data-tab-content>
                   <div class="fabric__image-box">
                     <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Monolith/Monolith-02-73026.jpg" ?>" data-lightbox="image-3" data-title="Monolith 02">
@@ -328,7 +346,13 @@
                   <p class="fabric__image-title">97</p>
                   </div>
             </div>
-                <li data-tab-target="#fabric-riviera" class="fabric__tab">Tkaniny Riviera</li>
+            <div class="fabrics__btns">
+              <li data-tab-target="#fabric-riviera" class="fabric__tab">Tkaniny Riviera
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/Riviera - karta produktowa.pdf" ?>" class="fabrics__specification fabrics__specification-mobile">
+                  <i class='bx bx-info-circle' ></i></a>
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/Riviera - karta produktowa.pdf" ?>" class="fabrics__specification fabrics__specification-desktop">specyfikacja</a>
+              </li>
+            </div>
                 <div id="fabric-riviera" data-tab-content>
               <div class="fabric__image-box">
                   <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Riviera/Riviera_69-2fae7.jpg" ?>" data-lightbox="image-4" data-title="Riviera 69">
@@ -533,7 +557,13 @@
                 <p class="fabric__image-title">100</p>
               </div>
             </div>
-                <li data-tab-target="#fabric-ronda" class="fabric__tab">Tkaniny Ronda</li>
+            <div class="fabrics__btns">
+              <li data-tab-target="#fabric-ronda" class="fabric__tab">Tkaniny Ronda
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/RONDA - KARTA PRODUKTOWA.pdf" ?>" class="fabrics__specification fabrics__specification-mobile">
+                  <i class='bx bx-info-circle' ></i></a>
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/RONDA - KARTA PRODUKTOWA.pdf" ?>" class="fabrics__specification fabrics__specification-desktop">specyfikacja</a>
+              </li>
+            </div>
                 <div id="fabric-ronda" data-tab-content>
               <div class="fabric__image-box">
                 <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Ronda/Ronda-06-d5b2d.jpg" ?>" data-lightbox="image-5" data-title="Ronda 06">
@@ -566,7 +596,13 @@
                 <p class="fabric__image-title">99</p>
               </div>       
             </div>
-                <li data-tab-target="#fabric-solid" class="fabric__tab">Tkaniny Solid</li>
+            <div class="fabrics__btns">
+              <li data-tab-target="#fabric-solid" class="fabric__tab">Tkaniny Solid
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/Solid - karta produktowa.pdf" ?>" class="fabrics__specification fabrics__specification-mobile">
+                  <i class='bx bx-info-circle' ></i></a>
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/Solid - karta produktowa.pdf" ?>" class="fabrics__specification fabrics__specification-desktop">specyfikacja</a>
+              </li>
+            </div>
                 <div id="fabric-solid" data-tab-content>
               <div class="fabric__image-box">
                   <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Solid/Solid_03_plaskie-4ab38.jpg" ?>" data-lightbox="image-6" data-title="Solid 03">
@@ -715,7 +751,13 @@
                 <p class="fabric__image-title">99</p>
               </div>
             </div>
-                <li data-tab-target="#fabric-vena" class="fabric__tab">Tkaniny Vena</li>
+            <div class="fabrics__btns">
+              <li data-tab-target="#fabric-vena" class="fabric__tab">Tkaniny Vena
+                <a href="" class="fabrics__specification fabrics__specification-mobile">
+                  <i class='bx bx-info-circle' ></i></a>
+                <a href="" class="fabrics__specification fabrics__specification-desktop">specyfikacja</a>
+              </li>
+            </div>
                 <div id="fabric-vena" data-tab-content>
               <div class="fabric__image-box">
               <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-01.jpg" ?>" data-lightbox="image-7" data-title="Vena 01">
@@ -794,7 +836,13 @@
               <a class="fabric__submenu-btn" id="fabric__submenu-btn-2">+</a>
             </li>
             <ul class="fabric__tabs" id="fabric__tabs-2">
-                <li data-tab-target="#fabric-icon" class="fabric__tab">Tkaniny Icon</li>
+              <div class="fabrics__btns">
+                <li data-tab-target="#fabric-icon" class="fabric__tab">Tkaniny Icon
+                  <a href="<?php echo get_template_directory_uri() . "/assets/files/Icon - karta produktowa.pdf" ?>" class="fabrics__specification fabrics__specification-mobile">
+                    <i class='bx bx-info-circle' ></i></a>
+                  <a href="<?php echo get_template_directory_uri() . "/assets/files/Icon - karta produktowa.pdf" ?>" class="fabrics__specification fabrics__specification-desktop">specyfikacja</a>
+                </li>
+              </div>
                 <div id="fabric-icon" data-tab-content>
               <div class="fabric__image-box">
               <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-2/Icon/Icon-02-aa432.jpg" ?>" data-lightbox="image-8" data-title="Icon 02">
@@ -888,7 +936,13 @@
               </div>
               
             </div>
-                <li data-tab-target="#fabric-milton" class="fabric__tab">Tkaniny Milton New</li>
+            <div class="fabrics__btns">
+              <li data-tab-target="#fabric-milton" class="fabric__tab">Tkaniny Milton New
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/827ulotka-magic-home.pdf" ?>" class="fabrics__specification fabrics__specification-mobile">
+                  <i class='bx bx-info-circle' ></i></a>
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/827ulotka-magic-home.pdf" ?>" class="fabrics__specification fabrics__specification-desktop">specyfikacja</a>
+              </li>
+            </div>
                 <div id="fabric-milton" data-tab-content>
               <div class="fabric__image-box">
               <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-2/Milton-New/Milton-New-01.jpeg" ?>" data-lightbox="image-9" data-title="Milton New 01">
@@ -1080,7 +1134,13 @@
               </div>
               
             </div>
-                <li data-tab-target="#fabric-piano" class="fabric__tab">Tkaniny Piano</li>
+            <div class="fabrics__btns">
+              <li data-tab-target="#fabric-piano" class="fabric__tab">Tkaniny Piano
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/827ulotka-magic-home.pdf" ?>" class="fabrics__specification fabrics__specification-mobile">
+                  <i class='bx bx-info-circle' ></i></a>
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/827ulotka-magic-home.pdf" ?>" class="fabrics__specification fabrics__specification-desktop">specyfikacja</a>
+              </li>
+            </div>
                 <div id="fabric-piano" data-tab-content>
               <div class="fabric__image-box">
               <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-2/Piano/Piano 01.jpeg" ?>" data-lightbox="image-10" data-title="Piano 01">
@@ -1272,7 +1332,13 @@
               </div>
               
             </div>
-                <li data-tab-target="#fabric-venus" class="fabric__tab">Tkaniny Venus Velvet</li>
+            <div class="fabrics__btns">
+              <li data-tab-target="#fabric-venus" class="fabric__tab">Tkaniny Venus Velvet
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/venus_velvet_karta_techniczna_datasheet_compressed.pdf" ?>" class="fabrics__specification fabrics__specification-mobile">
+                  <i class='bx bx-info-circle' ></i></a>
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/venus_velvet_karta_techniczna_datasheet_compressed.pdf" ?>" class="fabrics__specification fabrics__specification-desktop">specyfikacja</a>
+              </li>
+            </div>
                 <div id="fabric-venus" data-tab-content>
               <div class="fabric__image-box">
               <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-2/Venus-Velvet/Venus velvet 2914.jpeg" ?>" data-lightbox="image-11" data-title="Venus Velvet 2914">
@@ -1352,7 +1418,13 @@
               </div>
               
             </div>
-                <li data-tab-target="#fabric-zoya" class="fabric__tab">Tkaniny Zoya</li>
+            <div class="fabrics__btns">
+              <li data-tab-target="#fabric-zoya" class="fabric__tab">Tkaniny Zoya
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/827ulotka-magic-home.pdf" ?>" class="fabrics__specification fabrics__specification-mobile">
+                  <i class='bx bx-info-circle' ></i></a>
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/827ulotka-magic-home.pdf" ?>" class="fabrics__specification fabrics__specification-desktop">specyfikacja</a>
+              </li>
+            </div>
                 <div id="fabric-zoya" data-tab-content>
               <div class="fabric__image-box">
               <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-2/Zoya/Zoya 01.jpeg" ?>" data-lightbox="image-12" data-title="Zoya 01">
@@ -1466,7 +1538,13 @@
               <a class="fabric__submenu-btn" id="fabric__submenu-btn-3">+</a>
             </li>
             <ul class="fabric__tabs" id="fabric__tabs-3">
-                <li data-tab-target="#fabric-baloo" class="fabric__tab">Tkaniny Baloo</li>
+              <div class="fabrics__btns">
+                <li data-tab-target="#fabric-baloo" class="fabric__tab">Tkaniny Baloo
+                  <a href="<?php echo get_template_directory_uri() . "/assets/files/baloo_karta_techniczna_datasheet_compressed.pdf" ?>" class="fabrics__specification fabrics__specification-mobile">
+                    <i class='bx bx-info-circle' ></i></a>
+                  <a href="<?php echo get_template_directory_uri() . "/assets/files/baloo_karta_techniczna_datasheet_compressed.pdf" ?>" class="fabrics__specification fabrics__specification-desktop">specyfikacja</a>
+                </li>
+              </div>
                 <div id="fabric-baloo" data-tab-content>
               <div class="fabric__image-box">
               <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Baloo/baloo 2071.jpeg" ?>" data-lightbox="image-13" data-title="Baloo 2071">
@@ -1609,7 +1687,13 @@
               </div>
               
             </div>
-                <li data-tab-target="#fabric-dream" class="fabric__tab">Tkaniny Dream Velvet</li>
+            <div class="fabrics__btns">
+              <li data-tab-target="#fabric-dream" class="fabric__tab">Tkaniny Dream Velvet
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/dream_velvet_karta_techniczna_datasheet_compressed.pdf" ?>" class="fabrics__specification fabrics__specification-mobile">
+                  <i class='bx bx-info-circle' ></i></a>
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/dream_velvet_karta_techniczna_datasheet_compressed.pdf" ?>" class="fabrics__specification fabrics__specification-desktop">specyfikacja</a>
+              </li>
+            </div>
                 <div id="fabric-dream" data-tab-content>
               <div class="fabric__image-box">
               <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Dream-Velvet/Dream velvet 01.jpeg" ?>" data-lightbox="image-14" data-title="Dream Velvet 01">
@@ -1717,7 +1801,13 @@
               </div>
               
             </div>
-                <li data-tab-target="#fabric-grace" class="fabric__tab">Tkaniny Grace</li>
+            <div class="fabrics__btns">
+              <li data-tab-target="#fabric-grace" class="fabric__tab">Tkaniny Grace
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/Grace - karta produktowa.pdf" ?>" class="fabrics__specification fabrics__specification-mobile">
+                  <i class='bx bx-info-circle' ></i></a>
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/Grace - karta produktowa.pdf" ?>" class="fabrics__specification fabrics__specification-desktop">specyfikacja</a>
+              </li>
+            </div>
                 <div id="fabric-grace" data-tab-content>
               <div class="fabric__image-box">
               <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Grace/Grace_01-788d8.jpg" ?>" data-lightbox="image-15" data-title="Grace 01">
@@ -1874,7 +1964,13 @@
               </div>
               
             </div>
-                <li data-tab-target="#fabric-maya" class="fabric__tab">Tkaniny Maya</li>
+            <div class="fabrics__btns">
+              <li data-tab-target="#fabric-maya" class="fabric__tab">Tkaniny Maya
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/827ulotka-magic-home.pdf" ?>" class="fabrics__specification fabrics__specification-mobile">
+                  <i class='bx bx-info-circle' ></i></a>
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/827ulotka-magic-home.pdf" ?>" class="fabrics__specification fabrics__specification-desktop">specyfikacja</a>
+              </li>
+            </div>
                 <div id="fabric-maya" data-tab-content>
               <div class="fabric__image-box">
               <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Maya/Maya 01.jpeg" ?>" data-lightbox="image-16" data-title="Maya 01">
@@ -2003,7 +2099,13 @@
               </div>
               
             </div>
-                <li data-tab-target="#fabric-now-never" class="fabric__tab">Tkaniny Now or Never</li>
+            <div class="fabrics__btns">
+              <li data-tab-target="#fabric-now-never" class="fabric__tab">Tkaniny Now or Never
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/Now or never - karta produktowa.pdf" ?>" class="fabrics__specification fabrics__specification-mobile">
+                  <i class='bx bx-info-circle' ></i></a>
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/Now or never - karta produktowa.pdf" ?>" class="fabrics__specification fabrics__specification-desktop">specyfikacja</a>
+              </li>
+            </div>
                 <div id="fabric-now-never" data-tab-content>
               <div class="fabric__image-box">
               <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Now-or-Never/Now-or-never-01-9afb8.jpg" ?>" data-lightbox="image-17" data-title="Now or Never 01">
@@ -2048,7 +2150,13 @@
               </div>
               
             </div>
-                <li data-tab-target="#fabric-presence" class="fabric__tab">Tkaniny Presence</li>
+            <div class="fabrics__btns">
+              <li data-tab-target="#fabric-presence" class="fabric__tab">Tkaniny Presence
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/Presence - karta produktowa.pdf" ?>" class="fabrics__specification fabrics__specification-mobile">
+                  <i class='bx bx-info-circle' ></i></a>
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/Presence - karta produktowa.pdf" ?>" class="fabrics__specification fabrics__specification-desktop">specyfikacja</a>
+              </li>
+            </div>
                 <div id="fabric-presence" data-tab-content>
               <div class="fabric__image-box">
               <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Presence/Presence-01-eb669.jpg" ?>" data-lightbox="image-18" data-title="Presence 01">
@@ -2114,7 +2222,13 @@
               </div>
               
             </div>
-                <li data-tab-target="#fabric-tulia" class="fabric__tab">Tkaniny Tulia</li>
+            <div class="fabrics__btns">
+              <li data-tab-target="#fabric-tulia" class="fabric__tab">Tkaniny Tulia
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/827ulotka-magic-home.pdf" ?>" class="fabrics__specification fabrics__specification-mobile">
+                  <i class='bx bx-info-circle' ></i></a>
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/827ulotka-magic-home.pdf" ?>" class="fabrics__specification fabrics__specification-desktop">specyfikacja</a>
+              </li>
+            </div>
                 <div id="fabric-tulia" data-tab-content>
               <div class="fabric__image-box">
               <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Tulia/Tulia 01.jpeg" ?>" data-lightbox="image-19" data-title="Tulia 01">
@@ -2229,7 +2343,13 @@
               </div>
               
             </div>
-                <li data-tab-target="#fabric-vera" class="fabric__tab">Tkaniny Vera</li>
+            <div class="fabrics__btns">
+              <li data-tab-target="#fabric-vera" class="fabric__tab">Tkaniny Vera
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/827ulotka-magic-home.pdf" ?>" class="fabrics__specification fabrics__specification-mobile">
+                  <i class='bx bx-info-circle' ></i></a>
+                <a href="<?php echo get_template_directory_uri() . "/assets/files/827ulotka-magic-home.pdf" ?>" class="fabrics__specification fabrics__specification-desktop">specyfikacja</a>
+              </li>
+            </div>
                 <div id="fabric-vera" data-tab-content>
               <div class="fabric__image-box">
               <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Vera/Vera 1.jpeg" ?>" data-lightbox="image-20" data-title="Vera 01">
@@ -2343,278 +2463,398 @@
               <a class="fabric__submenu-btn" id="fabric__submenu-btn-4">+</a>
             </li>
             <ul class="fabric__tabs" id="fabric__tabs-4">
-                <li data-tab-target="#fabric-bloom" class="fabric__tab">Tkaniny Bloom</li>
+              <div class="fabrics__btns">
+                <li data-tab-target="#fabric-bloom" class="fabric__tab">Tkaniny Bloom
+                  <a href="<?php echo get_template_directory_uri() . "/assets/files/827ulotka-magic-home.pdf" ?>" class="fabrics__specification fabrics__specification-mobile">
+                    <i class='bx bx-info-circle' ></i></a>
+                  <a href="<?php echo get_template_directory_uri() . "/assets/files/827ulotka-magic-home.pdf" ?>" class="fabrics__specification fabrics__specification-desktop">specyfikacja</a>
+                </li>
+              </div>
                 <div id="fabric-bloom" data-tab-content>
               <div class="fabric__image-box">
+              <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 01.jpeg" ?>" data-lightbox="image-21" data-title="Bloom 01">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 01.jpeg" ?>" alt="Tkanina Bloom" data-fabric-group="grupa4" loading="lazy">
+              </a>
                 <p class="fabric__image-title">01</p>
               </div>
                 
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 02.jpeg" ?>" data-lightbox="image-21" data-title="Bloom 02">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 02.jpeg" ?>" alt="Tkanina Bloom" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">02</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 03.jpeg" ?>" data-lightbox="image-21" data-title="Bloom 03">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 03.jpeg" ?>" alt="Tkanina Bloom" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">03</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 04.jpeg" ?>" data-lightbox="image-21" data-title="Bloom 04">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 04.jpeg" ?>" alt="Tkanina Bloom" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">04</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 05.jpeg" ?>" data-lightbox="image-21" data-title="Bloom 05">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 05.jpeg" ?>" alt="Tkanina Bloom" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">05</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 06.jpeg" ?>" data-lightbox="image-21" data-title="Bloom 06">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 06.jpeg" ?>" alt="Tkanina Bloom" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">06</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 07.jpeg" ?>" data-lightbox="image-21" data-title="Bloom 07">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 07.jpeg" ?>" alt="Tkanina Bloom" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">07</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 08.jpeg" ?>" data-lightbox="image-21" data-title="Bloom 08">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 08.jpeg" ?>" alt="Tkanina Bloom" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">08</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 09.jpeg" ?>" data-lightbox="image-21" data-title="Bloom 09">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 09.jpeg" ?>" alt="Tkanina Bloom" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">09</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 10.jpeg" ?>" data-lightbox="image-21" data-title="Bloom 10">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 10.jpeg" ?>" alt="Tkanina Bloom" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">10</p>
               </div>
               
             </div>
-                <li data-tab-target="#fabric-charles" class="fabric__tab">Tkaniny Charles</li>
+            <div class="fabrics__btns">
+              <li data-tab-target="#fabric-charles" class="fabric__tab">Tkaniny Charles
+                <a href="" class="fabrics__specification fabrics__specification-mobile">
+                  <i class='bx bx-info-circle' ></i></a>
+                <a href="" class="fabrics__specification fabrics__specification-desktop">specyfikacja</a>
+              </li>
+            </div>
                 <div id="fabric-charles" data-tab-content>
               <div class="fabric__image-box">
+              <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 01.jpeg" ?>" data-lightbox="image-22" data-title="Charles 01">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 01.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+              </a>
                 <p class="fabric__image-title">01</p>
               </div>
                 
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 02.jpeg" ?>" data-lightbox="image-22" data-title="Charles 02">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 02.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">02</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 03.jpeg" ?>" data-lightbox="image-22" data-title="Charles 03">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 03.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">03</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 04.jpeg" ?>" data-lightbox="image-22" data-title="Charles 04">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 04.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">04</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 05.jpeg" ?>" data-lightbox="image-22" data-title="Charles 05">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 05.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">05</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 06.jpeg" ?>" data-lightbox="image-22" data-title="Charles 06">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 06.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">06</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 07.jpeg" ?>" data-lightbox="image-22" data-title="Charles 07">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 07.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">07</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 08.jpeg" ?>" data-lightbox="image-22" data-title="Charles 08">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 08.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">08</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 09.jpeg" ?>" data-lightbox="image-22" data-title="Charles 09">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 09.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">09</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 10.jpeg" ?>" data-lightbox="image-22" data-title="Charles 10">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 10.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">10</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 11.jpeg" ?>" data-lightbox="image-22" data-title="Charles 11">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 11.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">11</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 12.jpeg" ?>" data-lightbox="image-22" data-title="Charles 12">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 12.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">12</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 13.jpeg" ?>" data-lightbox="image-22" data-title="Charles 13">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 13.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">13</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 14.jpeg" ?>" data-lightbox="image-22" data-title="Charles 14">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 14.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">14</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 15.jpeg" ?>" data-lightbox="image-22" data-title="Charles 15">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 15.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">15</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 16.jpeg" ?>" data-lightbox="image-22" data-title="Charles 16">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 16.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">16</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 17.jpeg" ?>" data-lightbox="image-22" data-title="Charles 17">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 17.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">17</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 18.jpeg" ?>" data-lightbox="image-22" data-title="Charles 18">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 18.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">18</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 19.jpeg" ?>" data-lightbox="image-22" data-title="Charles 19">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 19.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">19</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 21.jpeg" ?>" data-lightbox="image-22" data-title="Charles 21">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 21.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">21</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 22.jpeg" ?>" data-lightbox="image-22" data-title="Charles 22">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 22.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">22</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 23.jpeg" ?>" data-lightbox="image-22" data-title="Charles 23">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 23.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">23</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 24.jpeg" ?>" data-lightbox="image-22" data-title="Charles 24">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 24.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">24</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 25.jpeg" ?>" data-lightbox="image-22" data-title="Charles 25">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 25.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">25</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 26.jpeg" ?>" data-lightbox="image-22" data-title="Charles 26">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 26.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">26</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 27.jpeg" ?>" data-lightbox="image-22" data-title="Charles 27">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 27.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">27</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 28.jpeg" ?>" data-lightbox="image-22" data-title="Charles 28">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 28.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">28</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 29.jpeg" ?>" data-lightbox="image-22" data-title="Charles 29">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 29.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">29</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 30.jpeg" ?>" data-lightbox="image-22" data-title="Charles 30">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 30.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">30</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 31.jpeg" ?>" data-lightbox="image-22" data-title="Charles 31">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 31.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">31</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 32.jpeg" ?>" data-lightbox="image-22" data-title="Charles 32">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 32.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">32</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 33.jpeg" ?>" data-lightbox="image-22" data-title="Charles 33">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 33.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">33</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 34.jpeg" ?>" data-lightbox="image-22" data-title="Charles 34">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 34.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">34</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 35.jpeg" ?>" data-lightbox="image-22" data-title="Charles 35">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 35.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">35</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 36.jpeg" ?>" data-lightbox="image-22" data-title="Charles 36">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 36.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">36</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 37.jpeg" ?>" data-lightbox="image-22" data-title="Charles 37">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 37.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">37</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 38.jpeg" ?>" data-lightbox="image-22" data-title="Charles 38">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 38.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">38</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 39.jpeg" ?>" data-lightbox="image-22" data-title="Charles 39">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 39.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">39</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 40.jpeg" ?>" data-lightbox="image-22" data-title="Charles 40">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 40.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">40</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 41.jpeg" ?>" data-lightbox="image-22" data-title="Charles 41">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 41.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">41</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 42.jpeg" ?>" data-lightbox="image-22" data-title="Charles 42">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 42.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">42</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 43.jpeg" ?>" data-lightbox="image-22" data-title="Charles 43">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 43.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">43</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 44.jpeg" ?>" data-lightbox="image-22" data-title="Charles 44">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 44.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">44</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 45.jpeg" ?>" data-lightbox="image-22" data-title="Charles 45">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 45.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
+                </a>
                 <p class="fabric__image-title">45</p>
               </div>
               
@@ -2625,208 +2865,300 @@
               <a class="fabric__submenu-btn" id="fabric__submenu-btn-5">+</a>
             </li>
             <ul class="fabric__tabs" id="fabric__tabs-5">
-                <li data-tab-target="#fabric-angola" class="fabric__tab">Tkaniny Angola</li>
+              <div class="fabrics__btns">
+                <li data-tab-target="#fabric-angola" class="fabric__tab">Tkaniny Angola
+                  <a href="<?php echo get_template_directory_uri() . "/assets/files/827ulotka-magic-home.pdf" ?>" class="fabrics__specification fabrics__specification-mobile">
+                    <i class='bx bx-info-circle' ></i></a>
+                  <a href="<?php echo get_template_directory_uri() . "/assets/files/827ulotka-magic-home.pdf" ?>" class="fabrics__specification fabrics__specification-desktop">specyfikacja</a>
+                </li>
+              </div>
                 <div id="fabric-angola" data-tab-content>
               <div class="fabric__image-box">
+              <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 01.jpeg" ?>" data-lightbox="image-23" data-title="Angola 01">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 01.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
+              </a>
                 <p class="fabric__image-title">01</p>
               </div>
                 
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 02.jpeg" ?>" data-lightbox="image-23" data-title="Angola 02">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 02.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
+                </a>
                 <p class="fabric__image-title">02</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 03.jpeg" ?>" data-lightbox="image-23" data-title="Angola 03">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 03.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
+                </a>
                 <p class="fabric__image-title">03</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 04.jpeg" ?>" data-lightbox="image-23" data-title="Angola 04">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 04.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
+                </a>
                 <p class="fabric__image-title">04</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 05.jpeg" ?>" data-lightbox="image-23" data-title="Angola 05">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 05.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
+                </a>
                 <p class="fabric__image-title">05</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 06.jpeg" ?>" data-lightbox="image-23" data-title="Angola 06">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 06.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
+                </a>
                 <p class="fabric__image-title">06</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 07.jpeg" ?>" data-lightbox="image-23" data-title="Angola 07">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 07.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
+                </a>
                 <p class="fabric__image-title">07</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 08.jpeg" ?>" data-lightbox="image-23" data-title="Angola 08">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 08.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
+                </a>
                 <p class="fabric__image-title">08</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 09.jpeg" ?>" data-lightbox="image-23" data-title="Angola 09">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 09.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
+                </a>
                 <p class="fabric__image-title">09</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 10.jpeg" ?>" data-lightbox="image-23" data-title="Angola 10">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 10.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
+                </a>
                 <p class="fabric__image-title">10</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 11.jpeg" ?>" data-lightbox="image-23" data-title="Angola 11">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 11.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
+                </a>
                 <p class="fabric__image-title">11</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 12.jpeg" ?>" data-lightbox="image-23" data-title="Angola 12">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 12.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
+                </a>
                 <p class="fabric__image-title">12</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 13.jpeg" ?>" data-lightbox="image-23" data-title="Angola 13">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 13.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
+                </a>
                 <p class="fabric__image-title">13</p>
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 14.jpeg" ?>" data-lightbox="image-23" data-title="Angola 14">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 14.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
+                </a>
                 <p class="fabric__image-title">14</p>
               </div>
               
             </div>
-                <li data-tab-target="#fabric-rustiq" class="fabric__tab">Tkaniny Rustiq</li>
+            <div class="fabrics__btns">
+              <li data-tab-target="#fabric-rustiq" class="fabric__tab">Tkaniny Rustiq
+                <a href="" class="fabrics__specification fabrics__specification-mobile">
+                  <i class='bx bx-info-circle' ></i></a>
+                <a href="" class="fabrics__specification fabrics__specification-desktop">specyfikacja</a>
+              </li>
+            </div>
                 <div id="fabric-rustiq" data-tab-content>
               <div class="fabric__image-box">
+              <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 02.jpeg" ?>" data-lightbox="image-24" data-title="Rustiq 02">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 02.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
+              </a>
                   <p class="fabric__image-title">02</p>  
               </div>
                 
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 04.jpeg"?>" data-lightbox="image-24" data-title="Rustiq 04">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 04.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
+            </a>
                   <p class="fabric__image-title">04</p>  
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 05.jpeg"?>" data-lightbox="image-24" data-title="Rustiq 05">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 05.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
+            </a>
                   <p class="fabric__image-title">05</p>  
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 09.jpeg"?>" data-lightbox="image-24" data-title="Rustiq 09">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 09.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
+            </a>
                   <p class="fabric__image-title">09</p>  
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 10.jpeg"?>" data-lightbox="image-24" data-title="Rustiq 10">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 10.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
+            </a>
                   <p class="fabric__image-title">10</p>  
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 11.jpeg"?>" data-lightbox="image-24" data-title="Rustiq 11">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 11.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
+            </a>
                   <p class="fabric__image-title">11</p>  
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 14.jpeg"?>" data-lightbox="image-24" data-title="Rustiq 14">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 14.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
+            </a>
                   <p class="fabric__image-title">14</p>  
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 15.jpeg"?>" data-lightbox="image-24" data-title="Rustiq 15">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 15.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
+            </a>
                   <p class="fabric__image-title">15</p>  
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 16.jpeg"?>" data-lightbox="image-24" data-title="Rustiq 16">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 16.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
+            </a>
                   <p class="fabric__image-title">16</p>  
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 19.jpeg"?>" data-lightbox="image-24" data-title="Rustiq 19">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 19.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
+            </a>
                   <p class="fabric__image-title">19</p>  
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 20.jpeg"?>" data-lightbox="image-24" data-title="Rustiq 20">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 20.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
+            </a>
                   <p class="fabric__image-title">20</p>  
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 24.jpeg"?>" data-lightbox="image-24" data-title="Rustiq 24">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 24.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
+            </a>
                   <p class="fabric__image-title">24</p>  
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 25.jpeg"?>" data-lightbox="image-24" data-title="Rustiq 25">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 25.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
+            </a>
                   <p class="fabric__image-title">25</p>  
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 27.jpeg"?>" data-lightbox="image-24" data-title="Rustiq 27">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 27.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
+            </a>
                   <p class="fabric__image-title">27</p>  
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 29.jpeg"?>" data-lightbox="image-24" data-title="Rustiq 29">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 29.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
+            </a>
                   <p class="fabric__image-title">29</p>  
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 30.jpeg"?>" data-lightbox="image-24" data-title="Rustiq 30">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 30.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
+            </a>
                   <p class="fabric__image-title">30</p>  
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 38.jpeg"?>" data-lightbox="image-24" data-title="Rustiq 38">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 38.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
+            </a>
                   <p class="fabric__image-title">38</p>  
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 39.jpeg"?>" data-lightbox="image-24" data-title="Rustiq 39">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 39.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
+            </a>
                   <p class="fabric__image-title">39</p>  
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 42.jpeg"?>" data-lightbox="image-24" data-title="Rustiq 42">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 42.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
+            </a>
                   <p class="fabric__image-title">42</p>  
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 54.jpeg"?>" data-lightbox="image-24" data-title="Rustiq 54">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 54.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
+            </a>
                   <p class="fabric__image-title">54</p>  
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 56.jpeg"?>" data-lightbox="image-24" data-title="Rustiq 56">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 56.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
+            </a>
                   <p class="fabric__image-title">56</p>  
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 59.jpeg"?>" data-lightbox="image-24" data-title="Rustiq 59">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 59.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
+            </a>
                   <p class="fabric__image-title">59</p>  
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 62.jpeg"?>" data-lightbox="image-24" data-title="Rustiq 62">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 62.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
+            </a>
                   <p class="fabric__image-title">62</p>  
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 68.jpeg"?>" data-lightbox="image-24" data-title="Rustiq 68">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 68.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
+            </a>
                   <p class="fabric__image-title">68</p>  
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 70.jpeg"?>" data-lightbox="image-24" data-title="Rustiq 70">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 70.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
+            </a>
                   <p class="fabric__image-title">70</p>  
               </div>
               
               <div class="fabric__image-box">
+                <a href="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 81.jpeg"?>" data-lightbox="image-24" data-title="Rustiq 81">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 81.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
+            </a>
                   <p class="fabric__image-title">81</p>  
               </div>
               
