@@ -220,3 +220,15 @@ p.custom-info {
 	text-align: center;
 	// border-bottom: 4px solid $red;
 }
+
+.woo-product-gallery-slider.woocommerce-product-gallery.wpgs--with-images.images {
+	@include respond(desktop) {
+		width: 58% !important;
+	}
+}
+
+.summary.entry-summary {
+	@include respond(desktop) {
+		width: 35% !important;
+	}
+}
