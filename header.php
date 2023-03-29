@@ -66,6 +66,10 @@
                     </a>
                     <a href="<?php echo wc_get_cart_url(); ?>">
                         <i class='bx bx-cart'></i>
+                        <small class="product_counter">
+	<?php $items_count = WC()->cart->get_cart_contents_count(); ?>
+	<span class="mini-cart-count"><?php echo $items_count ? $items_count : '0'; ?></span>
+</small>
                     </a>
                 </div>
             </div>

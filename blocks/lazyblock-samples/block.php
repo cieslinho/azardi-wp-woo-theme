@@ -26,7 +26,6 @@
           <label for="samples" class="samples__form-label">nazwa tkanin/tkaniny:</label>
           <input id="samples" name="samples" type="text" required class="samples__form-input">
           <button type="submit" class="samples__form-btn">zamów bezpłatne próbki</button>
-          <p class="samples__form-info">twoja prośba o przesłanie próbek została wysłana. dziękujemy!</p>
         </div>
       </form>
     </div>

@@ -2344,3 +2344,14 @@ function wdm_add_custom_order_line_item_meta($item, $cart_item_key, $values, $or
         $item->add_meta_data('_wdm_name',$values['wdm_name']);
     }
 }
+
+add_filter('woocommerce_add_to_cart_fragments', 'wc_refresh_mini_cart_count');
+function wc_refresh_mini_cart_count($fragments){
+	ob_start();
+	$items_count = WC()->cart->get_cart_contents_count();
+?>
+<span class="mini-cart-count"><?php echo $items_count ? $items_count : '0'; ?></span>
+<?php
+    $fragments['.mini-cart-count'] = ob_get_clean();
+	return $fragments;
+}

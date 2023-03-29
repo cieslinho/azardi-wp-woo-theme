@@ -55,6 +55,10 @@ button.single_add_to_cart_button.button.alt.wp-element-button {
 		background-color: $bg-color !important;
 		color: $text-color !important;
 	}
+
+	&::after {
+		content: '';
+	}
 }
 
 a.button.wc-forward.wp-element-button {
@@ -74,5 +78,28 @@ a.button.wc-forward.wp-element-button {
 			border: 2px solid $text-color;
 			color: $text-color !important;
 		}
+	}
+}
+
+.added_to_cart.wc-forward {
+	visibility: hidden;
+	display: none;
+	position: relative;
+
+	&::before {
+		display: flex !important;
+		align-items: flex-start;
+		justify-content: center;
+		position: relative;
+		left: 0;
+		top: 0;
+		content: 'Produkt został dodany do koszyka';
+		visibility: visible;
+		color: $text-color;
+		padding: 0.5em;
+		background-color: #eee;
+		border-bottom: 2px solid green;
+		text-align: center;
+		margin-block: 0.5em;
 	}
 }
