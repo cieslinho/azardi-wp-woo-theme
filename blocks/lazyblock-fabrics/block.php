@@ -2,6 +2,7 @@
     <div class="container">
         <h2 class="section-title">Tkaniny</h2>
         <p class="fabrics__text">Tkaniny obiciowe, dzielą się na różne rodzaje. Poszczególne grupy tkanin obiciowych mogą mieć inny skład, fakturę, inną odporność na zaciąganie czy ścieranie, wszystkie natomiast nadają się do renowacji oraz produkcji różnego rodzaju mebli.</p>
+        <p class="fabrics__text">Wybierz grupę a następnie tkaninę aby sprawdzić strukturę.</p>
         <div class="fabrics__boxes">
             <div class="fabrics__box fabrics__box-accordion">
                 <div class="fabrics__accordion">
@@ -753,9 +754,9 @@
             </div>
             <div class="fabrics__btns">
               <li data-tab-target="#fabric-vena" class="fabric__tab">Tkaniny Vena
-                <a href="" class="fabrics__specification fabrics__specification-mobile">
+                <a class="fabrics__specification fabrics__specification-mobile fabrics__specification-mobile-first">
                   <i class='bx bx-info-circle' ></i></a>
-                <a href="" class="fabrics__specification fabrics__specification-desktop">specyfikacja</a>
+                <a class="fabrics__specification fabrics__specification-desktop fabrics__specification-desktop-first">specyfikacja</a>
               </li>
             </div>
                 <div id="fabric-vena" data-tab-content>
@@ -2544,9 +2545,9 @@
             </div>
             <div class="fabrics__btns">
               <li data-tab-target="#fabric-charles" class="fabric__tab">Tkaniny Charles
-                <a href="" class="fabrics__specification fabrics__specification-mobile">
+                <a class="fabrics__specification fabrics__specification-mobile fabrics__specification-mobile fabrics__specification-mobile-second">
                   <i class='bx bx-info-circle' ></i></a>
-                <a href="" class="fabrics__specification fabrics__specification-desktop">specyfikacja</a>
+                <a class="fabrics__specification fabrics__specification-desktop fabrics__specification-desktop-second">specyfikacja</a>
               </li>
             </div>
                 <div id="fabric-charles" data-tab-content>
@@ -2974,9 +2975,9 @@
             </div>
             <div class="fabrics__btns">
               <li data-tab-target="#fabric-rustiq" class="fabric__tab">Tkaniny Rustiq
-                <a href="" class="fabrics__specification fabrics__specification-mobile">
+                <a  class="fabrics__specification fabrics__specification-mobile fabrics__specification-mobile-third">
                   <i class='bx bx-info-circle' ></i></a>
-                <a href="" class="fabrics__specification fabrics__specification-desktop">specyfikacja</a>
+                <a  class="fabrics__specification fabrics__specification-desktop fabrics__specification-desktop-third">specyfikacja</a>
               </li>
             </div>
                 <div id="fabric-rustiq" data-tab-content>
@@ -3168,7 +3169,108 @@
                     </div>
                 </div>
             </div>
-            <div class="fabrics__box fabrics__box-samples"></div>
+            <div class="fabrics__box fabrics__box-popup">
+            <div class="fabrics__popup fabrics__popup-first">
+                  <div class="fabrics__popup-body">
+                    <p class="fabrics__popup-title">Vena</p>
+                    <div class="fabrics__popup-row">
+                      <p class="fabrics__popup-text">skład / composition</p>
+                      <p class="fabrics__popup-text">100% PES</p>
+                    </div>
+                    <div class="fabrics__popup-row">
+                      <p class="fabrics__popup-text">szerokość / width</p>
+                      <p class="fabrics__popup-text">145 cm (+/- 5 cm)</p>
+                    </div>
+                    <div class="fabrics__popup-row">
+                      <p class="fabrics__popup-text">gramatura / weight</p>
+                      <p class="fabrics__popup-text">520 g/mb</p>
+                    </div>
+                    <div class="fabrics__popup-row">
+                      <p class="fabrics__popup-text">odporność na ścieranie / Martindale test EN ISO 12947-2</p>
+                      <p class="fabrics__popup-text">70 000</p>
+                    </div>
+                    <div class="fabrics__popup-row">
+                      <p class="fabrics__popup-text">przesunięcie nitek w szwie / seam slippage PN-EN ISO 13936-2</p>
+                      <p class="fabrics__popup-text">WARP/OSNOWA-2 mm WEFT/WĄTEK-2 mm</p>
+                    </div>
+                    <div class="fabrics__popup-row">
+                      <p class="fabrics__popup-text">skłonność do mechacenia i pillingu / pilling PN_EN ISO 12945-2</p>
+                      <p class="fabrics__popup-text">4-5 (2000 strokes)</p>
+                    </div>
+                    <div class="fabrics__popup-row">
+                      <p class="fabrics__popup-text">siła zrywająca i rozciąganie względne</p>
+                      <p class="fabrics__popup-text">≥ 600N
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="fabrics__popup fabrics__popup-second">
+                  <div class="fabrics__popup-body">
+                    <p class="fabrics__popup-title">Charles</p>
+                    <div class="fabrics__popup-row">
+                      <p class="fabrics__popup-text">szerokość / width</p>
+                      <p class="fabrics__popup-text">140 cm</p>
+                    </div>
+                    <div class="fabrics__popup-row">
+                      <p class="fabrics__popup-text">gramatura / weight</p>
+                      <p class="fabrics__popup-text">433 g/m2</p>
+                    </div>
+                    <div class="fabrics__popup-row">
+                      <p class="fabrics__popup-text">odporność na ścieranie / Martindale test EN ISO 12947-2</p>
+                      <p class="fabrics__popup-text">>90 000</p>
+                    </div>
+                    <div class="fabrics__popup-row">
+                      <p class="fabrics__popup-text">odporność koloru na światło / test EN ISO 105-B02</p>
+                      <p class="fabrics__popup-text">5</p>
+                    </div>
+                    <div class="fabrics__popup-row">
+                      <p class="fabrics__popup-text">odporność koloru na tarcie / test EN ISO 105 X12 <br>tarcie suche<br>tarcie mokre</p>
+                      <p class="fabrics__popup-text"><br>4 <br>3-4</p>
+                    </div>
+                    <div class="fabrics__popup-row">
+                      <p class="fabrics__popup-text">przesunięcie nitek w szwie / seam slippage PN-EN ISO 13936-2</p>
+                      <p class="fabrics__popup-text">WARP/OSNOWA-2 mm WEFT/WĄTEK-2 mm</p>
+                    </div>
+                    <div class="fabrics__popup-row">
+                      <p class="fabrics__popup-text">skłonność do mechacenia i pillingu / pilling PN_EN ISO 12945-2</p>
+                      <p class="fabrics__popup-text">5</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="fabrics__popup fabrics__popup-third">
+                  <div class="fabrics__popup-body">
+                    <p class="fabrics__popup-title">Rustiq</p>
+                    <div class="fabrics__popup-row">
+                      <p class="fabrics__popup-text">szerokość / width</p>
+                      <p class="fabrics__popup-text">138 cm</p>
+                    </div>
+                    <div class="fabrics__popup-row">
+                      <p class="fabrics__popup-text">gramatura / weight</p>
+                      <p class="fabrics__popup-text">604 g/m2</p>
+                    </div>
+                    <div class="fabrics__popup-row">
+                      <p class="fabrics__popup-text">odporność na ścieranie / Martindale test EN ISO 12947-2</p>
+                      <p class="fabrics__popup-text">45 000</p>
+                    </div>
+                    <div class="fabrics__popup-row">
+                      <p class="fabrics__popup-text">odporność koloru na światło / test EN ISO 105-B02</p>
+                      <p class="fabrics__popup-text">>5</p>
+                    </div>
+                    <div class="fabrics__popup-row">
+                      <p class="fabrics__popup-text">odporność koloru na tarcie / test EN ISO 105 X12 <br>tarcie suche<br>tarcie mokre</p>
+                      <p class="fabrics__popup-text">3 <br>3-4</p>
+                    </div>
+                    <div class="fabrics__popup-row">
+                      <p class="fabrics__popup-text">przesunięcie nitek w szwie / seam slippage PN-EN ISO 13936-2</p>
+                      <p class="fabrics__popup-text">WARP/OSNOWA-4 mm WEFT/WĄTEK-5 mm</p>
+                    </div>
+                    <div class="fabrics__popup-row">
+                      <p class="fabrics__popup-text">skłonność do mechacenia i pillingu / pilling PN_EN ISO 12945-2</p>
+                      <p class="fabrics__popup-text">4</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

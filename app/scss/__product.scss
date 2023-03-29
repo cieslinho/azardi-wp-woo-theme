@@ -48,18 +48,31 @@ li.product {
 button.single_add_to_cart_button.button.alt.wp-element-button.disabled.wc-variation-selection-needed,
 button.single_add_to_cart_button.button.alt.wp-element-button {
 	background-color: $dark-color !important;
-	color: $white-color !important;
+	color: $bg-color !important;
 	border: 2px solid $dark-color !important;
 
 	&:hover {
-		background-color: $white-color !important;
+		background-color: $bg-color !important;
 		color: $text-color !important;
 	}
 }
 
 a.button.wc-forward.wp-element-button {
-	background-color: $white-color !important;
+	background-color: $bg-color !important;
 	color: $text-color !important;
 	text-decoration: none;
 	border: none;
+}
+
+.wc-proceed-to-checkout {
+	a.checkout-button.button.alt.wc-forward.wp-element-button {
+		color: $bg-color !important;
+		border: 2px solid transparent;
+
+		&:hover {
+			background-color: $bg-color !important;
+			border: 2px solid $text-color;
+			color: $text-color !important;
+		}
+	}
 }

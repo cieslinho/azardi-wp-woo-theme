@@ -1,6 +1,16 @@
 const navBtn = document.querySelector('.nav__btn')
 const navItem = document.querySelectorAll('.menu-item')
 const menuItemDropdown = document.querySelectorAll('.menu-item-has-children')
+const fabricsPopupBtnFirst = document.querySelector('.fabrics__specification-desktop-first')
+const fabricsPopupBtnFirstMobile = document.querySelector('.fabrics__specification-mobile-first')
+const fabricsPopups = document.querySelectorAll('.fabrics__popup')
+const fabricsPopupFirst = document.querySelector('.fabrics__popup-first')
+const fabricsPopupBtnSecond = document.querySelector('.fabrics__specification-desktop-second')
+const fabricsPopupBtnSecondMobile = document.querySelector('.fabrics__specification-mobile-second')
+const fabricsPopupSecond = document.querySelector('.fabrics__popup-second')
+const fabricsPopupBtnThird = document.querySelector('.fabrics__specification-desktop-third')
+const fabricsPopupBtnThirdMobile = document.querySelector('.fabrics__specification-mobile-third')
+const fabricsPopupThird = document.querySelector('.fabrics__popup-third')
 
 const createButton = () => {
 	menuItemDropdown.forEach(menuItem => {
@@ -108,6 +118,9 @@ const toggleTab = () => {
 			tabContents.forEach(tabContent => {
 				tabContent.classList.remove('active')
 			})
+			fabricsPopups.forEach(popup => {
+				popup.classList.remove('active')
+			})
 		}
 	})
 }
@@ -119,8 +132,30 @@ document.querySelectorAll('.fabric__submenu-item').forEach((element, index) =>
 	})
 )
 
+const handleFabricsPopup = () => {
+	fabricsPopupBtnFirst.addEventListener('click', () => {
+		fabricsPopupFirst.classList.toggle('active')
+	})
+	fabricsPopupBtnFirstMobile.addEventListener('click', () => {
+		fabricsPopupFirst.classList.toggle('active')
+	})
+	fabricsPopupBtnSecond.addEventListener('click', () => {
+		fabricsPopupSecond.classList.toggle('active')
+	})
+	fabricsPopupBtnSecondMobile.addEventListener('click', () => {
+		fabricsPopupSecond.classList.toggle('active')
+	})
+	fabricsPopupBtnThird.addEventListener('click', () => {
+		fabricsPopupThird.classList.toggle('active')
+	})
+	fabricsPopupBtnThirdMobile.addEventListener('click', () => {
+		fabricsPopupThird.classList.toggle('active')
+	})
+}
+
 createButton()
 handleDropdown()
 handleMultiDropdown()
 navBtn.addEventListener('click', handleNav)
 handleSlider()
+handleFabricsPopup()
