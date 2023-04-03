@@ -1,9 +1,8 @@
 <section class="samples">
   <div class="container">
     <h2 class="section-title">Bezpłatne próbki tkanin</h2>
-    <p class="samples__text">Masz wątpliwości, czy wybrany przez Ciebie kolor jest dokładnie tym, czego oczekujesz?</p>
-    <p class="samples__text">Przed zakupem zamów bezpłatne próbki tkanin, dopasowane do Twoich preferencji. Wypełnij
-      poniższy formularz, a nasz konsultant skontaktuje się z Tobą i prześle Ci bezpłatny zestaw próbek.</p>
+    <p class="samples__text">Masz wątpliwości, czy wybrana przez Ciebie tkanina jest dokładnie tym, czego oczekujesz?</p>
+    <p class="samples__text">Przed zakupem zamów bezpłatne próbki tkanin, dopasowane do Twoich preferencji. Wypełnij poniższy formularz, a my prześlemy Ci bezpłatny zestaw próbek.</p>
     <div class="samples__box">
       <form action="<?php echo get_template_directory_uri(); ?>/samples.php" method="POST" class="samples__form">
         <div class="samples__form-top">

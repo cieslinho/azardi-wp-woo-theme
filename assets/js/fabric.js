@@ -13,21 +13,21 @@ let isSafari =
 	navigator.userAgent.indexOf('CriOS') == -1 &&
 	navigator.userAgent.indexOf('FxiOS') == -1
 
-if (containerSelect && frameSelect) {
-	frameSelect.value = ''
-	fabricSelect.value = ''
-	containerSelect.value = ''
+// if (containerSelect && frameSelect) {
+// 	frameSelect.value = ''
+// 	fabricSelect.value = ''
+// 	containerSelect.value = ''
 
-	containerSelect.addEventListener('change', () => {
-		if (containerSelect.value === 'dwupozycyjny' || containerSelect.value === 'zwykly') {
-			frameSelect.value = 'elastyczny'
-			frameSelect.setAttribute('disabled', 'disabled')
-		} else {
-			frameSelect.value = ''
-			frameSelect.removeAttribute('disabled')
-		}
-	})
-}
+// 	containerSelect.addEventListener('change', () => {
+// 		if (containerSelect.value === 'dwupozycyjny' || containerSelect.value === 'zwykly') {
+// 			frameSelect.value = 'elastyczny'
+// 			frameSelect.setAttribute('disabled', 'disabled')
+// 		} else {
+// 			frameSelect.value = ''
+// 			frameSelect.removeAttribute('disabled')
+// 		}
+// 	})
+// }
 
 if (isSafari) {
 	fabricSelect.addEventListener('change', () => {

@@ -77,9 +77,13 @@ if( function_exists('acf_add_options_page') ) {
 
 // add_filter('woocommerce_short_description', 'my_content', 10, 2);
 
-add_action('woocommerce_before_add_to_cart_button', 'variable_info');
-function variable_info(){
-  echo '<p class="custom-info">W celu skonfigurowania produktu uzupełnij wszystkie pola</p>';
+// add_action('woocommerce_before_add_to_cart_button', 'variable_info');
+// function variable_info(){
+//   echo '<p class="custom-info">W celu skonfigurowania produktu uzupełnij wszystkie pola</p>';
+// }
+add_action('woocommerce_before_variations_form', 'variable_fabrics');
+function variable_fabrics(){
+  echo '<a href="/tkaniny" class="custom-fabrics">wzornik tkanin</a>';
 }
 
 add_action('woocommerce_before_add_to_cart_button','wdm_add_custom_fields');

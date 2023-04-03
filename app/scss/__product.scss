@@ -36,10 +36,12 @@ li.product {
 		span.price {
 			color: $hover-color !important;
 			font-weight: 400 !important;
-			font-size: 1.6rem !important;
+			font-size: 1.3rem !important;
+
 			span.woocommerce-Price-amount.amount {
 				font-size: 1.9rem;
 				font-weight: 700;
+				margin-left: 0.3rem;
 			}
 		}
 	}
