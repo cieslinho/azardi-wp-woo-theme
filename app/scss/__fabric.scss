@@ -110,4 +110,37 @@
 		display: flex;
 		flex-wrap: wrap;
 	}
+
+	&__btns {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1em;
+	}
+
+	&__close {
+		margin-right: 0.5em;
+		padding: 0.1em;
+		border: 2px solid $dark-color;
+		display: block;
+		transition: background-color 0.3s;
+		cursor: pointer;
+
+		i {
+			font-size: 2.5rem;
+			color: $dark-color;
+			transition: color 0.3s;
+
+			@include respond(tablet) {
+				font-size: 3rem;
+			}
+		}
+
+		&:hover {
+			background-color: $dark-color;
+			i {
+				color: $bg-color;
+			}
+		}
+	}
 }

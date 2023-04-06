@@ -5,6 +5,7 @@ const fabricHiddenInput = document.querySelector('#wdm_name')
 const resetVariations = document.querySelector('.reset_variations')
 const containerSelect = document.querySelector('#pa_pojemnik')
 const frameSelect = document.querySelector('#pa_stelaz')
+const closeBtn = document.querySelector('.fabric__close')
 
 let isSafari =
 	navigator.vendor &&
@@ -88,3 +89,10 @@ document.querySelectorAll('.fabric__submenu-item').forEach((element, index) =>
 		toggleTab()
 	})
 )
+
+closeBtn.addEventListener('click', () => {
+	fabricModal.classList.toggle('fabric--hidden')
+	if (fabricModal.classList.contains('fabric--hidden')) {
+		fabricSelect.removeAttribute('disabled')
+	}
+})

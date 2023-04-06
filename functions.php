@@ -115,7 +115,12 @@ error_reporting(E_ERROR | E_PARSE);
             <input type="hidden" name="wdm_name" id="wdm_name" value="Brak" />
         </div>
         <div class="fabric fabric--hidden">
-          <h3 class="fabric__heading">Wybierz tkaninę:</h3>
+          <div class="fabric__btns">
+            <h3 class="fabric__heading">Wybierz tkaninę:</h3>
+            <a class="fabric__close">
+              <i class='bx bx-x'></i>
+            </a>
+          </div>
           <ul class="fabric__submenu">
             <li class="fabric__submenu-item">
               Grupa 1

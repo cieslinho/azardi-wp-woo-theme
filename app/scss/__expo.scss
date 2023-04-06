@@ -1,0 +1,60 @@
+.expo {
+	&__boxes {
+		display: flex;
+		flex-direction: column;
+		gap: 2em;
+	}
+
+	&__title {
+		margin-bottom: 1em;
+		// margin-left: 0.5em;
+	}
+
+	&__images {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5em;
+
+		@include respond(tablet) {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: 1fr;
+			grid-column-gap: 1.5em;
+			grid-row-gap: 2em;
+		}
+
+		@include respond(desktop-small) {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: 1fr;
+			grid-column-gap: 1.5em;
+			grid-row-gap: 2em;
+		}
+
+		@include respond(desktop) {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: 1fr;
+			grid-column-gap: 1.5em;
+			grid-row-gap: 2em;
+		}
+	}
+
+	&__link {
+		overflow: hidden;
+		display: block;
+	}
+
+	&__image {
+		width: 100%;
+		object-fit: cover;
+		height: 400px;
+		overflow: hidden;
+		transition: transform 0.2s;
+		display: block;
+
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+}
