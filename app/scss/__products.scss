@@ -1,157 +1,183 @@
 .products {
-  &__boxes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	&__boxes {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 
-    @include respond(tablet) {
-      flex-direction: row;
-    }
-  }
+		@include respond(tablet) {
+			flex-direction: row;
+		}
+	}
 
-  &__box {
-    position: relative;
-    margin-bottom: 2em;
-    width: 100%;
-    max-width: 500px;
-    height: 650px;
+	&__box {
+		position: relative;
+		margin-bottom: 2em;
+		width: 100%;
+		max-width: 500px;
+		height: 650px;
 
-    @include respond(tablet) {
-      margin-bottom: 0;
-    }
+		@include respond(tablet) {
+			margin-bottom: 0;
+		}
 
-    &::before {
-      position: absolute;
-      opacity: 1;
-      z-index: 15;
-      transition: opacity 0.3s;
-      background-color: rgba($color: $dark-color, $alpha: 0.6);
-      width: 100%;
-      height: 100%;
-      content: "";
-    }
-    &:hover::before {
-      opacity: 0.65;
-    }
-  }
+		&::before {
+			position: absolute;
+			opacity: 1;
+			z-index: 15;
+			transition: opacity 0.3s;
+			background-color: rgba($color: $dark-color, $alpha: 0.3);
+			width: 100%;
+			height: 100%;
+			content: '';
+		}
+		&:hover::before {
+			opacity: 0.45;
+		}
+	}
 
-  &__img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+	&__img {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
 
-  &__text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 30;
-    color: $white-color;
-    font-weight: 100;
-    font-size: 3.5rem;
-    letter-spacing: 5px;
-    text-transform: uppercase;
+	&__text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 30;
+		color: $white-color;
+		font-weight: 100;
+		font-size: 3.5rem;
+		letter-spacing: 5px;
+		text-transform: uppercase;
 
-    @include respond(tablet) {
-      font-size: 5rem;
-    }
-  }
+		@include respond(tablet) {
+			font-size: 5rem;
+		}
+	}
 
-  &__btn {
-    @include btn-outline;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 35;
+	&__btn {
+		@include btn-outline;
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 35;
+		border-radius: 5px;
 
-    @include respond(tablet) {
-      font-size: 1.8rem;
-    }
-  }
+		@include respond(tablet) {
+			font-size: 1.8rem;
+		}
+	}
+}
+
+select.orderby {
+	margin-top: -20px;
 }
 
 .featured {
-  &__boxes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	&__boxes {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 
-    @include respond(tablet) {
-      flex-direction: row;
-    }
-  }
+		@include respond(tablet) {
+			flex-direction: row;
+		}
+	}
 
-  &__product {
-    margin: 1em;
-    width: 100%;
-    max-width: 350px;
-    height: 100%;
+	&__product {
+		margin: 1em;
+		width: 100%;
+		max-width: 350px;
+		height: 100%;
 
-    @include respond(desktop) {
-      max-width: 500px;
-    }
+		@include respond(desktop) {
+			max-width: 500px;
+		}
 
-    &-top {
-      height: 300px;
-      overflow: hidden;
-    }
+		&-top {
+			height: 300px;
+			overflow: hidden;
+		}
 
-    &-img {
-      transition: transform 0.3s;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+		&-img {
+			transition: transform 0.3s;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
 
-    &:hover &-img {
-      transform: scale(1.05);
-    }
+		&:hover &-img {
+			transform: scale(1.05);
+		}
 
-    &:hover &-box {
-      background-color: $bg-color;
-    }
+		&:hover &-box {
+			background-color: $bg-color;
+		}
 
-    &:hover &-description,
-    &:hover &-title,
-    &:hover &-price {
-      color: $text-color;
-    }
+		&:hover &-description,
+		&:hover &-title,
+		&:hover &-price {
+			color: $text-color;
+		}
 
-    &-box {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      transition: background-color 0.3s;
-      border-bottom: 2px solid $dark-color;
-      background-color: $dark-color;
-      padding: 1em;
-    }
+		&-box {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			transition: background-color 0.3s;
+			border-bottom: 2px solid $dark-color;
+			background-color: $dark-color;
+			padding: 1em;
+		}
 
-    &-description,
-    &-title {
-      transition: color 0.3s;
-      margin-bottom: 0.5em;
-      color: $white-color;
+		&-description,
+		&-title {
+			transition: color 0.3s;
+			margin-bottom: 0.5em;
+			color: $white-color;
 
-      @include respond(tablet) {
-        font-size: 1.8rem;
-      }
-    }
+			@include respond(tablet) {
+				font-size: 1.8rem;
+			}
+		}
 
-    &-price {
-      transition: color 0.3s;
-      color: $white-color;
-      font-weight: 800;
+		&-price {
+			transition: color 0.3s;
+			color: $white-color;
+			font-weight: 800;
 
-      @include respond(tablet) {
-        font-size: 1.8rem;
-      }
-    }
-  }
+			@include respond(tablet) {
+				font-size: 1.8rem;
+			}
+		}
+	}
+}
+
+.woocommerce-products-header__title.page-title {
+	color: $text-color;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 400;
+	// font-size: 3rem;
+	@include respond(tablet) {
+		float: left;
+	}
+}
+
+.related.products {
+	h2 {
+		margin-bottom: 1em;
+	}
+}
+
+.woocommerce-loop-product__title {
+	letter-spacing: 1px;
 }

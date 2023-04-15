@@ -54,41 +54,41 @@ fabricImages.forEach(image =>
 	})
 )
 
-const tabs = document.querySelectorAll('[data-tab-target]')
-const tabContents = document.querySelectorAll('[data-tab-content]')
+// const tabs = document.querySelectorAll('[data-tab-target]')
+// const tabContents = document.querySelectorAll('[data-tab-content]')
 
-tabs.forEach(tab => {
-	tab.addEventListener('click', () => {
-		const target = document.querySelector(tab.dataset.tabTarget)
-		tabContents.forEach(tabContent => {
-			tabContent.classList.remove('active')
-		})
-		tabs.forEach(tab => {
-			tab.classList.remove('active')
-		})
-		tab.classList.add('active')
-		target.classList.add('active')
-	})
-})
+// tabs.forEach(tab => {
+// 	tab.addEventListener('click', () => {
+// 		const target = document.querySelector(tab.dataset.tabTarget)
+// 		tabContents.forEach(tabContent => {
+// 			tabContent.classList.remove('active')
+// 		})
+// 		tabs.forEach(tab => {
+// 			tab.classList.remove('active')
+// 		})
+// 		tab.classList.add('active')
+// 		target.classList.add('active')
+// 	})
+// })
 
-const toggleTab = () => {
-	const allMenus = document.querySelectorAll('.fabric__tabs')
-	allMenus.forEach(menu => {
-		if (menu.classList.contains('show-tabs')) {
-		} else {
-			tabContents.forEach(tabContent => {
-				tabContent.classList.remove('active')
-			})
-		}
-	})
-}
+// const toggleTab = () => {
+// 	const allMenus = document.querySelectorAll('.fabric__tabs')
+// 	allMenus.forEach(menu => {
+// 		if (menu.classList.contains('show-tabs')) {
+// 		} else {
+// 			tabContents.forEach(tabContent => {
+// 				tabContent.classList.remove('active')
+// 			})
+// 		}
+// 	})
+// }
 
-document.querySelectorAll('.fabric__submenu-item').forEach((element, index) =>
-	element.addEventListener('click', () => {
-		document.querySelector('#fabric__tabs-' + (index + 1)).classList.toggle('show-tabs')
-		toggleTab()
-	})
-)
+// document.querySelectorAll('.fabric__submenu-item').forEach((element, index) =>
+// 	element.addEventListener('click', () => {
+// 		document.querySelector('#fabric__tabs-' + (index + 1)).classList.toggle('show-tabs')
+// 		toggleTab()
+// 	})
+// )
 
 closeBtn.addEventListener('click', () => {
 	fabricModal.classList.toggle('fabric--hidden')

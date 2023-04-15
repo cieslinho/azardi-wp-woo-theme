@@ -49,6 +49,7 @@
 	background-color: transparent;
 	padding: 0.5em 1.5em;
 	color: $white-color;
+	border-radius: 5px;
 
 	&:hover {
 		background-color: $white-color;
@@ -59,7 +60,7 @@
 @mixin btn-product {
 	transition: background-color 0.2s, color 0.2s, border 0.2s;
 	border: 2px solid transparent;
-	border-radius: 0 !important;
+	border-radius: 5px !important;
 	background-color: $dark-color;
 	padding: 0.5em 1.5em;
 	color: $white-color;

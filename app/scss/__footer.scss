@@ -1,168 +1,222 @@
 .footer {
-  &__boxes {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-bottom: 1em;
+	&__boxes {
+		display: grid;
+		grid-template-columns: 1fr;
+		margin-bottom: 1em;
 
-    @include respond(desktop) {
-      grid-template-columns: 4fr 1fr 1fr 1fr;
-    }
-  }
+		@include respond(desktop) {
+			grid-template-columns: 4fr 1fr 1fr 1fr;
+		}
+	}
 
-  &__box {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0.5em;
+	&__box {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 0.5em;
 
-    @include respond(desktop) {
-      margin-top: 2em;
-      margin-right: 2.5em;
-      margin-bottom: 0;
-    }
+		@include respond(desktop) {
+			margin-top: 2em;
+			margin-right: 2.5em;
+			margin-bottom: 0;
+		}
 
-    &--first {
-      margin-top: unset;
-    }
+		&--first {
+			margin-top: unset;
+		}
 
-    &-address {
-      display: flex;
-      flex-direction: column;
+		&-address {
+			display: flex;
+			flex-direction: column;
 
-      .menu-item {
-        display: flex;
-        align-items: center;
-        border-bottom: 1px solid transparent;
-        padding: 0 0 0.5em 0;
-        width: 100%;
-        color: $text-color;
+			.menu-item {
+				display: flex;
+				align-items: center;
+				border-bottom: 1px solid transparent;
+				padding: 0 0 0.5em 0;
+				width: 100%;
+				color: $text-color;
 
-        &:hover {
-          border-bottom: 1px solid $text-color;
+				&:hover {
+					border-bottom: 1px solid $text-color;
 
-          &:first-child {
-            border-bottom: 1px solid transparent;
+					&:first-child {
+						border-bottom: 1px solid transparent;
 
-            @include respond(desktop) {
-              margin-right: auto;
-              width: 35%;
-            }
-          }
-        }
+						@include respond(desktop) {
+							margin-right: auto;
+							width: 35%;
+						}
+					}
+				}
 
-        i {
-          margin-right: 0.5em;
-        }
-      }
-    }
+				i {
+					margin-right: 0.5em;
+				}
+			}
+		}
 
-    &-title {
-      margin-bottom: 0.5em;
-      color: $text-color;
-      font-weight: 800;
-      font-size: 1.8rem;
+		&-title {
+			margin-bottom: 0.5em;
+			color: $text-color;
+			font-weight: 800;
+			font-size: 1.8rem;
 
-      @include respond(desktop) {
-        font-size: 1.9rem;
-      }
-    }
+			@include respond(desktop) {
+				font-size: 1.9rem;
+			}
+		}
 
-    &:last-child {
-      @include respond(desktop) {
-        margin-right: 0;
-      }
-    }
+		&:last-child {
+			@include respond(desktop) {
+				margin-right: 0;
+			}
+		}
 
-    .menu-item {
-      margin-bottom: 0.25em;
+		.menu-item {
+			margin-bottom: 0.25em;
 
-      @include respond(desktop) {
-        margin-bottom: 0.5em;
-      }
+			@include respond(desktop) {
+				margin-bottom: 0.5em;
+			}
 
-      a {
-        display: block;
-        border-bottom: 1px solid transparent;
-        padding-block: 0.3em;
-        width: 100%;
-        color: $text-color;
-        &:hover {
-          border-bottom: 1px solid $text-color;
-        }
-      }
-    }
-  }
+			a {
+				display: block;
+				border-bottom: 1px solid transparent;
+				padding-block: 0.3em;
+				width: 100%;
+				color: $text-color;
+				&:hover {
+					border-bottom: 1px solid $text-color;
+				}
+			}
+		}
+	}
 
-  &__logo {
-    margin-bottom: 1em;
-    width: 150px;
-  }
+	&__logo {
+		margin-bottom: 1em;
+		width: 150px;
+	}
 
-  &__motto {
-    margin-bottom: 1em;
-    line-height: 150%;
-  }
+	&__motto {
+		margin-bottom: 1em;
+		line-height: 150%;
+	}
 
-  &__img {
-    width: 100%;
-  }
+	&__img {
+		width: 100%;
+	}
 
-  &__text {
-    padding-bottom: 0.3em;
-    color: $text-color;
-  }
+	&__text {
+		padding-bottom: 0.3em;
+		color: $text-color;
+	}
 
-  &__bottom {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 20px;
+	&__bottom {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-bottom: 20px;
 
-    @include respond(tablet) {
-      flex-direction: row;
-    }
+		@include respond(tablet) {
+			flex-direction: row;
+		}
 
-    @include respond(desktop) {
-      margin-bottom: initial;
-    }
+		@include respond(desktop) {
+			margin-bottom: initial;
+		}
 
-    &-text {
-      text-align: center;
-    }
+		&-text {
+			text-align: center;
+		}
 
-    &-link {
-      position: relative;
-      transition: color 0.3s;
-      padding: 0 0.15em;
-      color: $text-color;
+		&-link {
+			position: relative;
+			transition: color 0.3s;
+			padding: 0 0.15em;
+			color: $text-color;
 
-      &:hover {
-        color: $white-color;
-      }
+			&:hover {
+				color: $white-color;
+			}
 
-      &:hover::after {
-        height: 100%;
-      }
+			&:hover::after {
+				height: 100%;
+			}
 
-      &::after {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        z-index: -5;
-        transition: height 0.3s;
-        background-color: $text-color;
-        width: 100%;
-        height: 1px;
-        content: "";
-      }
-    }
+			&::after {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				z-index: -5;
+				transition: height 0.3s;
+				background-color: $text-color;
+				width: 100%;
+				height: 1px;
+				content: '';
+			}
+		}
 
-    &-span {
-      visibility: hidden;
-      margin: 0 0.5em;
+		&-span {
+			visibility: hidden;
+			margin: 0 0.5em;
 
-      @include respond(tablet) {
-        visibility: visible;
-      }
-    }
-  }
+			@include respond(tablet) {
+				visibility: visible;
+			}
+		}
+	}
+
+	&__middle {
+		margin-block: 1em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1em;
+
+		@include respond(tablet) {
+			margin-block: 2em;
+			justify-content: space-between;
+			flex-direction: row;
+		}
+
+		&-apps {
+			display: flex;
+			align-items: center;
+			gap: 1em;
+		}
+
+		&-link {
+			display: block;
+
+			img {
+				width: 100px;
+				@include respond(tablet) {
+					width: 120px;
+				}
+
+				// height: 100px;
+				// object-fit: cover;
+			}
+		}
+
+		&-text {
+			color: #a5a5a5;
+			font-size: 1.4rem;
+		}
+
+		&-payments {
+			display: flex;
+			align-items: flex-end;
+			gap: 1em;
+
+			@include respond(tablet) {
+				margin-right: 4em;
+			}
+		}
+
+		&-img {
+			width: 70px;
+		}
+	}
 }

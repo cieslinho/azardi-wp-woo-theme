@@ -31,6 +31,7 @@
 			font-family: 'Roboto', sans-serif;
 			outline: none;
 			border: 1px solid gray;
+			border-radius: 5px;
 
 			&:focus {
 				border: 1px solid $dark-color;
@@ -45,6 +46,7 @@
 			background-color: $dark-color;
 			color: $bg-color;
 			border: 2px solid transparent;
+			border-radius: 5px;
 			transition: background-color 0.3s, color 0.3s, border 0.3s;
 			margin-bottom: 1em;
 

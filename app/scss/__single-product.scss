@@ -43,14 +43,14 @@
 					text-transform: uppercase;
 				}
 				th {
-					width: 50%;
+					width: 45%;
 					text-align: left;
 					label {
 						font-size: 1.4rem;
 					}
 				}
 				td {
-					width: 50%;
+					width: 55%;
 					select {
 						@include btn-product;
 						cursor: pointer;
@@ -58,13 +58,16 @@
 						width: 100% !important;
 						text-transform: uppercase;
 						background-color: $bg-color;
-						border: 2px solid $dark-color;
+						border-radius: 5px !important;
+						border: 1px solid #d1d1d1 !important;
 						color: $text-color;
+						outline: none;
 
-						// &:hover {
-						// 	background-color: $dark-color;
-						// 	color: $white-color;
-						// }
+						&:hover,
+						&:focus,
+						&:focus-visible {
+							border: 1px solid $dark-color !important;
+						}
 					}
 					a {
 						border-bottom: 1px solid gray;
@@ -86,15 +89,22 @@
 					padding: 0.5em;
 					min-width: 25%;
 					max-width: 30%;
-					input {
-						border: 1px solid gray;
-						border-radius: 0 !important;
+					border-radius: 5px !important;
+					border: 1px solid #d1d1d1;
+					outline: none;
+					transition: border 0.3s;
+
+					&:hover,
+					&:focus,
+					&:focus-visible {
+						border: 1px solid $dark-color !important;
 					}
 				}
 			}
 			.wp-element-button {
 				@include btn-product;
 				padding: 1em;
+				border-radius: 5px !important;
 				text-transform: uppercase;
 			}
 			button.alt.disabled {
@@ -125,7 +135,7 @@
 					max-width: 100%;
 				}
 				input {
-					border: 1px solid gray;
+					border: 1px solid #d1d1d1;
 					border-radius: 0 !important;
 				}
 			}
@@ -133,6 +143,7 @@
 		.wp-element-button {
 			@include btn-product;
 			padding: 1em;
+			border-radius: 5px !important;
 			text-transform: uppercase;
 
 			&:hover {
@@ -240,6 +251,12 @@ a.custom-fabrics {
 	font-size: 1.1rem;
 	color: $text-color;
 	padding: 0.5em;
-	border-bottom: 1px solid $dark-color;
 	letter-spacing: 1px;
+	border-bottom: 1px solid #d1d1d1;
+	transition: border-bottom 0.3s;
+
+	&:hover {
+		// color: $text-color;
+		border-bottom: 1px solid $dark-color;
+	}
 }

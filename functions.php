@@ -83,7 +83,7 @@ if( function_exists('acf_add_options_page') ) {
 // }
 add_action('woocommerce_before_variations_form', 'variable_fabrics');
 function variable_fabrics(){
-  echo '<a href="/tkaniny" class="custom-fabrics">wzornik tkanin</a>';
+  echo '<a href="/tkaniny" target="_blank" class="custom-fabrics">wzornik tkanin</a>';
 }
 
 add_action('woocommerce_before_add_to_cart_button','wdm_add_custom_fields');
@@ -91,6 +91,17 @@ add_action('woocommerce_before_add_to_cart_button','wdm_add_custom_fields');
  * Adds custom field for Product
  * @return [type] [description]
  */
+// function product_category_in_shop_loop() {
+//   error_reporting(E_ERROR | E_PARSE);
+//   global $product;
+//   $product_id = $product->get_id();
+//   $cat = wp_get_post_terms($product_id, 'product_cat', array('fields' => 'names'));
+//   if( !empty($cat[0]) ){
+//      echo '<p class="product__category-class">'.$cat[1].'</p>';
+//   }
+// }
+// add_action( 'woocommerce_after_shop_loop_item_title', 'product_category_in_shop_loop', 40 );
+ 
 function wdm_add_custom_fields()
 {
 

@@ -1,5 +1,5 @@
 li.product {
-	margin: 1em !important;
+	// margin: 1em !important;
 	border-bottom: 1px solid $text-color;
 	width: 100% !important;
 	max-width: 340px;
@@ -104,4 +104,8 @@ a.button.wc-forward.wp-element-button {
 		text-align: center;
 		margin-block: 0.5em;
 	}
+}
+
+p.product__category-class {
+	display: block !important;
 }

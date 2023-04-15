@@ -46,7 +46,7 @@
                     </div>
                 </button>
                 <a href="<?php echo get_home_url(); ?>" class="nav__logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Azardi - Odrkyj Piękno Sypialni, Azardi Logo" class="nav__img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logonew2.png" alt="Azardi - Odrkyj Piękno Sypialni, Azardi Logo" class="nav__img">
                 </a>
                 <ul class="nav__list">
                     <?php wp_nav_menu(
