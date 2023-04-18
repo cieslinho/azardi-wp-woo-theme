@@ -18,7 +18,17 @@
     <?php wp_head(); ?>
 
 	
-	
+	<!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '56ac3ac15b7d852d16fc81769183161e403935ba';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
 </head>
 
 <body <?php body_class();?>>
@@ -26,14 +36,6 @@
     <nav class="nav">
             <div class="nav__overlay"></div>
             <div class="nav__top">
-                <div class="nav__top-socials">
-                    <a href="https://www.facebook.com/lozkamaterace/">
-                        <i class='bx bxl-facebook-circle'></i>
-                    </a>
-                    <a href="https://www.instagram.com/azardi.art/?igshid=YmMyMTA2M2Y%3D">
-                        <i class='bx bxl-instagram-alt'></i>
-                    </a>
-                </div>
                 <div class="nav__top-info">
                     <p>Zadzwoń do doradcy:</p>
                     <a href="tel:+48884822444">+48 884 822 444</a>

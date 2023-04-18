@@ -33,6 +33,14 @@
                         <i class='bx bxs-phone'></i>
                         +48 884 822 444</a>
                 </div>
+                <div class="nav__top-socials">
+                    <a href="https://www.facebook.com/lozkamaterace/">
+                        <i class='bx bxl-facebook-circle'></i>
+                    </a>
+                    <a href="https://www.instagram.com/azardi.art/?igshid=YmMyMTA2M2Y%3D">
+                        <i class='bx bxl-instagram-alt'></i>
+                    </a>
+                </div>
             </div>
             <div class="footer__box">
                 <p class="footer__box-title">Godziny otwarcia</p>

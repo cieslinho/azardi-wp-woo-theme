@@ -1,16 +1,9 @@
 const navBtn = document.querySelector('.nav__btn')
-const navItem = document.querySelectorAll('.menu-item')
 const menuItemDropdown = document.querySelectorAll('.menu-item-has-children')
-const fabricsPopupBtnFirst = document.querySelector('.fabrics__specification-desktop-first')
-const fabricsPopupBtnFirstMobile = document.querySelector('.fabrics__specification-mobile-first')
-const fabricsPopups = document.querySelectorAll('.fabrics__popup')
-const fabricsPopupFirst = document.querySelector('.fabrics__popup-first')
-const fabricsPopupBtnSecond = document.querySelector('.fabrics__specification-desktop-second')
-const fabricsPopupBtnSecondMobile = document.querySelector('.fabrics__specification-mobile-second')
-const fabricsPopupSecond = document.querySelector('.fabrics__popup-second')
-const fabricsPopupBtnThird = document.querySelector('.fabrics__specification-desktop-third')
-const fabricsPopupBtnThirdMobile = document.querySelector('.fabrics__specification-mobile-third')
-const fabricsPopupThird = document.querySelector('.fabrics__popup-third')
+const musicBtn = document.querySelector('.header-video__icon')
+const fabricsSubmenu = document.querySelector('.fabrics__submenu')
+const fabricsSubmenuItems = document.querySelectorAll('.fabrics__submenu-item')
+const fabricsImages = document.querySelectorAll('.fabrics__images')
 
 const createButton = () => {
 	menuItemDropdown.forEach(menuItem => {
@@ -73,26 +66,6 @@ const handleMultiDropdown = () => {
 	})
 }
 
-const handleSlider = () => {
-	let slideIndex = 0
-	showSlides()
-	function showSlides() {
-		let i
-		let slides = document.getElementsByClassName('header__slide')
-		for (i = 0; i < slides.length; i++) {
-			slides[i].style.opacity = '0'
-			slides[i].style.visibility = 'hidden'
-		}
-		slideIndex++
-		if (slideIndex > slides.length) {
-			slideIndex = 1
-		}
-		slides[slideIndex - 1].style.opacity = '1'
-		slides[slideIndex - 1].style.visibility = 'visible'
-		setTimeout(showSlides, 3000) // Change image every 2 seconds
-	}
-}
-
 const tabs = document.querySelectorAll('[data-tab-target]')
 const tabContents = document.querySelectorAll('[data-tab-content]')
 
@@ -118,7 +91,7 @@ const toggleTab = () => {
 			tabContents.forEach(tabContent => {
 				tabContent.classList.remove('active')
 			})
-			fabricsPopups.forEach(popup => {
+			tabContents.forEach(popup => {
 				popup.classList.remove('active')
 			})
 		}
@@ -132,33 +105,167 @@ document.querySelectorAll('.fabric__submenu-item').forEach((element, index) =>
 	})
 )
 
-const handleFabricsPopup = () => {
-	fabricsPopupBtnFirst.addEventListener('click', () => {
-		fabricsPopupFirst.classList.toggle('active')
+fabricsSubmenuItems.forEach(fabricsSubmenuItem => {
+	fabricsSubmenuItem.addEventListener('click', () => {
+		// console.log(fabricsSubmenuItem)
+		fabricsSubmenuItem.nextElementSibling.classList.toggle('active')
+		handlePopup()
 	})
-	fabricsPopupBtnFirstMobile.addEventListener('click', () => {
-		fabricsPopupFirst.classList.toggle('active')
-	})
-	fabricsPopupBtnSecond.addEventListener('click', () => {
-		fabricsPopupSecond.classList.toggle('active')
-	})
-	fabricsPopupBtnSecondMobile.addEventListener('click', () => {
-		fabricsPopupSecond.classList.toggle('active')
-	})
-	fabricsPopupBtnThird.addEventListener('click', () => {
-		fabricsPopupThird.classList.toggle('active')
-	})
-	fabricsPopupBtnThirdMobile.addEventListener('click', () => {
-		fabricsPopupThird.classList.toggle('active')
+})
+
+let currentColor = document.querySelector('.fabrics__popup-current')
+
+const handlePopup = () => {
+	const popupOverlay = document.querySelector('.fabrics__popup-overlay')
+	const popup = document.querySelector('.fabrics__popup')
+	fabricsImages.forEach(fabricsImage => {
+		if (fabricsImage.classList.contains('active')) {
+			const imagesBoxs = fabricsImage.querySelectorAll('[data-group-images]')
+			imagesBoxs.forEach(imageBox => {
+				imageBox.addEventListener('click', () => {
+					popup.classList.add('active')
+					popupOverlay.classList.add('active')
+					const colorsId = imageBox.dataset.groupImages
+					const colors = document.getElementById(colorsId)
+					colors.classList.add('active')
+
+					console.log(colors)
+					console.log(colorsId)
+
+					currentColor.src = imageBox.lastElementChild.src
+
+					const colorsTitle = document.querySelector('.fabrics__popup-title')
+					const colorsDescription = document.querySelector('.fabrics__popup-description')
+					console.log(colorsTitle)
+
+					if (imageBox.dataset.groupImages === 'group-1') {
+						colorsTitle.textContent = 'Boss'
+					}
+					if (imageBox.dataset.groupImages === 'group-2') {
+						colorsTitle.textContent = 'Magic Velvet'
+					}
+					if (imageBox.dataset.groupImages === 'group-3') {
+						colorsTitle.textContent = 'Monolith'
+					}
+					if (imageBox.dataset.groupImages === 'group-4') {
+						colorsTitle.textContent = 'Riviera'
+					}
+					if (imageBox.dataset.groupImages === 'group-5') {
+						colorsTitle.textContent = 'Ronda'
+					}
+					if (imageBox.dataset.groupImages === 'group-6') {
+						colorsTitle.textContent = 'Solid'
+					}
+					if (imageBox.dataset.groupImages === 'group-7') {
+						colorsTitle.textContent = 'Vena'
+					}
+					if (imageBox.dataset.groupImages === 'group-8') {
+						colorsTitle.textContent = 'Icon'
+					}
+					if (imageBox.dataset.groupImages === 'group-9') {
+						colorsTitle.textContent = 'Milton New'
+					}
+					if (imageBox.dataset.groupImages === 'group-10') {
+						colorsTitle.textContent = 'Piano'
+					}
+					if (imageBox.dataset.groupImages === 'group-11') {
+						colorsTitle.textContent = 'Venus Velvet'
+					}
+					if (imageBox.dataset.groupImages === 'group-12') {
+						colorsTitle.textContent = 'Zoya'
+					}
+					if (imageBox.dataset.groupImages === 'group-13') {
+						colorsTitle.textContent = 'Baloo'
+					}
+					if (imageBox.dataset.groupImages === 'group-14') {
+						colorsTitle.textContent = 'Dream Velvet'
+					}
+					if (imageBox.dataset.groupImages === 'group-15') {
+						colorsTitle.textContent = 'Grace'
+					}
+					if (imageBox.dataset.groupImages === 'group-16') {
+						colorsTitle.textContent = 'Maya'
+					}
+					if (imageBox.dataset.groupImages === 'group-17') {
+						colorsTitle.textContent = 'Now Or Never'
+					}
+					if (imageBox.dataset.groupImages === 'group-18') {
+						colorsTitle.textContent = 'Presence'
+					}
+					if (imageBox.dataset.groupImages === 'group-19') {
+						colorsTitle.textContent = 'Tulia'
+					}
+					if (imageBox.dataset.groupImages === 'group-20') {
+						colorsTitle.textContent = 'Vera'
+					}
+					if (imageBox.dataset.groupImages === 'group-21') {
+						colorsTitle.textContent = 'Bloom'
+					}
+					if (imageBox.dataset.groupImages === 'group-22') {
+						colorsTitle.textContent = 'Charles'
+					}
+					if (imageBox.dataset.groupImages === 'group-23') {
+						colorsTitle.textContent = 'Angola'
+					}
+					if (imageBox.dataset.groupImages === 'group-24') {
+						colorsTitle.textContent = 'Rustiq'
+					}
+
+					const closeBtns = document.querySelectorAll('.fabrics__popup-close')
+					closeBtns.forEach(closeBtn => {
+						closeBtn.addEventListener('click', () => {
+							popup.classList.remove('active')
+							popupOverlay.classList.remove('active')
+							colors.classList.remove('active')
+						})
+					})
+
+					const popupColors = document.querySelectorAll('.fabrics__popup-color')
+					popupColors.forEach(popupColor => {
+						popupColor.addEventListener('click', () => {
+							currentColor.src = popupColor.src
+						})
+					})
+				})
+			})
+			// console.log(imagesBoxs)
+		} else {
+			popup.classList.remove('active')
+			popupOverlay.classList.remove('active')
+		}
 	})
 }
 
+navBtn.addEventListener('click', handleNav)
 createButton()
 handleDropdown()
 handleMultiDropdown()
-navBtn.addEventListener('click', handleNav)
-handleSlider()
-handleFabricsPopup()
+
+window.addEventListener('DOMContentLoaded', () => {
+	let slideIndex = 0
+	showSlides()
+	function showSlides() {
+		let i
+		let slides = document.getElementsByClassName('header__slide')
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.opacity = '0'
+			slides[i].style.visibility = 'hidden'
+		}
+		slideIndex++
+		if (slideIndex > slides.length) {
+			slideIndex = 1
+		}
+		slides[slideIndex - 1].style.opacity = '1'
+		slides[slideIndex - 1].style.visibility = 'visible'
+		setTimeout(showSlides, 3000) // Change image every 2 seconds
+	}
+})
+
+musicBtn.addEventListener('click', () => {
+	const headerVideo = document.querySelector('.header-video__video')
+	headerVideo.muted = !headerVideo.muted
+	musicBtn.classList.toggle('active')
+})
 
 /*!
  * Lightbox v2.11.4

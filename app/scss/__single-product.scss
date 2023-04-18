@@ -162,8 +162,9 @@
 	}
 	p {
 		margin-block: 0.5em;
-		color: $text-color;
+		color: rgba(51, 53, 51, 0.8);
 		line-height: 150%;
+		font-size: 1.5rem;
 		img {
 			@include respond(tablet) {
 				max-width: 60%;
@@ -234,13 +235,100 @@ p.custom-info {
 
 .woo-product-gallery-slider.woocommerce-product-gallery.wpgs--with-images.images {
 	@include respond(desktop) {
-		width: 58% !important;
+		width: 65% !important;
+	}
+
+	.wpgs-nav.slick-initialized.slick-slider {
+		i.thumb {
+			display: none !important;
+			position: absolute;
+			top: 50%;
+			z-index: 10000;
+			cursor: pointer;
+			font-size: 3rem;
+			background-color: rgba($color: $dark-color, $alpha: 0.7);
+			color: $bg-color;
+			transition: background-color 0.3s;
+			transform: translateY(-50%);
+
+			@include respond(tablet) {
+				display: block !important;
+			}
+
+			&-left {
+				left: 5px;
+			}
+
+			&-right {
+				right: 5px;
+			}
+
+			&:hover {
+				background-color: rgba($color: $dark-color, $alpha: 0.9);
+			}
+		}
+	}
+
+	i.slick-arrow {
+		position: absolute;
+		top: 50%;
+		z-index: 2;
+		cursor: pointer;
+		font-size: 3rem;
+		background-color: rgba($color: $dark-color, $alpha: 0.7);
+		transform: translateY(-50%);
+		transition: background-color 0.3s;
+
+		&:before {
+			color: $bg-color;
+		}
+
+		&-previous {
+			left: 0;
+		}
+		&-next {
+			right: 0;
+		}
+
+		&:hover {
+			background-color: rgba($color: $dark-color, $alpha: 0.9);
+		}
+	}
+
+	.slick-dots {
+		display: flex !important;
+		justify-content: center;
+		align-items: center;
+		margin-block: 0.5em;
+
+		li {
+			width: 10px;
+			height: 10px;
+		}
+
+		li button {
+			width: 10px;
+			height: 10px;
+
+			&::before {
+				width: 8px;
+				height: 8px;
+			}
+		}
+
+		@include respond(tablet) {
+			display: none !important;
+		}
+	}
+
+	.wpgs-nav .slick-current {
+		border: 1px solid #d1d1d1 !important;
 	}
 }
 
 .summary.entry-summary {
 	@include respond(desktop) {
-		width: 35% !important;
+		width: 28% !important;
 	}
 }
 
@@ -259,4 +347,19 @@ a.custom-fabrics {
 		// color: $text-color;
 		border-bottom: 1px solid $dark-color;
 	}
+}
+
+.attachment-full,
+.wpgs-thumb-main-image {
+	height: 100px !important;
+	width: 100% !important;
+	object-fit: cover;
+
+	@include respond(desktop) {
+		height: 150px !important;
+	}
+}
+
+.slick-track {
+	display: flex !important;
 }

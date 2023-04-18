@@ -26,6 +26,15 @@
 				font-weight: 700;
 				font-size: 1.7rem;
 			}
+
+			&-link {
+				color: $text-color;
+				font-weight: 700;
+
+				&:hover {
+					border-bottom: 1px solid $text-color;
+				}
+			}
 		}
 
 		&-mail {

@@ -23,7 +23,7 @@
                 <div class="about__card">
                     <h4 class="about__card-title">Szybka dostawa</h4>
                     <i class='bx bx-package' ></i>
-                    <p class="about__card-text">Wiemy, że nikt nie lubi czekać, dlatego staramy się w jak najszybszym terminie dostarczyć Twój produkt do Ciebie</p>
+                    <p class="about__card-text">Dostarczymy do ciebie Twój wymarzony mebel do 14 dni roboczych</p>
                 </div>
                 <div class="about__card">
                     <h4 class="about__card-title">Wybór</h4>

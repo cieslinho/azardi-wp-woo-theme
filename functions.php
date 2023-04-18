@@ -85,22 +85,47 @@ add_action('woocommerce_before_variations_form', 'variable_fabrics');
 function variable_fabrics(){
   echo '<a href="/tkaniny" target="_blank" class="custom-fabrics">wzornik tkanin</a>';
 }
+add_action('woocommerce_after_variations_form', 'variable_fabrics_additional_info');
+function variable_fabrics_additional_info(){
+  echo '
+      <div class="custom-fabrics__info">
+      <div class="custom-fabrics__info-box">
+        <i class="bx bx-package"></i>
+        <a href="/dostawa" class="custom-fabrics__info-text custom-fabrics__info-link">Dostawa do 14 dni roboczych</a>
+      </div>
+      <div class="custom-fabrics__info-box">
+        <i class="bx bxs-file-pdf"></i>
+        <a href="/instrukcje" target="_blank" class="custom-fabrics__info-text custom-fabrics__info-link">Instrukcja montażu </a>
+      </div>
+      <div class="custom-fabrics__info-box">
+        <i class="bx bx-badge-check"></i>
+        <p class="custom-fabrics__info-text">24 miesiące gwarancji</p>
+        </div>
+      </div>
+  
+  ';
+}
 
 add_action('woocommerce_before_add_to_cart_button','wdm_add_custom_fields');
 /**
  * Adds custom field for Product
  * @return [type] [description]
  */
-// function product_category_in_shop_loop() {
-//   error_reporting(E_ERROR | E_PARSE);
-//   global $product;
-//   $product_id = $product->get_id();
-//   $cat = wp_get_post_terms($product_id, 'product_cat', array('fields' => 'names'));
-//   if( !empty($cat[0]) ){
-//      echo '<p class="product__category-class">'.$cat[1].'</p>';
-//   }
-// }
-// add_action( 'woocommerce_after_shop_loop_item_title', 'product_category_in_shop_loop', 40 );
+function product_category_in_shop_loop() {
+  error_reporting(E_ERROR | E_PARSE);
+
+  global $product;
+  $product_id = $product->get_id();
+  $cat = wp_get_post_terms($product_id, 'product_cat', array('fields' => 'names'));
+  $cat2 = wp_get_post_terms($product_id, 'product_cat', array('fields' => 'names'));
+  
+  if( !empty($cat[0]))  {
+     echo '<div class="product__category-box">
+            <p class="product__category-class">'.$cat[2]. '</p>
+                    </div>';
+  } 
+}
+add_action( 'woocommerce_after_shop_loop_item_title', 'product_category_in_shop_loop', 40 );
  
 function wdm_add_custom_fields()
 {
@@ -138,7 +163,7 @@ error_reporting(E_ERROR | E_PARSE);
               <a class="fabric__submenu-btn" id="fabric__submenu-btn-1">+</a>
             </li>
             <ul class="fabric__tabs" id="fabric__tabs-1">
-                <li data-tab-target="#fabric-boss" class="fabric__tab">Tkaniny Boss</li>
+                <li data-tab-target="#fabric-boss" class="fabric__tab">Boss - Plecionka</li>
                 <div id="fabric-boss" data-tab-content class="">
                 <div class="fabric__image-box">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Boss/Boss_01.jpg" ?>" alt="Tkanina Boss" data-fabric-group="grupa1" loading="lazy">
@@ -202,7 +227,7 @@ error_reporting(E_ERROR | E_PARSE);
                 </div>
 
             </div>
-                <li data-tab-target="#fabric-velvet" class="fabric__tab">Tkaniny Magic Velvet</li>
+                <li data-tab-target="#fabric-velvet" class="fabric__tab">Magic Velvet - Dzianina </li>
                 <div id="fabric-velvet" data-tab-content>
                   <div class="fabric__image-box">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Magic-Velvet/Magic-Velvet-2203.jpeg" ?>" alt="Tkanina Magic Velvet" data-fabric-group="grupa1" loading="lazy">
@@ -253,7 +278,7 @@ error_reporting(E_ERROR | E_PARSE);
                   <p class="fabric__image-title">2297</p>
                   </div>
             </div>
-                <li data-tab-target="#fabric-monolith" class="fabric__tab">Tkaniny Monolith</li>
+                <li data-tab-target="#fabric-monolith" class="fabric__tab">Monolith - Velvet</li>
                 <div id="fabric-monolith" data-tab-content>
                   <div class="fabric__image-box">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Monolith/Monolith-02-73026.jpg" ?>" alt="Tkanina Monolith" data-fabric-group="grupa1" loading="lazy">
@@ -352,7 +377,7 @@ error_reporting(E_ERROR | E_PARSE);
                   <p class="fabric__image-title">97</p>
                   </div>
             </div>
-                <li data-tab-target="#fabric-riviera" class="fabric__tab">Tkaniny Riviera</li>
+                <li data-tab-target="#fabric-riviera" class="fabric__tab">Riviera - Velvet</li>
                 <div id="fabric-riviera" data-tab-content>
               <div class="fabric__image-box">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Riviera/Riviera_69-2fae7.jpg" ?>" alt="Tkanina Riviera" data-fabric-group="grupa1" loading="lazy">
@@ -499,7 +524,7 @@ error_reporting(E_ERROR | E_PARSE);
                 <p class="fabric__image-title">100</p>
               </div>
             </div>
-                <li data-tab-target="#fabric-ronda" class="fabric__tab">Tkaniny Ronda</li>
+                <li data-tab-target="#fabric-ronda" class="fabric__tab">Ronda - Plecionka</li>
                 <div id="fabric-ronda" data-tab-content>
               <div class="fabric__image-box">
               <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Ronda/Ronda-06-d5b2d.jpg" ?>" alt="Tkanina Ronda" data-fabric-group="grupa1" loading="lazy">
@@ -522,7 +547,7 @@ error_reporting(E_ERROR | E_PARSE);
                 <p class="fabric__image-title">99</p>
               </div>       
             </div>
-                <li data-tab-target="#fabric-solid" class="fabric__tab">Tkaniny Solid</li>
+                <li data-tab-target="#fabric-solid" class="fabric__tab">Solid - Plecionka</li>
                 <div id="fabric-solid" data-tab-content>
               <div class="fabric__image-box">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Solid/Solid_03_plaskie-4ab38.jpg" ?>" alt="Tkanina Solid" data-fabric-group="grupa1" loading="lazy">
@@ -629,7 +654,7 @@ error_reporting(E_ERROR | E_PARSE);
                 <p class="fabric__image-title">99</p>
               </div>
             </div>
-                <li data-tab-target="#fabric-vena" class="fabric__tab">Tkaniny Vena</li>
+                <li data-tab-target="#fabric-vena" class="fabric__tab">Vena - Plecionka</li>
                 <div id="fabric-vena" data-tab-content>
               <div class="fabric__image-box">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-01.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
@@ -688,7 +713,7 @@ error_reporting(E_ERROR | E_PARSE);
               <a class="fabric__submenu-btn" id="fabric__submenu-btn-2">+</a>
             </li>
             <ul class="fabric__tabs" id="fabric__tabs-2">
-                <li data-tab-target="#fabric-icon" class="fabric__tab">Tkaniny Icon</li>
+                <li data-tab-target="#fabric-icon" class="fabric__tab">Icon - Szenil </li>
                 <div id="fabric-icon" data-tab-content>
               <div class="fabric__image-box">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-2/Icon/Icon-02-aa432.jpg" ?>" alt="Tkanina Icon" data-fabric-group="grupa2" loading="lazy">
@@ -756,7 +781,7 @@ error_reporting(E_ERROR | E_PARSE);
               </div>
               
             </div>
-                <li data-tab-target="#fabric-milton" class="fabric__tab">Tkaniny Milton New</li>
+                <li data-tab-target="#fabric-milton" class="fabric__tab">Milton New - Dzianina </li>
                 <div id="fabric-milton" data-tab-content>
               <div class="fabric__image-box">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-2/Milton-New/Milton-New-01.jpeg" ?>" alt="Tkanina Milton New" data-fabric-group="grupa2" loading="lazy">
@@ -894,7 +919,7 @@ error_reporting(E_ERROR | E_PARSE);
               </div>
               
             </div>
-                <li data-tab-target="#fabric-piano" class="fabric__tab">Tkaniny Piano</li>
+                <li data-tab-target="#fabric-piano" class="fabric__tab">Piano - Velvet </li>
                 <div id="fabric-piano" data-tab-content>
               <div class="fabric__image-box">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-2/Piano/Piano 01.jpeg" ?>" alt="Tkanina Piano" data-fabric-group="grupa2" loading="lazy">
@@ -1032,7 +1057,7 @@ error_reporting(E_ERROR | E_PARSE);
               </div>
               
             </div>
-                <li data-tab-target="#fabric-venus" class="fabric__tab">Tkaniny Venus Velvet</li>
+                <li data-tab-target="#fabric-venus" class="fabric__tab">Venus Velvet - Dzianina </li>
                 <div id="fabric-venus" data-tab-content>
               <div class="fabric__image-box">
 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-2/Venus-Velvet/Venus velvet 2914.jpeg" ?>" alt="Tkanina Venus Velvet" data-fabric-group="grupa2" loading="lazy">
@@ -1090,7 +1115,7 @@ error_reporting(E_ERROR | E_PARSE);
               </div>
               
             </div>
-                <li data-tab-target="#fabric-zoya" class="fabric__tab">Tkaniny Zoya</li>
+                <li data-tab-target="#fabric-zoya" class="fabric__tab">Zoya - Dzianina</li>
                 <div id="fabric-zoya" data-tab-content>
               <div class="fabric__image-box">
               <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-2/Zoya/Zoya 01.jpeg" ?>" alt="Tkanina Zoya" data-fabric-group="grupa2" loading="lazy">
@@ -1174,7 +1199,7 @@ error_reporting(E_ERROR | E_PARSE);
               <a class="fabric__submenu-btn" id="fabric__submenu-btn-3">+</a>
             </li>
             <ul class="fabric__tabs" id="fabric__tabs-3">
-                <li data-tab-target="#fabric-baloo" class="fabric__tab">Tkaniny Baloo</li>
+                <li data-tab-target="#fabric-baloo" class="fabric__tab">Baloo - Boucle </li>
                 <div id="fabric-baloo" data-tab-content>
               <div class="fabric__image-box">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Baloo/baloo 2071.jpeg" ?>" alt="Tkanina Baloo" data-fabric-group="grupa3" loading="lazy">
@@ -1277,7 +1302,7 @@ error_reporting(E_ERROR | E_PARSE);
               </div>
               
             </div>
-                <li data-tab-target="#fabric-dream" class="fabric__tab">Tkaniny Dream Velvet</li>
+                <li data-tab-target="#fabric-dream" class="fabric__tab">Dream velvet - Dzianina </li>
                 <div id="fabric-dream" data-tab-content>
               <div class="fabric__image-box">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Dream-Velvet/Dream velvet 01.jpeg" ?>" alt="Tkanina Dream Velvet" data-fabric-group="grupa3" loading="lazy">
@@ -1355,7 +1380,7 @@ error_reporting(E_ERROR | E_PARSE);
               </div>
               
             </div>
-                <li data-tab-target="#fabric-grace" class="fabric__tab">Tkaniny Grace</li>
+                <li data-tab-target="#fabric-grace" class="fabric__tab">Grace - Plecionka</li>
                 <div id="fabric-grace" data-tab-content>
               <div class="fabric__image-box">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Grace/Grace_01-788d8.jpg" ?>" alt="Tkanina Grace" data-fabric-group="grupa3" loading="lazy">
@@ -1468,7 +1493,7 @@ error_reporting(E_ERROR | E_PARSE);
               </div>
               
             </div>
-                <li data-tab-target="#fabric-maya" class="fabric__tab">Tkaniny Maya</li>
+                <li data-tab-target="#fabric-maya" class="fabric__tab">Maya - Velvet</li>
                 <div id="fabric-maya" data-tab-content>
               <div class="fabric__image-box">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Maya/Maya 01.jpeg" ?>" alt="Tkanina Maya" data-fabric-group="grupa3" loading="lazy">
@@ -1561,7 +1586,7 @@ error_reporting(E_ERROR | E_PARSE);
               </div>
               
             </div>
-                <li data-tab-target="#fabric-now-never" class="fabric__tab">Tkaniny Now or Never</li>
+                <li data-tab-target="#fabric-now-never" class="fabric__tab">Now or Never - Boucle</li>
                 <div id="fabric-now-never" data-tab-content>
               <div class="fabric__image-box">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Now-or-Never/Now-or-never-01-9afb8.jpg" ?>" alt="Tkanina Now or Never" data-fabric-group="grupa3" loading="lazy">
@@ -1594,7 +1619,7 @@ error_reporting(E_ERROR | E_PARSE);
               </div>
               
             </div>
-                <li data-tab-target="#fabric-presence" class="fabric__tab">Tkaniny Presence</li>
+                <li data-tab-target="#fabric-presence" class="fabric__tab">Presence - Boucle</li>
                 <div id="fabric-presence" data-tab-content>
               <div class="fabric__image-box">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Presence/Presence-01-eb669.jpg" ?>" alt="Tkanina Presence" data-fabric-group="grupa3" loading="lazy">
@@ -1642,7 +1667,7 @@ error_reporting(E_ERROR | E_PARSE);
               </div>
               
             </div>
-                <li data-tab-target="#fabric-tulia" class="fabric__tab">Tkaniny Tulia</li>
+                <li data-tab-target="#fabric-tulia" class="fabric__tab">Tulia - Szenil</li>
                 <div id="fabric-tulia" data-tab-content>
               <div class="fabric__image-box">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Tulia/Tulia 01.jpeg" ?>" alt="Tkanina Tulia" data-fabric-group="grupa3" loading="lazy">
@@ -1725,7 +1750,7 @@ error_reporting(E_ERROR | E_PARSE);
               </div>
               
             </div>
-                <li data-tab-target="#fabric-vera" class="fabric__tab">Tkaniny Vera</li>
+                <li data-tab-target="#fabric-vera" class="fabric__tab">Vera - Velvet</li>
                 <div id="fabric-vera" data-tab-content>
               <div class="fabric__image-box">
               <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Vera/Vera 1.jpeg" ?>" alt="Tkanina Vera" data-fabric-group="grupa3" loading="lazy">
@@ -1809,7 +1834,7 @@ error_reporting(E_ERROR | E_PARSE);
               <a class="fabric__submenu-btn" id="fabric__submenu-btn-4">+</a>
             </li>
             <ul class="fabric__tabs" id="fabric__tabs-4">
-                <li data-tab-target="#fabric-bloom" class="fabric__tab">Tkaniny Bloom</li>
+                <li data-tab-target="#fabric-bloom" class="fabric__tab">Bloom - Szenil </li>
                 <div id="fabric-bloom" data-tab-content>
               <div class="fabric__image-box">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 01.jpeg" ?>" alt="Tkanina Bloom" data-fabric-group="grupa4" loading="lazy">
@@ -1862,7 +1887,7 @@ error_reporting(E_ERROR | E_PARSE);
               </div>
               
             </div>
-                <li data-tab-target="#fabric-charles" class="fabric__tab">Tkaniny Charles</li>
+                <li data-tab-target="#fabric-charles" class="fabric__tab">Charles - Velur</li>
                 <div id="fabric-charles" data-tab-content>
               <div class="fabric__image-box">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Charles/charles 01.jpeg" ?>" alt="Tkanina Charles" data-fabric-group="grupa4" loading="lazy">
@@ -2091,7 +2116,7 @@ error_reporting(E_ERROR | E_PARSE);
               <a class="fabric__submenu-btn" id="fabric__submenu-btn-5">+</a>
             </li>
             <ul class="fabric__tabs" id="fabric__tabs-5">
-                <li data-tab-target="#fabric-angola" class="fabric__tab">Tkaniny Angola</li>
+                <li data-tab-target="#fabric-angola" class="fabric__tab">Angola - Boucle</li>
                 <div id="fabric-angola" data-tab-content>
               <div class="fabric__image-box">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 01.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
@@ -2164,7 +2189,7 @@ error_reporting(E_ERROR | E_PARSE);
               </div>
               
             </div>
-                <li data-tab-target="#fabric-rustiq" class="fabric__tab">Tkaniny Rustiq</li>
+                <li data-tab-target="#fabric-rustiq" class="fabric__tab">Rustiq - Tkanina Dekoracyjna</li>
                 <div id="fabric-rustiq" data-tab-content>
               <div class="fabric__image-box">
                   <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 02.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">

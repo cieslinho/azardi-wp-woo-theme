@@ -2,10 +2,12 @@ li.product {
 	// margin: 1em !important;
 	border-bottom: 1px solid $text-color;
 	width: 100% !important;
-	max-width: 340px;
+	// max-width: 340px;
 	a {
 		display: flex;
 		flex-direction: column;
+		gap: 0.3em;
+
 		&:hover {
 			img {
 				transform: scale(0.98);
@@ -30,7 +32,7 @@ li.product {
 		h2 {
 			color: $text-color;
 			font-weight: 700;
-			font-size: 2rem !important;
+			font-size: 1.7rem !important;
 			text-transform: uppercase;
 		}
 		span.price {

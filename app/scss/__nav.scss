@@ -31,14 +31,18 @@
 	&__top,
 	&__top-info {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
+
+		@include respond(tablet) {
+			justify-content: flex-end;
+		}
 	}
 
 	&__top {
 		&-socials {
 			display: flex;
-			padding: 0.5em;
+			// padding: 0.5em;
 			a {
 				display: block;
 				margin-right: 0.5em;
@@ -51,6 +55,7 @@
 
 		&-info {
 			font-size: 1.4rem;
+			padding-block: 0.5em;
 			a {
 				color: $dark-color;
 			}

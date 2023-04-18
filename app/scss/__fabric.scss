@@ -56,6 +56,8 @@
 			right: 0;
 			cursor: pointer;
 			padding: 0.8em;
+			transition: background-color 0.3s;
+
 			&:hover {
 				background-color: $bg-color;
 			}
@@ -125,6 +127,7 @@
 		display: block;
 		transition: background-color 0.3s;
 		cursor: pointer;
+		border-radius: 5px;
 
 		i {
 			font-size: 2.5rem;
@@ -141,6 +144,48 @@
 			i {
 				color: $bg-color;
 			}
+		}
+	}
+}
+
+.custom-fabrics__info {
+	margin-block: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.3em;
+
+	&-box {
+		display: flex;
+		align-items: center;
+		gap: 0.5em;
+
+		i {
+			font-size: 1.9rem;
+			color: gray;
+
+			@include respond(tablet) {
+				font-size: 2.3rem;
+			}
+		}
+	}
+
+	&-text {
+		font-size: 1.6rem;
+		color: gray;
+
+		@include respond(tablet) {
+			font-size: 1.7rem;
+		}
+	}
+
+	&-link {
+		border-bottom: 1px solid #d1d1d1;
+		transition: border-bottom 0.3s, color 0.3s;
+
+		&:hover {
+			border-bottom: 1px solid $text-color;
+			color: $text-color;
 		}
 	}
 }
