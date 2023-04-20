@@ -1,7 +1,7 @@
 <?php
 add_action('woocommerce_before_main_content', 'azardi_shop_section', 5);
 function azardi_shop_section(){
-  echo '<div class="shop section-padding"><div class="container"><div class="shop__layout">';
+  echo '<div class="shop container"><div class="shop__layout">';
 }
 add_action('woocommerce_after_main_content', 'azardi_shop_section_close', 5);
 function azardi_shop_section_close(){

@@ -167,8 +167,11 @@ select.orderby {
 	letter-spacing: 2px;
 	font-weight: 700;
 	// font-size: 3rem;
+	margin-bottom: 1.5em;
+
 	@include respond(tablet) {
 		float: left;
+		margin-bottom: 0;
 	}
 }
 

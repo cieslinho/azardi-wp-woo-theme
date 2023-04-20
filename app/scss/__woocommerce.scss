@@ -1,9 +1,15 @@
-.woocommerce {
-	@include container();
-	margin-top: 7.5em;
+.woocommerce-page {
+	margin-top: 85px;
 
 	@include respond(tablet) {
-		margin-top: 2em;
+		margin-top: 30px;
+	}
+}
+
+.woocommerce {
+	&::before,
+	&::after {
+		content: none !important;
 	}
 
 	.woocommerce-error,
@@ -20,6 +26,11 @@
 	.woocommerce-error {
 		background-color: $white-color;
 		color: $text-color;
+		margin-top: 5em;
+
+		@include respond(tablet) {
+			margin-top: 3em;
+		}
 	}
 
 	form .form-row input.input-text {
@@ -100,6 +111,38 @@
 	.woocommerce-result-count {
 		display: none;
 	}
+}
+
+.shop,
+.woocommerce-MyAccount-navigation,
+.woocommerce-MyAccount-content,
+.woocommerce-cart-form,
+.shop_table.shop_table_responsive.cart.woocommerce-cart-form__contents,
+.cart-collaterals,
+.woocommerce-form-coupon-toggle,
+.checkout.woocommerce-checkout,
+.order_details,
+#payment,
+.checkout_coupon.woocommerce-form-coupon,
+#customer_login,
+.woocommerce-notices-wrapper,
+.return-to-shop,
+.woocommerce-ResetPassword.lost_reset_password,
+.woocommerce-order {
+	@include container();
+	margin: 0 auto !important;
+}
+
+.woocommerce-pagination,
+.woocommerce-ResetPassword.lost_reset_password {
+	margin-block: 1em;
+}
+
+.cart-empty.woocommerce-info,
+.woocommerce-error {
+	max-width: 1600px;
+	width: 100%;
+	margin: 0 auto 2em;
 }
 
 .shop__layout {
