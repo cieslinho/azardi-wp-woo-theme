@@ -13,10 +13,6 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logonew2.png" alt="Logo firmy Azardi, Azardi sklep meblarski"
                         class="footer__img">
                 </a>
-                <p class="footer__motto">
-                    Nasza oferta skierowana jest do każdego świadomego klienta, poszukującego mebli wysokiej jakości
-                    prosto od Polskiego producenta
-                </p>
                 <div class="footer__box-address">
                     <p class="footer__link menu-item">
                         <i class='bx bxs-map'></i>
@@ -26,12 +22,6 @@
                         <i class='bx bxs-envelope'></i>
                         kontakt@azardi.pl
                     </a>
-                    <a class="footer__link menu-item" href="tel:+48 790 231 122">
-                        <i class='bx bxs-phone'></i>
-                        +48 790 231 122</a>
-                    <a class="footer__link menu-item" href="tel:+48 884 822 444">
-                        <i class='bx bxs-phone'></i>
-                        +48 884 822 444</a>
                 </div>
                 <div class="nav__top-socials">
                     <a href="https://www.facebook.com/lozkamaterace/">
@@ -43,27 +33,7 @@
                 </div>
             </div>
             <div class="footer__box">
-                <p class="footer__box-title">Godziny otwarcia</p>
-                    <p class="footer__text">
-                        Pon - Pt: 8:00 - 16:00
-                    </p>
-                    <p class="footer__text">
-                        Sobota: 9:00-13:00
-                    </p>
-                    <p class="footer__text">
-                        Niedziela: Nieczynne
-                    </p>
-                    <div class="footer__box-opening">
-                    <?php wp_nav_menu(
-                    array(
-                        'theme_location' => 'azardi_footer_menu_first'
-                    )
-                    );
-                    ?>
-                    </div>
-            </div>
-            <div class="footer__box">
-                <p class="footer__box-title">Oferta</p>
+                <p class="footer__box-title">Meble</p>
                 <div class="footer__box-offer">
  <?php wp_nav_menu(
     array(
@@ -83,6 +53,32 @@
     );
     ?>
                 </div>
+            </div>
+            <div class="footer__box">
+                <p class="footer__box-title">Obsługa klienta</p>
+                    <div class="footer__box-opening">
+                    <?php wp_nav_menu(
+                    array(
+                        'theme_location' => 'azardi_footer_menu_fourth'
+                    )
+                    );
+                    ?>
+                    </div>
+            </div>
+            <div class="footer__box">
+                <p class="footer__box-title">Infolinia</p>
+                    <a class="footer__link menu-item" href="tel:+48 790 231 122">
+                        <i class='bx bxs-phone'></i>
+                        +48 790 231 122</a>
+                    <a class="footer__link menu-item" href="tel:+48 884 822 444">
+                        <i class='bx bxs-phone'></i>
+                        +48 884 822 444</a>
+                        <p class="footer__text">
+                        Pon - Pt: 8:00 - 16:00
+                    </p>
+                    <p class="footer__text">
+                        Sobota: 9:00-13:00
+                    </p>
             </div>
         </div>
         <div class="footer__middle">

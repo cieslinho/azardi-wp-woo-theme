@@ -114,6 +114,11 @@ fabricsSubmenuItems.forEach(fabricsSubmenuItem => {
 })
 
 let currentColor = document.querySelector('.fabrics__popup-current')
+let currentColorLink = document.getElementById('fabrics__popup-link')
+let downloadFile = document.getElementById('fabrics__popup-download')
+const vena = document.getElementById('box-first')
+const charles = document.getElementById('box-second')
+const rustiq = document.getElementById('box-third')
 
 const handlePopup = () => {
 	const popupOverlay = document.querySelector('.fabrics__popup-overlay')
@@ -129,86 +134,132 @@ const handlePopup = () => {
 					const colors = document.getElementById(colorsId)
 					colors.classList.add('active')
 
-					console.log(colors)
-					console.log(colorsId)
-
 					currentColor.src = imageBox.lastElementChild.src
+					let newSrc = imageBox.lastElementChild.src
+					currentColorLink.href = newSrc
 
 					const colorsTitle = document.querySelector('.fabrics__popup-title')
-					const colorsDescription = document.querySelector('.fabrics__popup-description')
-					console.log(colorsTitle)
+					let colorDescription = document.querySelector('.fabrics__popup-description')
+
+					colorDescription.textContent = imageBox.lastElementChild.dataset.groupId
 
 					if (imageBox.dataset.groupImages === 'group-1') {
 						colorsTitle.textContent = 'Boss'
+						downloadFile.href = '/wp-content/themes/azardi/assets/files/boss.pdf'
 					}
 					if (imageBox.dataset.groupImages === 'group-2') {
 						colorsTitle.textContent = 'Magic Velvet'
+						downloadFile.href =
+							'/wp-content/themes/azardi/assets/files/magic_velvet_karta_techniczna_datasheet_compressed.pdf'
 					}
 					if (imageBox.dataset.groupImages === 'group-3') {
 						colorsTitle.textContent = 'Monolith'
+						downloadFile.href = '/wp-content/themes/azardi/assets/files/Monolith - karta produktowa.pdf'
 					}
 					if (imageBox.dataset.groupImages === 'group-4') {
 						colorsTitle.textContent = 'Riviera'
+						downloadFile.href = '/wp-content/themes/azardi/assets/files/Riviera - karta produktowa.pdf'
 					}
 					if (imageBox.dataset.groupImages === 'group-5') {
 						colorsTitle.textContent = 'Ronda'
+						downloadFile.href = '/wp-content/themes/azardi/assets/files/RONDA - KARTA PRODUKTOWA.pdf'
 					}
 					if (imageBox.dataset.groupImages === 'group-6') {
 						colorsTitle.textContent = 'Solid'
+						downloadFile.href = '/wp-content/themes/azardi/assets/files/Solid - karta produktowa.pdf'
 					}
 					if (imageBox.dataset.groupImages === 'group-7') {
 						colorsTitle.textContent = 'Vena'
+
+						downloadFile.removeAttribute('href', '')
+						downloadFile.removeAttribute('target', '')
+						downloadFile.addEventListener('click', () => {
+							vena.classList.add('vena')
+							charles.classList.remove('charles')
+							rustiq.classList.remove('rustiq')
+						})
 					}
 					if (imageBox.dataset.groupImages === 'group-8') {
 						colorsTitle.textContent = 'Icon'
+						downloadFile.href = '/wp-content/themes/azardi/assets/files/Icon - karta produktowa.pdf'
 					}
 					if (imageBox.dataset.groupImages === 'group-9') {
 						colorsTitle.textContent = 'Milton New'
+						downloadFile.href = '/wp-content/themes/azardi/assets/files/827ulotka-magic-home.pdf'
 					}
 					if (imageBox.dataset.groupImages === 'group-10') {
 						colorsTitle.textContent = 'Piano'
+						downloadFile.href = '/wp-content/themes/azardi/assets/files/827ulotka-magic-home.pdf'
 					}
 					if (imageBox.dataset.groupImages === 'group-11') {
 						colorsTitle.textContent = 'Venus Velvet'
+						downloadFile.href =
+							'/wp-content/themes/azardi/assets/files/venus_velvet_karta_techniczna_datasheet_compressed.pdf'
 					}
 					if (imageBox.dataset.groupImages === 'group-12') {
 						colorsTitle.textContent = 'Zoya'
+						downloadFile.href = '/wp-content/themes/azardi/assets/files/827ulotka-magic-home.pdf'
 					}
 					if (imageBox.dataset.groupImages === 'group-13') {
 						colorsTitle.textContent = 'Baloo'
+						downloadFile.href = '/wp-content/themes/azardi/assets/files/baloo_karta_techniczna_datasheet_compressed.pdf'
 					}
 					if (imageBox.dataset.groupImages === 'group-14') {
 						colorsTitle.textContent = 'Dream Velvet'
+						downloadFile.href =
+							'/wp-content/themes/azardi/assets/files/dream_velvet_karta_techniczna_datasheet_compressed.pdf'
 					}
 					if (imageBox.dataset.groupImages === 'group-15') {
 						colorsTitle.textContent = 'Grace'
+						downloadFile.href = '/wp-content/themes/azardi/assets/files/Grace - karta produktowa.pdf'
 					}
 					if (imageBox.dataset.groupImages === 'group-16') {
 						colorsTitle.textContent = 'Maya'
+						downloadFile.href = '/wp-content/themes/azardi/assets/files/827ulotka-magic-home.pdf'
 					}
 					if (imageBox.dataset.groupImages === 'group-17') {
 						colorsTitle.textContent = 'Now Or Never'
+						downloadFile.href = '/wp-content/themes/azardi/assets/files/Now or never - karta produktowa.pdf'
 					}
 					if (imageBox.dataset.groupImages === 'group-18') {
 						colorsTitle.textContent = 'Presence'
+						downloadFile.href = '/wp-content/themes/azardi/assets/files/Presence - karta produktowa.pdf'
 					}
 					if (imageBox.dataset.groupImages === 'group-19') {
 						colorsTitle.textContent = 'Tulia'
+						downloadFile.href = '/wp-content/themes/azardi/assets/files/827ulotka-magic-home.pdf'
 					}
 					if (imageBox.dataset.groupImages === 'group-20') {
 						colorsTitle.textContent = 'Vera'
+						downloadFile.href = '/wp-content/themes/azardi/assets/files/827ulotka-magic-home.pdf'
 					}
 					if (imageBox.dataset.groupImages === 'group-21') {
 						colorsTitle.textContent = 'Bloom'
+						downloadFile.href = '/wp-content/themes/azardi/assets/files/827ulotka-magic-home.pdf'
 					}
 					if (imageBox.dataset.groupImages === 'group-22') {
 						colorsTitle.textContent = 'Charles'
+						downloadFile.removeAttribute('href', '')
+						downloadFile.removeAttribute('target', '')
+						downloadFile.addEventListener('click', () => {
+							charles.classList.add('charles')
+							vena.classList.remove('vena')
+							rustiq.classList.remove('rustiq')
+						})
 					}
 					if (imageBox.dataset.groupImages === 'group-23') {
 						colorsTitle.textContent = 'Angola'
+						downloadFile.href = '/wp-content/themes/azardi/assets/files/827ulotka-magic-home.pdf'
 					}
 					if (imageBox.dataset.groupImages === 'group-24') {
 						colorsTitle.textContent = 'Rustiq'
+						downloadFile.removeAttribute('href', '')
+						downloadFile.removeAttribute('target', '')
+						downloadFile.addEventListener('click', () => {
+							rustiq.classList.add('rustiq')
+							vena.classList.remove('vena')
+							charles.classList.remove('charles')
+						})
 					}
 
 					const closeBtns = document.querySelectorAll('.fabrics__popup-close')
@@ -217,6 +268,9 @@ const handlePopup = () => {
 							popup.classList.remove('active')
 							popupOverlay.classList.remove('active')
 							colors.classList.remove('active')
+							vena.classList.remove('vena')
+							charles.classList.remove('charles')
+							rustiq.classList.remove('rustiq')
 						})
 					})
 
@@ -224,7 +278,19 @@ const handlePopup = () => {
 					popupColors.forEach(popupColor => {
 						popupColor.addEventListener('click', () => {
 							currentColor.src = popupColor.src
+							let newSrcSecond = popupColor.src
+							currentColorLink.href = newSrcSecond
+							colorDescription.textContent = popupColor.dataset.groupId
 						})
+					})
+
+					popupOverlay.addEventListener('click', () => {
+						popup.classList.remove('active')
+						popupOverlay.classList.remove('active')
+						colors.classList.remove('active')
+						vena.classList.remove('vena')
+						charles.classList.remove('charles')
+						rustiq.classList.remove('rustiq')
 					})
 				})
 			})

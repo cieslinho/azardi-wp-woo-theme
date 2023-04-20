@@ -35,7 +35,8 @@ function azardi_config(){
   'azardi_main_menu' => 'Azardi Main Menu',
   'azardi_footer_menu_first' => 'Azardi Footer Menu Contact',
   'azardi_footer_menu_second' => 'Azardi Footer Menu Offer',
-  'azardi_footer_menu_third' => 'Azardi Footer Menu Informations'
+  'azardi_footer_menu_third' => 'Azardi Footer Menu Informations',
+  'azardi_footer_menu_fourth' => 'Azardi Footer Menu Custom Service'
     )
   );
   add_theme_support('woocommerce', array(
