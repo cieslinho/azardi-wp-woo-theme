@@ -324,11 +324,11 @@
            <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Riviera/Riviera-100-99ae9.jpg" ?>" data-group-id="100" alt="Tkanina Riviera" class="fabrics__popup-color">
           </div>
           <div class="fabrics__popup-colors" id="group-5">
-           <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Ronda/Ronda-06-d5b2d.jpg" ?>" data-group-id="" alt="Tkanina Ronda" class="fabrics__popup-color">
-           <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Ronda/Ronda-09-659c1.jpg" ?>" data-group-id="" alt="Tkanina Ronda" class="fabrics__popup-color">
-           <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Ronda/Ronda-45-eb5b3.jpg" ?>" data-group-id="" alt="Tkanina Ronda" class="fabrics__popup-color">
-           <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Ronda/Ronda-88-5622e.jpg" ?>" data-group-id="" alt="Tkanina Ronda" class="fabrics__popup-color">
-           <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Ronda/Ronda-99-80cdc.jpg" ?>" data-group-id="" alt="Tkanina Ronda" class="fabrics__popup-color">
+           <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Ronda/Ronda-06-d5b2d.jpg" ?>" data-group-id="06" alt="Tkanina Ronda" class="fabrics__popup-color">
+           <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Ronda/Ronda-09-659c1.jpg" ?>" data-group-id="09" alt="Tkanina Ronda" class="fabrics__popup-color">
+           <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Ronda/Ronda-45-eb5b3.jpg" ?>" data-group-id="45" alt="Tkanina Ronda" class="fabrics__popup-color">
+           <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Ronda/Ronda-88-5622e.jpg" ?>" data-group-id="88" alt="Tkanina Ronda" class="fabrics__popup-color">
+           <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Ronda/Ronda-99-80cdc.jpg" ?>" data-group-id="99" alt="Tkanina Ronda" class="fabrics__popup-color">
           </div>
           <div class="fabrics__popup-colors" id="group-6">
            <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Solid/Solid_03_plaskie-4ab38.jpg" ?>" data-group-id="03" alt="Tkanina Solid" class="fabrics__popup-color">

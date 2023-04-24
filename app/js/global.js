@@ -4,6 +4,7 @@ const musicBtn = document.querySelector('.header-video__icon')
 const fabricsSubmenu = document.querySelector('.fabrics__submenu')
 const fabricsSubmenuItems = document.querySelectorAll('.fabrics__submenu-item')
 const fabricsImages = document.querySelectorAll('.fabrics__images')
+const closePopup = document.querySelector('.promo__close')
 
 const createButton = () => {
 	menuItemDropdown.forEach(menuItem => {
@@ -331,6 +332,23 @@ musicBtn.addEventListener('click', () => {
 	const headerVideo = document.querySelector('.header-video__video')
 	headerVideo.muted = !headerVideo.muted
 	musicBtn.classList.toggle('active')
+})
+
+window.addEventListener('load', function () {
+	const promoPopup = document.querySelector('.promo')
+	const promoOverlay = document.querySelector('.promo__overlay')
+	setTimeout(function open(event) {
+		promoPopup.classList.add('active')
+		promoOverlay.classList.add('active')
+	}, 1000)
+})
+
+closePopup.addEventListener('click', () => {
+	const promoPopup = document.querySelector('.promo')
+	const promoOverlay = document.querySelector('.promo__overlay')
+
+	promoPopup.classList.remove('active')
+	promoOverlay.classList.remove('active')
 })
 
 /*!
