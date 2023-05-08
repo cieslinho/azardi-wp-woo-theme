@@ -349,6 +349,22 @@ a.custom-fabrics {
 	}
 }
 
+.reset_variations {
+	display: table;
+	text-align: right;
+	margin-left: auto;
+	padding-inline: 0.5em;
+	font-size: 1.1rem !important;
+	color: $text-color !important;
+	border-bottom: 1px solid #d1d1d1 !important;
+	letter-spacing: 1px;
+	transition: border-bottom 0.3s;
+
+	&:hover {
+		border-bottom: 1px solid $dark-color !important;
+	}
+}
+
 .attachment-full,
 .wpgs-thumb-main-image {
 	height: 100px !important;

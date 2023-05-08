@@ -37,8 +37,10 @@ window.smartsupp||(function(d) {
             <div class="nav__overlay"></div>
             <div class="nav__top">
                 <div class="nav__top-info">
-                    <p>Zadzwoń do doradcy:</p>
-                    <a href="tel:+48884822444">+48 884 822 444</a>
+                    
+                    <a href="tel:+48884822444">
+                    <i class='bx bxs-phone'></i>
+                    +48 884 822 444</a>
                 </div>
             </div>
             <div class="nav__navbar">

@@ -44,10 +44,10 @@
 			i {
 				margin-right: 0.5em;
 				color: $dark-color;
-				font-size: 2.2rem;
+				font-size: 1.8rem;
 			}
 			p {
-				font-size: 2rem;
+				font-size: 1.5rem;
 				text-transform: uppercase;
 			}
 		}
@@ -56,11 +56,18 @@
 		}
 		&-text {
 			color: $text-color;
+			font-size: 1.5rem;
 		}
 		&-btn {
 			display: block;
 			margin: 1em 0;
 			@include btn-product;
+			font-size: 1.5rem;
+			width: 100%;
+
+			@include respond(tablet) {
+				width: 190px;
+			}
 		}
 	}
 	&__form {

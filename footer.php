@@ -83,7 +83,9 @@
         </div>
         <div class="footer__middle">
             <div class="footer__middle-apps">
-                <a href="https://apps.apple.com/pl/app/azardi/id1635741425" class="footer__middle-link">
+                <p class="footer__middle-app">Azardi Apps</p>
+           <div class="footer__middle-icons">
+            <a href="https://apps.apple.com/pl/app/azardi/id1635741425" class="footer__middle-link">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/app-store.png" alt="Logo app store"
                         class="footer__middle-img">
                 </a>
@@ -91,6 +93,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/google-play-badge.png" alt="Logo google store"
                         class="footer__middle-img">
                 </a>
+           </div>
             </div>
             <div class="footer__middle-payments">
                 <p class="footer__middle-text">Bezpieczne płatności</p>

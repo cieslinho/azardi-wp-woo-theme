@@ -162,11 +162,11 @@ select.orderby {
 }
 
 .woocommerce-products-header__title.page-title {
-	color: rgba(51, 53, 51, 0.6);
-	text-transform: uppercase;
+	color: #000;
+	text-transform: capitalize;
 	letter-spacing: 2px;
 	font-weight: 700;
-	// font-size: 3rem;
+	font-size: 2.8rem;
 	margin-bottom: 1.5em;
 
 	@include respond(tablet) {

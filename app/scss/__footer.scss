@@ -169,7 +169,18 @@
 		&-apps {
 			display: flex;
 			align-items: center;
-			gap: 1em;
+			flex-direction: column;
+			gap: 0.3em;
+		}
+
+		&-app {
+			color: $text-color;
+		}
+
+		&-icons {
+			display: flex;
+			align-items: center;
+			gap: 0.5em;
 		}
 
 		&-link {
