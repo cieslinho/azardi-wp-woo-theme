@@ -20,7 +20,7 @@
                 Grupa 1
                 <a class="fabrics__submenu-btn">+</a>            
               </li>
-              <div class="fabrics__images">
+              <div class="fabrics__images active" id="first-gruop">
                 <div class="fabrics__images-box" data-group-images="group-1">
                     <div class="fabrics__images-info">
                         <p class="fabrics__images-type">Plecionka</p>

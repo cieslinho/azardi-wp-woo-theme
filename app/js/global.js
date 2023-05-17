@@ -5,6 +5,21 @@ const fabricsSubmenu = document.querySelector('.fabrics__submenu')
 const fabricsSubmenuItems = document.querySelectorAll('.fabrics__submenu-item')
 const fabricsImages = document.querySelectorAll('.fabrics__images')
 const closePopup = document.querySelector('.promo__close')
+const quiz = document.querySelector('.quiz')
+const startQuiz = document.querySelector('.quiz__btn-start')
+const returnQuiz = document.querySelector('.quiz__btn-again')
+const introQuiz = document.querySelector('.quiz__intro')
+const quizBtns = document.querySelector('.quiz__btns')
+const contentQuiz = document.querySelector('.quiz__content')
+const formPages = document.querySelectorAll('.quiz__answers')
+const formSteps = document.querySelectorAll('.quiz__progress-step')
+const prevBtn = document.querySelector('.quiz__btn-return')
+const nextBtn = document.querySelector('.quiz__btn-next')
+const progress = document.querySelector('.quiz__progress')
+const allLabels = document.querySelectorAll('.quiz__label')
+const allInputs = document.querySelectorAll('.quiz__answer')
+const quizInfo = document.querySelector('.quiz__error')
+const boxFive = document.getElementById('box-five')
 
 const createButton = () => {
 	menuItemDropdown.forEach(menuItem => {
@@ -35,6 +50,151 @@ const handleNav = () => {
 		})
 	}
 	closeOverlay()
+}
+
+const handleQuiz = () => {
+	quiz.classList.add('active')
+	progress.classList.add('active')
+	quizBtns.classList.add('active')
+	introQuiz.classList.add('hidden')
+	contentQuiz.classList.add('active')
+	quizInfo.classList.add('active')
+
+	quizInfo.textContent = 'Zaznacz odpowiedź'
+
+	allInputs.forEach(input => {
+		if (input.checked === false) {
+			quizInfo.textContent = 'Zaznacz odpowiedź'
+			nextBtn.disabled = true
+		}
+		allLabels.forEach(label => {
+			label.addEventListener('click', () => {
+				if (input.checked === false) {
+					input.parentElement.classList.remove('selected')
+				}
+				input.addEventListener('click', () => {
+					if (input.checked === true) {
+						input.parentElement.classList.add('selected')
+						quizInfo.textContent = ''
+						nextBtn.disabled = false
+					}
+				})
+			})
+		})
+	})
+}
+
+let currentStep = 1
+
+const handleNextBtn = () => {
+	currentStep++
+	if (currentStep > formSteps.length) {
+		currentStep = formSteps.length
+	}
+
+	handleProgressBar()
+	if (boxFive.classList.contains('active-page')) {
+		quizInfo.textContent = ''
+	}
+}
+
+const handlePrevBtn = () => {
+	currentStep--
+
+	if (currentStep < 1) {
+		currentStep = 1
+	}
+	console.log(currentStep)
+	handleProgressBar()
+
+	allInputs.forEach(input => {
+		if (input.checked === true) {
+			quizInfo.textContent = ''
+			nextBtn.disabled = false
+		}
+		allLabels.forEach(label => {
+			label.addEventListener('click', () => {
+				if (input.checked === false) {
+					input.parentElement.classList.remove('selected')
+				}
+				input.addEventListener('click', () => {
+					if (input.checked === true) {
+						input.parentElement.classList.add('selected')
+						quizInfo.textContent = ''
+						nextBtn.disabled = false
+					}
+				})
+			})
+		})
+	})
+}
+
+const handleProgressBar = () => {
+	formSteps.forEach((step, index) => {
+		if (index < currentStep) {
+			step.classList.add('active-step')
+		} else {
+			step.classList.remove('active-step')
+		}
+	})
+	handleButtons()
+	handleFormPage()
+}
+
+const handleButtons = () => {
+	if (currentStep === 1) {
+		prevBtn.disabled = true
+	} else if (currentStep === formSteps.length) {
+		nextBtn.disabled = true
+	} else {
+		prevBtn.disabled = false
+		nextBtn.disabled = false
+	}
+}
+
+const handleFormPage = () => {
+	checkInput()
+	formPages.forEach(page => {
+		if (currentStep == page.dataset.number) {
+			page.classList.add('active-page')
+		} else {
+			page.classList.remove('active-page')
+		}
+	})
+}
+
+const clearQuiz = () => {
+	quiz.classList.remove('active')
+	progress.classList.remove('active')
+	introQuiz.classList.remove('hidden')
+	contentQuiz.classList.remove('active')
+	quizBtns.classList.remove('active')
+
+	currentStep = 1
+	formPages.forEach(page => {
+		if (currentStep == page.dataset.number) {
+			page.classList.add('active-page')
+		} else {
+			page.classList.remove('active-page')
+		}
+	})
+	formSteps.forEach((step, index) => {
+		if (index < currentStep) {
+			step.classList.add('active-step')
+		} else {
+			step.classList.remove('active-step')
+		}
+	})
+	allInputs.forEach(input => {
+		input.checked = false
+	})
+
+	allLabels.forEach(label => {
+		label.classList.remove('selected')
+	})
+	prevBtn.disabled = true
+	nextBtn.disabled = false
+	quizInfo.textContent = ''
 }
 
 const handleDropdown = () => {
@@ -108,7 +268,6 @@ document.querySelectorAll('.fabric__submenu-item').forEach((element, index) =>
 
 fabricsSubmenuItems.forEach(fabricsSubmenuItem => {
 	fabricsSubmenuItem.addEventListener('click', () => {
-		// console.log(fabricsSubmenuItem)
 		fabricsSubmenuItem.nextElementSibling.classList.toggle('active')
 		handlePopup()
 	})
@@ -303,7 +462,14 @@ const handlePopup = () => {
 	})
 }
 
+handlePopup()
+
 navBtn.addEventListener('click', handleNav)
+startQuiz.addEventListener('click', handleQuiz)
+nextBtn.addEventListener('click', handleNextBtn)
+prevBtn.addEventListener('click', handlePrevBtn)
+returnQuiz.addEventListener('click', clearQuiz)
+
 createButton()
 handleDropdown()
 handleMultiDropdown()
@@ -327,6 +493,17 @@ window.addEventListener('DOMContentLoaded', () => {
 		setTimeout(showSlides, 3000) // Change image every 2 seconds
 	}
 })
+
+function checkInput() {
+	if ((quizInfo.textContent = 'Zaznacz odpowiedź')) {
+		console.log('true')
+		nextBtn.disabled = true
+	} else {
+		nextBtn.disabled = false
+	}
+}
+
+checkInput()
 
 musicBtn.addEventListener('click', () => {
 	const headerVideo = document.querySelector('.header-video__video')
