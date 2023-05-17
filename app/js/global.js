@@ -18,8 +18,10 @@ const nextBtn = document.querySelector('.quiz__btn-next')
 const progress = document.querySelector('.quiz__progress')
 const allLabels = document.querySelectorAll('.quiz__label')
 const allInputs = document.querySelectorAll('.quiz__answer')
+const inputs = Array.from(document.querySelectorAll('.quiz__answer'))
 const quizInfo = document.querySelector('.quiz__error')
 const boxFive = document.getElementById('box-five')
+const mattressBoxes = document.querySelector('.mattress__boxes')
 
 const createButton = () => {
 	menuItemDropdown.forEach(menuItem => {
@@ -50,6 +52,64 @@ const handleNav = () => {
 		})
 	}
 	closeOverlay()
+}
+
+function check() {
+	const checkedInputs = inputs.filter(answer => answer.checked)
+
+	const answerFirst = document.querySelector('#answer-1')
+	const answerSecond = document.querySelector('#answer-2')
+	const answerThird = document.querySelector('#answer-3')
+	const answerFour = document.querySelector('#answer-4')
+
+	const answerFive = document.querySelector('#answer-5')
+	const answerSix = document.querySelector('#answer-6')
+	const answerSeven = document.querySelector('#answer-7')
+	const answerEight = document.querySelector('#answer-8')
+
+	const answerNine = document.querySelector('#answer-9')
+	const answerTen = document.querySelector('#answer-10')
+	const answerEleven = document.querySelector('#answer-11')
+	const answerTwelve = document.querySelector('#answer-12')
+
+	const answerThirteen = document.querySelector('#answer-13')
+	const answerFourteen = document.querySelector('#answer-14')
+	const answerFifteen = document.querySelector('#answer-15')
+	const answerSixteen = document.querySelector('#answer-16')
+
+	const array = [answerFirst, answerFive, answerNine, answerThirteen]
+
+	console.log(checkedInputs)
+
+	function arrayEquals(a, b) {
+		return Array.isArray(a) && Array.isArray(b) && a.length === b.length && a.every((val, index) => val === b[index])
+	}
+
+	if (arrayEquals(array, checkedInputs)) {
+		console.log('combo-1')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-piankowy-azardi-piano/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1381-Materac-piankowy-AZARDI-Piano.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Piano</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-piano/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1381-Materac-piankowy-AZARDI-Piano.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Piano</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-piano/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1381-Materac-piankowy-AZARDI-Piano.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Piano</p>
+		</a>
+	`
+	} else {
+		console.log('')
+	}
 }
 
 const handleQuiz = () => {
@@ -96,6 +156,7 @@ const handleNextBtn = () => {
 	if (boxFive.classList.contains('active-page')) {
 		quizInfo.textContent = ''
 	}
+	check()
 }
 
 const handlePrevBtn = () => {
@@ -127,6 +188,8 @@ const handlePrevBtn = () => {
 			})
 		})
 	})
+
+	mattressBoxes.innerHTML = ''
 }
 
 const handleProgressBar = () => {
@@ -195,6 +258,7 @@ const clearQuiz = () => {
 	prevBtn.disabled = true
 	nextBtn.disabled = false
 	quizInfo.textContent = ''
+	mattressBoxes.innerHTML = ''
 }
 
 const handleDropdown = () => {
@@ -465,10 +529,6 @@ const handlePopup = () => {
 handlePopup()
 
 navBtn.addEventListener('click', handleNav)
-startQuiz.addEventListener('click', handleQuiz)
-nextBtn.addEventListener('click', handleNextBtn)
-prevBtn.addEventListener('click', handlePrevBtn)
-returnQuiz.addEventListener('click', clearQuiz)
 
 createButton()
 handleDropdown()
@@ -493,6 +553,10 @@ window.addEventListener('DOMContentLoaded', () => {
 		setTimeout(showSlides, 3000) // Change image every 2 seconds
 	}
 })
+startQuiz.addEventListener('click', handleQuiz)
+nextBtn.addEventListener('click', handleNextBtn)
+prevBtn.addEventListener('click', handlePrevBtn)
+returnQuiz.addEventListener('click', clearQuiz)
 
 function checkInput() {
 	if ((quizInfo.textContent = 'Zaznacz odpowiedź')) {

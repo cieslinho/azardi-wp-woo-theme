@@ -75,6 +75,7 @@
 			cursor: pointer;
 			transition: border 0.2s;
 			background-color: $bg-color;
+			color: $text-color;
 
 			&:hover {
 				border: 2px solid #d1d1d1;
@@ -148,6 +149,7 @@
 			align-items: center;
 			padding: 1em;
 			border: 2px solid $gray-color;
+			color: $text-color;
 			border-radius: 8px;
 			cursor: pointer;
 			transition: border 0.2s;
@@ -194,6 +196,10 @@
 		&__error.active {
 			display: block;
 		}
+
+		&__question {
+			color: $text-color;
+		}
 	}
 
 	.quiz.active {
@@ -204,6 +210,12 @@
 		display: flex;
 		flex-direction: column;
 		gap: 1em;
+
+		&-title {
+			text-align: center;
+			font-weight: 700;
+			color: $text-color;
+		}
 	}
 
 	&__result {
@@ -211,13 +223,20 @@
 	}
 
 	&__boxes {
-		@include respond(tablet) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2em;
+
+		@include respond(mobile-max) {
 			display: grid;
-			grid-template-columns: repeat(3, 1fr);
+			grid-template-columns: repeat(2, 1fr);
 			grid-template-rows: 1fr;
 			gap: 1em;
-			max-height: 320px;
-			overflow: scroll;
+		}
+
+		@include respond(tablet) {
+			grid-template-columns: repeat(3, 1fr);
 		}
 	}
 

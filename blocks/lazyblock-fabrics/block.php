@@ -27,11 +27,16 @@
                         <p class="fabrics__images-title">Boss</p>
                     </div>
                   <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Boss/Boss_04.jpg" ?>" data-group-id="04" alt="Tkanina Boss" class="fabrics__images-img">
+                  
                 </div>
                 <div class="fabrics__images-box" data-group-images="group-2">
                     <div class="fabrics__images-info">
                         <p class="fabrics__images-type">Dzianina</p>
                         <p class="fabrics__images-title">Magic Velvet</p>
+                    </div>
+                    <div class="fabrics__picto">
+                      <img class="fabrics__picto-img" src="<?php echo get_template_directory_uri() . "/assets/images/latwe-czyszczenie.png" ?>" alt="Piktogram Tkanin">
+                      <img class="fabrics__picto-img" src="<?php echo get_template_directory_uri() . "/assets/images/przyjazne-zwierz.png" ?>" alt="Piktogram Tkanin">
                     </div>
                     <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Magic-Velvet/Magic-Velvet-2274.jpeg" ?>" data-group-id="2274" alt="Tkanina Magic Velvet" class="fabrics__images-img">
                 </div>
@@ -39,6 +44,10 @@
                     <div class="fabrics__images-info">
                         <p class="fabrics__images-type">Velvet</p>
                         <p class="fabrics__images-title">Monolith</p>
+                    </div>
+                    <div class="fabrics__picto">
+                      <img class="fabrics__picto-img" src="<?php echo get_template_directory_uri() . "/assets/images/hydrofobowa.png" ?>" alt="Piktogram Tkanin">
+                    
                     </div>
                     <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Monolith/Monolith-09-b1b50.jpg" ?>" data-group-id="09" alt="Tkanina Monolith" class="fabrics__images-img">
                 </div>
@@ -54,12 +63,20 @@
                         <p class="fabrics__images-type">Plecionka</p>
                         <p class="fabrics__images-title">Ronda</p>
                     </div>
+                    <div class="fabrics__picto">
+                      <img class="fabrics__picto-img" src="<?php echo get_template_directory_uri() . "/assets/images/hydrofobowa.png" ?>" alt="Piktogram Tkanin">
+                    
+                    </div>
                     <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Ronda/Ronda-09-659c1.jpg" ?>" data-group-id="09" alt="Tkanina Ronda" class="fabrics__images-img">
                 </div>
                 <div class="fabrics__images-box" data-group-images="group-6">
                     <div class="fabrics__images-info">
                         <p class="fabrics__images-type">Plecionka</p>
                         <p class="fabrics__images-title">Solid</p>
+                    </div>
+                    <div class="fabrics__picto">
+                      <img class="fabrics__picto-img" src="<?php echo get_template_directory_uri() . "/assets/images/hydrofobowa.png" ?>" alt="Piktogram Tkanin">
+                    
                     </div>
                     <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Solid/Solid_30_plaskie-04741.jpg" ?>" data-group-id="30" alt="Tkanina Solid" class="fabrics__images-img">
                 </div>
@@ -81,12 +98,20 @@
                         <p class="fabrics__images-type">Szenil</p>
                         <p class="fabrics__images-title">Icon</p>
                     </div>
+                    <div class="fabrics__picto">
+                      <img class="fabrics__picto-img" src="<?php echo get_template_directory_uri() . "/assets/images/latwe-czyszczenie.png" ?>" alt="Piktogram Tkanin">
+                    
+                    </div>
                   <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-2/Icon/Icon-02-aa432.jpg" ?>" data-group-id="02" alt="Tkanina Icon" class="fabrics__images-img">
                 </div>
                 <div class="fabrics__images-box" data-group-images="group-9">
                     <div class="fabrics__images-info">
                         <p class="fabrics__images-type">Dzianina</p>
                         <p class="fabrics__images-title">Milton New</p>
+                    </div>
+                    <div class="fabrics__picto">
+                      <img class="fabrics__picto-img fabrics__picto-all" src="<?php echo get_template_directory_uri() . "/assets/images/piktoall.png" ?>" alt="Piktogram Tkanin">
+                    
                     </div>
                   <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-2/Milton-New/Milton-New-01.jpeg" ?>" data-group-id="01" alt="Tkanina Milton New" class="fabrics__images-img">
                 </div>
@@ -95,6 +120,10 @@
                         <p class="fabrics__images-type">Velvet</p>
                         <p class="fabrics__images-title">Piano</p>
                     </div>
+                    <div class="fabrics__picto">
+                      <img class="fabrics__picto-img fabrics__picto-all" src="<?php echo get_template_directory_uri() . "/assets/images/piktoall.png" ?>" alt="Piktogram Tkanin">
+                    
+                    </div>
                   <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-2/Piano/Piano 03.jpeg" ?>" data-group-id="03" alt="Tkanina Piano" class="fabrics__images-img">
                 </div>
                 <div class="fabrics__images-box" data-group-images="group-11">
@@ -102,12 +131,21 @@
                         <p class="fabrics__images-type">Dzianina</p>
                         <p class="fabrics__images-title">Venus Velvet</p>
                     </div>
+                    <div class="fabrics__picto">
+                      <img class="fabrics__picto-img" src="<?php echo get_template_directory_uri() . "/assets/images/latwe-czyszczenie.png" ?>" alt="Piktogram Tkanin">
+                      <img class="fabrics__picto-img" src="<?php echo get_template_directory_uri() . "/assets/images/przyjazne-zwierz.png" ?>" alt="Piktogram Tkanin">
+                    
+                    </div>
                   <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-2/Venus-Velvet/Venus velvet 2935.jpeg" ?>" data-group-id="2935" alt="Tkanina Venus Velvet" class="fabrics__images-img">
                 </div>
                 <div class="fabrics__images-box" data-group-images="group-12">
                     <div class="fabrics__images-info">
                         <p class="fabrics__images-type">Dzianina</p>
                         <p class="fabrics__images-title">Zoya</p>
+                    </div>
+                    <div class="fabrics__picto">
+                      <img class="fabrics__picto-img fabrics__picto-all" src="<?php echo get_template_directory_uri() . "/assets/images/piktoall.png" ?>" alt="Piktogram Tkanin">
+                    
                     </div>
                   <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-2/Zoya/Zoya 01.jpeg" ?>" data-group-id="01" alt="Tkanina Zoya" class="fabrics__images-img">
                 </div>
@@ -129,12 +167,22 @@
                         <p class="fabrics__images-type">Dzianina</p>
                         <p class="fabrics__images-title">Dream Velvet</p>
                     </div>
+                    <div class="fabrics__picto">
+                      <img class="fabrics__picto-img" src="<?php echo get_template_directory_uri() . "/assets/images/latwe-czyszczenie.png" ?>" alt="Piktogram Tkanin">
+                      <img class="fabrics__picto-img" src="<?php echo get_template_directory_uri() . "/assets/images/przyjazne-zwierz.png" ?>" alt="Piktogram Tkanin">
+                    
+                    </div>
                     <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Dream-Velvet/Dream velvet 18.jpeg" ?>" data-group-id="18" alt="Tkanina Dream Velvet" class="fabrics__images-img">
                 </div>
                 <div class="fabrics__images-box" data-group-images="group-15">
                     <div class="fabrics__images-info">
                         <p class="fabrics__images-type">plecionka</p>
                         <p class="fabrics__images-title">Grace</p>
+                    </div>
+                    <div class="fabrics__picto">
+                      <img class="fabrics__picto-img" src="<?php echo get_template_directory_uri() . "/assets/images/latwe-czyszczenie.png" ?>" alt="Piktogram Tkanin">
+                      <img class="fabrics__picto-img" src="<?php echo get_template_directory_uri() . "/assets/images/recykling.png" ?>" alt="Piktogram Tkanin">
+                    
                     </div>
                     <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Grace/Grace_11-16212.jpg" ?>" data-group-id="11" alt="Tkanina Grace" class="fabrics__images-img">
                 </div>
@@ -143,12 +191,20 @@
                         <p class="fabrics__images-type">velvet</p>
                         <p class="fabrics__images-title">Maya</p>
                     </div>
+                    <div class="fabrics__picto">
+                      <img class="fabrics__picto-img fabrics__picto-all" src="<?php echo get_template_directory_uri() . "/assets/images/piktoall.png" ?>" alt="Piktogram Tkanin">
+                    
+                    </div>
                     <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Maya/Maya 01.jpeg" ?>" data-group-id="01" alt="Tkanina Maya" class="fabrics__images-img">
                 </div>
                 <div class="fabrics__images-box" data-group-images="group-17">
                     <div class="fabrics__images-info">
                         <p class="fabrics__images-type">boucle</p>
                         <p class="fabrics__images-title">Now or Never</p>
+                    </div>
+                    <div class="fabrics__picto">
+                      <img class="fabrics__picto-img" src="<?php echo get_template_directory_uri() . "/assets/images/recykling.png" ?>" alt="Piktogram Tkanin">
+                    
                     </div>
                     <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Now-or-Never/Now-or-never-83-4bfee.jpg" ?>" data-group-id="83" alt="Tkanina Now or never" class="fabrics__images-img">
                 </div>
@@ -157,6 +213,7 @@
                         <p class="fabrics__images-type">boucle</p>
                         <p class="fabrics__images-title">Presence</p>
                     </div>
+                    
                     <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Presence/Presence-08-65e25.jpg" ?>" data-group-id="08" alt="Tkanina Presence" class="fabrics__images-img">
                 </div>
                 <div class="fabrics__images-box" data-group-images="group-19">
@@ -164,12 +221,20 @@
                         <p class="fabrics__images-type">Szenil</p>
                         <p class="fabrics__images-title">Tulia</p>
                     </div>
+                    <div class="fabrics__picto">
+                      <img class="fabrics__picto-img fabrics__picto-all" src="<?php echo get_template_directory_uri() . "/assets/images/piktoall.png" ?>" alt="Piktogram Tkanin">
+                    
+                    </div>
                     <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Tulia/Tulia 07.jpeg" ?>" data-group-id="07" alt="Tkanina Tulia" class="fabrics__images-img">
                 </div>
                 <div class="fabrics__images-box" data-group-images="group-20">
                     <div class="fabrics__images-info">
                         <p class="fabrics__images-type">Velvet</p>
                         <p class="fabrics__images-title">Vera</p>
+                    </div>
+                    <div class="fabrics__picto">
+                      <img class="fabrics__picto-img fabrics__picto-all" src="<?php echo get_template_directory_uri() . "/assets/images/piktoall.png" ?>" alt="Piktogram Tkanin">
+                    
                     </div>
                     <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Vera/Vera 1.jpeg" ?>" data-group-id="01" alt="Tkanina Vera" class="fabrics__images-img">
                 </div>
@@ -183,6 +248,10 @@
                     <div class="fabrics__images-info">
                         <p class="fabrics__images-type">Szenil</p>
                         <p class="fabrics__images-title">Bloom</p>
+                    </div>
+                    <div class="fabrics__picto">
+                      <img class="fabrics__picto-img fabrics__picto-all" src="<?php echo get_template_directory_uri() . "/assets/images/piktoall.png" ?>" alt="Piktogram Tkanin">
+                    
                     </div>
                   <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 02.jpeg" ?>" data-group-id="02" alt="Tkanina Bloom" class="fabrics__images-img">
                 </div>
@@ -203,6 +272,10 @@
                     <div class="fabrics__images-info">
                         <p class="fabrics__images-type">boucle </p>
                         <p class="fabrics__images-title">Angola</p>
+                    </div>
+                    <div class="fabrics__picto">
+                      <img class="fabrics__picto-img fabrics__picto-all" src="<?php echo get_template_directory_uri() . "/assets/images/piktoall.png" ?>" alt="Piktogram Tkanin">
+                    
                     </div>
                   <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 09.jpeg" ?>" data-group-id="09" alt="Tkanina Angola" class="fabrics__images-img">
                 </div>

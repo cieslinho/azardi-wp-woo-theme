@@ -155,30 +155,7 @@
                 <div class="mattress__results quiz__answers" id="box-five" data-number="5">
                     <p class="mattress__results-title">Twoj idealny materac to:</p>
                     <div class="mattress__boxes">
-                        <a href="/produkt/materac-piankowy-azardi-piano/" class="mattress__link">
-                            <img class="mattress__img"
-                                src="<?php echo get_template_directory_uri(); ?>/assets/images/piano.jpg"
-                                alt="Materac Azardi">
-                            <p class="mattress__name">Piano</p>
-                        </a>
-                        <a href="/produkt/materac-piankowy-azardi-piano/" class="mattress__link">
-                            <img class="mattress__img"
-                                src="<?php echo get_template_directory_uri(); ?>/assets/images/piano.jpg"
-                                alt="Materac Azardi">
-                            <p class="mattress__name">Piano</p>
-                        </a>
-                        <a href="/produkt/materac-piankowy-azardi-piano/" class="mattress__link">
-                            <img class="mattress__img"
-                                src="<?php echo get_template_directory_uri(); ?>/assets/images/piano.jpg"
-                                alt="Materac Azardi">
-                            <p class="mattress__name">Piano</p>
-                        </a>
-                        <a href="/produkt/materac-piankowy-azardi-piano/" class="mattress__link">
-                            <img class="mattress__img"
-                                src="<?php echo get_template_directory_uri(); ?>/assets/images/piano.jpg"
-                                alt="Materac Azardi">
-                            <p class="mattress__name">Piano</p>
-                        </a>
+
                     </div>
                 </div>
 
