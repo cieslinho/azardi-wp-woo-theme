@@ -2,58 +2,22 @@
     <div class="container">
         <h2 class="section-title">Salony Azardi</h2>
         <div class="salons__boxes">
+        <?php foreach( $attributes['box'] as $boxSalon ): ?>
             <div class="salons__box">
-                <h3 class="salons__title">Azardi Kępno</h3>
+                
+                <h3 class="salons__title"><?php echo $boxSalon['title']; ?></h3>
                 <p class="salons__text">
-                    <i class="bx bx-current-location"></i> 63-600 Kępno, Poznańska 7
+                    <i class="bx bx-current-location"></i> <?php echo $boxSalon['address']; ?>
                 </p>
                 <p class="salons__text">
-                    <i class="bx bxs-watch"></i> Czynne pn-pt 8-16, sb 9-13
+                    <i class="bx bxs-watch"></i> <?php echo $boxSalon['opening']; ?>
                 </p>
-                <a href="tel:+48790231122" class="salons__link">
+                <a href="<?php echo esc_attr( $boxSalon['mobile-link']); ?>" class="salons__link">
                     <i class="bx bxs-phone">
                     </i>
-                    790 231 122 </a>
+                    <?php echo $boxSalon['mobile-text']; ?></a>
             </div>
-            <div class="salons__box">
-                <h3 class="salons__title">Azardi Kępno</h3>
-                <p class="salons__text">
-                    <i class="bx bx-current-location"></i> 63-600 Kępno, Poznańska 7
-                </p>
-                <p class="salons__text">
-                    <i class="bx bxs-watch"></i> Czynne pn-pt 8-16, sb 9-13
-                </p>
-                <a href="tel:+48790231122" class="salons__link">
-                    <i class="bx bxs-phone">
-                    </i>
-                    790 231 122 </a>
-            </div>
-            <div class="salons__box">
-                <h3 class="salons__title">Azardi Kępno</h3>
-                <p class="salons__text">
-                    <i class="bx bx-current-location"></i> 63-600 Kępno, Poznańska 7
-                </p>
-                <p class="salons__text">
-                    <i class="bx bxs-watch"></i> Czynne pn-pt 8-16, sb 9-13
-                </p>
-                <a href="tel:+48790231122" class="salons__link">
-                    <i class="bx bxs-phone">
-                    </i>
-                    790 231 122 </a>
-            </div>
-            <div class="salons__box">
-                <h3 class="salons__title">Azardi Kępno</h3>
-                <p class="salons__text">
-                    <i class="bx bx-current-location"></i> 63-600 Kępno, Poznańska 7
-                </p>
-                <p class="salons__text">
-                    <i class="bx bxs-watch"></i> Czynne pn-pt 8-16, sb 9-13
-                </p>
-                <a href="tel:+48790231122" class="salons__link">
-                    <i class="bx bxs-phone">
-                    </i>
-                    790 231 122 </a>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </section>

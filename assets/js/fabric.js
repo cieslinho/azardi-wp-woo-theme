@@ -44,13 +44,17 @@ if (isSafari) {
 
 fabricImages.forEach(image =>
 	image.addEventListener('click', () => {
+		const currentFabric = document.querySelector('.fabric__current-img')
+		const fabricTitle = document.querySelector('.product__fabrics-current')
 		const filename = image.src.replace(/^.*[\\\/]/, '')
 		const imageFabricGroup = image.getAttribute('data-fabric-group')
-		fabricModal.classList.toggle('fabric--hidden')
+		// fabricModal.classList.toggle('fabric--hidden')
 		fabricHiddenInput.value = filename.replace(/\.[^/.]+$/, '')
 		fabricSelect.value = imageFabricGroup
 		fabricSelect.removeAttribute('disabled')
 		document.querySelector('.variations_form').dispatchEvent(new CustomEvent('check_variations'))
+		currentFabric.src = image.src
+		fabricTitle.textContent = filename.replace(/\.[^/.]+$/, '')
 	})
 )
 
@@ -91,7 +95,7 @@ fabricImages.forEach(image =>
 // )
 
 closeBtn.addEventListener('click', () => {
-	fabricModal.classList.toggle('fabric--hidden')
+	fabricModal.classList.add('fabric--hidden')
 	if (fabricModal.classList.contains('fabric--hidden')) {
 		fabricSelect.removeAttribute('disabled')
 	}

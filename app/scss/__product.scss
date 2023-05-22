@@ -111,3 +111,35 @@ a.button.wc-forward.wp-element-button {
 p.product__category-class {
 	display: block !important;
 }
+
+.product__fabrics {
+	padding: 1em 0.5em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #333533;
+
+	&-text {
+		font-size: 1.4rem;
+		text-transform: uppercase;
+		font-weight: 700;
+		width: 45%;
+	}
+
+	&-current {
+		cursor: pointer;
+		padding: 0.5em;
+		text-transform: uppercase;
+		border-radius: 5px;
+		border: 1px solid #d1d1d1;
+		color: #202020;
+		outline: none;
+		width: 55%;
+		font-size: 1.4rem;
+		transition: background-color 0.2s, color 0.2s, border 0.2s;
+
+		&:hover {
+			border: 1px solid $dark-color;
+		}
+	}
+}

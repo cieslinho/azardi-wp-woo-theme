@@ -88,27 +88,21 @@ function check() {
 	if (arrayEquals(array, checkedInputs)) {
 		console.log('combo-1')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/materac-piankowy-azardi-piano/" class="mattress__link">
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
 		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1381-Materac-piankowy-AZARDI-Piano.jpg"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
 			alt="Materac Azardi">
-		<p class="mattress__name">Piano</p>
+		<p class="mattress__name">Magnicool Soft</p>
 		</a>
-		<a href="/produkt/materac-piankowy-azardi-piano/" class="mattress__link">
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
 		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1381-Materac-piankowy-AZARDI-Piano.jpg"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
 			alt="Materac Azardi">
-		<p class="mattress__name">Piano</p>
-		</a>
-		<a href="/produkt/materac-piankowy-azardi-piano/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1381-Materac-piankowy-AZARDI-Piano.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">Piano</p>
+		<p class="mattress__name">Vitale Armonioso</p>
 		</a>
 	`
 	} else {
-		console.log('')
+		console.log('niezgodna tablica')
 	}
 }
 
@@ -591,6 +585,7 @@ closePopup.addEventListener('click', () => {
 	promoPopup.classList.remove('active')
 	promoOverlay.classList.remove('active')
 })
+
 
 /*!
  * Lightbox v2.11.4

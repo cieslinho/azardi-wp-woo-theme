@@ -106,7 +106,7 @@ function variable_fabrics_additional_info(){
   
   ';
 }
-
+add_action('woocommerce_before_add_to_cart_button', 'variable1_fabrics');
 add_action('woocommerce_before_add_to_cart_button','wdm_add_custom_fields');
 /**
  * Adds custom field for Product
@@ -128,6 +128,39 @@ function product_category_in_shop_loop() {
 }
 add_action( 'woocommerce_after_shop_loop_item_title', 'product_category_in_shop_loop', 40 );
  
+function variable1_fabrics(){
+  global $product;
+
+  ob_start();
+
+  error_reporting(E_ERROR | E_PARSE);
+  
+  if( 
+    get_the_terms( $product->ID, 'product_cat' )[0]->name === "Łóżka" || 
+    get_the_terms( $product->ID, 'product_cat' )[1]->name === "Łóżka" || 
+    get_the_terms( $product->ID, 'product_cat' )[2]->name === "Łóżka" ||
+    get_the_terms( $product->ID, 'product_cat' )[0]->name === "Meble" ||
+    get_the_terms( $product->ID, 'product_cat' )[1]->name === "Meble" ||
+    get_the_terms( $product->ID, 'product_cat' )[2]->name === "Meble" 
+    ) :
+  
+
+  echo '<div class="product__fabrics">
+
+  <p class="product__fabrics-text label">wybrana tkanina</p>
+  <p class="product__fabrics-current">brak</p>
+
+  
+  </div>';
+  
+endif;
+
+$content = ob_get_contents();
+ob_end_flush();
+
+return $content;
+}
+
 function wdm_add_custom_fields()
 {
 
@@ -148,6 +181,13 @@ error_reporting(E_ERROR | E_PARSE);
       get_the_terms( $product->ID, 'product_cat' )[2]->name === "Meble" 
       ) :
     ?>
+
+
+
+
+
+
+
         <div class="wdm-custom-fields">
             <input type="hidden" name="wdm_name" id="wdm_name" value="Brak" />
         </div>
@@ -2325,6 +2365,10 @@ error_reporting(E_ERROR | E_PARSE);
             </div>
              </ul>
           </ul>
+          <div class="fabric__current">
+            <p class="fabric__current">Wybrana tkanina:</p>
+            <img class="fabric__current-img" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 81.jpeg" ?>" alt="Aktualnie wybrana tkanina">
+          </div>
         </div>
         <script src="<?php echo get_template_directory_uri() . "/assets/js/fabric.js" ?>"></script>
         <div class="clear"></div>
