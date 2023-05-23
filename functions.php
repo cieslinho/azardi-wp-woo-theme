@@ -96,6 +96,10 @@ function variable_fabrics_additional_info(){
       </div>
       <div class="custom-fabrics__info-box">
         <i class="bx bxs-file-pdf"></i>
+        <a href="/pojemniki" target="_blank" class="custom-fabrics__info-text custom-fabrics__info-link">Rodzaje pojemników </a>
+      </div>
+      <div class="custom-fabrics__info-box">
+        <i class="bx bxs-file-pdf"></i>
         <a href="/instrukcje" target="_blank" class="custom-fabrics__info-text custom-fabrics__info-link">Instrukcja montażu </a>
       </div>
       <div class="custom-fabrics__info-box">
@@ -143,16 +147,24 @@ function variable1_fabrics(){
     get_the_terms( $product->ID, 'product_cat' )[1]->name === "Meble" ||
     get_the_terms( $product->ID, 'product_cat' )[2]->name === "Meble" 
     ) :
+    ?>
   
 
-  echo '<div class="product__fabrics">
+   <div class="product__fabrics hidden">
 
+ <div class="product__fabrics-top">
   <p class="product__fabrics-text label">wybrana tkanina</p>
   <p class="product__fabrics-current">brak</p>
+</div>
+
+
+  <img class="product__fabrics-img" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 81.jpeg" ?>">
+
+
 
   
-  </div>';
-  
+  </div>
+  <?php
 endif;
 
 $content = ob_get_contents();
@@ -160,6 +172,7 @@ ob_end_flush();
 
 return $content;
 }
+
 
 function wdm_add_custom_fields()
 {
@@ -2365,10 +2378,6 @@ error_reporting(E_ERROR | E_PARSE);
             </div>
              </ul>
           </ul>
-          <div class="fabric__current">
-            <p class="fabric__current">Wybrana tkanina:</p>
-            <img class="fabric__current-img" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 81.jpeg" ?>" alt="Aktualnie wybrana tkanina">
-          </div>
         </div>
         <script src="<?php echo get_template_directory_uri() . "/assets/js/fabric.js" ?>"></script>
         <div class="clear"></div>

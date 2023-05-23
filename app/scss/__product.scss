@@ -115,15 +115,28 @@ p.product__category-class {
 .product__fabrics {
 	padding: 1em 0.5em;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	gap: 1em;
+	flex-direction: column;
+
 	border-bottom: 1px solid #333533;
+
+	&-top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
 
 	&-text {
 		font-size: 1.4rem;
 		text-transform: uppercase;
 		font-weight: 700;
 		width: 45%;
+	}
+
+	&-img {
+		width: 100%;
+		height: 100px !important;
+		object-fit: cover;
 	}
 
 	&-current {
@@ -142,4 +155,8 @@ p.product__category-class {
 			border: 1px solid $dark-color;
 		}
 	}
+}
+
+.product__fabrics.hidden {
+	display: none;
 }
