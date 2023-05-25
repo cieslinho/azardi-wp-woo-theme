@@ -1,0 +1,62 @@
+.containers {
+	&__boxes {
+		display: flex;
+		flex-direction: column;
+		gap: 2em;
+
+		@include respond(tablet) {
+			// display: grid;
+			// grid-template-columns: repeat(2, 1fr);
+			// gap: 3em;
+
+			flex-direction: row;
+			justify-content: center;
+		}
+	}
+
+	&__box {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		background-color: #e5e5e5
+		border: 2px solid #e5e5e5;
+		border-radius: 8px;
+		overflow: hidden;
+		box-shadow: 0px 8px 15px -10px $dark-color;
+		transition: transform 0.3s, border 0.3s, box-shadow 0.3s;
+
+		@include respond(tablet) {
+			max-width: 450px;
+		}
+
+		&:hover {
+			transform: scale(1.03);
+			border: 2px solid #333533;
+			box-shadow: 0px 8px 20px -10px #202020;
+		}
+	}
+
+	&__img {
+		width: 100%;
+	}
+
+	&__bottom {
+		padding: 1em;
+	}
+
+	&__text {
+		color: $text-color;
+		font-size: 1.7rem;
+	}
+
+	&__list {
+		padding: 0.5em 1em;
+		margin-left: 1em;
+		list-style-type: square;
+
+		&-item {
+			color: $text-color;
+			margin-bottom: 0.25em;
+		}
+	}
+}
