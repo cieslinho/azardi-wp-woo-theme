@@ -7062,12 +7062,12 @@ function check() {
 		<p class="mattress__name">Essence</p>
 		</a>
 	`
-	} else if (arrayEquals(array256, checkedInputs)) {
+	}
+	if (arrayEquals(array256, checkedInputs)) {
 		console.log('array256')
 		console.log('brak jakiejkolwiek logicznej odp - array256')
-	}
-	if (mattressBoxes.innerHTML === '') {
-		mattressBoxesTitle.textContent = 'Odpowiedz chociaż na jedno pytanie logicznie 😎'
+		mattressBoxesTitle.textContent =
+			'Musisz wybrać przynajmniej jedną odpowiedź, która pozwoli na dopasowanie odpowiedniego materaca 😊'
 	} else {
 		mattressBoxesTitle.textContent = 'Twój idealny materac to:'
 	}
