@@ -153,7 +153,7 @@
                 </div>
 
                 <div class="mattress__results quiz__answers" id="box-five" data-number="5">
-                    <p class="mattress__results-title">Twoj idealny materac to:</p>
+                    <p class="mattress__results-title ">Twoj idealny materac to:</p>
                     <div class="mattress__boxes">
 
                     </div>

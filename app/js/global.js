@@ -22,6 +22,7 @@ const inputs = Array.from(document.querySelectorAll('.quiz__answer'))
 const quizInfo = document.querySelector('.quiz__error')
 const boxFive = document.getElementById('box-five')
 const mattressBoxes = document.querySelector('.mattress__boxes')
+const mattressBoxesTitle = document.querySelector('.mattress__results-title')
 
 const createButton = () => {
 	menuItemDropdown.forEach(menuItem => {
@@ -341,13 +342,13 @@ function check() {
 	}
 
 	if (arrayEquals(array1, checkedInputs)) {
-		console.log('combo-1')
+		console.log('array1')
 		mattressBoxes.innerHTML = ` 
 		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
 			alt="Materac Azardi">
-		<p class="mattress__name">Magnicool Soft</p>
+		<p class="mattress__name">Magnicool 10 Soft</p>
 		</a>
 		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
 		<img class="mattress__img"
@@ -357,19 +358,43 @@ function check() {
 		</a>
 	`
 	} else if (arrayEquals(array2, checkedInputs)) {
-		console.log('combo-2')
+		console.log('array2')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">Magnicool Soft</p>
-		</a>
 		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
 			alt="Materac Azardi">
 		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array3, checkedInputs)) {
+		console.log('array3')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array4, checkedInputs)) {
+		console.log('array4')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array5, checkedInputs)) {
+		console.log('array5')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
 		</a>
 		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
 		<img class="mattress__img"
@@ -378,8 +403,6673 @@ function check() {
 		<p class="mattress__name">Vitale Armonioso</p>
 		</a>
 	`
+	} else if (arrayEquals(array6, checkedInputs)) {
+		console.log('array6')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array7, checkedInputs)) {
+		console.log('array7')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array8, checkedInputs)) {
+		console.log('array8')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array9, checkedInputs)) {
+		console.log('array9')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+	`
+	} else if (arrayEquals(array10, checkedInputs)) {
+		console.log('array10')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array11, checkedInputs)) {
+		console.log('array11')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array12, checkedInputs)) {
+		console.log('array12')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+	`
+	} else if (arrayEquals(array13, checkedInputs)) {
+		console.log('array13')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+	`
+	} else if (arrayEquals(array14, checkedInputs)) {
+		console.log('array14')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array15, checkedInputs)) {
+		console.log('array15')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array16, checkedInputs)) {
+		console.log('array16')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+	`
+	} else if (arrayEquals(array17, checkedInputs)) {
+		console.log('array17')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array18, checkedInputs)) {
+		console.log('array18')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array19, checkedInputs)) {
+		console.log('array19')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array20, checkedInputs)) {
+		console.log('array20')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array21, checkedInputs)) {
+		console.log('array21')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+	`
+	} else if (arrayEquals(array22, checkedInputs)) {
+		console.log('array22')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array23, checkedInputs)) {
+		console.log('array23')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array24, checkedInputs)) {
+		console.log('array24')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array25, checkedInputs)) {
+		console.log('array25')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+	`
+	} else if (arrayEquals(array26, checkedInputs)) {
+		console.log('array26')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array27, checkedInputs)) {
+		console.log('array27')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array28, checkedInputs)) {
+		console.log('array28')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+	`
+	} else if (arrayEquals(array29, checkedInputs)) {
+		console.log('array29')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+	`
+	} else if (arrayEquals(array30, checkedInputs)) {
+		console.log('array30')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array31, checkedInputs)) {
+		console.log('array31')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array32, checkedInputs)) {
+		console.log('array32')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array33, checkedInputs)) {
+		console.log('array33')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array34, checkedInputs)) {
+		console.log('array34')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array35, checkedInputs)) {
+		console.log('array35')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array36, checkedInputs)) {
+		console.log('array36')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array37, checkedInputs)) {
+		console.log('array37')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+	`
+	} else if (arrayEquals(array38, checkedInputs)) {
+		console.log('array38')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array39, checkedInputs)) {
+		console.log('array39')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array40, checkedInputs)) {
+		console.log('array40')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array41, checkedInputs)) {
+		console.log('array41')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+	`
+	} else if (arrayEquals(array42, checkedInputs)) {
+		console.log('array42')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array43, checkedInputs)) {
+		console.log('array43')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+	`
+	} else if (arrayEquals(array44, checkedInputs)) {
+		console.log('array44')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+	`
+	} else if (arrayEquals(array45, checkedInputs)) {
+		console.log('array45')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+	`
+	} else if (arrayEquals(array46, checkedInputs)) {
+		console.log('array46')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array47, checkedInputs)) {
+		console.log('array47')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array48, checkedInputs)) {
+		console.log('array48')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+	`
+	} else if (arrayEquals(array49, checkedInputs)) {
+		console.log('array49')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array50, checkedInputs)) {
+		console.log('array50')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array51, checkedInputs)) {
+		console.log('array51')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array52, checkedInputs)) {
+		console.log('array52')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array53, checkedInputs)) {
+		console.log('array53')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array54, checkedInputs)) {
+		console.log('array54')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array55, checkedInputs)) {
+		console.log('array55')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array56, checkedInputs)) {
+		console.log('array56')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array57, checkedInputs)) {
+		console.log('array57')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-piano-hr/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1386-Materac-piankowy-AZARDI-Piano-HR-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PIANO HR</p>
+		</a>
+	`
+	} else if (arrayEquals(array58, checkedInputs)) {
+		console.log('array58')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array59, checkedInputs)) {
+		console.log('array59')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array60, checkedInputs)) {
+		console.log('array60')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-piankowy-azardi-piano/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1386-Materac-piankowy-AZARDI-Piano-HR-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PIANO</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-piano-hr/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1386-Materac-piankowy-AZARDI-Piano-HR-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PIANO HR</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array61, checkedInputs)) {
+		console.log('array61')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-piankowy-azardi-piano-hr/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1386-Materac-piankowy-AZARDI-Piano-HR-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PIANO HR</p>
+		</a>
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array62, checkedInputs)) {
+		console.log('array62')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array63, checkedInputs)) {
+		console.log('array63')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array64, checkedInputs)) {
+		console.log('array64')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-piankowy-azardi-piano/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1386-Materac-piankowy-AZARDI-Piano-HR-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PIANO</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-piano-hr/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1386-Materac-piankowy-AZARDI-Piano-HR-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PIANO HR</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array65, checkedInputs)) {
+		console.log('array65')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1409-Materac-Vario-AZARDI-kieszeniowy-visco-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO</p>
+		</a>
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+	
+	`
+	} else if (arrayEquals(array66, checkedInputs)) {
+		console.log('array66')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">BASIC PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+	
+	`
+	} else if (arrayEquals(array67, checkedInputs)) {
+		console.log('array67')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+	
+	`
+	} else if (arrayEquals(array68, checkedInputs)) {
+		console.log('array68')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+	
+	`
+	} else if (arrayEquals(array69, checkedInputs)) {
+		console.log('array69')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+	
+	
+	`
+	} else if (arrayEquals(array70, checkedInputs)) {
+		console.log('array70')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+	
+	
+	`
+	} else if (arrayEquals(array71, checkedInputs)) {
+		console.log('array71')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+	
+	
+	`
+	} else if (arrayEquals(array72, checkedInputs)) {
+		console.log('array72')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+	
+	
+	`
+	} else if (arrayEquals(array73, checkedInputs)) {
+		console.log('array73')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+	
+	
+	`
+	} else if (arrayEquals(array74, checkedInputs)) {
+		console.log('array74')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+	
+	
+	`
+	} else if (arrayEquals(array75, checkedInputs)) {
+		console.log('array75')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+
+
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+
+	
+	`
+	} else if (arrayEquals(array76, checkedInputs)) {
+		console.log('array76')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+
+
+	
+	`
+	} else if (arrayEquals(array77, checkedInputs)) {
+		console.log('array77')
+		mattressBoxes.innerHTML = ` 
+		
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+	
+
+
+	
+	`
+	} else if (arrayEquals(array78, checkedInputs)) {
+		console.log('array78')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+	
+	
+
+
+	
+	`
+	} else if (arrayEquals(array79, checkedInputs)) {
+		console.log('array79')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+
+
+
+	
+	`
+	} else if (arrayEquals(array80, checkedInputs)) {
+		console.log('array80')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+
+	
+	`
+	} else if (arrayEquals(array81, checkedInputs)) {
+		console.log('array81')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+
+	
+	`
+	} else if (arrayEquals(array82, checkedInputs)) {
+		console.log('array82')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+
+
+	
+	`
+	} else if (arrayEquals(array83, checkedInputs)) {
+		console.log('array83')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+
+
+	
+	`
+	} else if (arrayEquals(array84, checkedInputs)) {
+		console.log('array84')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+
+
+	
+	`
+	} else if (arrayEquals(array85, checkedInputs)) {
+		console.log('array85')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1409-Materac-Vario-AZARDI-kieszeniowy-visco-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO</p>
+		</a>
+
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+
+
+	
+	`
+	} else if (arrayEquals(array86, checkedInputs)) {
+		console.log('array86')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+
+
+	
+	`
+	} else if (arrayEquals(array87, checkedInputs)) {
+		console.log('array87')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+
+
+	
+	`
+	} else if (arrayEquals(array88, checkedInputs)) {
+		console.log('array88')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+
+
+	
+	`
+	} else if (arrayEquals(array89, checkedInputs)) {
+		console.log('array89')
+		mattressBoxes.innerHTML = ` 
+
+		<a href="/produkt/materac-vario-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1409-Materac-Vario-AZARDI-kieszeniowy-visco-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO</p>
+		</a>
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+	`
+	} else if (arrayEquals(array90, checkedInputs)) {
+		console.log('array90')
+		mattressBoxes.innerHTML = ` 
+
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+	`
+	} else if (arrayEquals(array91, checkedInputs)) {
+		console.log('array91')
+		mattressBoxes.innerHTML = ` 
+
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+	`
+	} else if (arrayEquals(array92, checkedInputs)) {
+		console.log('array92')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array93, checkedInputs)) {
+		console.log('array93')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1409-Materac-Vario-AZARDI-kieszeniowy-visco-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO</p>
+		</a>
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array94, checkedInputs)) {
+		console.log('array94')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array95, checkedInputs)) {
+		console.log('array95')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array96, checkedInputs)) {
+		console.log('array96')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array97, checkedInputs)) {
+		console.log('array97')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array98, checkedInputs)) {
+		console.log('array98')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array99, checkedInputs)) {
+		console.log('array99')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array100, checkedInputs)) {
+		console.log('array100')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+
+
+	`
+	} else if (arrayEquals(array101, checkedInputs)) {
+		console.log('array101')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1409-Materac-Vario-AZARDI-kieszeniowy-visco-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO</p>
+		</a>
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+
+
+	`
+	} else if (arrayEquals(array102, checkedInputs)) {
+		console.log('array102')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+
+
+	`
+	} else if (arrayEquals(array103, checkedInputs)) {
+		console.log('array103')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+
+
+	`
+	} else if (arrayEquals(array104, checkedInputs)) {
+		console.log('array104')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+
+
+	`
+	} else if (arrayEquals(array105, checkedInputs)) {
+		console.log('array105')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1409-Materac-Vario-AZARDI-kieszeniowy-visco-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO</p>
+		</a>
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+
+
+	`
+	} else if (arrayEquals(array106, checkedInputs)) {
+		console.log('array106')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+
+
+	`
+	} else if (arrayEquals(array107, checkedInputs)) {
+		console.log('array107')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+
+
+	`
+	} else if (arrayEquals(array108, checkedInputs)) {
+		console.log('array108')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+
+
+
+	`
+	} else if (arrayEquals(array109, checkedInputs)) {
+		console.log('array109')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		
+
+
+
+	`
+	} else if (arrayEquals(array110, checkedInputs)) {
+		console.log('array110')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+
+
+
+	`
+	} else if (arrayEquals(array111, checkedInputs)) {
+		console.log('array111')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+
+
+
+	`
+	} else if (arrayEquals(array112, checkedInputs)) {
+		console.log('array112')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+
+
+	`
+	} else if (arrayEquals(array113, checkedInputs)) {
+		console.log('array113')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1409-Materac-Vario-AZARDI-kieszeniowy-visco-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO</p>
+		</a>
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+
+
+	`
+	} else if (arrayEquals(array114, checkedInputs)) {
+		console.log('array114')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">BASIC PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array115, checkedInputs)) {
+		console.log('array115')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array116, checkedInputs)) {
+		console.log('array116')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-basic-sprezyny-kieszeniowe/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1397-Materac-AZARDI-Basic-sprezyny-kieszeniowe-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">BASIC</p>
+		</a>
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+
+
+
+	`
+	} else if (arrayEquals(array117, checkedInputs)) {
+		console.log('array117')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1409-Materac-Vario-AZARDI-kieszeniowy-visco-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		
+
+
+
+	`
+	} else if (arrayEquals(array118, checkedInputs)) {
+		console.log('array118')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-mono-bonelowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1391-Materac-AZARDI-Mono-bonelowy.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Mono</p>
+		</a>
+		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">BASIC PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+	
+		
+
+
+
+	`
+	} else if (arrayEquals(array119, checkedInputs)) {
+		console.log('array119')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		
+		
+	
+		
+
+
+
+	`
+	} else if (arrayEquals(array120, checkedInputs)) {
+		console.log('array120')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-mono-bonelowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1391-Materac-AZARDI-Mono-bonelowy.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Mono</p>
+		</a>
+		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">BASIC PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		
+	
+		
+
+
+
+	`
+	} else if (arrayEquals(array121, checkedInputs)) {
+		console.log('array121')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1409-Materac-Vario-AZARDI-kieszeniowy-visco-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+	
+		
+
+
+
+	`
+	} else if (arrayEquals(array122, checkedInputs)) {
+		console.log('array122')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">BASIC PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		
+
+
+
+	`
+	} else if (arrayEquals(array123, checkedInputs)) {
+		console.log('array123')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+		
+
+
+
+	`
+	} else if (arrayEquals(array124, checkedInputs)) {
+		console.log('array124')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-mono-bonelowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1391-Materac-AZARDI-Mono-bonelowy.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Mono</p>
+		</a>
+		<a href="/produkt/materac-azardi-basic-sprezyny-kieszeniowe/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1397-Materac-AZARDI-Basic-sprezyny-kieszeniowe-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">BASIC</p>
+		</a>
+		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">BASIC PLUS</p>
+		</a>
+		<a href="/produkt/materac-vario-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1409-Materac-Vario-AZARDI-kieszeniowy-visco-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO</p>
+		</a>
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+		
+
+
+
+	`
+	} else if (arrayEquals(array124, checkedInputs)) {
+		console.log('array124')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1409-Materac-Vario-AZARDI-kieszeniowy-visco-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO</p>
+		</a>
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+
+
+
+	`
+	} else if (arrayEquals(array125, checkedInputs)) {
+		console.log('array125')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1409-Materac-Vario-AZARDI-kieszeniowy-visco-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO</p>
+		</a>
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+
+
+
+	`
+	} else if (arrayEquals(array126, checkedInputs)) {
+		console.log('array126')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">BASIC PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+
+
+	`
+	} else if (arrayEquals(array127, checkedInputs)) {
+		console.log('array127')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+
+
+	`
+	} else if (arrayEquals(array128, checkedInputs)) {
+		console.log('array128')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-mono-bonelowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1391-Materac-AZARDI-Mono-bonelowy.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Mono</p>
+		</a>
+		<a href="/produkt/materac-azardi-basic-sprezyny-kieszeniowe/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1397-Materac-AZARDI-Basic-sprezyny-kieszeniowe-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">BASIC</p>
+		</a>
+		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">BASIC PLUS</p>
+		</a>
+		<a href="/produkt/materac-vario-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1409-Materac-Vario-AZARDI-kieszeniowy-visco-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO</p>
+		</a>
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+
+
+	`
+	} else if (arrayEquals(array129, checkedInputs)) {
+		console.log('array129')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		
+
+
+	`
+	} else if (arrayEquals(array130, checkedInputs)) {
+		console.log('array130')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">BASIC PLUS</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+
+	`
+	} else if (arrayEquals(array131, checkedInputs)) {
+		console.log('array131')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+
+	`
+	} else if (arrayEquals(array132, checkedInputs)) {
+		console.log('array132')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+
+
+
+	`
+	} else if (arrayEquals(array133, checkedInputs)) {
+		console.log('array133')
+		mattressBoxes.innerHTML = ` 
+
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+
+
+	`
+	} else if (arrayEquals(array134, checkedInputs)) {
+		console.log('array134')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">BASIC PLUS</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+
+
+	`
+	} else if (arrayEquals(array135, checkedInputs)) {
+		console.log('array135')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array136, checkedInputs)) {
+		console.log('array136')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">BASIC PLUS</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array137, checkedInputs)) {
+		console.log('array137')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array138, checkedInputs)) {
+		console.log('array138')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">BASIC PLUS</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array139, checkedInputs)) {
+		console.log('array139')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+	`
+	} else if (arrayEquals(array140, checkedInputs)) {
+		console.log('array140')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array141, checkedInputs)) {
+		console.log('array141')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+	`
+	} else if (arrayEquals(array142, checkedInputs)) {
+		console.log('array142')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array143, checkedInputs)) {
+		console.log('array143')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+	`
+	} else if (arrayEquals(array144, checkedInputs)) {
+		console.log('array144')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array145, checkedInputs)) {
+		console.log('array145')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array146, checkedInputs)) {
+		console.log('array146')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">BASIC PLUS</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array147, checkedInputs)) {
+		console.log('array147')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array148, checkedInputs)) {
+		console.log('array148')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array149, checkedInputs)) {
+		console.log('array149')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array150, checkedInputs)) {
+		console.log('array150')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array151, checkedInputs)) {
+		console.log('array151')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array152, checkedInputs)) {
+		console.log('array152')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array153, checkedInputs)) {
+		console.log('array153')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array154, checkedInputs)) {
+		console.log('array154')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array155, checkedInputs)) {
+		console.log('array155')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array156, checkedInputs)) {
+		console.log('array156')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array157, checkedInputs)) {
+		console.log('array157')
+		mattressBoxes.innerHTML = ` 
+
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array158, checkedInputs)) {
+		console.log('array158')
+		mattressBoxes.innerHTML = ` 
+
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array159, checkedInputs)) {
+		console.log('array159')
+		mattressBoxes.innerHTML = ` 
+
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+
+	`
+	} else if (arrayEquals(array160, checkedInputs)) {
+		console.log('array160')
+		mattressBoxes.innerHTML = ` 
+
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+
+	`
+	} else if (arrayEquals(array161, checkedInputs)) {
+		console.log('array161')
+		mattressBoxes.innerHTML = ` 
+
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+
+
+	`
+	} else if (arrayEquals(array162, checkedInputs)) {
+		console.log('array162')
+		mattressBoxes.innerHTML = ` 
+
+		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">BASIC PLUS</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+
+	`
+	} else if (arrayEquals(array163, checkedInputs)) {
+		console.log('array163')
+		mattressBoxes.innerHTML = ` 
+
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array164, checkedInputs)) {
+		console.log('array164')
+		mattressBoxes.innerHTML = ` 
+
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+	`
+	} else if (arrayEquals(array165, checkedInputs)) {
+		console.log('array165')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+	`
+	} else if (arrayEquals(array166, checkedInputs)) {
+		console.log('array166')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">BASIC PLUS</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array167, checkedInputs)) {
+		console.log('array167')
+		mattressBoxes.innerHTML = ` 
+
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array168, checkedInputs)) {
+		console.log('array168')
+		mattressBoxes.innerHTML = ` 
+
+		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">BASIC PLUS</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array169, checkedInputs)) {
+		console.log('array169')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array170, checkedInputs)) {
+		console.log('array170')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">BASIC PLUS</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array171, checkedInputs)) {
+		console.log('array171')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array172, checkedInputs)) {
+		console.log('array172')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array173, checkedInputs)) {
+		console.log('array173')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array174, checkedInputs)) {
+		console.log('array174')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">BASIC PLUS</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+
+	`
+	} else if (arrayEquals(array175, checkedInputs)) {
+		console.log('array175')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array176, checkedInputs)) {
+		console.log('array176')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">BASIC PLUS</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array177, checkedInputs)) {
+		console.log('array177')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+	`
+	} else if (arrayEquals(array178, checkedInputs)) {
+		console.log('array178')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array179, checkedInputs)) {
+		console.log('array179')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+	`
+	} else if (arrayEquals(array180, checkedInputs)) {
+		console.log('array180')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array181, checkedInputs)) {
+		console.log('array181')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+	`
+	} else if (arrayEquals(array182, checkedInputs)) {
+		console.log('array182')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">BASIC PLUS</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array183, checkedInputs)) {
+		console.log('array183')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array184, checkedInputs)) {
+		console.log('array184')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">BASIC PLUS</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array185, checkedInputs)) {
+		console.log('array185')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+	`
+	} else if (arrayEquals(array186, checkedInputs)) {
+		console.log('array186')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">BASIC PLUS</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array187, checkedInputs)) {
+		console.log('array187')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array188, checkedInputs)) {
+		console.log('array188')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">BASIC PLUS</p>
+		</a>
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array189, checkedInputs)) {
+		console.log('array189')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+	`
+	} else if (arrayEquals(array190, checkedInputs)) {
+		console.log('array190')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+	`
+	} else if (arrayEquals(array191, checkedInputs)) {
+		console.log('array191')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array192, checkedInputs)) {
+		console.log('array192')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">BASIC PLUS</p>
+		</a>
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array193, checkedInputs)) {
+		console.log('array193')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1409-Materac-Vario-AZARDI-kieszeniowy-visco-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO</p>
+		</a>
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+	`
+	} else if (arrayEquals(array194, checkedInputs)) {
+		console.log('array194')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array195, checkedInputs)) {
+		console.log('array195')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array196, checkedInputs)) {
+		console.log('array196')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array197, checkedInputs)) {
+		console.log('array197')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+	`
+	} else if (arrayEquals(array198, checkedInputs)) {
+		console.log('array198')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	
+	`
+	} else if (arrayEquals(array199, checkedInputs)) {
+		console.log('array199')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+	`
+	} else if (arrayEquals(array200, checkedInputs)) {
+		console.log('array200')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+	`
+	} else if (arrayEquals(array201, checkedInputs)) {
+		console.log('array201')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+		<a href="/produkt/materac-vario-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1409-Materac-Vario-AZARDI-kieszeniowy-visco-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO</p>
+		</a>
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+	
+	`
+	} else if (arrayEquals(array202, checkedInputs)) {
+		console.log('array202')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	
+	`
+	} else if (arrayEquals(array203, checkedInputs)) {
+		console.log('array203')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+	`
+	} else if (arrayEquals(array204, checkedInputs)) {
+		console.log('array204')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+	
+	`
+	} else if (arrayEquals(array205, checkedInputs)) {
+		console.log('array205')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+	`
+	} else if (arrayEquals(array206, checkedInputs)) {
+		console.log('array206')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+	`
+	} else if (arrayEquals(array207, checkedInputs)) {
+		console.log('array207')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+	`
+	} else if (arrayEquals(array208, checkedInputs)) {
+		console.log('array208')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+	
+	`
+	} else if (arrayEquals(array209, checkedInputs)) {
+		console.log('array209')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1409-Materac-Vario-AZARDI-kieszeniowy-visco-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO</p>
+		</a>
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+	`
+	} else if (arrayEquals(array210, checkedInputs)) {
+		console.log('array210')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array211, checkedInputs)) {
+		console.log('array211')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array212, checkedInputs)) {
+		console.log('array212')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array213, checkedInputs)) {
+		console.log('array213')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+	`
+	} else if (arrayEquals(array214, checkedInputs)) {
+		console.log('array214')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	
+	`
+	} else if (arrayEquals(array215, checkedInputs)) {
+		console.log('array215')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+	`
+	} else if (arrayEquals(array216, checkedInputs)) {
+		console.log('array216')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array217, checkedInputs)) {
+		console.log('array217')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+		<a href="/produkt/materac-vario-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1409-Materac-Vario-AZARDI-kieszeniowy-visco-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO</p>
+		</a>
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+	
+	`
+	} else if (arrayEquals(array218, checkedInputs)) {
+		console.log('array218')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	
+	`
+	} else if (arrayEquals(array219, checkedInputs)) {
+		console.log('array219')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+	`
+	} else if (arrayEquals(array220, checkedInputs)) {
+		console.log('array220')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+	
+	`
+	} else if (arrayEquals(array221, checkedInputs)) {
+		console.log('array221')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+	`
+	} else if (arrayEquals(array222, checkedInputs)) {
+		console.log('array222')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+	`
+	} else if (arrayEquals(array223, checkedInputs)) {
+		console.log('array223')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+	`
+	} else if (arrayEquals(array224, checkedInputs)) {
+		console.log('array224')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+	
+	`
+	} else if (arrayEquals(array225, checkedInputs)) {
+		console.log('array225')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1409-Materac-Vario-AZARDI-kieszeniowy-visco-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO</p>
+		</a>
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+	`
+	} else if (arrayEquals(array226, checkedInputs)) {
+		console.log('array226')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array227, checkedInputs)) {
+		console.log('array227')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array228, checkedInputs)) {
+		console.log('array228')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array229, checkedInputs)) {
+		console.log('array229')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+	`
+	} else if (arrayEquals(array230, checkedInputs)) {
+		console.log('array230')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	
+	`
+	} else if (arrayEquals(array231, checkedInputs)) {
+		console.log('array231')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+	`
+	} else if (arrayEquals(array232, checkedInputs)) {
+		console.log('array232')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+	`
+	} else if (arrayEquals(array233, checkedInputs)) {
+		console.log('array233')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+		<a href="/produkt/materac-vario-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1409-Materac-Vario-AZARDI-kieszeniowy-visco-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO</p>
+		</a>
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+	
+	`
+	} else if (arrayEquals(array234, checkedInputs)) {
+		console.log('array234')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	
+	`
+	} else if (arrayEquals(array235, checkedInputs)) {
+		console.log('array235')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+	`
+	} else if (arrayEquals(array236, checkedInputs)) {
+		console.log('array236')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+	
+	`
+	} else if (arrayEquals(array237, checkedInputs)) {
+		console.log('array237')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+	`
+	} else if (arrayEquals(array238, checkedInputs)) {
+		console.log('array238')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+	`
+	} else if (arrayEquals(array239, checkedInputs)) {
+		console.log('array239')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+	`
+	} else if (arrayEquals(array240, checkedInputs)) {
+		console.log('array240')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+	
+	`
+	} else if (arrayEquals(array241, checkedInputs)) {
+		console.log('array241')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1409-Materac-Vario-AZARDI-kieszeniowy-visco-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO</p>
+		</a>
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+	`
+	} else if (arrayEquals(array242, checkedInputs)) {
+		console.log('array242')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array243, checkedInputs)) {
+		console.log('array243')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array244, checkedInputs)) {
+		console.log('array244')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	`
+	} else if (arrayEquals(array245, checkedInputs)) {
+		console.log('array245')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+	`
+	} else if (arrayEquals(array246, checkedInputs)) {
+		console.log('array246')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	
+	`
+	} else if (arrayEquals(array247, checkedInputs)) {
+		console.log('array247')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+	`
+	} else if (arrayEquals(array248, checkedInputs)) {
+		console.log('array248')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+	`
+	} else if (arrayEquals(array249, checkedInputs)) {
+		console.log('array249')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+		<a href="/produkt/materac-vario-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1409-Materac-Vario-AZARDI-kieszeniowy-visco-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO</p>
+		</a>
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+	
+	`
+	} else if (arrayEquals(array250, checkedInputs)) {
+		console.log('array250')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+	
+	`
+	} else if (arrayEquals(array251, checkedInputs)) {
+		console.log('array251')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+	`
+	} else if (arrayEquals(array252, checkedInputs)) {
+		console.log('array252')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+	
+	`
+	} else if (arrayEquals(array253, checkedInputs)) {
+		console.log('array253')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Soft</p>
+		</a>
+		<a href="/produkt/magnicool-10-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-FIRM-1024x719.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Magnicool 10 Firm</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+	`
+	} else if (arrayEquals(array254, checkedInputs)) {
+		console.log('array254')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-king-firm/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1438-Materac-kieszeniowy-Azardi-King-Firm.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">King Firm</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-vouge-royal-coil/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1456-Materac-kieszeniowy-Azardi-Vouge-Royal-Coil.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vouge</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">DOLCE VITA DUAL 8</p>
+		</a>
+	`
+	} else if (arrayEquals(array255, checkedInputs)) {
+		console.log('array255')
+		mattressBoxes.innerHTML = ` 
+		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">VARIO PLUS</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-premium-komfort/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1422-Materac-kieszeniowy-AZARDI-Premium-Komfort-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT</p>
+		</a>
+		<a href="/produkt/materac-azardi-premium-komfort-royal/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1432-Materac-AZARDI-Premium-Komfort-Royal-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">PREMIUM KOMFORT ROYAL</p>
+		</a>
+		<a href="/produkt/materac-piankowy-azardi-vitale-armonioso/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1495-Materac-piankowy-AZARDI-Vitale-Armonioso.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Vitale Armonioso</p>
+		</a>
+		<a href="/produkt/materac-kieszeniowy-azardi-claremont-latex/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1447-Materac-kieszeniowy-Azardi-Claremont-latex-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">CLAREMONT LATEX</p>
+		</a>
+		<a href="/produkt/essence/" class="mattress__link">
+		<img class="mattress__img"
+			src="https://azardi.pl/wp-content/uploads/2022/12/1477-Materac-kieszeniowy-AZARDI-Essence-Royal-Coil-300x180.jpg"
+			alt="Materac Azardi">
+		<p class="mattress__name">Essence</p>
+		</a>
+	`
+	} else if (arrayEquals(array256, checkedInputs)) {
+		console.log('array256')
+		console.log('brak jakiejkolwiek logicznej odp - array256')
+	}
+	if (mattressBoxes.innerHTML === '') {
+		mattressBoxesTitle.textContent = 'Odpowiedz chociaż na jedno pytanie logicznie 😎'
 	} else {
-		console.log('test')
+		mattressBoxesTitle.textContent = 'Twój idealny materac to:'
 	}
 }
 
@@ -526,6 +7216,7 @@ const clearQuiz = () => {
 	allLabels.forEach(label => {
 		label.classList.remove('selected')
 	})
+	mattressBoxesTitle.textContent = 'Twój idealny materac to:'
 	prevBtn.disabled = true
 	nextBtn.disabled = false
 	quizInfo.textContent = ''

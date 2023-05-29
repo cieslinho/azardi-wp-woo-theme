@@ -99,7 +99,7 @@
                 <p class="footer__middle-text">Bezpieczne płatności</p>
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/przelewy24.png" alt="Logo płatności przelewy24"
                         class="footer__middle-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eraty.png" alt="Logo płatności eraty"
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eraty-2.svg" alt="Logo płatności eraty"
                         class="footer__middle-img">
             </div>
         </div>
