@@ -62,8 +62,8 @@
 			display: block;
 			margin: 1em 0;
 			@include btn-product;
-			font-size: 1.5rem;
 			width: 100%;
+			font-size: 1.5rem;
 
 			@include respond(tablet) {
 				width: 190px;
@@ -83,8 +83,8 @@
 
 		&-label,
 		&-input {
-			margin-bottom: 1em;
-			color: $text-color;
+			margin-bottom: 1em !important;
+			color: $text-color !important;
 			font-family: 'Roboto', sans-serif;
 		}
 		&-label {
@@ -118,6 +118,92 @@
 			// padding: 1em 1.5em;
 			font-size: 1.8rem;
 			text-transform: uppercase;
+		}
+	}
+}
+
+.nf-form-cont {
+	.nf-form-title {
+		display: none !important;
+	}
+	.nf-before-form-content {
+		display: none !important;
+	}
+
+	.nf-field-container {
+		margin-bottom: 0 !important;
+	}
+
+	.nf-error-msg {
+		margin-block: 0.5em !important;
+		font-size: 1.3rem !important ;
+	}
+
+	label,
+	input {
+		margin-bottom: 1em !important;
+		background-color: $bg-color !important;
+		height: inherit !important;
+		// padding: 0.8em 1em !important;
+		color: $text-color !important;
+		font-size: 1.3rem !important;
+		font-family: 'Roboto', sans-serif;
+	}
+
+	input {
+		margin-bottom: 0 !important;
+	}
+
+	.nf-field-element {
+		&::after {
+			right: 0 !important;
+			width: 40px !important;
+			height: 36px !important;
+			line-height: 36px !important;
+		}
+	}
+
+	label {
+		font-weight: 700 !important;
+		font-size: 1.4rem !important;
+		text-transform: uppercase !important;
+	}
+
+	input,
+	textarea {
+		outline: none !important;
+		border: 1px solid gray !important;
+		border-radius: 5px !important;
+		background-color: $bg-color !important;
+		padding: 0.8em 1em !important;
+		color: $text-color !important;
+		font-size: 1.3rem !important;
+		&:hover,
+		&:focus {
+			border: 1px solid $dark-color !important;
+		}
+		&:focus {
+			background-color: rgba($color: gray, $alpha: 0.1) !important;
+		}
+	}
+
+	#nf-field-10 {
+		@include btn-product;
+		cursor: pointer !important;
+		border: 2px solid transparent !important;
+		background-color: $dark-color !important;
+		padding: 0.5em 1em !important;
+		width: 100% !important;
+		color: $bg-color !important;
+		// padding: 1em 1.5em;
+		font-size: 1.8rem !important;
+		text-transform: uppercase !important;
+
+		&:hover,
+		&:focus {
+			border: 2px solid $dark-color !important;
+			background-color: $bg-color !important;
+			color: $dark-color !important;
 		}
 	}
 }

@@ -1,0 +1,50 @@
+.wpcsb-wrapper.wpcsb-wrapper-bottom {
+	z-index: 20000000 !important;
+	@include respond(tablet) {
+		display: none !important;
+	}
+
+	.wpcsb-product {
+		display: flex;
+		flex-direction: row;
+
+		.wpcsb-product-image {
+			display: none;
+		}
+
+		.wpcsb-product-data {
+			.wpcsb-product-name {
+				display: none;
+			}
+			.wpcsb-product-price {
+				font-size: 1.8rem;
+			}
+		}
+
+		.wpcsb-product-info {
+			width: 35%;
+		}
+
+		.wpcsb-product-action {
+			margin-top: 0 !important;
+			width: 75% !important;
+
+			.wpcsb-quantity {
+				display: none !important;
+				// width: 30%;
+
+				// .input-text.qty.text.wpcsb-qty.wpcsb-qty-9803 {
+				// 	width: 100%;
+				// }
+			}
+
+			.wpcsb-atc {
+				width: 100%;
+
+				button.wpcsb-btn.button.alt {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

@@ -41,7 +41,7 @@ function azardi_config(){
   );
   add_theme_support('woocommerce', array(
     'thumbnails_image_width' => 200,
-    'single_image_width' => 1024,
+    'single_image_width' => 800,
     'product_grid' => array(
       'default_rows' => 10,
       'min_rows' => 1,
@@ -68,6 +68,50 @@ if( function_exists('acf_add_options_page') ) {
     'capability' => 'edit_posts',
     'icon_url'   => 'dashicons-admin-tools'
   ) );
+}
+
+
+add_filter( 'woocommerce_get_image_size_gallery_thumbnail', function( $size ) {
+	return array(
+		'width'  => 200,
+		'height' => 200,
+		'crop'   => 1
+	);
+} );
+
+add_filter( 'woocommerce_get_image_size_single', function( $size ) {
+  return array(
+   'width' => 800,
+   'height' => 800,
+   'crop' => 0,
+  );
+ } );
+
+add_filter( 'woocommerce_get_image_size_thumbnail', function( $size ) {
+    return array(
+		'width' => 300, 
+		'height' => 300, 
+		'crop' => 0, );
+} );
+
+
+ remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10 );
+add_action( 'woocommerce_before_shop_loop_item_title', 'custom_loop_product_thumbnail', 10 );
+function custom_loop_product_thumbnail() {
+    global $product;
+    $size = 'woocommerce_thumbnail';
+    $image_size = apply_filters( 'single_product_archive_thumbnail_size', $size );
+    echo $product ? $product->get_image( 'large' ) : '';
+}
+
+add_shortcode ('woo_cart_count', 'woo_cart_count' );
+function woo_cart_count() {
+	ob_start();
+		$items_count = WC()->cart->get_cart_contents_count();
+    ?>
+    <span class="mini-cart-count"><?php echo $items_count ? $items_count : '0'; ?></span>
+    <?php
+    return ob_get_clean();
 }
 
 // function my_content( $content) {
@@ -578,7 +622,7 @@ error_reporting(E_ERROR | E_PARSE);
                 <p class="fabric__image-title">100</p>
               </div>
             </div>
-                <li data-tab-target="#fabric-ronda" class="fabric__tab">Ronda - Plecionka</li>
+<!--                 <li data-tab-target="#fabric-ronda" class="fabric__tab">Ronda - Plecionka</li>
                 <div id="fabric-ronda" data-tab-content>
               <div class="fabric__image-box">
               <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Ronda/Ronda-06-d5b2d.jpg" ?>" alt="Tkanina Ronda" data-fabric-group="grupa1" loading="lazy">
@@ -600,8 +644,8 @@ error_reporting(E_ERROR | E_PARSE);
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Ronda/Ronda-99-80cdc.jpg" ?>" alt="Tkanina Ronda" data-fabric-group="grupa1" loading="lazy">
                 <p class="fabric__image-title">99</p>
               </div>       
-            </div>
-                <li data-tab-target="#fabric-solid" class="fabric__tab">Solid - Plecionka</li>
+            </div> -->
+<!--                 <li data-tab-target="#fabric-solid" class="fabric__tab">Solid - Plecionka</li>
                 <div id="fabric-solid" data-tab-content>
               <div class="fabric__image-box">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Solid/Solid_03_plaskie-4ab38.jpg" ?>" alt="Tkanina Solid" data-fabric-group="grupa1" loading="lazy">
@@ -707,7 +751,7 @@ error_reporting(E_ERROR | E_PARSE);
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Solid/Solid_99_plaskie-59d0b.jpg" ?>" alt="Tkanina Solid" data-fabric-group="grupa1" loading="lazy">
                 <p class="fabric__image-title">99</p>
               </div>
-            </div>
+            </div> -->
                 <li data-tab-target="#fabric-vena" class="fabric__tab">Vena - Plecionka</li>
                 <div id="fabric-vena" data-tab-content>
               <div class="fabric__image-box">
@@ -2379,7 +2423,7 @@ error_reporting(E_ERROR | E_PARSE);
              </ul>
           </ul>
         </div>
-        <script src="<?php echo get_template_directory_uri() . "/assets/js/fabric.js" ?>"></script>
+        <!-- <script src="<?php echo get_template_directory_uri() . "/assets/js/fabric.js" ?>"></script> -->
         <div class="clear"></div>
     <?php
     endif;
@@ -2388,69 +2432,4 @@ error_reporting(E_ERROR | E_PARSE);
     ob_end_flush();
 
     return $content;
-}
-
-add_filter('woocommerce_add_cart_item_data','wdm_add_item_data',10,3);
-
-/**
- * Add custom data to Cart
- * @param  [type] $cart_item_data [description]
- * @param  [type] $product_id     [description]
- * @param  [type] $variation_id   [description]
- * @return [type]                 [description]
- */
-function wdm_add_item_data($cart_item_data, $product_id, $variation_id)
-{
-    if(isset($_REQUEST['wdm_name']))
-    {
-        $cart_item_data['wdm_name'] = sanitize_text_field($_REQUEST['wdm_name']);
-    }
-
-    return $cart_item_data;
-}
-
-add_filter('woocommerce_get_item_data','wdm_add_item_meta',10,2);
-
-/**
- * Display information as Meta on Cart page
- * @param  [type] $item_data [description]
- * @param  [type] $cart_item [description]
- * @return [type]            [description]
- */
-function wdm_add_item_meta($item_data, $cart_item)
-{
-
-    if(array_key_exists('wdm_name', $cart_item))
-    {
-        $custom_details = $cart_item['wdm_name'];
-
-        $item_data[] = array(
-            'key'   => 'Tkanina-ID',
-            'value' => $custom_details
-        );
-    }
-
-    return $item_data;
-}
-
-add_action( 'woocommerce_checkout_create_order_line_item', 'wdm_add_custom_order_line_item_meta',10,4 );
-
-function wdm_add_custom_order_line_item_meta($item, $cart_item_key, $values, $order)
-{
-
-    if(array_key_exists('wdm_name', $values))
-    {
-        $item->add_meta_data('_wdm_name',$values['wdm_name']);
-    }
-}
-
-add_filter('woocommerce_add_to_cart_fragments', 'wc_refresh_mini_cart_count');
-function wc_refresh_mini_cart_count($fragments){
-	ob_start();
-	$items_count = WC()->cart->get_cart_contents_count();
-?>
-<span class="mini-cart-count"><?php echo $items_count ? $items_count : '0'; ?></span>
-<?php
-    $fragments['.mini-cart-count'] = ob_get_clean();
-	return $fragments;
 }

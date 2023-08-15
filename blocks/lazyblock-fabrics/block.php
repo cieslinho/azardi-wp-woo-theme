@@ -58,7 +58,7 @@
                     </div>
                     <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Riviera/Riviera-16-820d8.jpg" ?>" data-group-id="16" alt="Tkanina Riviera" class="fabrics__images-img">
                 </div>
-                <div class="fabrics__images-box" data-group-images="group-5">
+<!--                 <div class="fabrics__images-box" data-group-images="group-5">
                     <div class="fabrics__images-info">
                         <p class="fabrics__images-type">Plecionka</p>
                         <p class="fabrics__images-title">Ronda</p>
@@ -79,7 +79,7 @@
                     
                     </div>
                     <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Solid/Solid_30_plaskie-04741.jpg" ?>" data-group-id="30" alt="Tkanina Solid" class="fabrics__images-img">
-                </div>
+                </div> -->
                 <div class="fabrics__images-box" data-group-images="group-7">
                     <div class="fabrics__images-info">
                         <p class="fabrics__images-type">Plecionka</p>
@@ -396,7 +396,7 @@
            <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Riviera/Riviera-97-d2fb5.jpg" ?>"  data-group-id="97" alt="Tkanina Riviera" class="fabrics__popup-color">
            <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Riviera/Riviera-100-99ae9.jpg" ?>" data-group-id="100" alt="Tkanina Riviera" class="fabrics__popup-color">
           </div>
-          <div class="fabrics__popup-colors" id="group-5">
+<!--           <div class="fabrics__popup-colors" id="group-5">
            <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Ronda/Ronda-06-d5b2d.jpg" ?>" data-group-id="06" alt="Tkanina Ronda" class="fabrics__popup-color">
            <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Ronda/Ronda-09-659c1.jpg" ?>" data-group-id="09" alt="Tkanina Ronda" class="fabrics__popup-color">
            <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Ronda/Ronda-45-eb5b3.jpg" ?>" data-group-id="45" alt="Tkanina Ronda" class="fabrics__popup-color">
@@ -425,7 +425,7 @@
            <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Solid/Solid_89_plaskie-fea89.jpg" ?>" data-group-id="89" alt="Tkanina Solid" class="fabrics__popup-color">
            <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Solid/Solid_90_plaskie-6b1b5.jpg" ?>" data-group-id="90" alt="Tkanina Solid" class="fabrics__popup-color">
            <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Solid/Solid_99_plaskie-59d0b.jpg" ?>" data-group-id="99" alt="Tkanina Solid" class="fabrics__popup-color">
-          </div>
+          </div> -->
           <div class="fabrics__popup-colors" id="group-7">
            <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-01.jpg" ?>" data-group-id="01" alt="Tkanina Vena" class="fabrics__popup-color">
            <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-02.jpg" ?>" data-group-id="02" alt="Tkanina Vena" class="fabrics__popup-color">

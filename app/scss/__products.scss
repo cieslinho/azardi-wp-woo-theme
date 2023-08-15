@@ -162,12 +162,12 @@ select.orderby {
 }
 
 .woocommerce-products-header__title.page-title {
+	margin-bottom: 1.5em;
 	color: #000;
-	text-transform: capitalize;
-	letter-spacing: 2px;
 	font-weight: 700;
 	font-size: 2.8rem;
-	margin-bottom: 1.5em;
+	letter-spacing: 2px;
+	text-transform: capitalize;
 
 	@include respond(tablet) {
 		float: left;
@@ -182,9 +182,9 @@ select.orderby {
 }
 
 .woocommerce-loop-product__title {
-	letter-spacing: 1px;
 	order: 0;
 	padding-block: 0 !important;
+	letter-spacing: 1px;
 }
 
 span.price {
@@ -193,11 +193,24 @@ span.price {
 
 .product__category-box {
 	display: flex;
-	gap: 0.25em;
 	order: 1;
+	gap: 0.25em;
 	color: rgba($color: $dark-color, $alpha: 0.6);
 	font-weight: 700;
-	letter-spacing: 1px;
 	font-size: 1rem;
+	letter-spacing: 1px;
 	text-transform: uppercase;
+}
+
+.term-description {
+	border: 2px solid $gray-color;
+	border-radius: 5px;
+	background-color: $white-color;
+	padding: 1em;
+
+	p {
+		margin-bottom: 0.5em;
+		color: $text-color;
+		line-height: 150%;
+	}
 }

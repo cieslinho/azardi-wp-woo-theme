@@ -1,6 +1,8 @@
 .product {
+	// overflow: hidden;
 	.summary {
 		color: $text-color;
+		text-align: right;
 	}
 	p.price {
 		color: $dark-color !important;
@@ -31,8 +33,9 @@
 			flex-direction: column;
 			tr {
 				display: flex;
+				flex-direction: column;
 				justify-content: space-between;
-				align-items: baseline;
+				align-items: stretch !important;
 				border-bottom: 1px solid $dark-color;
 				padding: 0 0.5em;
 				width: 100%;
@@ -54,14 +57,14 @@
 					select {
 						@include btn-product;
 						cursor: pointer;
+						outline: none;
+						border: 1px solid #d1d1d1 !important;
+						border-radius: 5px !important;
+						background-color: $bg-color;
 						padding: 0.5em 0.25em;
 						width: 100% !important;
-						text-transform: uppercase;
-						background-color: $bg-color;
-						border-radius: 5px !important;
-						border: 1px solid #d1d1d1 !important;
 						color: $text-color;
-						outline: none;
+						text-transform: uppercase;
 
 						&:hover,
 						&:focus,
@@ -86,13 +89,13 @@
 			.quantity {
 				margin: 1em 0 !important;
 				.qty {
+					transition: border 0.3s;
+					outline: none;
+					border: 1px solid #d1d1d1;
+					border-radius: 5px !important;
 					padding: 0.5em;
 					min-width: 25%;
 					max-width: 30%;
-					border-radius: 5px !important;
-					border: 1px solid #d1d1d1;
-					outline: none;
-					transition: border 0.3s;
 
 					&:hover,
 					&:focus,
@@ -103,13 +106,33 @@
 			}
 			.wp-element-button {
 				@include btn-product;
-				padding: 1em;
 				border-radius: 5px !important;
+				padding: 1em;
 				text-transform: uppercase;
 			}
 			button.alt.disabled {
 				background-color: $dark-color;
 			}
+		}
+
+		.single_add_to_cart_button.button.alt {
+			padding: 1em 2em !important;
+
+			&::after {
+				display: none !important;
+			}
+
+			&:focus,
+			&:hover {
+				background-color: $white-color !important;
+				color: $text-color !important;
+			}
+		}
+
+		.input-text.qty.text {
+			width: 100% !important;
+			min-width: initial !important;
+			max-width: initial !important;
 		}
 	}
 	form.cart {
@@ -142,8 +165,8 @@
 		}
 		.wp-element-button {
 			@include btn-product;
-			padding: 1em;
 			border-radius: 5px !important;
+			padding: 1em;
 			text-transform: uppercase;
 
 			&:hover {
@@ -163,8 +186,8 @@
 	p {
 		margin-block: 0.5em;
 		color: rgba(51, 53, 51, 0.8);
-		line-height: 150%;
 		font-size: 1.5rem;
+		line-height: 150%;
 		img {
 			@include respond(tablet) {
 				max-width: 60%;
@@ -225,8 +248,8 @@
 
 p.custom-info {
 	margin-block: 1em;
-	padding: 0.8em 1em;
 	background-color: $dark-color;
+	padding: 0.8em 1em;
 	color: $white-color;
 	font-size: 1.5rem;
 	text-align: center;
@@ -243,13 +266,13 @@ p.custom-info {
 			display: none !important;
 			position: absolute;
 			top: 50%;
+			transform: translateY(-50%);
 			z-index: 10000;
+			transition: background-color 0.3s;
 			cursor: pointer;
-			font-size: 3rem;
 			background-color: rgba($color: $dark-color, $alpha: 0.7);
 			color: $bg-color;
-			transition: background-color 0.3s;
-			transform: translateY(-50%);
+			font-size: 3rem;
 
 			@include respond(tablet) {
 				display: block !important;
@@ -272,12 +295,12 @@ p.custom-info {
 	i.slick-arrow {
 		position: absolute;
 		top: 50%;
-		z-index: 2;
-		cursor: pointer;
-		font-size: 3rem;
-		background-color: rgba($color: $dark-color, $alpha: 0.7);
 		transform: translateY(-50%);
+		z-index: 2;
 		transition: background-color 0.3s;
+		cursor: pointer;
+		background-color: rgba($color: $dark-color, $alpha: 0.7);
+		font-size: 3rem;
 
 		&:before {
 			color: $bg-color;
@@ -300,6 +323,7 @@ p.custom-info {
 		justify-content: center;
 		align-items: center;
 		margin-block: 0.5em;
+		overflow: hidden;
 
 		li {
 			width: 10px;
@@ -334,14 +358,14 @@ p.custom-info {
 
 a.custom-fabrics {
 	align-self: flex-end;
-	text-transform: uppercase;
-	text-align: right;
-	font-size: 1.1rem;
-	color: $text-color;
-	padding: 0.5em;
-	letter-spacing: 1px;
-	border-bottom: 1px solid #d1d1d1;
 	transition: border-bottom 0.3s;
+	border-bottom: 1px solid #d1d1d1;
+	padding: 0.5em;
+	color: $text-color;
+	font-size: 1.1rem;
+	letter-spacing: 1px;
+	text-align: right;
+	text-transform: uppercase;
 
 	&:hover {
 		// color: $text-color;
@@ -351,14 +375,14 @@ a.custom-fabrics {
 
 .reset_variations {
 	display: table;
-	text-align: right;
-	margin-left: auto;
-	padding-inline: 0.5em;
-	font-size: 1.1rem !important;
-	color: $text-color !important;
-	border-bottom: 1px solid #d1d1d1 !important;
-	letter-spacing: 1px;
 	transition: border-bottom 0.3s;
+	margin-left: auto;
+	border-bottom: 1px solid #d1d1d1 !important;
+	padding-inline: 0.5em;
+	color: $text-color !important;
+	font-size: 1.1rem !important;
+	letter-spacing: 1px;
+	text-align: right;
 
 	&:hover {
 		border-bottom: 1px solid $dark-color !important;
@@ -367,8 +391,8 @@ a.custom-fabrics {
 
 .attachment-full,
 .wpgs-thumb-main-image {
-	height: 100px !important;
 	width: 100% !important;
+	height: 100px !important;
 	object-fit: cover;
 
 	@include respond(desktop) {
@@ -378,4 +402,127 @@ a.custom-fabrics {
 
 .slick-track {
 	display: flex !important;
+}
+
+.woo-variation-swatches .variable-items-wrapper {
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: repeat(1, 1fr);
+
+	@include respond(tablet) {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 0.3em;
+		padding: 0 0.5em;
+	}
+}
+
+ul.variable-items-wrapper {
+	li {
+		box-shadow: none !important;
+		border: 1px solid rgb(214, 214, 214) !important;
+		border-radius: 5px !important;
+		padding: 1.5em 2em !important;
+		width: 100% !important;
+
+		&:hover {
+		}
+
+		span {
+			color: #323232 !important;
+			letter-spacing: 1px !important;
+		}
+	}
+}
+
+ul[data-attribute_name='attribute_pa_fabrics-image'] {
+	display: flex !important;
+	justify-content: flex-end !important;
+	padding: 0 1em;
+	// display: none !important;
+	li {
+		border-radius: 50% !important;
+		padding: initial !important;
+		width: 35px !important;
+		height: 35px !important;
+
+		img {
+			border-radius: 50% !important;
+		}
+	}
+}
+
+.variable-item.button-variable-item.selected {
+	border: 1px solid #000 !important;
+	span {
+		color: #000;
+		font-weight: 700 !important;
+	}
+}
+
+th.label {
+	font-size: 1.8rem !important;
+
+	letter-spacing: 1px !important;
+	text-align: right !important;
+}
+
+.checkout-button.button.alt.wc-forward {
+	&:focus,
+	&:hover {
+		background-color: $white-color !important;
+		color: $text-color !important;
+	}
+}
+
+.rtwpvg-slider-prev-arrow {
+	left: 0 !important;
+}
+
+.rtwpvg-slider-next-arrow {
+	right: 0 !important;
+}
+
+.rtwpvg-slider-next-arrow,
+.rtwpvg-slider-prev-arrow,
+.rtwpvg-thumbnail-next-arrow,
+.rtwpvg-thumbnail-prev-arrow {
+	transition: all 0.3s !important;
+	background-color: rgba($color: $dark-color, $alpha: 0.7) !important;
+	color: $bg-color !important;
+
+	&:hover {
+		background-color: rgba($color: $dark-color, $alpha: 0.9) !important;
+	}
+}
+
+.rtwpvg-thumbnail-next-arrow,
+.rtwpvg-thumbnail-prev-arrow {
+	top: 50% !important;
+	transform: translateY(-50%);
+	height: 40px !important;
+}
+
+.rtwpvg-images {
+	@include respond(tablet) {
+		max-width: 45% !important;
+	}
+
+	@include respond(desktop) {
+		max-width: 65% !important;
+	}
+}
+
+.rtwpvg-slider-wrapper,
+.rtwpvg-thumbnail-wrapper {
+	margin-bottom: 2em !important;
+}
+
+.rtwpvg-thumbnail-image {
+	img {
+		width: 100% !important;
+		// height: 150px !important;
+		object-fit: cover;
+	}
 }

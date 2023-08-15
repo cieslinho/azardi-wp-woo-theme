@@ -59,6 +59,8 @@ if ( woocommerce_product_loop() ) {
 	
 			<?php
 			/**
+			 * 
+			 * 
 			 * Hook: woocommerce_archive_description.
 			 *
 			 * @hooked woocommerce_taxonomy_archive_description - 10
@@ -87,6 +89,8 @@ if ( woocommerce_product_loop() ) {
 			do_action( 'woocommerce_shop_loop' );
 
 			wc_get_template_part( 'content', 'product' );
+
+			
 		}
 	}
 
@@ -100,6 +104,7 @@ if ( woocommerce_product_loop() ) {
 	 * @hooked woocommerce_pagination - 10
 	 */
 	do_action( 'woocommerce_after_shop_loop' );
+	do_action( 'woocommerce_archive_description' );
 } else {
 	/**
 	 * Hook: woocommerce_no_products_found.
