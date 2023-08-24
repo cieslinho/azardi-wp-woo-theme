@@ -59,8 +59,8 @@
 		}
 
 		&-info {
-			font-size: 1.4rem;
 			padding-block: 0.5em;
+			font-size: 1.4rem;
 			a {
 				color: $dark-color;
 			}
@@ -151,7 +151,7 @@
 		&__list {
 			.menu-item a {
 				padding: 0.5em;
-				font-size: 1.5rem;
+				font-size: 1.3rem !important;
 			}
 			ul.sub-menu.sub-menu-active {
 				visibility: visible;
@@ -161,7 +161,7 @@
 			.menu-item {
 				.menu-item-btn {
 					padding: 0.5em;
-					font-size: 1.5rem;
+					font-size: 1.3rem !important;
 				}
 			}
 		}
@@ -213,6 +213,14 @@
 				}
 				&-btn {
 					@include nav-btn;
+					padding: 0.6em !important;
+					font-size: 1.5rem !important;
+				}
+
+				&-177 {
+					.sub-menu.sub-menu.sub-menu-active {
+						max-height: 250px !important;
+					}
 				}
 			}
 
@@ -234,8 +242,9 @@
 			a {
 				display: block;
 				border-bottom: 1px solid rgba($color: $dark-color, $alpha: 0.4);
-				padding: 0.8em;
+				padding: 0.6em !important;
 				color: $text-color;
+				font-size: 1.5rem !important;
 			}
 		}
 		&__list.list--active {
