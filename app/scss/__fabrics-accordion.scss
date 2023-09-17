@@ -1,0 +1,37 @@
+.accordion {
+	.fabric__submenu {
+		&-item {
+			display: flex;
+		}
+	}
+
+	.fabric__tabs > div {
+		display: none;
+		flex-wrap: wrap;
+	}
+
+	.fabric__tabs > div.active {
+		display: flex;
+	}
+}
+.custom-fabric {
+	margin-top: 1em;
+}
+
+.custom-fabrics-text {
+	margin-top: 1em;
+	color: $text-color;
+	font-size: 1.4rem;
+	line-height: 150%;
+
+	a {
+		transition: border-bottom 0.3s;
+		border-bottom: 1px solid #d1d1d1;
+		padding: 0 0 0.3em 0;
+		color: $text-color;
+
+		&:hover {
+			border-bottom: 1px solid #000;
+		}
+	}
+}

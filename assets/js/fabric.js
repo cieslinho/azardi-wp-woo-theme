@@ -44,30 +44,30 @@ if (isSafari) {
 	})
 }
 
-fabricImages.forEach(image =>
-	image.addEventListener('click', () => {
-		const fabricTitle = document.querySelector('.product__fabrics-current')
-		const filename = image.src.replace(/^.*[\\\/]/, '')
-		const imageFabricGroup = image.getAttribute('data-fabric-group')
-		fabricModal.classList.toggle('fabric--hidden')
-		fabricHiddenInput.value = filename.replace(/\.[^/.]+$/, '')
-		fabricSelect.value = imageFabricGroup
-		fabricSelect.removeAttribute('disabled')
-		document.querySelector('.variations_form').dispatchEvent(new CustomEvent('check_variations'))
-		fabricBox.classList.remove('hidden')
-		currentFabric.src = image.src
-		fabricTitle.textContent = filename
-			.split('.')[0]
-			.split('_')
-			.join(' ')
-			.split('-')
-			.join(' ')
-			.split('%20')
-			.join(' ')
-			.split('plaskie')
-			.join(' ')
-	})
-)
+// fabricImages.forEach(image =>
+// 	image.addEventListener('click', () => {
+// 		const fabricTitle = document.querySelector('.product__fabrics-current')
+// 		const filename = image.src.replace(/^.*[\\\/]/, '')
+// 		const imageFabricGroup = image.getAttribute('data-fabric-group')
+// 		fabricModal.classList.toggle('fabric--hidden')
+// 		fabricHiddenInput.value = filename.replace(/\.[^/.]+$/, '')
+// 		fabricSelect.value = imageFabricGroup
+// 		fabricSelect.removeAttribute('disabled')
+// 		document.querySelector('.variations_form').dispatchEvent(new CustomEvent('check_variations'))
+// 		fabricBox.classList.remove('hidden')
+// 		currentFabric.src = image.src
+// 		fabricTitle.textContent = filename
+// 			.split('.')[0]
+// 			.split('_')
+// 			.join(' ')
+// 			.split('-')
+// 			.join(' ')
+// 			.split('%20')
+// 			.join(' ')
+// 			.split('plaskie')
+// 			.join(' ')
+// 	})
+// )
 
 // const tabs = document.querySelectorAll('[data-tab-target]')
 // const tabContents = document.querySelectorAll('[data-tab-content]')

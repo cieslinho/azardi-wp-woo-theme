@@ -24,9 +24,9 @@
 		}
 	}
 	.woocommerce-error {
+		margin-top: 5em;
 		background-color: $white-color;
 		color: $text-color;
-		margin-top: 5em;
 
 		@include respond(tablet) {
 			margin-top: 3em;
@@ -146,16 +146,16 @@
 
 .cart-empty.woocommerce-info,
 .woocommerce-error {
-	max-width: 1600px;
-	width: 100%;
 	margin: 0 auto 2em;
+	width: 100%;
+	max-width: 1600px;
 }
 
 .shop__layout {
 	ul.products {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-items: flex-end;
 
 		&::before,
 		&::after {
@@ -163,27 +163,19 @@
 		}
 
 		@include respond(mobile-max) {
-			display: grid;
-			grid-template-columns: repeat(2, 1fr);
-			grid-template-rows: 1fr;
 			grid-column-gap: 1em;
 			grid-row-gap: 1em;
+			display: grid;
+			grid-template-rows: 1fr;
+			grid-template-columns: repeat(2, 1fr);
 		}
 
 		@include respond(tablet) {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			grid-template-rows: 1fr;
 			grid-column-gap: 1em;
 			grid-row-gap: 1em;
-		}
-
-		@include respond(desktop) {
 			display: grid;
-			grid-template-columns: repeat(4, 1fr);
 			grid-template-rows: 1fr;
-			grid-column-gap: 1.5em;
-			grid-row-gap: 1.5em;
+			grid-template-columns: repeat(3, 1fr);
 		}
 	}
 }
@@ -275,10 +267,10 @@
 .woocommerce form .form-row textarea,
 select.orderby,
 input.input-text {
-	border-radius: 5px !important;
-	border: 1px solid #d1d1d1;
-	outline: none;
 	transition: border 0.3s;
+	outline: none;
+	border: 1px solid #d1d1d1;
+	border-radius: 5px !important;
 
 	&:hover,
 	&:focus,
@@ -289,9 +281,9 @@ input.input-text {
 
 .woocommerce {
 	a.woocommerce-Button.button {
+		border: none;
 		background-color: $bg-color;
 		color: $text-color;
-		border: none;
 		text-decoration: none;
 
 		&:hover {
@@ -348,10 +340,10 @@ a.checkout-button.button.alt.wc-forward.wp-element-button,
 
 .actions {
 	button.button.wp-element-button {
-		border-radius: 5px !important;
-		border: 1px solid #d1d1d1;
-		outline: none;
 		transition: border 0.3s, background-color 0.3s, color 0.3s;
+		outline: none;
+		border: 1px solid #d1d1d1;
+		border-radius: 5px !important;
 
 		&:hover,
 		&:focus,
