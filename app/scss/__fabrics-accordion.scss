@@ -15,7 +15,68 @@
 	}
 }
 .custom-fabric {
-	margin-top: 1em;
+	position: fixed;
+	top: 0;
+	right: 0;
+	transform: translateX(105%);
+	z-index: 1000;
+	z-index: 3000;
+	transition: transform 0.3s ease;
+	box-shadow: -5px 0 20px #202020;
+	// margin-top: 1em;
+	background-color: $bg-color;
+	padding: 2em 1em;
+	width: 80vw;
+	height: 100%;
+	overflow-y: scroll;
+
+	@include respond(tablet) {
+		width: 35vw;
+	}
+
+	.top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.close-btn {
+			transition: all 0.2s;
+			cursor: pointer;
+			border: 2px solid $gray-color;
+			border-radius: 50%;
+			background-color: $gray-color;
+			padding: 0.3em;
+			font-size: 2rem;
+
+			&:hover {
+				border: 2px solid $text-color;
+				background-color: $text-color;
+				color: $bg-color;
+			}
+		}
+	}
+}
+
+.custom-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 2000;
+	transition: opacity 0.3s ease-in-out;
+	background-color: rgba($color: #000000, $alpha: 0.5);
+	width: 100vw;
+	height: 100vh;
+}
+
+.custom-overlay.active {
+	visibility: visible;
+	opacity: 1;
+}
+
+.custom-fabric.active {
+	transform: translateX(0);
 }
 
 .custom-fabrics-text {
@@ -34,4 +95,17 @@
 			border-bottom: 1px solid #000;
 		}
 	}
+}
+
+.confirm-btn {
+	transition: all 0.3s;
+	cursor: pointer;
+	border: 1px solid $text-color;
+	border-radius: 5px;
+	background-color: $text-color;
+	padding: 1em;
+	color: #fff;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-align: center;
 }

@@ -259,8 +259,14 @@ error_reporting(E_ERROR | E_PARSE);
     <?php
     $value = isset( $_POST['custom_text_add_on'] ) ? sanitize_text_field( $_POST['custom_text_add_on'] ) : '';
     ?>
+   
+   <div class="custom-overlay"></div>
    <div class="custom-fabric">
+    <div class="top">
       <label class="custom-label">Wypełnij pole jeśli chcesz wybrać dowolną tkaninę</label>
+      <a class="close-btn"><i class='bx bx-x'></i></a>
+    </div>
+      
       <div class="accordion">
       <ul class="fabric__submenu">
             <li class="fabric__submenu-item">
@@ -2212,13 +2218,39 @@ error_reporting(E_ERROR | E_PARSE);
         <p>
           <input class="custom-input" placeholder="Wprowadź nazwę tkaniny, np: BOSS 01" name="custom_text_add_on" value="<?php $value ?>">
         </p>
+
+        <a class="confirm-btn">Zatwierdź</a>
     </div>
     
 <script>
 
 const fabricImages = document.querySelectorAll('.fabric__image')
 const fabricInput = document.querySelector('.custom-input')
+const customFabric =document.querySelector('.custom-fabric')
+const anyFabric = document.querySelector('[data-value="dowolna-tkanina"]')
+const closeFabric = document.querySelector('.close-btn')
+const confirmBtn =document.querySelector('.confirm-btn')
+const overlay = document.querySelector('.custom-overlay')
+const fabricsList = document.querySelector('[aria-label="Sugerowana Tkanina"]')
 
+
+
+ 
+
+anyFabric.addEventListener('click', () =>{
+  customFabric.classList.add('active')
+overlay.classList.add('active')
+})
+
+closeFabric.addEventListener('click', () => {
+  customFabric.classList.remove('active')
+  overlay.classList.remove('active')
+})
+
+confirmBtn.addEventListener('click', () => {
+  customFabric.classList.remove('active')
+  overlay.classList.remove('active')
+})
 
 fabricImages.forEach(image => {
   image.addEventListener('click', () => {
@@ -2236,6 +2268,25 @@ fabricInput.value = filename
 			.join(' ')
   })
 });
+
+const allFabrics = fabricsList.getElementsByTagName('li')
+Array.from(allFabrics).forEach(function (element) {
+console.log(element);
+const value = element.dataset.value
+element.addEventListener('click', () => {
+console.log(value);
+
+if (value === 'dowolna-tkanina'){
+  console.log('true')} 
+  else {
+    console.log('false');
+    fabricInput.value = ''
+  }
+
+})
+
+});
+
 
 
 
