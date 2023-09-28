@@ -2303,6 +2303,52 @@ if (value === 'dowolna-tkanina'){
 
 
 
+add_action( 'woocommerce_after_order_notes', 'wpdesk_vat_field' );
+/**
+* Pole NIP w zamówieniu
+*/
+function wpdesk_vat_field( $checkout ) {
+
+    echo '<div id="wpdesk_vat_field"><h3>' . __('Dane do Faktury') . '</h3>';
+    
+    woocommerce_form_field( 'vat_number', array(
+        'type'          => 'text',
+        'class'         => array( 'vat-number-field form-row-wide') ,
+        'label'         => __( 'NIP' ),
+        'placeholder'   => __( 'Wpisz NIP, aby otrzymać fakturę' ),
+    ), $checkout->get_value( 'vat_number' ));
+    
+    echo '</div>';
+
+}
+
+add_action( 'woocommerce_checkout_update_order_meta', 'wpdesk_checkout_vat_number_update_order_meta' );
+/**
+* Save VAT Number in the order meta
+*/
+function wpdesk_checkout_vat_number_update_order_meta( $order_id ) {
+    if ( ! empty( $_POST['vat_number'] ) ) {
+        update_post_meta( $order_id, '_vat_number', sanitize_text_field( $_POST['vat_number'] ) );
+    }
+}
+
+add_action( 'woocommerce_admin_order_data_after_billing_address', 'wpdesk_vat_number_display_admin_order_meta', 10, 1 );
+/**
+ * Wyświetlenie pola NIP
+ */
+function wpdesk_vat_number_display_admin_order_meta( $order ) {
+    echo '<p><strong>' . __( 'NIP', 'woocommerce' ) . ':</strong> ' . get_post_meta( $order->id, '_vat_number', true ) . '</p>';
+}
+
+
+add_filter( 'woocommerce_email_order_meta_keys', 'wpdesk_vat_number_display_email' );
+/**
+* Pole NIP w mailu
+*/
+function wpdesk_vat_number_display_email( $keys ) {
+     $keys['NIP'] = '_vat_number';
+     return $keys;
+}
 
  
 // -----------------------------------------
