@@ -40,7 +40,7 @@ function azardi_config(){
     )
   );
   add_theme_support('woocommerce', array(
-    'thumbnails_image_width' => 200,
+    'thumbnails_image_width' => 300,
     'single_image_width' => 800,
     'product_grid' => array(
       'default_rows' => 10,
@@ -73,9 +73,9 @@ if( function_exists('acf_add_options_page') ) {
 
 add_filter( 'woocommerce_get_image_size_gallery_thumbnail', function( $size ) {
 	return array(
-		'width'  => 200,
-		'height' => 200,
-		'crop'   => 1
+		'width'  => 300,
+		'height' => 300,
+		'crop'   => 0
 	);
 } );
 
@@ -2303,52 +2303,52 @@ if (value === 'dowolna-tkanina'){
 
 
 
-add_action( 'woocommerce_after_order_notes', 'wpdesk_vat_field' );
-/**
-* Pole NIP w zamówieniu
-*/
-function wpdesk_vat_field( $checkout ) {
+// add_action( 'woocommerce_after_order_notes', 'wpdesk_vat_field' );
+// /**
+// * Pole NIP w zamówieniu
+// */
+// function wpdesk_vat_field( $checkout ) {
 
-    echo '<div id="wpdesk_vat_field"><h3>' . __('Dane do Faktury') . '</h3>';
+//     echo '<div id="wpdesk_vat_field"><h3>' . __('Dane do Faktury') . '</h3>';
     
-    woocommerce_form_field( 'vat_number', array(
-        'type'          => 'text',
-        'class'         => array( 'vat-number-field form-row-wide') ,
-        'label'         => __( 'NIP' ),
-        'placeholder'   => __( 'Wpisz NIP, aby otrzymać fakturę' ),
-    ), $checkout->get_value( 'vat_number' ));
+//     woocommerce_form_field( 'vat_number', array(
+//         'type'          => 'text',
+//         'class'         => array( 'vat-number-field form-row-wide') ,
+//         'label'         => __( 'NIP' ),
+//         'placeholder'   => __( 'Wpisz NIP, aby otrzymać fakturę' ),
+//     ), $checkout->get_value( 'vat_number' ));
     
-    echo '</div>';
+//     echo '</div>';
 
-}
+// }
 
-add_action( 'woocommerce_checkout_update_order_meta', 'wpdesk_checkout_vat_number_update_order_meta' );
-/**
-* Save VAT Number in the order meta
-*/
-function wpdesk_checkout_vat_number_update_order_meta( $order_id ) {
-    if ( ! empty( $_POST['vat_number'] ) ) {
-        update_post_meta( $order_id, '_vat_number', sanitize_text_field( $_POST['vat_number'] ) );
-    }
-}
+// add_action( 'woocommerce_checkout_update_order_meta', 'wpdesk_checkout_vat_number_update_order_meta' );
+// /**
+// * Save VAT Number in the order meta
+// */
+// function wpdesk_checkout_vat_number_update_order_meta( $order_id ) {
+//     if ( ! empty( $_POST['vat_number'] ) ) {
+//         update_post_meta( $order_id, '_vat_number', sanitize_text_field( $_POST['vat_number'] ) );
+//     }
+// }
 
-add_action( 'woocommerce_admin_order_data_after_billing_address', 'wpdesk_vat_number_display_admin_order_meta', 10, 1 );
-/**
- * Wyświetlenie pola NIP
- */
-function wpdesk_vat_number_display_admin_order_meta( $order ) {
-    echo '<p><strong>' . __( 'NIP', 'woocommerce' ) . ':</strong> ' . get_post_meta( $order->id, '_vat_number', true ) . '</p>';
-}
+// add_action( 'woocommerce_admin_order_data_after_billing_address', 'wpdesk_vat_number_display_admin_order_meta', 10, 1 );
+// /**
+//  * Wyświetlenie pola NIP
+//  */
+// function wpdesk_vat_number_display_admin_order_meta( $order ) {
+//     echo '<p><strong>' . __( 'NIP', 'woocommerce' ) . ':</strong> ' . get_post_meta( $order->id, '_vat_number', true ) . '</p>';
+// }
 
 
-add_filter( 'woocommerce_email_order_meta_keys', 'wpdesk_vat_number_display_email' );
-/**
-* Pole NIP w mailu
-*/
-function wpdesk_vat_number_display_email( $keys ) {
-     $keys['NIP'] = '_vat_number';
-     return $keys;
-}
+// add_filter( 'woocommerce_email_order_meta_keys', 'wpdesk_vat_number_display_email' );
+// /**
+// * Pole NIP w mailu
+// */
+// function wpdesk_vat_number_display_email( $keys ) {
+//      $keys['NIP'] = '_vat_number';
+//      return $keys;
+// }
 
  
 // -----------------------------------------
@@ -2423,4 +2423,139 @@ function bbloomer_product_add_on_display_emails( $fields ) {
     $fields['custom_text_add_on'] = 'Dowolna Tkanina:';
     return $fields; 
 }
+
+add_action( 'woocommerce_after_add_to_cart_button', 'add_content_after_addtocart_button_func' );
+/*
+ * Content below "Add to cart" Button.
+ */
+function add_content_after_addtocart_button_func() {
+?>
+   <script type="text/javascript" style="display:none;">
+        let caratySelector = '.caraty-price-';
+        if(document.querySelectorAll('.caraty-product').length > 1) {
+            caratySelector = '.caraty-product .caraty-price-';
+        }
+
+        function reformat(price) {
+            price = price.replace(new RegExp('[^0-9,.]', 'gi'), '');
+
+            let lastComma = price.lastIndexOf(',');
+            let lastPoint = price.lastIndexOf('.');
+
+            if (lastComma === -1 && lastPoint === -1) {
+                return price + '.00';
+            }
+            if (lastComma !== -1 && lastPoint !== -1) {
+                if (lastComma > lastPoint) {
+                    price = price.replace(new RegExp('\\.', 'gi'), '').replace(new RegExp(',', 'gi'), '.');
+                } else {
+                    price = price.replace(new RegExp(',', 'gi'), '');
+                }
+            } else if (lastPoint === -1) {
+                price = price.replace(',', '.');
+            }
+            lastPoint = price.lastIndexOf('.');
+
+            if (lastPoint !== price.length - 3) {
+                return price.replace('.', '') + '.00';
+            }
+            if (lastPoint === -1) {
+                return price + '.00';
+            }
+            return price;
+        }
+
+        function PoliczRateCA() {
+            let price = document.querySelectorAll(getPriceSelector())[0].textContent
+            price = reformat(price);
+            url = 'https://ewniosek.credit-agricole.pl/eWniosek/simulator.jsp?PARAM_TYPE=RAT&PARAM_PROFILE=<?php echo get_option('caraty_psp'); ?>&PARAM_CREDIT_AMOUNT=' + price + '<?php if (!empty($offerId)) { echo '&offerId=' . $offerId; }?>'
+            if(<?php echo get_option("caraty_img_calc"); ?>) {
+                url += '&cart.imageUrl=' + getImg();
+            }
+            window.open(url, 'Policz_rate');
+            return false;
+        }
+
+        function getImg() {
+            if('<?php echo get_option("caraty_image_selector") ?>' != ''){
+                // getImg = '<?php echo get_option("caraty_image_selector") ?>';
+                // getImg = getImg.replace(/\\"/g, '"');
+                return eval('<?php echo get_option("caraty_image_selector") ?>');
+            }
+            return document.querySelectorAll('.wp-post-image')[0].src;
+        }
+
+        function isCustomSelector() {
+            if ('<?php echo get_option("caraty_product_selector"); ?>' !== '') {
+                return document.querySelectorAll('<?php echo get_option("caraty_product_selector"); ?>').length !== 0
+            }
+            return false
+        }
+
+        function getPriceSelector() {
+            if (isCustomSelector()) {
+                return '<?php echo get_option("caraty_product_selector"); ?>'
+            }
+
+            let productId = getProductId();
+            let discount = hasDiscount(productId);
+            if (discount) {
+                return discount;
+            }
+            return  caratySelector + productId;
+        }
+
+        function getProductId() {
+            if (hasVariations()) {
+                var id = document.getElementsByName('variation_id')[0].value;
+                 if(document.querySelectorAll(caratySelector + id).length > 0) {
+                    return id;
+                 }
+            }
+            return document.getElementsByName('add-to-cart')[0].value;
+        }
+
+        function hasVariations() {
+            return document.querySelectorAll('.variations').length > 0;
+        }
+
+        function hasDiscount(productId) {
+            selector = caratySelector + productId
+            if(document.querySelectorAll(selector + ' ins').length > 0){
+                return caratySelector + productId + ' ins';
+            }
+            if(document.querySelectorAll(selector + ' bdi').length > 0){
+                return caratySelector + productId + ' bdi';
+            }
+            return false;
+        }
+    </script>
+   <p id="caraty" class="buttons_bottom_block">
+        <?php if ($logoCalc === null) : ?>
+        <a target="raty_symulator" title="Kupuj na Raty!" onclick="return PoliczRateCA();">
+            <img alt="" src="<?php echo get_option('caraty_logo_calc') ?>" align="middle">
+        </a>
+        <?php else :
+            global $product; ?>
+            <a target="raty_symulator" title="Kupuj na Raty!" onclick="return PoliczRateCA();">
+                <img id="caraty_img_auto" alt="" align="middle" src="<?= $logoCalc; ?>?creditAmount=<?php echo $product->get_price(); ?>&posId=<?= get_option('caraty_psp'); ?>&imgType=<?= get_option('caraty_logo_calc'); ?><?php if (!empty($offerId)) { echo '&offerId=' . $offerId; } ?>">
+            </a>
+        <?php endif; ?>
+    </p>
+  <?php  
+//         // Echo content.
+//         echo '
+// 		<div class="ratyCA">
+// 		<a target="raty_symulator" href="https://ewniosek.credit-agricole.pl/eWniosek/procedure.jsp?PARAM_TYPE=RAT&PARAM_PROFILE=PSP2011676" title="Kupuj na Raty!" onclick="PoliczRateCA();">
+//  <img src="http://ewniosek.credit-agricole.pl/eWniosek/res/buttons/calc_sm_comp.png">
+// </a>
+
+// 		</div>
+		
+		
+		
+// 		';
+
+}
+
 

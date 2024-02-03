@@ -13,6 +13,9 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logonew2.png" alt="Logo firmy Azardi, Azardi sklep meblarski"
                         class="footer__img">
                 </a>
+				 <a style="font-style: italic;" class="footer__link menu-item" href="https://www.royalcoil.pl/">
+                       „Oficjalny dystrybutor materacy Royal Coil” 
+                                            </a>
                 <div class="footer__box-address">
                     <p class="footer__link menu-item">
                         <i class='bx bxs-map'></i>
@@ -22,6 +25,7 @@
                         <i class='bx bxs-envelope'></i>
                         kontakt@azardi.pl
                     </a>
+					
                 </div>
                 <div class="nav__top-socials">
                     <a href="https://www.facebook.com/lozkamaterace/">
@@ -67,9 +71,9 @@
             </div>
             <div class="footer__box">
                 <p class="footer__box-title">Infolinia</p>
-                    <a class="footer__link menu-item" href="tel:+48 790 231 122">
+<!--                     <a class="footer__link menu-item" href="tel:+48 790 231 122">
                         <i class='bx bxs-phone'></i>
-                        +48 790 231 122</a>
+                        +48 790 231 122</a> -->
                     <a class="footer__link menu-item" href="tel:+48 884 822 444">
                         <i class='bx bxs-phone'></i>
                         +48 884 822 444</a>
@@ -101,6 +105,8 @@
                         class="footer__middle-img">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eraty-2.svg" alt="Logo płatności eraty"
                         class="footer__middle-img">
+				<img src="https://azardi.pl/wp-content/uploads/2024/01/ca-logo-768.png" alt="Logo płatności CA Raty"
+                        class="footer__middle-img">
             </div>
         </div>
         <div class="footer__bottom">
@@ -108,7 +114,7 @@
                 Copyright &copy; AZARDI All rights reserved 
             </p>
             <p class="footer__bottom-text"> <span class="footer__bottom-span">|</span>Realizacja: 
-                <a href="https://www.cieslaszymon.pl" class="footer__bottom-link">Cieśla Szymon</a>
+                <a href="mailto:contact@cieslaszymon.pl" class="footer__bottom-link">Cieśla Szymon</a>
             </p>
         </div>
 
