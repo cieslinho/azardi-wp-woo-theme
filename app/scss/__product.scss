@@ -10,7 +10,7 @@ li.product {
 
 		&:hover {
 			img {
-				transform: scale(0.98);
+				// transform: scale(0.98);
 			}
 		}
 		span.onsale {
@@ -24,7 +24,9 @@ li.product {
 			text-transform: uppercase;
 		}
 		img {
-			transition: transform 0.3s;
+			transition: opacity 0.3s;
+			margin: 0 !important;
+			height: 100% !important;
 		}
 		p {
 			display: none;
@@ -41,9 +43,9 @@ li.product {
 			font-size: 1.3rem !important;
 
 			span.woocommerce-Price-amount.amount {
-				font-size: 1.9rem;
-				font-weight: 700;
 				margin-left: 0.3rem;
+				font-weight: 700;
+				font-size: 1.9rem;
 			}
 		}
 	}
@@ -51,9 +53,9 @@ li.product {
 
 button.single_add_to_cart_button.button.alt.wp-element-button.disabled.wc-variation-selection-needed,
 button.single_add_to_cart_button.button.alt.wp-element-button {
+	border: 2px solid $dark-color !important;
 	background-color: $dark-color !important;
 	color: $bg-color !important;
-	border: 2px solid $dark-color !important;
 
 	&:hover {
 		background-color: $bg-color !important;
@@ -66,45 +68,45 @@ button.single_add_to_cart_button.button.alt.wp-element-button {
 }
 
 a.button.wc-forward.wp-element-button {
+	border: none;
 	background-color: $bg-color !important;
 	color: $text-color !important;
 	text-decoration: none;
-	border: none;
 }
 
 .wc-proceed-to-checkout {
 	a.checkout-button.button.alt.wc-forward.wp-element-button {
-		color: $bg-color !important;
 		border: 2px solid transparent;
+		color: $bg-color !important;
 
 		&:hover {
-			background-color: $bg-color !important;
 			border: 2px solid $text-color;
+			background-color: $bg-color !important;
 			color: $text-color !important;
 		}
 	}
 }
 
 .added_to_cart.wc-forward {
-	visibility: hidden;
 	display: none;
 	position: relative;
+	visibility: hidden;
 
 	&::before {
 		display: flex !important;
-		align-items: flex-start;
-		justify-content: center;
 		position: relative;
-		left: 0;
 		top: 0;
-		content: 'Produkt został dodany do koszyka';
+		left: 0;
+		justify-content: center;
+		align-items: flex-start;
 		visibility: visible;
-		color: $text-color;
-		padding: 0.5em;
-		background-color: #eee;
-		border-bottom: 2px solid green;
-		text-align: center;
 		margin-block: 0.5em;
+		border-bottom: 2px solid green;
+		background-color: #eee;
+		padding: 0.5em;
+		content: 'Produkt został dodany do koszyka';
+		color: $text-color;
+		text-align: center;
 	}
 }
 
@@ -113,24 +115,24 @@ p.product__category-class {
 }
 
 .product__fabrics {
-	padding: 1em 0.5em;
 	display: flex;
-	gap: 1em;
 	flex-direction: column;
+	gap: 1em;
 
 	border-bottom: 1px solid #333533;
+	padding: 1em 0.5em;
 
 	&-top {
 		display: flex;
-		align-items: center;
 		justify-content: space-between;
+		align-items: center;
 	}
 
 	&-text {
+		width: 45%;
+		font-weight: 700;
 		font-size: 1.4rem;
 		text-transform: uppercase;
-		font-weight: 700;
-		width: 45%;
 	}
 
 	&-img {
@@ -140,16 +142,16 @@ p.product__category-class {
 	}
 
 	&-current {
-		cursor: pointer;
-		padding: 0.5em;
-		text-transform: uppercase;
-		border-radius: 5px;
-		border: 1px solid #d1d1d1;
-		color: #202020;
-		outline: none;
-		width: 55%;
-		font-size: 1.4rem;
 		transition: background-color 0.2s, color 0.2s, border 0.2s;
+		cursor: pointer;
+		outline: none;
+		border: 1px solid #d1d1d1;
+		border-radius: 5px;
+		padding: 0.5em;
+		width: 55%;
+		color: #202020;
+		font-size: 1.4rem;
+		text-transform: uppercase;
 
 		&:hover {
 			border: 1px solid $dark-color;
@@ -159,4 +161,12 @@ p.product__category-class {
 
 .product__fabrics.hidden {
 	display: none;
+}
+
+.product-category.product {
+	a {
+		img {
+			display: block !important;
+		}
+	}
 }

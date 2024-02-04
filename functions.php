@@ -33,6 +33,8 @@ function azardi_config(){
   register_nav_menus(
     array(
   'azardi_main_menu' => 'Azardi Main Menu',
+  'azardi_beds_menu' => 'Azardi Beds Menu',
+  'azardi_mattress_menu' => 'Azardi Mattress Menu',
   'azardi_footer_menu_first' => 'Azardi Footer Menu Contact',
   'azardi_footer_menu_second' => 'Azardi Footer Menu Offer',
   'azardi_footer_menu_third' => 'Azardi Footer Menu Informations',
@@ -2557,5 +2559,8 @@ function add_content_after_addtocart_button_func() {
 // 		';
 
 }
+
+
+
 
 

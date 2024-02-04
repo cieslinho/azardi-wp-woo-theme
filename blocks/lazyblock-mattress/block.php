@@ -1,6 +1,12 @@
-<section class="mattress">
+<section id="quiz" class="mattress">
     <div class="container">
         <h2 class="section-title">Dobierz idealny materac</h2>
+        <div class="quiz__texts">
+            <img src="<?php echo esc_url( $attributes['image']['url'] ); ?>"
+                    alt="<?php echo esc_attr( $attributes['image']['alt'] ); ?>" class="quiz__img">
+            <p class="quiz__text"> <?php echo esc_html( $attributes['text'] ); ?></p>
+            
+        </div>
         <div class="quiz">
             <div class="quiz__intro">
                 <h3 class="quiz__intro-title">Quiz</h3>

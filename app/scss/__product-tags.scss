@@ -9,13 +9,17 @@
 		a {
 			display: inline-block;
 			margin: 0.15em;
-			border-radius: 5px;
 			border: 1px solid #d1d1d1;
+			border-radius: 5px;
 			background-color: $bg-color;
 			padding: 0.2em 0.5em;
 			color: #d1d1d1;
 			font-size: 1.2rem;
 			white-space: nowrap;
 		}
+	}
+
+	span.sku_wrapper {
+		display: none;
 	}
 }

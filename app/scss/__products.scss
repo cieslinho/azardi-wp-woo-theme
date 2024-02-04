@@ -208,6 +208,13 @@ span.price {
 	background-color: $white-color;
 	padding: 1em;
 
+	img {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 350px;
+	}
+
 	p {
 		margin-bottom: 0.5em;
 		color: $text-color;

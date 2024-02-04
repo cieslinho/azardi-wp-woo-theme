@@ -7,12 +7,27 @@
 	padding: 0 1em;
 	width: 100%;
 
+	&__left {
+		display: none;
+	}
+
 	&__search {
 		display: none;
 
-		@include respond(desktop-small) {
+		@include respond(desktop-large) {
 			display: block;
 			margin-right: 10px;
+		}
+
+		div.asl_m {
+			background: transparent;
+		}
+
+		div.asl_m .probox {
+			background: transparent !important;
+		}
+		div.asl_w .probox .promagnifier {
+			box-shadow: none !important;
 		}
 	}
 
@@ -24,6 +39,8 @@
 	}
 
 	&__img {
+		position: relative;
+		z-index: 2000;
 		width: 100%;
 		object-fit: cover;
 	}
@@ -34,7 +51,7 @@
 		justify-content: center;
 		align-items: center;
 
-		@include respond(tablet) {
+		@include respond(desktop-small) {
 			display: flex;
 			justify-content: flex-end;
 		}
@@ -269,23 +286,55 @@
 }
 @media (min-width: 1024px) {
 	.nav {
-		padding: 0 1.5em;
+		background-color: transparent;
+		padding: 0;
 		&__top {
+			background-color: $text-color;
+			padding: 0.3em 1.5em;
+			&-left {
+				font-size: 1.5rem;
+				p {
+					color: $bg-color;
+				}
+			}
+			&-center {
+				margin: 0 auto;
+				font-size: 1.5rem;
+				p {
+					color: $bg-color;
+					font-weight: 700;
+					text-transform: uppercase;
+				}
+			}
 			&-info {
 				font-size: 1.5rem;
+				a {
+					color: $bg-color;
+				}
 			}
 		}
 		&__btn {
 			display: none;
 		}
 		&__navbar {
+			// padding: 0 1.5em;
 			justify-content: flex-start;
+			backdrop-filter: blur(12.5px);
+			-webkit-backdrop-filter: blur(12.5px);
+
+			// box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+			background: rgba(255, 255, 255, 0.5);
+			padding: 0.5em 1.5em 0;
 		}
 		&__logo {
-			margin-right: 4em;
+			// margin-right: 4em;
+			margin: 0 auto;
+			margin-left: 0;
 		}
 		&__list {
-			display: block;
+			display: flex;
+			position: relative;
+			margin: 0 auto;
 			.menu-item {
 				display: inline-block;
 				position: relative;
@@ -362,7 +411,7 @@
 			.sub-menu {
 				display: none;
 				position: absolute;
-				top: 40px;
+				top: 50px;
 				left: 0;
 				background-color: $bg-color;
 				.menu-item {
@@ -384,7 +433,7 @@
 			a {
 				// font-weight: 600;
 				display: block;
-				padding: 0.7em;
+				padding: 1em;
 				color: $text-color;
 			}
 		}
@@ -392,13 +441,140 @@
 			display: none;
 		}
 		&__tools {
-			margin-left: auto;
+			// margin-left: auto;
 			a {
 				display: block;
 				i {
 					font-size: 2rem;
 				}
 			}
+		}
+
+		&__left {
+			display: flex;
+
+			&-item {
+				display: block;
+				// position: relative;
+				// padding-bottom: 1em;
+				// padding-left: 1em;
+			}
+
+			&-item:hover &-submenu {
+				display: flex;
+			}
+
+			&-submenu {
+				display: none;
+				position: fixed;
+				right: 0;
+				// top: 50px;
+				left: 0;
+				justify-content: space-between;
+				gap: 5em;
+				background-color: $bg-color;
+				padding: 2em 10em;
+				width: 100%;
+
+				&::after {
+					position: absolute;
+					top: 100%;
+					right: 0;
+					left: 0;
+					opacity: 0.15;
+					background: linear-gradient(180deg, #000 0, rgba(0, 0, 0, 0) 100%);
+					height: 20px;
+					content: '';
+				}
+			}
+
+			&-subitems {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				background-color: $bg-color;
+				width: 30%;
+				// max-width: 600px;
+				&-nested {
+					padding-left: 1.5em;
+				}
+
+				&-columns {
+					display: flex;
+					flex-direction: row;
+					gap: 3em;
+				}
+			}
+
+			&-subitem {
+				position: relative;
+				// border-bottom: 1px solid rgba($color: $dark-color, $alpha: 0.1);
+				// width: 100%;
+				font-weight: 700;
+				font-size: 1.8rem;
+
+				&::after {
+					position: absolute;
+					bottom: 0;
+					left: 10px;
+					transition: width 0.3s;
+					background-color: $dark-color;
+					width: 0px;
+					height: 2px;
+					content: '';
+				}
+
+				&:hover {
+					&::after {
+						width: 100%;
+					}
+				}
+			}
+
+			&-imgs {
+				display: flex;
+				align-items: flex-start;
+				gap: 1em;
+				// width: 60%;
+			}
+
+			&-img {
+				width: 500px !important;
+				max-width: 100%;
+				height: 300px !important;
+				object-fit: cover;
+			}
+
+			&-linkImg {
+				display: flex !important;
+				flex-direction: column;
+				gap: 1em;
+				border-bottom: 2px solid $dark-color;
+				padding: 0 !important;
+				padding-bottom: 1em !important;
+
+				&-mattress {
+					max-width: 550px;
+					// text-align: center;
+
+					img {
+						width: 100% !important;
+					}
+				}
+			}
+
+			&-text {
+				font-weight: 700;
+				font-size: 1.8rem;
+			}
+		}
+
+		.menu-beds,
+		.menu-mattress,
+		.menu-saloons,
+		.menu-furniture,
+		.menu-cooperation {
+			display: none;
 		}
 	}
 }

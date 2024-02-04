@@ -70,6 +70,7 @@ if ( woocommerce_product_loop() ) {
 			?>
 		</header>
 	<?php
+	do_action( 'woocommerce_archive_description' );
 	do_action( 'woocommerce_before_shop_loop' );
 	
 
@@ -103,8 +104,8 @@ if ( woocommerce_product_loop() ) {
 	 *
 	 * @hooked woocommerce_pagination - 10
 	 */
+	
 	do_action( 'woocommerce_after_shop_loop' );
-	do_action( 'woocommerce_archive_description' );
 } else {
 	/**
 	 * Hook: woocommerce_no_products_found.

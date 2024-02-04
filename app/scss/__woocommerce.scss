@@ -353,3 +353,26 @@ a.checkout-button.button.alt.wc-forward.wp-element-button,
 		}
 	}
 }
+
+.woocommerce .woocommerce-breadcrumb {
+	@include respond(desktop-small) {
+		margin-top: 4.5em;
+	}
+}
+
+.woocommerce-products-header__title.page-title {
+	margin-bottom: 0.5em !important;
+
+	@include respond(tablet) {
+		float: none !important;
+		margin-bottom: 1em !important;
+	}
+}
+
+.woocommerce .woocommerce-ordering {
+	margin-top: 3em;
+
+	@include respond(tablet) {
+		margin-top: 1.5em;
+	}
+}
