@@ -251,7 +251,6 @@
 }
 
 .woocommerce-thankyou-order-received {
-	margin-top: 100px;
 	margin-bottom: 20px;
 
 	@include respond(desktop) {
@@ -376,3 +375,24 @@ a.checkout-button.button.alt.wc-forward.wp-element-button,
 		margin-top: 1.5em;
 	}
 }
+
+.woocommerce {
+	padding-top: 1em;
+
+	@include respond(tablet) {
+		padding-top: 3em;
+	}
+}
+
+// .woocommerce-notices-wrapper {
+// 	padding-top: 1.5em;
+// 	padding-bottom: 1em;
+
+// 	@include respond(desktop) {
+// 		padding-top: 5.5em !important;
+// 	}
+// }
+
+// .woocommerce-MyAccount-navigation {
+// 	margin-top: 3em;
+// }

@@ -10,7 +10,7 @@
         <div class="footer__boxes">
             <div class="footer__box footer__box--first">
                 <a href="<?php echo get_home_url(); ?>" class="footer__logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logonew2.png" alt="Logo firmy Azardi, Azardi sklep meblarski"
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/azardi-white.png" alt="Logo firmy Azardi, Azardi sklep meblarski"
                         class="footer__img">
                 </a>
 				 <a style="font-style: italic;" class="footer__link menu-item" href="https://www.royalcoil.pl/">
@@ -106,6 +106,8 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eraty-2.svg" alt="Logo płatności eraty"
                         class="footer__middle-img">
 				<img src="https://azardi.pl/wp-content/uploads/2024/01/ca-logo-768.png" alt="Logo płatności CA Raty"
+                        class="footer__middle-img">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/raty0.jpeg" alt="Logo płatności CA Raty"
                         class="footer__middle-img">
             </div>
         </div>

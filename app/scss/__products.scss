@@ -6,7 +6,9 @@
 		align-items: center;
 
 		@include respond(tablet) {
-			flex-direction: row;
+			display: grid;
+			grid-template-rows: 1fr;
+			grid-template-columns: repeat(3, 1fr);
 		}
 	}
 
@@ -19,6 +21,7 @@
 
 		@include respond(tablet) {
 			margin-bottom: 0;
+			max-width: 100%;
 		}
 
 		&::before {

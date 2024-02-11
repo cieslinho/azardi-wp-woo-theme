@@ -1157,12 +1157,7 @@ function check() {
 			alt="Materac Azardi">
 		<p class="mattress__name">Magnicool 10 Soft</p>
 		</a>
-		<a href="/produkt/materac-piankowy-azardi-piano-hr/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1386-Materac-piankowy-AZARDI-Piano-HR-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">PIANO HR</p>
-		</a>
+		
 	`
 	} else if (arrayEquals(array58, checkedInputs)) {
 		console.log('array58')
@@ -1199,18 +1194,8 @@ function check() {
 	} else if (arrayEquals(array60, checkedInputs)) {
 		console.log('array60')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/materac-piankowy-azardi-piano/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1386-Materac-piankowy-AZARDI-Piano-HR-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">PIANO</p>
-		</a>
-		<a href="/produkt/materac-piankowy-azardi-piano-hr/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1386-Materac-piankowy-AZARDI-Piano-HR-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">PIANO HR</p>
-		</a>
+		
+		
 		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
@@ -1240,12 +1225,7 @@ function check() {
 	} else if (arrayEquals(array61, checkedInputs)) {
 		console.log('array61')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/materac-piankowy-azardi-piano-hr/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1386-Materac-piankowy-AZARDI-Piano-HR-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">PIANO HR</p>
-		</a>
+		
 		<a href="/produkt/magnicool-10-soft/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2023/02/MAGNICOOL-10-SOFT-1024x719.jpg"
@@ -1291,18 +1271,8 @@ function check() {
 	} else if (arrayEquals(array64, checkedInputs)) {
 		console.log('array64')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/materac-piankowy-azardi-piano/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1386-Materac-piankowy-AZARDI-Piano-HR-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">PIANO</p>
-		</a>
-		<a href="/produkt/materac-piankowy-azardi-piano-hr/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1386-Materac-piankowy-AZARDI-Piano-HR-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">PIANO HR</p>
-		</a>
+		
+		
 		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
@@ -1355,12 +1325,7 @@ function check() {
 	} else if (arrayEquals(array66, checkedInputs)) {
 		console.log('array66')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">BASIC PLUS</p>
-		</a>
+		
 		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
@@ -2705,12 +2670,7 @@ function check() {
 	} else if (arrayEquals(array114, checkedInputs)) {
 		console.log('array114')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">BASIC PLUS</p>
-		</a>
+		
 		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
@@ -2751,12 +2711,7 @@ function check() {
 	} else if (arrayEquals(array116, checkedInputs)) {
 		console.log('array116')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/materac-azardi-basic-sprezyny-kieszeniowe/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1397-Materac-AZARDI-Basic-sprezyny-kieszeniowe-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">BASIC</p>
-		</a>
+		
 		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
@@ -2814,18 +2769,8 @@ function check() {
 	} else if (arrayEquals(array118, checkedInputs)) {
 		console.log('array118')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/materac-azardi-mono-bonelowy/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1391-Materac-AZARDI-Mono-bonelowy.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">Mono</p>
-		</a>
-		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">BASIC PLUS</p>
-		</a>
+		
+		
 		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
@@ -2882,18 +2827,8 @@ function check() {
 	} else if (arrayEquals(array120, checkedInputs)) {
 		console.log('array120')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/materac-azardi-mono-bonelowy/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1391-Materac-AZARDI-Mono-bonelowy.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">Mono</p>
-		</a>
-		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">BASIC PLUS</p>
-		</a>
+		
+		
 		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
@@ -2943,12 +2878,7 @@ function check() {
 	} else if (arrayEquals(array122, checkedInputs)) {
 		console.log('array122')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">BASIC PLUS</p>
-		</a>
+		
 		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
@@ -3001,24 +2931,9 @@ function check() {
 	} else if (arrayEquals(array124, checkedInputs)) {
 		console.log('array124')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/materac-azardi-mono-bonelowy/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1391-Materac-AZARDI-Mono-bonelowy.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">Mono</p>
-		</a>
-		<a href="/produkt/materac-azardi-basic-sprezyny-kieszeniowe/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1397-Materac-AZARDI-Basic-sprezyny-kieszeniowe-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">BASIC</p>
-		</a>
-		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">BASIC PLUS</p>
-		</a>
+		
+		
+		
 		<a href="/produkt/materac-vario-azardi-kieszeniowy-visco/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2022/12/1409-Materac-Vario-AZARDI-kieszeniowy-visco-300x180.jpg"
@@ -3131,12 +3046,7 @@ function check() {
 	} else if (arrayEquals(array126, checkedInputs)) {
 		console.log('array126')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">BASIC PLUS</p>
-		</a>
+		
 		<a href="/produkt/materac-azardi-premium-kieszeniowy/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2022/12/1426-Materac-AZARDI-Premium-kieszeniowy-300x180.jpg"
@@ -3191,24 +3101,9 @@ function check() {
 	} else if (arrayEquals(array128, checkedInputs)) {
 		console.log('array128')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/materac-azardi-mono-bonelowy/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1391-Materac-AZARDI-Mono-bonelowy.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">Mono</p>
-		</a>
-		<a href="/produkt/materac-azardi-basic-sprezyny-kieszeniowe/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1397-Materac-AZARDI-Basic-sprezyny-kieszeniowe-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">BASIC</p>
-		</a>
-		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">BASIC PLUS</p>
-		</a>
+		
+		
+		
 		<a href="/produkt/materac-vario-azardi-kieszeniowy-visco/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2022/12/1409-Materac-Vario-AZARDI-kieszeniowy-visco-300x180.jpg"
@@ -3288,12 +3183,7 @@ function check() {
 	} else if (arrayEquals(array130, checkedInputs)) {
 		console.log('array130')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">BASIC PLUS</p>
-		</a>
+		
 		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
@@ -3387,12 +3277,7 @@ function check() {
 	} else if (arrayEquals(array134, checkedInputs)) {
 		console.log('array134')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">BASIC PLUS</p>
-		</a>
+		
 		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
@@ -3427,12 +3312,7 @@ function check() {
 	} else if (arrayEquals(array136, checkedInputs)) {
 		console.log('array136')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">BASIC PLUS</p>
-		</a>
+		
 		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
@@ -3467,12 +3347,7 @@ function check() {
 	} else if (arrayEquals(array138, checkedInputs)) {
 		console.log('array138')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">BASIC PLUS</p>
-		</a>
+		
 		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
@@ -3650,12 +3525,7 @@ function check() {
 	} else if (arrayEquals(array146, checkedInputs)) {
 		console.log('array146')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">BASIC PLUS</p>
-		</a>
+		
 		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
@@ -3991,12 +3861,7 @@ function check() {
 		console.log('array162')
 		mattressBoxes.innerHTML = ` 
 
-		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">BASIC PLUS</p>
-		</a>
+		
 		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
@@ -4084,12 +3949,7 @@ function check() {
 	} else if (arrayEquals(array166, checkedInputs)) {
 		console.log('array166')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">BASIC PLUS</p>
-		</a>
+		
 		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
@@ -4138,12 +3998,7 @@ function check() {
 		console.log('array168')
 		mattressBoxes.innerHTML = ` 
 
-		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">BASIC PLUS</p>
-		</a>
+		
 		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
@@ -4172,12 +4027,7 @@ function check() {
 	} else if (arrayEquals(array170, checkedInputs)) {
 		console.log('array170')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">BASIC PLUS</p>
-		</a>
+		
 		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
@@ -4270,12 +4120,7 @@ function check() {
 	} else if (arrayEquals(array174, checkedInputs)) {
 		console.log('array174')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">BASIC PLUS</p>
-		</a>
+		
 		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
@@ -4321,12 +4166,7 @@ function check() {
 	} else if (arrayEquals(array176, checkedInputs)) {
 		console.log('array176')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">BASIC PLUS</p>
-		</a>
+		
 		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
@@ -4434,12 +4274,7 @@ function check() {
 	} else if (arrayEquals(array182, checkedInputs)) {
 		console.log('array182')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">BASIC PLUS</p>
-		</a>
+		
 		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
@@ -4472,12 +4307,7 @@ function check() {
 	} else if (arrayEquals(array184, checkedInputs)) {
 		console.log('array184')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">BASIC PLUS</p>
-		</a>
+		
 		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
@@ -4510,12 +4340,7 @@ function check() {
 	} else if (arrayEquals(array186, checkedInputs)) {
 		console.log('array186')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">BASIC PLUS</p>
-		</a>
+		
 		<a href="/produkt/dolce-vita-dual-8/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2023/02/dolce-vita-dual-8-300x180.jpg"
@@ -4560,12 +4385,7 @@ function check() {
 	} else if (arrayEquals(array188, checkedInputs)) {
 		console.log('array188')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">BASIC PLUS</p>
-		</a>
+		
 		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"
@@ -4660,12 +4480,7 @@ function check() {
 	} else if (arrayEquals(array192, checkedInputs)) {
 		console.log('array192')
 		mattressBoxes.innerHTML = ` 
-		<a href="/produkt/materac-azardi-basic-plus-sprezyny-kieszeniowe-kokos/" class="mattress__link">
-		<img class="mattress__img"
-			src="https://azardi.pl/wp-content/uploads/2022/12/1403-Materac-AZARDI-Basic-Plus-sprezyny-kieszeniowe-kokos-300x180.jpg"
-			alt="Materac Azardi">
-		<p class="mattress__name">BASIC PLUS</p>
-		</a>
+		
 		<a href="/produkt/materac-vario-plus-azardi-kieszeniowy-visco/" class="mattress__link">
 		<img class="mattress__img"
 			src="https://azardi.pl/wp-content/uploads/2022/12/1415-Materac-Vario-Plus-AZARDI-kieszeniowy-visco.jpg"

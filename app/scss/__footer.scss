@@ -1,6 +1,6 @@
 .footer {
 	margin-top: 4em;
-	background-color: #efefef;
+	background-color: $text-color;
 	width: 100%;
 	&__boxes {
 		display: grid;
@@ -34,7 +34,7 @@
 
 		&-title {
 			margin-bottom: 0.5em;
-			color: $text-color;
+			color: $bg-color;
 			font-weight: 800;
 			font-size: 1.8rem;
 
@@ -53,15 +53,15 @@
 			a {
 				display: flex;
 				align-items: center;
+				cursor: pointer;
 				border-bottom: 1px solid transparent;
 				padding-block: 0.3em;
 				width: 100%;
-				color: $text-color;
+				color: $bg-color;
 				font-size: 1.5rem;
-				cursor: pointer;
 
 				&:hover {
-					border-bottom: 1px solid $text-color;
+					border-bottom: 1px solid $bg-color;
 				}
 
 				@include respond(desktop) {
@@ -91,7 +91,7 @@
 
 	&__text {
 		padding-block: 0.3em;
-		color: $text-color;
+		color: $bg-color;
 		font-size: 1.5rem;
 	}
 
@@ -111,18 +111,19 @@
 		}
 
 		&-text {
+			color: $bg-color;
 			text-align: center;
 		}
 
 		&-link {
 			position: relative;
+			z-index: 5;
 			transition: color 0.3s;
 			padding: 0 0.15em;
-			color: $text-color;
-			z-index: 5;
+			color: $bg-color;
 
 			&:hover {
-				color: $white-color;
+				color: $text-color;
 			}
 
 			&:hover::after {
@@ -135,7 +136,7 @@
 				left: 0;
 				z-index: -5;
 				transition: height 0.3s;
-				background-color: $dark-color;
+				background-color: $bg-color;
 				width: 100%;
 				height: 1px;
 				content: '';
@@ -153,28 +154,28 @@
 	}
 
 	&__middle {
-		margin-block: 1em;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		gap: 1em;
+		margin-block: 1em;
 
 		@include respond(tablet) {
-			margin-block: 2em;
-			justify-content: space-between;
 			flex-direction: row;
+			justify-content: space-between;
+			margin-block: 2em;
 		}
 
 		&-apps {
 			display: flex;
-			align-items: center;
 			flex-direction: column;
+			align-items: center;
 			gap: 0.3em;
 		}
 
 		&-app {
-			color: $text-color;
+			color: $bg-color;
 		}
 
 		&-icons {
@@ -198,16 +199,19 @@
 		}
 
 		&-text {
-			color: #a5a5a5;
+			color: $bg-color;
 			font-size: 1.4rem;
 		}
 
 		&-payments {
 			display: flex;
-			align-items: flex-end;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
 			gap: 1em;
 
 			@include respond(tablet) {
+				align-items: flex-end;
 				margin-right: 4em;
 			}
 		}
@@ -220,20 +224,20 @@
 	&__link.menu-item {
 		display: flex;
 		align-items: center;
+		gap: 0.3em;
+		cursor: pointer;
 		border-bottom: 1px solid transparent;
 		padding-block: 0.3em;
 		width: 100%;
-		color: $text-color;
+		color: $bg-color;
 		font-size: 1.5rem;
-		cursor: pointer;
-		gap: 0.3em;
 
 		i {
 			font-size: 1.7rem;
 		}
 
 		&:hover {
-			border-bottom: 1px solid $text-color;
+			border-bottom: 1px solid $bg-color;
 		}
 
 		@include respond(desktop) {

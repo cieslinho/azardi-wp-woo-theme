@@ -91,12 +91,12 @@
                             <div class="nav__left-imgs">
                                 <a href="/kontakt/" class="nav__left-linkImg">
                                     <img class="nav__left-img"
-                                        src="http://azardi.local/wp-content/uploads/2024/02/Projekt-lozka.jpeg" alt="">
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/projekt-lozka.jpeg" alt="">
                                     <p class="nav__left-text">Zaprojektuj swoje łóżko</p>
                                 </a>
                                 <a href="/tkaniny/" class="nav__left-linkImg">
                                     <img class="nav__left-img"
-                                        src="http://azardi.local/wp-content/uploads/2024/02/tkanina-2.jpeg" alt="">
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/tkanina-2.jpeg" alt="">
                                     <p class="nav__left-text">Zamów darmowe próbki tkanin</p>
                                 </a>
 
@@ -120,22 +120,13 @@
                                 <a href="/kategoria-produktu/materace/"
                                     class="nav__left-linkImg nav__left-linkImg-mattress">
                                     <img class="nav__left-img"
-                                        src="http://azardi.local/wp-content/uploads/2024/02/plecy.jpg" alt="">
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/plecy.jpg" alt="">
                                     <p class="nav__left-text">Sen jest niezwykle istotny dla naszego zdrowia. Badania
                                         wykazują, że skutecznie wpływa na poprawę koncentracji, obniżenie poziomu stresu
                                         oraz wzmocnienie odporności organizmu. Dobrej jakości sen jest kluczowy dla
                                         zachowania równowagi fizycznej i psychicznej.</p>
                                 </a>
-                                <a href="/kategoria-produktu/materace/"
-                                    class="nav__left-linkImg nav__left-linkImg-mattress">
-                                    <img class="nav__left-img"
-                                        src="http://azardi.local/wp-content/uploads/2024/02/plecy.jpg" alt="">
-                                    <p class="nav__left-text">Sen jest niezwykle istotny dla naszego zdrowia. Badania
-                                        wykazują, że skutecznie wpływa na poprawę koncentracji, obniżenie poziomu stresu
-                                        oraz wzmocnienie odporności organizmu. Dobrej jakości sen jest kluczowy dla
-                                        zachowania równowagi fizycznej i psychicznej.</p>
-                                </a>
-
+                              
 
 
                             </div>
@@ -159,12 +150,12 @@
                             <div class="nav__left-imgs">
                                 <a href="/kontakt/" class="nav__left-linkImg nav__left-linkImg-mattress">
                                     <img class="nav__left-img"
-                                        src="http://azardi.local/wp-content/uploads/2024/02/meble-scaled.jpg" alt="">
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/meble.jpg" alt="">
                                     <!-- <p class="nav__left-text"></p> -->
                                 </a>
                                 <a href="/kontakt/" class="nav__left-linkImg nav__left-linkImg-mattress">
                                     <img class="nav__left-img"
-                                        src="http://azardi.local/wp-content/uploads/2024/02/meble-scaled.jpg" alt="">
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/meble-2.jpg" alt="">
                                     <!-- <p class="nav__left-text"></p> -->
                                 </a>
 
@@ -203,7 +194,7 @@
                                 </a>
                                 <a href="/salony/" class="nav__left-linkImg nav__left-linkImg-mattress">
                                     <img class="nav__left-img"
-                                        src="http://azardi.local/wp-content/uploads/2024/02/salon.png" alt="">
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/mapka.png" alt="">
                                     <!-- <p class="nav__left-text"></p> -->
                                 </a>
 
@@ -222,7 +213,7 @@
 
                             </div>
 
-                            <div class="nav__left-imgs">
+                            <!-- <div class="nav__left-imgs">
                                 <a href="/kontakt/" class="nav__left-linkImg nav__left-linkImg-mattress">
                                     <img class="nav__left-img"
                                         src="http://azardi.local/wp-content/uploads/2024/02/salon.png" alt="">
@@ -236,7 +227,7 @@
 
 
 
-                            </div>
+                            </div> -->
                         </div>
                     </li>
 
