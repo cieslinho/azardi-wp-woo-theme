@@ -2,7 +2,7 @@
 	margin-top: 73px;
 
 	@include respond(desktop) {
-		margin-top: 0px;
+		margin-top: 6em !important;
 	}
 
 	&__box {

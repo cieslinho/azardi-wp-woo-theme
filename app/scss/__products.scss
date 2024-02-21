@@ -224,3 +224,95 @@ span.price {
 		line-height: 150%;
 	}
 }
+
+.shop-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 2em;
+	width: 100%;
+
+	@include respond(tablet) {
+		display: grid;
+		grid-template-rows: 1fr;
+		grid-template-columns: 0.3fr 1fr;
+	}
+
+	.shop-content {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	.wpfMainWrapper {
+		box-shadow: 0 0 10px rgba($color: $dark-color, $alpha: 0.2);
+		border-radius: 10px;
+		// background-color: rgba($color: $dark-color, $alpha: 0.03);
+		padding: 1em 1em;
+		width: 100% !important;
+	}
+
+	.products {
+		width: 100% !important;
+
+		// @include
+	}
+
+	.wpfCheckbox {
+		// display: none;
+	}
+	.wpfFilterContent {
+		padding-left: 0.5em;
+
+		ul li {
+			font-size: 1.5rem;
+
+			@include respond(tablet) {
+				font-size: 1.6rem;
+			}
+		}
+	}
+
+	.wfpTitle {
+		margin-bottom: 0.3em !important;
+		font-weight: 700 !important;
+		font-size: 1.6rem;
+
+		@include respond(tablet) {
+			font-size: 1.8rem !important;
+		}
+	}
+
+	.wpfFilterWrapper[data-radio='1'] .wpfCheckbox label:before {
+		width: 13px !important;
+		height: 13px !important;
+
+		@include respond(tablet) {
+			width: 15px !important;
+			height: 15px !important;
+		}
+	}
+
+	.wpfFilterVerScroll li label {
+		// display: flex !important;
+	}
+
+	.wpfFilterButton.wpfButton,
+	.wpfClearButton.wpfButton {
+		margin: 0;
+		border-radius: 5px !important;
+		background-color: $dark-color;
+		padding: 1em 2em;
+		width: 100%;
+		min-height: 0 !important;
+		color: $bg-color;
+		font-size: 1.4rem;
+	}
+}
+
+.shop-pagination {
+	.woocommerce-pagination {
+		@include respond(tablet) {
+			text-align: right !important;
+		}
+	}
+}

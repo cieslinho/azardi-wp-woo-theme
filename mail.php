@@ -15,4 +15,3 @@
     }
     //redirect
     header("Location: /kontakt/wiadomosc-wyslana");
-?>

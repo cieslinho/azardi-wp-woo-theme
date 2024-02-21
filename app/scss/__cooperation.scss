@@ -43,5 +43,16 @@
 				}
 			}
 		}
+
+		&-form {
+			.contact__form-btn {
+				margin: 0 auto !important;
+				max-width: 500px;
+			}
+
+			.nf-field-element {
+				text-align: center;
+			}
+		}
 	}
 }
