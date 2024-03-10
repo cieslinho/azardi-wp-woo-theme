@@ -29,6 +29,22 @@
             c.src = 'https://www.smartsuppchat.com/loader.js?'; s.parentNode.insertBefore(c, s);
         })(document);
     </script>
+    <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-X1QCNJBD9R"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-X1QCNJBD9R');
+        </script>
+    <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MSPX54B6');</script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <!-- Hotjar Tracking Code for https://www.azardi.pl -->
@@ -44,6 +60,10 @@
 </script>
 
 <body <?php body_class();?>>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MSPX54B6"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <nav class="nav">
         <div class="nav__overlay"></div>
@@ -81,11 +101,10 @@
                                 <a href="/kategoria-produktu/lozka/drewniane/" class="nav__left-subitem">Drewniane</a>
                                 <a href="/kategoria-produktu/lozka/kontynentalne/"
                                     class="nav__left-subitem">Kontynentalne</a>
-                                <a href="/kategoria-produktu/lozka/hotelowe/" class="nav__left-subitem">Hotelowe</a>
+                               
                                 <a href="/kategoria-produktu/lozka/elektryczne/"
                                     class="nav__left-subitem">Elektryczne</a>
-                                <a href="/kategoria-produktu/lozka/dla-dzieci/" class="nav__left-subitem">Dla
-                                    dzieci</a>
+                                
                                 <a href="/kategoria-produktu/lozka/kolekcje/" class="nav__left-subitem">Kolekcje</a>
                             </div>
                             <div class="nav__left-imgs">
@@ -208,8 +227,8 @@
                         <div class="nav__left-submenu">
                             <div class="nav__left-subitems">
 
-                                <a href="/wspolpraca/" class="nav__left-subitem">Architekci</a>
-                                <a href="/wspolpraca/" class="nav__left-subitem">Współpraca B2B</a>
+                                <a href="/wspolpraca-architekci/" class="nav__left-subitem">Architekci</a>
+                                <a href="/wspolpraca-b2b/" class="nav__left-subitem">Współpraca B2B</a>
 
                             </div>
 

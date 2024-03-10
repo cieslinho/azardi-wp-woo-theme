@@ -24,7 +24,7 @@ function liveReload(done) {
 		// server: {
 		//     baseDir: config.dist.base
 		// },
-		proxy: 'http://azardi.local',
+		proxy: 'http://azardishop.local',
 	})
 	done()
 }
