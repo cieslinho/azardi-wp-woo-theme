@@ -7362,6 +7362,18 @@ musicBtn.addEventListener('click', () => {
 	musicBtn.classList.toggle('active')
 })
 
+var swiperImages = new Swiper('.swiper-images', {
+	pagination: {
+		el: '.worth__slide-img-pagination',
+	},
+})
+
+var swiperTexts = new Swiper('.swiper-texts', {
+	pagination: {
+		el: '.worth__slide-texts-pagination',
+	},
+})
+
 window.addEventListener('load', function () {
 	const promoPopup = document.querySelector('.promo')
 	const promoOverlay = document.querySelector('.promo__overlay')
@@ -7369,6 +7381,25 @@ window.addEventListener('load', function () {
 		promoPopup.classList.add('active')
 		promoOverlay.classList.add('active')
 	}, 1000)
+})
+
+const closePopupRaty = document.querySelector('.promo__close-raty')
+
+window.addEventListener('load', function () {
+	const promoPopupRaty = document.querySelector('.promo-raty')
+	const promoOverlayRaty = document.querySelector('.promo__overlay-raty')
+	setTimeout(function open(event) {
+		promoPopupRaty.classList.add('active')
+		promoOverlayRaty.classList.add('active')
+	}, 2300)
+})
+
+closePopupRaty.addEventListener('click', () => {
+	const promoPopupRaty = document.querySelector('.promo-raty')
+	const promoOverlayRaty = document.querySelector('.promo__overlay-raty')
+
+	promoPopupRaty.classList.remove('active')
+	promoOverlayRaty.classList.remove('active')
 })
 
 closePopup.addEventListener('click', () => {

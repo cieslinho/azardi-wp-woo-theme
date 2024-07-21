@@ -8,7 +8,7 @@ error_reporting(E_ERROR | E_PARSE);
     'orderby'             => $orderby,
     'order'               => $order == 'asc' ? 'asc' : 'desc',
     'post__in'            => wc_get_featured_product_ids(),
-    'posts_per_page'      => '3',
+    'posts_per_page'      => '6',
 );
 
 $query = new WP_Query( $args );
