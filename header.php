@@ -8,6 +8,9 @@
 <html <?php language_attributes();?>>
 
 <head>
+	<meta name="google-site-verification" content="mL3_6BSSYwlPZ0Qo3JXoRGg_O6yPfKw64OCvun7kbzc" />
+	<meta name="google-site-verification" content="7QB-LW_ltOWwwakVEJ1TEXjttiWyln0mba0EQWX_1VA" />
+	<meta name="google-site-verification" content="Nu3AZb6E5ZdA9Ocr3EF1-np6bUzaih-h3CfAhDBUaDg" />
     <meta charset="<?php bloginfo('charset');?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,20 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <?php wp_head(); ?>
-
-
-    <!-- Smartsupp Live Chat script -->
-    <script type="text/javascript">
-        var _smartsupp = _smartsupp || {};
-        _smartsupp.key = '56ac3ac15b7d852d16fc81769183161e403935ba';
-        window.smartsupp || (function (d) {
-            var s, c, o = smartsupp = function () { o._.push(arguments) }; o._ = [];
-            s = d.getElementsByTagName('script')[0]; c = d.createElement('script');
-            c.type = 'text/javascript'; c.charset = 'utf-8'; c.async = true;
-            c.src = 'https://www.smartsuppchat.com/loader.js?'; s.parentNode.insertBefore(c, s);
-        })(document);
-    </script>
-    <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-X1QCNJBD9R"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
@@ -45,6 +35,23 @@
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-MSPX54B6');</script>
     <!-- End Google Tag Manager -->
+	<!-- Api Pixel Code -->
+<script src="https://pixel.fasttony.com/d40571f25167400bb74651d6f78f4ddc" async defer></script>
+<!-- End Api Pixel Code -->
+
+
+    <!-- Smartsupp Live Chat script -->
+    <script type="text/javascript">
+        var _smartsupp = _smartsupp || {};
+        _smartsupp.key = '56ac3ac15b7d852d16fc81769183161e403935ba';
+        window.smartsupp || (function (d) {
+            var s, c, o = smartsupp = function () { o._.push(arguments) }; o._ = [];
+            s = d.getElementsByTagName('script')[0]; c = d.createElement('script');
+            c.type = 'text/javascript'; c.charset = 'utf-8'; c.async = true;
+            c.src = 'https://www.smartsuppchat.com/loader.js?'; s.parentNode.insertBefore(c, s);
+        })(document);
+    </script>
+    
 </head>
 
 <!-- Hotjar Tracking Code for https://www.azardi.pl -->
@@ -59,11 +66,14 @@
     })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
 </script>
 
+ 
+
 <body <?php body_class();?>>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MSPX54B6"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
 
     <nav class="nav">
         <div class="nav__overlay"></div>
@@ -101,6 +111,10 @@
                                 <a href="/kategoria-produktu/lozka/drewniane/" class="nav__left-subitem">Drewniane</a>
                                 <a href="/kategoria-produktu/lozka/kontynentalne/"
                                     class="nav__left-subitem">Kontynentalne</a>
+                                <a href="/kategoria-produktu/lozka/hotelowe/"
+                                    class="nav__left-subitem">Hotelowe</a>
+                                <a href="/kategoria-produktu/lozka/dla-dzieci/"
+                                    class="nav__left-subitem">Dla Dzieci</a>
                                
                                 <a href="/kategoria-produktu/lozka/elektryczne/"
                                     class="nav__left-subitem">Elektryczne</a>
@@ -194,9 +208,10 @@
                                     <a href="/wroclaw/" class="nav__left-subitem">Wrocław</a>
                                     <a href="/ostrow/" class="nav__left-subitem">Ostrów</a>
                                     <a href="/kalisz/" class="nav__left-subitem">Kalisz</a>
+									<a href="/krotoszyn/" class="nav__left-subitem">Krotoszyn</a>
                                 </div>
                                 <div class="nav__left-subitems-right">
-                                    <a href="/krotoszyn/" class="nav__left-subitem">Krotoszyn</a>
+                                    <a href="/lublin/" class="nav__left-subitem">Lublin</a>
                                     <a href="/kutno/" class="nav__left-subitem">Kutno</a>
                                     <a href="/lodz/" class="nav__left-subitem">Łódź</a>
                                     <a href="/nysa/" class="nav__left-subitem">Nysa</a>
@@ -213,7 +228,7 @@
                                 </a>
                                 <a href="/salony/" class="nav__left-linkImg nav__left-linkImg-mattress">
                                     <img class="nav__left-img"
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/mapka.png" alt="">
+                                        src="https://azardi.pl/wp-content/uploads/2024/04/Warszawa.png" alt="">
                                     <!-- <p class="nav__left-text"></p> -->
                                 </a>
 

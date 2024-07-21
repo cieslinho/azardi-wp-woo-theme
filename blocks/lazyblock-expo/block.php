@@ -3,7 +3,7 @@
         <div class="expo__boxes">
         <?php foreach( $attributes['box'] as $box ) : ?>
             <div class="expo__box">
-                        <h2 class="section-title"><?php echo esc_html( $box['expo-title'] ); ?></h2>
+                        <h1 class="section-title"><?php echo esc_html( $box['expo-title'] ); ?></h1>
                             <div class="expo__images">
                             <?php foreach( $attributes['box-images'] as $image ) : ?>
                     <a href="<?php echo esc_url( $image['image']['url'] ); ?>" data-lightbox="image-33" data-title="Targi 2022" class="expo__link">

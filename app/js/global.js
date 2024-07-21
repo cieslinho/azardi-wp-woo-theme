@@ -23,6 +23,16 @@ const quizInfo = document.querySelector('.quiz__error')
 const boxFive = document.getElementById('box-five')
 const mattressBoxes = document.querySelector('.mattress__boxes')
 const mattressBoxesTitle = document.querySelector('.mattress__results-title')
+const navbar = document.querySelector('.nav__navbar')
+
+window.onscroll = function () {
+	// pageYOffset or scrollY
+	if (window.pageYOffset > 0) {
+		navbar.classList.add('scrolled')
+	} else {
+		navbar.classList.remove('scrolled')
+	}
+}
 
 const createButton = () => {
 	menuItemDropdown.forEach(menuItem => {

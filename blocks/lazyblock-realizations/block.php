@@ -1,6 +1,6 @@
 <section class="shipping">
     <div class="container">
-        <h2 class="section-title">Realizacje</h2>
+        <h1 class="section-title">Realizacje</h1>
             <ul class="shipping__list">
                 <p class="shipping__list-item">
                 Jesteśmy producentem mebli tapicerowanych, dlatego dajemy możliwość wykonania zamówienia pod konkretne wymiary. Każdy z naszych mebli można modyfikować, zmieniać wysokości, szerokości jak i inne parametry. Jednocześnie tworzymy indywidualne projekty łóżek na podstawie zdjęć lub przedstawionego projektu.  Wykonujemy również materace w niestandardowych wymiarach.

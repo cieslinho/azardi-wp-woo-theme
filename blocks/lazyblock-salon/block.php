@@ -3,7 +3,7 @@
         <h2 class="section-title">Salon</h2>
         <div class="salon__boxes">
             <div class="salon__box salon__box-info">
-                <h3 class="salon__box-title"><?php echo $attributes['place']; ?></h3>
+                <h1 class="salon__box-title" id="ek-salon-h1"><?php echo $attributes['place']; ?></h1>
                     <p class="salon__box-text">
                         <i class='bx bx-current-location'></i> <?php echo $attributes['address']; ?>
                      </p>

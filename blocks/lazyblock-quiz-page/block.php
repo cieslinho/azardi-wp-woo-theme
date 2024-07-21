@@ -1,6 +1,6 @@
 <section class="mattress quiz-page">
     <div class="container">
-        <h2 class="section-title">Materac Quiz</h2>
+        <h1 class="section-title">Materac Quiz</h1>
         <div class="quiz-page__boxes">
 
 

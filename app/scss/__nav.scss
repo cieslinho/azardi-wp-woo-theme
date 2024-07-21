@@ -7,6 +7,10 @@
 	padding: 0 1em;
 	width: 100%;
 
+	@include respond(tablet) {
+		background-color: transparent;
+	}
+
 	&__left {
 		display: none;
 	}
@@ -325,13 +329,24 @@
 		&__navbar {
 			// padding: 0 1.5em;
 			justify-content: flex-start;
-			// backdrop-filter: blur(12.5px);
-			// -webkit-backdrop-filter: blur(12.5px);
+			backdrop-filter: blur(12.5px);
+			-webkit-backdrop-filter: blur(12.5px);
+			transition: background-color 0.2s linear;
 
 			// box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-			background: $bg-color;
+			background-color: transparent;
 			padding: 0.5em 1.5em 0;
 		}
+
+		&__navbar.scrolled {
+			display: none;
+
+			@include respond(tablet) {
+				display: flex;
+				background-color: $bg-color;
+			}
+		}
+
 		&__logo {
 			// margin-right: 4em;
 			margin: 0 auto;

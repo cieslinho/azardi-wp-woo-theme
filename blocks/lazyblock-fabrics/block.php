@@ -1,6 +1,6 @@
 <section class="fabrics">
   <div class="container">
-    <h2 class="section-title">Tkaniny</h2>
+    <h1 class="section-title">Tkaniny</h1>
     <p class="fabrics__text">Tkaniny obiciowe, dzielą się na różne rodzaje. Poszczególne grupy tkanin obiciowych mogą
       mieć inny skład, fakturę, inną odporność na zaciąganie czy ścieranie, wszystkie natomiast nadają się do renowacji
       oraz produkcji różnego rodzaju mebli.</p>
@@ -742,7 +742,7 @@
            <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 70.jpeg" ?>" data-group-id="70" alt="Tkanina Rustiq" class="fabrics__popup-color">
            <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 81.jpeg" ?>" data-group-id="81" alt="Tkanina Rustiq" class="fabrics__popup-color">
           </div>
-          <a href="<?php echo get_template_directory_uri() . "" ?>" target="_blank" id="fabrics__popup-download" class="fabrics__popup-file">specyfikacja</a>
+          <a href="" target="_blank" id="fabrics__popup-download" class="fabrics__popup-file">specyfikacja</a>
             <div class="fabrics__popup-box" id="box-first">
             <div class="fabrics__popup-row">
               <p class="fabrics__popup-text">skład / composition</p>

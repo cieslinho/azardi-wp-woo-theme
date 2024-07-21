@@ -2558,9 +2558,42 @@ function add_content_after_addtocart_button_func() {
 		
 // 		';
 
+function custom_alt_attribute_for_missing_alt_text( $content ) {
+  global $product;
+  
+  if ( is_product() ) {
+      $attachment_ids = $product->get_gallery_image_ids();
+      
+      if ( !empty( $attachment_ids ) ) {
+          foreach ( $attachment_ids as $attachment_id ) {
+              $alt = get_post_meta( $attachment_id, '_wp_attachment_image_alt', true );
+              
+              if ( empty( $alt ) ) {
+                  $product_title = get_the_title();
+                  $content = str_replace( 'alt=""', 'alt="' . esc_attr( $product_title ) . '"', $content );
+              }
+          }
+      }
+  }
+  
+  return $content;
+}
+add_filter( 'the_content', 'custom_alt_attribute_for_missing_alt_text' );
+
+
+
+function change_robots_tag_specific_page($robots) {
+    if (is_page('dobierz-idealny-materac')) {
+        $robots = str_replace('index', 'noindex', $robots);
+    }
+    return $robots;
 }
 
+add_filter('wpseo_robots', 'change_robots_tag_specific_page');
 
+
+
+}
 
 
 

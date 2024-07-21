@@ -1,6 +1,6 @@
 <section class="returns">
     <div class="container">
-        <h2 class="section-title">Zwroty i reklamacje</h2>
+        <h1 class="section-title">Zwroty i reklamacje</h1>
         <div class="returns__boxes">
             <div class="returns__box">
                 <h3 class="returns__box-title">Zwroty</h3>

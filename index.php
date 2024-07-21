@@ -35,7 +35,7 @@ get_header();
         </header>
             <section class="blog section-padding">
                 <div class="container">
-                    <h2 class="section-title">Blog</h2>
+                    <h1 class="section-title">Blog</h1>
                     <div class="blog__cards">
                     <?php 
                     if (have_posts()):

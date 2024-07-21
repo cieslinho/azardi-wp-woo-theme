@@ -1,6 +1,6 @@
 <section class="shipping">
     <div class="container">
-        <h2 class="section-title">Dostawa</h2>
+        <h1 class="section-title">Dostawa</h1>
             <ul class="shipping__list">
                 <p class="shipping__list-text">
                 Przygotowaliśmy dla Państwa 3 formy odbioru zamówionych towarów:

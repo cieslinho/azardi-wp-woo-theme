@@ -1,6 +1,6 @@
 <section class="salons">
     <div class="container">
-        <h2 class="section-title">Salony Azardi</h2>
+        <h1 class="section-title">Salony Azardi</h1>
         <div class="salons__boxes">
         <?php foreach( $attributes['box'] as $boxSalon ): ?>
             <div class="salons__box">

@@ -1,6 +1,6 @@
 <section class="cooperation">
 <div class="container">
-    <h2 class="section-title">Współpraca</h2>
+    <h1 class="section-title">Współpraca</h1>
     <div class="cooperation__boxes">
     <div class="cooperation__box">
     <h3 class="cooperation__box-title">Dystrybutorzy</h3>

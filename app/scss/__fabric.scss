@@ -1,10 +1,10 @@
 .fabric {
 	display: flex;
-	flex-direction: column;
-	gap: 1em;
 	position: fixed;
 	top: 0;
 	right: 0;
+	flex-direction: column;
+	gap: 1em;
 	transform: translateX(0);
 	visibility: visible;
 	z-index: 999;
@@ -58,9 +58,9 @@
 			position: absolute;
 			top: 0;
 			right: 0;
+			transition: background-color 0.3s;
 			cursor: pointer;
 			padding: 0.8em;
-			transition: background-color 0.3s;
 
 			&:hover {
 				background-color: $bg-color;
@@ -119,24 +119,24 @@
 
 	&__btns {
 		display: flex;
-		align-items: center;
 		justify-content: space-between;
+		align-items: center;
 		gap: 1em;
 	}
 
 	&__close {
-		margin-right: 0.5em;
-		padding: 0.1em;
-		border: 2px solid $dark-color;
 		display: block;
 		transition: background-color 0.3s;
 		cursor: pointer;
+		margin-right: 0.5em;
+		border: 2px solid $dark-color;
 		border-radius: 5px;
+		padding: 0.1em;
 
 		i {
-			font-size: 2.5rem;
-			color: $dark-color;
 			transition: color 0.3s;
+			color: $dark-color;
+			font-size: 2.5rem;
 
 			@include respond(tablet) {
 				font-size: 3rem;
@@ -152,11 +152,11 @@
 	}
 
 	&__current {
-		padding: 1em;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		gap: 1em;
+		padding: 1em;
 
 		&-img {
 			width: 100%;
@@ -167,11 +167,11 @@
 }
 
 .custom-fabrics__info {
-	margin-block: 1em;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	gap: 0.3em;
+	margin-block: 1em;
 
 	&-box {
 		display: flex;
@@ -186,12 +186,16 @@
 
 	&-text {
 		color: gray;
-		font-size: 1.2rem;
+		font-size: 1.3rem;
+
+		@include respond(tablet) {
+			font-size: 1.5rem;
+		}
 	}
 
 	&-link {
-		border-bottom: 1px solid #d1d1d1;
 		transition: border-bottom 0.3s, color 0.3s;
+		border-bottom: 1px solid #d1d1d1;
 
 		&:hover {
 			border-bottom: 1px solid $text-color;

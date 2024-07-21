@@ -83,6 +83,7 @@
 	.single_variation_wrap {
 		display: flex;
 		flex-direction: column;
+		margin-bottom: 1em;
 		.woocommerce-variation-add-to-cart {
 			display: flex;
 			flex-direction: column;
@@ -564,5 +565,20 @@ th.label {
 		&:focus {
 			border: 1px solid #000 !important;
 		}
+	}
+}
+
+[data-product_id='13904'],
+[data-product_id='13979'],
+[data-product_id='13562'],
+[data-product_id='1067'],
+[data-product_id='1062'],
+[data-product_id='1072'],
+[data-product_id='1079'],
+[data-product_id='6733'],
+[data-product_id='13573'],
+[data-product_id='18793'] {
+	[data-attribute_name='attribute_pa_rozmiar'] {
+		grid-template-columns: repeat(1, 1fr);
 	}
 }

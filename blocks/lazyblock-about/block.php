@@ -1,6 +1,6 @@
 <section class="about">
     <div class="container">
-        <h2 class="section-title">O nas</h2>
+        <h1 class="section-title">O nas</h1>
         <div class="about__boxes">
             <div class="about__box">
                 <h3 class="about__box-title">Kim jesteśmy?</h3>

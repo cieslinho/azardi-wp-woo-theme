@@ -1,6 +1,6 @@
 <section class="rules">
     <div class="container">
-        <h2 class="section-title">Regulamin</h2>
+        <h1 class="section-title">Regulamin</h1>
         <div class="rules__boxes">
             <ol class="rules__box rules__list">
                 <p class="rules__list-text">1. Ogólne warunki zakupów:</p>

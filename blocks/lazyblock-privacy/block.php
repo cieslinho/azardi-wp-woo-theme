@@ -1,6 +1,6 @@
 <section class="privacy">
     <div class="container">
-        <h2 class="section-title">Polityka prywatności</h2>
+        <h1 class="section-title">Polityka prywatności</h1>
         <div class="privacy__boxes">
             <ul class="privacy__box privacy__list">
                 <p class="privacy__list-text">1. Informacje ogólne:</p>

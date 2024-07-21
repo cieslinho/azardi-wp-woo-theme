@@ -1,8 +1,8 @@
 <section class="containers">
     <div class="container">
-        <h2 class="section-title">
+        <h1 class="section-title">
             Pojemniki
-        </h2>
+        </h1>
         <div class="containers__boxes">
             <div class="containers__box">
                 <img src="<?php echo get_template_directory_uri() . "/assets/images/pojemnik2.jpg" ?>" alt="Azardi Zdjecie Pojemnika" class="containers__img">

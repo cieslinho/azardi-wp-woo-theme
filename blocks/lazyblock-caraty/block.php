@@ -1,6 +1,6 @@
 <section class="shipping">
     <div class="container">
-        <h2 class="section-title">Credit Agricole Raty</h2>
+        <h1 class="section-title">Credit Agricole Raty</h1>
             <ul class="shipping__list">
                 <p class="shipping__list-text">
                 Kupuj wygodnie, wybierz raty banku Credit Agricole.
@@ -21,8 +21,7 @@
 </li>
                
             </ul>
-            <p class="shipping__list-form"><em><b>AZARDI SPÓŁKA CYWILNA</b> oświadcza, iż na podstawie zawartych umów z Credit Agricole Bank Polska S.A. jest upoważniony do
-wykonywania czynności faktycznych związanych z zawarciem/zmianą umów kredytu na zakup towarów i usług. </em></p>
+            <p class="shipping__list-form"><em><b>AZARDI SPÓŁKA CYWILNA</b> w imieniu Credit Agricole Bank Polska S.A. wykonuje czynności faktyczne związane z zawarciem umowy kredytu ratalnego z osobami fizycznymi. Decyzję o udzieleniu kredytu podejmie bank na podstawie analizy Twojej wiarygodności i zdolności kredytowej, po spełnieniu wymogów formalnych. Materiał ma charakter informacyjny. </em></p>
 <a href="https://ewniosek.credit-agricole.pl/eWniosek/procedure.jsp?PARAM_TYPE=RAT&PARAM_PROFILE=PSP2011676" class="shipping__link">
     <img src="https://ewniosek.credit-agricole.pl/eWniosek/res/buttons/inst_md_comp.png
 " alt="ca raty logo" class="shipping__img">

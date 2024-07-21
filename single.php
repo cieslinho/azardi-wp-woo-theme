@@ -18,7 +18,7 @@ get_header();
             <?php the_category(); ?>
             </div>
         </div>
-        <h2 class="article__title"><?php the_title(); ?></h2>
+        <h1 class="article__title" id="ek-article-title"><?php the_title(); ?></h1>
         <div class="article__content">
             <?php the_content(); ?>
         </div>

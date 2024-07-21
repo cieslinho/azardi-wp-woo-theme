@@ -1,6 +1,6 @@
 <section class="instructions">
     <div class="container">
-        <h2 class="section-title">Instrukcje</h2>
+        <h1 class="section-title">Instrukcje</h1>
             <div class="instructions__cards">
                 <a  href="<?php echo get_template_directory_uri(); ?>/assets/files/instrukcja-lozko.pdf" target="_blank" class="instructions__card">
                     <h4 class="instructions__card-title">Łóżko</h4>

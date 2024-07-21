@@ -1,6 +1,6 @@
 <section class="shipping">
     <div class="container">
-        <h2 class="section-title">Płatności</h2>
+        <h1 class="section-title">Płatności</h1>
             <ul class="shipping__list">
                 <p class="shipping__list-text">
                 Na azardi.pl masz do wyboru trzy różne sposoby płatności:
