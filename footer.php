@@ -123,6 +123,68 @@
     </div>
 </footer>
 <?php wp_footer(); ?>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Organization",
+"url": "https://azardi.pl/",
+"logo": "https://azardi.pl/wp-content/themes/azardi/assets/images/logo-new-png.png"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "FurnitureStore",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Baranów",
+    "streetAddress": "Mroczeń 93",
+    "postalCode": "63-604",
+    "addressRegion": "Wielkopolskie",
+    "addressCountry": "PL"
+  },
+  "name": "Azardi",
+  "legalName": "Azardi s.c.",
+  "alternateName": "azardi.pl",
+  "brand": "Azardi",
+  "email": "kontakt@azardi.pl",
+  "telephone": "+48884822444",
+  "image": "https://azardi.pl/wp-content/themes/azardi/assets/images/logo-new-png.png",
+  "logo": "https://azardi.pl/wp-content/themes/azardi/assets/images/logo-new-png.png",
+  "priceRange": "PLN",
+  "url": "https://azardi.pl/",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "16:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "16:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/lozkamaterace/",
+    "https://www.instagram.com/azardi.art/"
+  ],
+  "hasMap": "https://maps.app.goo.gl/Z6ijBUWU2zBta9Rv9",
+  "taxID": "6192048542"
+}
+</script>
+
 </body>
 
 </html>

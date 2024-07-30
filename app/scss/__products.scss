@@ -83,28 +83,26 @@ select.orderby {
 }
 
 .featured {
+	margin: 1em 0;
+
 	&__boxes {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-
-		@include respond(tablet) {
-			flex-direction: row;
-		}
+		gap: 1em;
 	}
 
 	&__product {
-		margin: 1em;
 		width: 100%;
-		max-width: 350px;
 		height: 100%;
 
 		@include respond(desktop) {
-			max-width: 500px;
+			// max-width: 500px;
 		}
 
 		&-top {
+			margin-bottom: 0.5em;
 			height: 300px;
 			overflow: hidden;
 		}
@@ -159,6 +157,16 @@ select.orderby {
 
 			@include respond(tablet) {
 				font-size: 1.8rem;
+			}
+		}
+	}
+
+	.swiper__featured-pagination {
+		width: unset;
+
+		.swiper-pagination-bullet {
+			&-active {
+				background-color: $text-color;
 			}
 		}
 	}

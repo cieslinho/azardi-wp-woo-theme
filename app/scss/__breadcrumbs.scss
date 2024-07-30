@@ -1,0 +1,35 @@
+.breadcrumbs {
+	margin-top: 2em;
+	margin-bottom: 1em;
+
+	font-size: 1.4rem;
+
+	@include respond(tablet) {
+		font-size: 1.6rem;
+	}
+
+	&__ul {
+		display: flex;
+		gap: 0.35em;
+
+		li {
+			a {
+				opacity: 0.65;
+				transition: opacity 0.3s;
+				color: $text-color;
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+
+		li:last-child a {
+			opacity: 1;
+
+			&:hover {
+				opacity: 0.65;
+			}
+		}
+	}
+}

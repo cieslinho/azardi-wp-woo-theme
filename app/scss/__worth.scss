@@ -57,4 +57,10 @@
 			text-decoration: underline;
 		}
 	}
+
+	.swiper-pagination-bullet {
+		&-active {
+			background-color: #fff;
+		}
+	}
 }

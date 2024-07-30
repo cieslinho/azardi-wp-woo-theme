@@ -38,6 +38,7 @@ function azardi_config(){
   'azardi_footer_menu_first' => 'Azardi Footer Menu Contact',
   'azardi_footer_menu_second' => 'Azardi Footer Menu Offer',
   'azardi_footer_menu_third' => 'Azardi Footer Menu Informations',
+  'azardi_bedcategory_menu' => 'Azardi Bed Category Menu ',
   'azardi_footer_menu_fourth' => 'Azardi Footer Menu Custom Service'
     )
   );
@@ -2593,6 +2594,18 @@ add_filter('wpseo_robots', 'change_robots_tag_specific_page');
 
 
 
+}
+
+add_filter( 'woocommerce_breadcrumb_defaults', 'custom_woocommerce_breadcrumbs' );
+function custom_woocommerce_breadcrumbs() {
+  return array(
+    'delimiter'   => '/', // no delimiter
+    'wrap_before' => '<div class="breadcrumbs"><ul class="breadcrumbs__ul">',
+    'wrap_after'  => '</ul></div>',
+    'before'      => '<li>',
+    'after'       => '</li>',
+    'home'        => _x( 'Azardi', 'breadcrumb', 'woocommerce' ),
+  );
 }
 
 

@@ -7366,11 +7366,40 @@ var swiperImages = new Swiper('.swiper-images', {
 	pagination: {
 		el: '.worth__slide-img-pagination',
 	},
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	},
+	effect: 'fade',
 })
 
 var swiperTexts = new Swiper('.swiper-texts', {
 	pagination: {
 		el: '.worth__slide-texts-pagination',
+	},
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	},
+	spaceBetween: 30,
+})
+
+var swiperProducts = new Swiper('.swiper__featured', {
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	},
+	pagination: {
+		el: '.swiper__featured-pagination',
+	},
+	spaceBetween: 30,
+	breakpoints: {
+		568: {
+			slidesPerView: 2,
+		},
+		768: {
+			slidesPerView: 3,
+		},
 	},
 })
 

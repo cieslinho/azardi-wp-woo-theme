@@ -16,10 +16,12 @@ $query = new WP_Query( $args );
 <section class="featured section-padding">
     <div class="container">
         <h2 class="section-title">Najczęściej wybierane</h2>
-        <div class="featured__boxes">
+        <div class="featured__boxes swiper swiper__featured">
+        <div class="swiper-wrapper">
             <?php while ( $query->have_posts() ) : $query->the_post(); ?>
                 <?php $product = wc_get_product( get_the_ID() ); ?>
-                <a href="<?php the_permalink(); ?>" class="featured__product">
+                
+                <a href="<?php the_permalink(); ?>" class="featured__product swiper-slide">
                     <div class="featured__product-top">
                         <img src="<?php echo wp_get_attachment_url( $product->get_image_id() ); ?>" alt="<?php echo get_post_meta( $product->get_image_id(), '_wp_attachment_image_alt', true ); ?>" class="featured__product-img">
                     </div>
@@ -29,7 +31,10 @@ $query = new WP_Query( $args );
                         <p class="featured__product-price"><?php echo $product->get_price_html(); ?></p>
                     </div>
                 </a>
+                
             <?php endwhile; ?>
+            </div>
+            <div class="swiper__featured-pagination"></div>
         </div>
     </div>
 </section>

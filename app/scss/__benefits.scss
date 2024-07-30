@@ -4,11 +4,14 @@
 		flex-direction: column;
 		align-items: center;
 		gap: 1em;
+		margin-block: 1em;
 
 		@include respond(tablet) {
 			display: grid;
 			grid-template-rows: 1fr;
 			grid-template-columns: repeat(4, 1fr);
+
+			gap: 2em;
 		}
 	}
 
@@ -26,7 +29,8 @@
 		padding: 1em;
 		width: 100%;
 		max-width: 500px;
-		min-height: 270px;
+		min-height: 164px;
+
 		text-align: center;
 
 		&:hover {
@@ -44,6 +48,10 @@
 			transition: color 0.2s;
 			color: $dark-color;
 			font-size: 2.4rem;
+
+			@include respond(tablet) {
+				font-size: 2rem;
+			}
 		}
 
 		i {

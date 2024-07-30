@@ -26,7 +26,7 @@
                     </div>
                     <?php endforeach; ?>
                 </div>
-                <div class="swiper-pagination worth__slide-texts-pagination"></div>
+                <!-- <div class="swiper-pagination worth__slide-texts-pagination"></div> -->
             </div>
         </div>
     </div>
