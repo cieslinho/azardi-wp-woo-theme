@@ -13,7 +13,7 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/azardi-white.png" alt="Logo firmy Azardi, Azardi sklep meblarski"
                         class="footer__img">
                 </a>
-				 <a style="font-style: italic;" class="footer__link menu-item" href="https://www.royalcoil.pl/">
+				 <a target="_blank" rel="noopener" style="font-style: italic;" class="footer__link menu-item" href="https://www.royalcoil.pl/">
                        „Oficjalny dystrybutor materacy Royal Coil” 
                                             </a>
                 <div class="footer__box-address">
@@ -28,10 +28,10 @@
 					
                 </div>
                 <div class="nav__top-socials">
-                    <a href="https://www.facebook.com/lozkamaterace/">
+                    <a target="_blank" rel="noopener" href="https://www.facebook.com/lozkamaterace/">
                         <i class='bx bxl-facebook-circle'></i>
                     </a>
-                    <a href="https://www.instagram.com/azardi.art/?igshid=YmMyMTA2M2Y%3D">
+                    <a target="_blank" rel="noopener" href="https://www.instagram.com/azardi.art/?igshid=YmMyMTA2M2Y%3D">
                         <i class='bx bxl-instagram-alt'></i>
                     </a>
                 </div>
@@ -89,11 +89,11 @@
             <div class="footer__middle-apps">
                 <p class="footer__middle-app">Azardi Apps</p>
            <div class="footer__middle-icons">
-            <a href="https://apps.apple.com/pl/app/azardi/id1635741425" class="footer__middle-link">
+            <a target="_blank" rel="noopener" href="https://apps.apple.com/pl/app/azardi/id1635741425" class="footer__middle-link">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/app-store.png" alt="Logo app store"
                         class="footer__middle-img">
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=com.arlity.cloud.azardi&hl=pl&gl=US" class="footer__middle-link">
+                </>
+                <a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.arlity.cloud.azardi&hl=pl&gl=US" class="footer__middle-link">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/google-play-badge.png" alt="Logo google store"
                         class="footer__middle-img">
                 </a>

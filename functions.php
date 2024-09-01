@@ -131,7 +131,7 @@ function woo_cart_count() {
 // }
 add_action('woocommerce_before_variations_form', 'variable_fabrics', 8);
 function variable_fabrics(){
-  echo '<a href="/tkaniny" target="_blank" class="custom-fabrics">wzornik tkanin</a>';
+  echo '<a href="https://azardi.pl/tkaniny/" target="_blank" class="custom-fabrics">wzornik tkanin</a>';
   echo '<p class="custom-fabrics-text">Wykonujemy łóżka pod wymiar. <br>Napisz do nas <a href="mailto:kontakt@azardi.pl">kontakt@azardi.pl</a></p>';
 }
 add_action('woocommerce_after_variations_form', 'variable_fabrics_additional_info');
@@ -140,15 +140,15 @@ function variable_fabrics_additional_info(){
       <div class="custom-fabrics__info">
       <div class="custom-fabrics__info-box">
         <i class="bx bx-package"></i>
-        <a href="/dostawa" class="custom-fabrics__info-text custom-fabrics__info-link">Dostawa do 14 dni roboczych</a>
+        <a href="https://azardi.pl/dostawa" class="custom-fabrics__info-text custom-fabrics__info-link">Dostawa do 14 dni roboczych</a>
       </div>
       <div class="custom-fabrics__info-box">
         <i class="bx bxs-file-pdf"></i>
-        <a href="/pojemniki" target="_blank" class="custom-fabrics__info-text custom-fabrics__info-link">Rodzaje pojemników </a>
+        <a href="https://azardi.pl/pojemniki" target="_blank" class="custom-fabrics__info-text custom-fabrics__info-link">Rodzaje pojemników </a>
       </div>
       <div class="custom-fabrics__info-box">
         <i class="bx bxs-file-pdf"></i>
-        <a href="/instrukcje" target="_blank" class="custom-fabrics__info-text custom-fabrics__info-link">Instrukcja montażu </a>
+        <a href="https://azardi.pl/instrukcje" target="_blank" class="custom-fabrics__info-text custom-fabrics__info-link">Instrukcja montażu </a>
       </div>
       <div class="custom-fabrics__info-box">
         <i class="bx bx-badge-check"></i>

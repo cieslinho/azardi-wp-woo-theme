@@ -60,6 +60,13 @@ if ( woocommerce_product_loop() ) {
 		}
 	?>
 
+<?php 	wp_nav_menu(
+		array(
+			'theme_location' => 'azardi_bedcategory_menu',
+			
+		)
+	);?>
+
 	<header class="woocommerce-products-header">
 	<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 		<?php
@@ -82,18 +89,16 @@ if ( woocommerce_product_loop() ) {
 			
 			?>
 		</header>
+
+
+
 	<?php
 	do_action( 'woocommerce_archive_description' );
 	
 	do_action( 'woocommerce_before_shop_loop' );
 	
 	
-	wp_nav_menu(
-		array(
-			'theme_location' => 'azardi_bedcategory_menu',
-			
-		)
-	);
+
 
 
 		function myfunction() {

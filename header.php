@@ -109,31 +109,31 @@
             <ul class="nav__list">
                 <div class="nav__left">
                     <li class="nav__left-item">
-                        <a href="/kategoria-produktu/lozka/" class="nav__left-link">Łóżka</a>
+                        <a href="https://azardi.pl/kategoria-produktu/lozka/" class="nav__left-link">Łóżka</a>
                         <div class="nav__left-submenu">
                             <div class="nav__left-subitems">
-                                <a href="/kategoria-produktu/lozka/tapicerowane/"
+                                <a href="https://azardi.pl/kategoria-produktu/lozka/tapicerowane/"
                                     class="nav__left-subitem">Tapicerowane</a>
-                                <a href="/kategoria-produktu/lozka/drewniane/" class="nav__left-subitem">Drewniane</a>
-                                <a href="/kategoria-produktu/lozka/kontynentalne/"
+                                <a href="https://azardi.pl/kategoria-produktu/lozka/drewniane/" class="nav__left-subitem">Drewniane</a>
+                                <a href="https://azardi.pl/kategoria-produktu/lozka/kontynentalne/"
                                     class="nav__left-subitem">Kontynentalne</a>
-                                <a href="/kategoria-produktu/lozka/hotelowe/"
+                                <a href="https://azardi.pl/kategoria-produktu/lozka/hotelowe/"
                                     class="nav__left-subitem">Hotelowe</a>
-                                <a href="/kategoria-produktu/lozka/dla-dzieci/"
+                                <a href="https://azardi.pl/kategoria-produktu/lozka/dla-dzieci/"
                                     class="nav__left-subitem">Dla Dzieci</a>
                                
-                                <a href="/kategoria-produktu/lozka/elektryczne/"
+                                <a href="https://azardi.pl/kategoria-produktu/lozka/elektryczne/"
                                     class="nav__left-subitem">Elektryczne</a>
                                 
-                                <a href="/kategoria-produktu/lozka/kolekcje/" class="nav__left-subitem">Kolekcje</a>
+                                <a href="https://azardi.pl/kategoria-produktu/lozka/kolekcje/" class="nav__left-subitem">Kolekcje</a>
                             </div>
                             <div class="nav__left-imgs">
-                                <a href="/kontakt/" class="nav__left-linkImg">
+                                <a href="https://azardi.pl/kontakt/" class="nav__left-linkImg">
                                     <img class="nav__left-img"
                                         src="<?php echo get_template_directory_uri(); ?>/assets/images/projekt-lozka.jpeg" alt="">
                                     <p class="nav__left-text">Zaprojektuj swoje łóżko</p>
                                 </a>
-                                <a href="/tkaniny/" class="nav__left-linkImg">
+                                <a href="https://azardi.pl/tkaniny/" class="nav__left-linkImg">
                                     <img class="nav__left-img"
                                         src="<?php echo get_template_directory_uri(); ?>/assets/images/tkanina-2.jpeg" alt="">
                                     <p class="nav__left-text">Zamów darmowe próbki tkanin</p>
@@ -144,19 +144,19 @@
                         </div>
                     </li>
                     <li class="nav__left-item">
-                        <a href="/kategoria-produktu/materace/" class="nav__left-link">Materace</a>
+                        <a href="https://azardi.pl/kategoria-produktu/materace/" class="nav__left-link">Materace</a>
                         <div class="nav__left-submenu">
                             <div class="nav__left-subitems">
-                                <a href="/kategoria-produktu/materace/azardi/" class="nav__left-subitem">Azardi</a>
-                                <a href="/kategoria-produktu/materace/royalcoil/" class="nav__left-subitem">Royal
+                                <a href="https://azardi.pl/kategoria-produktu/materace/azardi/" class="nav__left-subitem">Azardi</a>
+                                <a href="https://azardi.pl/kategoria-produktu/materace/royalcoil/" class="nav__left-subitem">Royal
                                     Coil</a>
-                                <a href="/kategoria-produktu/materace/magniflex/"
+                                <a href="https://azardi.pl/kategoria-produktu/materace/magniflex/"
                                     class="nav__left-subitem">Magniflex</a>
-                                <a href="/kategoria-produktu/materace/" class="nav__left-subitem">Wszystkie</a>
-                                <a href="/materac-quiz/" class="nav__left-subitem">Materac Quiz</a>
+                                <a href="https://azardi.pl/kategoria-produktu/materace/" class="nav__left-subitem">Wszystkie</a>
+                                <a href="https://azardi.pl/materac-quiz/" class="nav__left-subitem">Materac Quiz</a>
                             </div>
                             <div class="nav__left-imgs">
-                                <a href="/kategoria-produktu/materace/"
+                                <a href="https://azardi.pl/kategoria-produktu/materace/"
                                     class="nav__left-linkImg nav__left-linkImg-mattress">
                                     <img class="nav__left-img"
                                         src="https://azardi.pl/wp-content/uploads/2024/02/gosc-w-kitlu-1.jpg" alt="">
@@ -172,27 +172,27 @@
                         </div>
                     </li>
                     <li class="nav__left-item">
-                        <a href="/kategoria-produktu/meble/" class="nav__left-link">Meble</a>
+                        <a href="https://azardi.pl/kategoria-produktu/meble/" class="nav__left-link">Meble</a>
                         <div class="nav__left-submenu">
                             <div class="nav__left-subitems">
-                                <a href="/kategoria-produktu/meble/salon/" class="nav__left-subitem">Salon</a>
-                                <a href="/kategoria-produktu/meble/sofy/" class="nav__left-subitem">Sofy</a>
-                                <a href="/kategoria-produktu/meble/sypialnia/" class="nav__left-subitem">Sypialnia</a>
+                                <a href="https://azardi.pl/kategoria-produktu/meble/salon/" class="nav__left-subitem">Salon</a>
+                                <a href="https://azardi.pl/kategoria-produktu/meble/sofy/" class="nav__left-subitem">Sofy</a>
+                                <a href="https://azardi.pl/kategoria-produktu/meble/sypialnia/" class="nav__left-subitem">Sypialnia</a>
                                 <div class="nav__left-subitems-nested">
-                                    <a href="/kategoria-produktu/meble/sypialnia/poduszki/"
+                                    <a href="https://azardi.pl/kategoria-produktu/meble/sypialnia/poduszki/"
                                         class="nav__left-subitem">Poduszki</a>
-                                    <a href="/kategoria-produktu/meble/sypialnia/nakladki/"
+                                    <a href="https://azardi.pl/kategoria-produktu/meble/sypialnia/nakladki/"
                                         class="nav__left-subitem">Nakładki</a>
                                 </div>
-                                <a href="/kategoria-produktu/meble/dodatki" class="nav__left-subitem">Dodatki</a>
+                                <a href="https://azardi.pl/kategoria-produktu/meble/dodatki" class="nav__left-subitem">Dodatki</a>
                             </div>
                             <div class="nav__left-imgs">
-                                <a href="/kontakt/" class="nav__left-linkImg nav__left-linkImg-mattress">
+                                <a href="https://azardi.pl/kontakt/" class="nav__left-linkImg nav__left-linkImg-mattress">
                                     <img class="nav__left-img"
                                         src="https://azardi.pl/wp-content/uploads/2024/02/meble-1-scaled.jpg" alt="">
                                     <!-- <p class="nav__left-text"></p> -->
                                 </a>
-                                <a href="/kontakt/" class="nav__left-linkImg nav__left-linkImg-mattress">
+                                <a href="https://azardi.pl/kontakt/" class="nav__left-linkImg nav__left-linkImg-mattress">
                                     <img class="nav__left-img"
                                         src="https://azardi.pl/wp-content/uploads/2024/02/meble-2-scaled.jpg" alt="">
                                     <!-- <p class="nav__left-text"></p> -->
@@ -204,35 +204,35 @@
                         </div>
                     </li>
                     <li class="nav__left-item">
-                        <a href="/salony/" class="nav__left-link">Salony</a>
+                        <a href="https://azardi.pl/salony/" class="nav__left-link">Salony</a>
                         <div class="nav__left-submenu">
                             <div class="nav__left-subitems nav__left-subitems-columns">
                                 <div class="nav__left-subitems-left">
-                                    <a href="/salony/" class="nav__left-subitem">Wszystkie</a>
-                                    <a href="/warszawa/" class="nav__left-subitem">Warszawa</a>
-                                    <a href="/kepno/" class="nav__left-subitem">Kępno</a>
-                                    <a href="/wroclaw/" class="nav__left-subitem">Wrocław</a>
-                                    <a href="/ostrow/" class="nav__left-subitem">Ostrów</a>
-                                    <a href="/kalisz/" class="nav__left-subitem">Kalisz</a>
-									<a href="/krotoszyn/" class="nav__left-subitem">Krotoszyn</a>
+                                    <a href="https://azardi.pl/salony/" class="nav__left-subitem">Wszystkie</a>
+                                    <a href="https://azardi.pl/warszawa/" class="nav__left-subitem">Warszawa</a>
+                                    <a href="https://azardi.pl/kepno/" class="nav__left-subitem">Kępno</a>
+                                    <a href="https://azardi.pl/wroclaw/" class="nav__left-subitem">Wrocław</a>
+                                    <a href="https://azardi.pl/ostrow/" class="nav__left-subitem">Ostrów</a>
+                                    <a href="https://azardi.pl/kalisz/" class="nav__left-subitem">Kalisz</a>
+									<a href="https://azardi.pl/krotoszyn/" class="nav__left-subitem">Krotoszyn</a>
                                 </div>
                                 <div class="nav__left-subitems-right">
-                                    <a href="/lublin/" class="nav__left-subitem">Lublin</a>
-                                    <a href="/kutno/" class="nav__left-subitem">Kutno</a>
-                                    <a href="/lodz/" class="nav__left-subitem">Łódź</a>
-                                    <a href="/nysa/" class="nav__left-subitem">Nysa</a>
-                                    <a href="/plock/" class="nav__left-subitem">Płock</a>
-                                    <a href="/slupsk/" class="nav__left-subitem">Słupsk</a>
-                                    <a href="/sieradz/" class="nav__left-subitem">Sieradz</a>
+                                    <a href="https://azardi.pl/lublin/" class="nav__left-subitem">Lublin</a>
+                                    <a href="https://azardi.pl/kutno/" class="nav__left-subitem">Kutno</a>
+                                    <a href="https://azardi.pl/lodz/" class="nav__left-subitem">Łódź</a>
+                                    <a href="https://azardi.pl/nysa/" class="nav__left-subitem">Nysa</a>
+                                    <a href="https://azardi.pl/plock/" class="nav__left-subitem">Płock</a>
+                                    <a href="https://azardi.pl/slupsk/" class="nav__left-subitem">Słupsk</a>
+                                    <a href="https://azardi.pl/sieradz/" class="nav__left-subitem">Sieradz</a>
                                 </div>
                             </div>
                             <div class="nav__left-imgs">
-                                <a href="/salony/" class="nav__left-linkImg nav__left-linkImg-mattress">
+                                <a href="https://azardi.pl/salony/" class="nav__left-linkImg nav__left-linkImg-mattress">
                                     <img class="nav__left-img"
                                         src="https://azardi.pl/wp-content/uploads/2024/02/salon.png" alt="">
                                     <!-- <p class="nav__left-text"></p> -->
                                 </a>
-                                <a href="/salony/" class="nav__left-linkImg nav__left-linkImg-mattress">
+                                <a href="https://azardi.pl/salony/" class="nav__left-linkImg nav__left-linkImg-mattress">
                                     <img class="nav__left-img"
                                         src="https://azardi.pl/wp-content/uploads/2024/04/Warszawa.png" alt="">
                                     <!-- <p class="nav__left-text"></p> -->
@@ -244,12 +244,12 @@
                         </div>
                     </li>
                     <li class="nav__left-item">
-                        <a href="/wspolpraca/" class="nav__left-link">Współpraca</a>
+                        <a href="https://azardi.pl/wspolpraca-architekci/" class="nav__left-link">Współpraca</a>
                         <div class="nav__left-submenu">
                             <div class="nav__left-subitems">
 
-                                <a href="/wspolpraca-architekci/" class="nav__left-subitem">Architekci</a>
-                                <a href="/wspolpraca-b2b/" class="nav__left-subitem">Współpraca B2B</a>
+                                <a href="https://azardi.pl/wspolpraca-architekci/" class="nav__left-subitem">Architekci</a>
+                                <a href="https://azardi.pl/wspolpraca-b2b/" class="nav__left-subitem">Współpraca B2B</a>
 
                             </div>
 
