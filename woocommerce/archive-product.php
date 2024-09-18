@@ -60,6 +60,8 @@ if ( woocommerce_product_loop() ) {
 		}
 	?>
 
+
+
 	<header class="woocommerce-products-header">
 	<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 		<?php
@@ -82,33 +84,52 @@ if ( woocommerce_product_loop() ) {
 			
 			?>
 		</header>
+
+
+
 	<?php
 	do_action( 'woocommerce_archive_description' );
+	
 	do_action( 'woocommerce_before_shop_loop' );
 	
-
-	
 	
 
-	woocommerce_product_loop_start();
+
+
+		function myfunction() {
+	?>
+		
+<div class='shop-wrapper'>
+	<!-- <?php echo do_shortcode('[wpf-filters id=1]');?> -->
+	 <aside class="aside">
+		 <?php dynamic_sidebar( 'sidebar-shop' ); ?>
+
+	 </aside>
+
+	<?php woocommerce_product_loop_start();
+
+if ( wc_get_loop_prop( 'total' ) ) {
+		
+	while ( have_posts() ) {
 	
+		the_post();
 
-	if ( wc_get_loop_prop( 'total' ) ) {
-		while ( have_posts() ) {
-			the_post();
+		
+		do_action( 'woocommerce_shop_loop' );
 
-			/**
-			 * Hook: woocommerce_shop_loop.
-			 */
-			do_action( 'woocommerce_shop_loop' );
+		wc_get_template_part( 'content', 'product' );
 
-			wc_get_template_part( 'content', 'product' );
-
-			
-		}
+		
 	}
+}  ?>
 
+
+</div>
+<div class="shop-pagination">	<? do_action( 'woocommerce_after_shop_loop' ); ?> </div>
+<?php   	  return;
+	  }
 	
+	  myfunction();
 
 	woocommerce_product_loop_end();
 
@@ -127,6 +148,7 @@ if ( woocommerce_product_loop() ) {
 	 */
 	do_action( 'woocommerce_no_products_found' );
 }
+
 global $wp_query;
 	$term = $wp_query->get_queried_object();
 
@@ -139,6 +161,7 @@ global $wp_query;
 			}
 		}
 	}
+
 /**
  * Hook: woocommerce_after_main_content.
  *
@@ -149,7 +172,7 @@ do_action( 'woocommerce_after_main_content' );
 
 ?>
 </div>
-<?php 
+<?php
 get_footer( 'shop' );
 ?>
 </div>

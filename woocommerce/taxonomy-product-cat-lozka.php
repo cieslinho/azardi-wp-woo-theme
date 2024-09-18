@@ -60,12 +60,7 @@ if ( woocommerce_product_loop() ) {
 		}
 	?>
 
-<?php 	wp_nav_menu(
-		array(
-			'theme_location' => 'azardi_bedcategory_menu',
-			
-		)
-	);?>
+
 
 	<header class="woocommerce-products-header">
 	<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
@@ -105,7 +100,12 @@ if ( woocommerce_product_loop() ) {
 	?>
 		
 <div class='shop-wrapper'>
-	<?php echo do_shortcode('[wpf-filters id=1]');?>
+	<!-- <?php echo do_shortcode('[wpf-filters id=1]');?> -->
+	 <aside class="aside">
+		 <?php dynamic_sidebar( 'sidebar-shop' ); ?>
+
+	 </aside>
+
 	<?php woocommerce_product_loop_start();
 
 if ( wc_get_loop_prop( 'total' ) ) {

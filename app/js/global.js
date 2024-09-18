@@ -25,6 +25,34 @@ const mattressBoxes = document.querySelector('.mattress__boxes')
 const mattressBoxesTitle = document.querySelector('.mattress__results-title')
 const navbar = document.querySelector('.nav__navbar')
 
+jQuery(document).ready(function ($) {
+	var bad_woo_fix_cat_nav_loc = window.location.origin + window.location.pathname
+
+	if ($('ul.wc-block-product-categories-list').length) {
+		$('ul.wc-block-product-categories-list li').addClass('nav-category')
+	}
+
+	$('ul.wc-block-product-categories-list')
+		.find('a')
+		.each(function () {
+			if ($(this).parent().find('ul').length > 0) {
+				$(this).parent().addClass('has-children')
+			}
+
+			if ($(this).attr('href') == bad_woo_fix_cat_nav_loc) {
+				$(this).parent().addClass('active-category')
+				$(this)
+					.parents('.wc-block-product-categories > ul.wc-block-product-categories-list li')
+					.addClass('active-category')
+
+				$(this)
+					.parents('.wc-block-product-categories > ul.wc-block-product-categories-list li')
+					.removeClass('nav-category')
+				$(this).parent().find('ul > li').removeClass('nav-category')
+			}
+		})
+})
+
 window.onscroll = function () {
 	// pageYOffset or scrollY
 	if (window.pageYOffset > 0) {

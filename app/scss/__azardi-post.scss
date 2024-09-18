@@ -1,5 +1,6 @@
 .article {
-	margin-block: 3em;
+	margin-block: 4em;
+
 	&__top {
 		position: relative;
 		height: 300px;
@@ -11,8 +12,10 @@
 			position: absolute;
 			bottom: 0;
 			left: 0;
+			flex-wrap: wrap;
 			justify-content: space-between;
 			align-items: center;
+			gap: 1em;
 			border-bottom: 2px solid $dark-color;
 			background-color: $bg-color;
 			padding: 1em;
@@ -21,6 +24,11 @@
 				padding: 3em 2em;
 			}
 			ul.post-categories {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				gap: 1em;
+
 				li a {
 					@include btn-product;
 					padding: 0.3em 2em;

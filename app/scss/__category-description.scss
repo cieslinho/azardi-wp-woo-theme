@@ -17,6 +17,54 @@
 			&:last-child {
 				margin-bottom: 0;
 			}
+
+			a {
+				border-bottom: 1px solid $dark-color;
+				color: $text-color;
+			}
+		}
+	}
+}
+
+.term-description {
+	a {
+		border-bottom: 1px solid $dark-color;
+		color: $text-color;
+	}
+}
+
+.ek-term-desc-container {
+	width: 100% !important;
+	max-width: 100% !important;
+
+	ul {
+		margin: 1em 2em;
+		list-style-type: none !important;
+
+		li {
+			position: relative;
+			margin-top: 0.5em;
+
+			&::before {
+				position: absolute;
+				top: -2px;
+				left: -20px;
+				content: '+';
+				font-weight: 700;
+				font-size: 1.7rem;
+			}
+
+			a {
+				border-bottom: 1px solid $dark-color;
+				color: $text-color;
+			}
+		}
+	}
+
+	p {
+		a {
+			border-bottom: 1px solid $dark-color;
+			color: $text-color;
 		}
 	}
 }

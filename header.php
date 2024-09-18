@@ -280,6 +280,8 @@
                 <a href="/moje-konto">
                     <i class='bx bx-user'></i>
                 </a>
+
+
                 <a href="<?php echo wc_get_cart_url(); ?>">
                     <i class='bx bx-cart'></i>
                     <small class="product_counter">

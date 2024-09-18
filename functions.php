@@ -341,176 +341,7 @@ error_reporting(E_ERROR | E_PARSE);
                 </div>
 
             </div>
-            <li data-tab-target="#fabric-vena" class="fabric__tab">Vena</li>
-                <div id="fabric-vena" data-tab-content>
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-01.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
-                <p class="fabric__image-title">01</p>
-              </div>
-                
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-02.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
-                <p class="fabric__image-title">02</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-03.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
-                <p class="fabric__image-title">03</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-04.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
-                <p class="fabric__image-title">04</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-05.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
-                <p class="fabric__image-title">05</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-06.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
-                <p class="fabric__image-title">06</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-07.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
-                <p class="fabric__image-title">07</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-08.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
-                <p class="fabric__image-title">08</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-09.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
-                <p class="fabric__image-title">09</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Vena/Vena-10.jpg" ?>" alt="Tkanina Vena" data-fabric-group="grupa1" loading="lazy">
-                <p class="fabric__image-title">10</p>
-              </div>
-              
-            </div>
-
-            <li data-tab-target="#fabric-grace" class="fabric__tab">Grace</li>
-                <div id="fabric-grace" data-tab-content>
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Grace/Grace_01-788d8.jpg" ?>" alt="Tkanina Grace" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">01</p>
-              </div>
-                
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Grace/Grace_11-16212.jpg" ?>" alt="Tkanina Grace" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">11</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Grace/Grace_13-64ac8.jpg" ?>" alt="Tkanina Grace" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">13</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Grace/Grace_16-5075d.jpg" ?>" alt="Tkanina Grace" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">16</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Grace/Grace_24-05250.jpg" ?>" alt="Tkanina Grace" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">24</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Grace/Grace_38-c405e.jpg" ?>" alt="Tkanina Grace" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">38</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Grace/Grace_39-a81ec.jpg" ?>" alt="Tkanina Grace" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">39</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Grace/Grace_55-9e035.jpg" ?>" alt="Tkanina Grace" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">55</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Grace/Grace_58-ab44c.jpg" ?>" alt="Tkanina Grace" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">58</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Grace/Grace_59-203e0.jpg" ?>" alt="Tkanina Grace" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">59</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Grace/Grace_70-5d90f.jpg" ?>" alt="Tkanina Grace" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">70</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Grace/Grace_71-61a39.jpg" ?>" alt="Tkanina Grace" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">71</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Grace/Grace_73-37662.jpg" ?>" alt="Tkanina Grace" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">73</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Grace/Grace_75-763e7.jpg" ?>" alt="Tkanina Grace" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">75</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Grace/Grace_76-7245f.jpg" ?>" alt="Tkanina Grace" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">76</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Grace/Grace_77-92413.jpg" ?>" alt="Tkanina Grace" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">77</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Grace/Grace_78-4fa3c.jpg" ?>" alt="Tkanina Grace" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">78</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Grace/Grace_79-16c46.jpg" ?>" alt="Tkanina Grace" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">79</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Grace/Grace_92-6caa0.jpg" ?>" alt="Tkanina Grace" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">92</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Grace/Grace_93-c4750.jpg" ?>" alt="Tkanina Grace" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">93</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Grace/Grace_94-badb1.jpg" ?>" alt="Tkanina Grace" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">94</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Grace/Grace_99-60176.jpg" ?>" alt="Tkanina Grace" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">99</p>
-              </div>
-              
-            </div>
-               
-                
-<!--                -->
+        
                
              </ul>
              <li class="fabric__submenu-item">
@@ -735,140 +566,7 @@ error_reporting(E_ERROR | E_PARSE);
               </div>
               
             </div>
-            <li data-tab-target="#fabric-rustiq" class="fabric__tab">Rustiq</li>
-                <div id="fabric-rustiq" data-tab-content>
-              <div class="fabric__image-box">
-                  <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 02.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
-                  <p class="fabric__image-title">02</p>  
-              </div>
-                
-              <div class="fabric__image-box">
-                  <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 04.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
-                  <p class="fabric__image-title">04</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-                  <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 05.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
-                  <p class="fabric__image-title">05</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-                  <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 09.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
-                  <p class="fabric__image-title">09</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-                  <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 10.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
-                  <p class="fabric__image-title">10</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-                  <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 11.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
-                  <p class="fabric__image-title">11</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-                  <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 14.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
-                  <p class="fabric__image-title">14</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-                  <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 15.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
-                  <p class="fabric__image-title">15</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-                  <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 16.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
-                  <p class="fabric__image-title">16</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-                  <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 19.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
-                  <p class="fabric__image-title">19</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-                  <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 20.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
-                  <p class="fabric__image-title">20</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-                  <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 24.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
-                  <p class="fabric__image-title">24</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-                  <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 25.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
-                  <p class="fabric__image-title">25</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-                  <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 27.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
-                  <p class="fabric__image-title">27</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-                  <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 29.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
-                  <p class="fabric__image-title">29</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-                  <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 30.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
-                  <p class="fabric__image-title">30</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-                  <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 38.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
-                  <p class="fabric__image-title">38</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-                  <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 39.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
-                  <p class="fabric__image-title">39</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-                  <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 42.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
-                  <p class="fabric__image-title">42</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-                  <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 54.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
-                  <p class="fabric__image-title">54</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-                  <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 56.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
-                  <p class="fabric__image-title">56</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-                  <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 59.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
-                  <p class="fabric__image-title">59</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-                  <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 62.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
-                  <p class="fabric__image-title">62</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-                  <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 68.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
-                  <p class="fabric__image-title">68</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-                  <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 70.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
-                  <p class="fabric__image-title">70</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-                  <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Rustiq/Rustiq 81.jpeg" ?>" alt="Tkanina Rustiq" data-fabric-group="grupa5" loading="lazy">
-                  <p class="fabric__image-title">81</p>  
-              </div>
-              
-            </div>
-                
+            
                
              </ul>
              <li class="fabric__submenu-item">
@@ -888,60 +586,21 @@ error_reporting(E_ERROR | E_PARSE);
                 <p class="fabric__image-title">06</p>
               </div>
               
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-2/Icon/Icon-39-eccd1.jpg" ?>" alt="Tkanina Icon" data-fabric-group="grupa2" loading="lazy">
-                <p class="fabric__image-title">39</p>
-              </div>
               
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-2/Icon/Icon-45-41fb8.jpg" ?>" alt="Tkanina Icon" data-fabric-group="grupa2" loading="lazy">
-                <p class="fabric__image-title">45</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-2/Icon/Icon-56-a7d4d.jpg" ?>" alt="Tkanina Icon" data-fabric-group="grupa2" loading="lazy">
-                <p class="fabric__image-title">56</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-2/Icon/Icon-59-7ca7d.jpg" ?>" alt="Tkanina Icon" data-fabric-group="grupa2" loading="lazy">
-                <p class="fabric__image-title">59</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-2/Icon/Icon-61-40056.jpg" ?>" alt="Tkanina Icon" data-fabric-group="grupa2" loading="lazy">
-                <p class="fabric__image-title">61</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-2/Icon/Icon-69-2d849.jpg" ?>" alt="Tkanina Icon" data-fabric-group="grupa2" loading="lazy">
-                <p class="fabric__image-title">69</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-2/Icon/Icon-79-61cc8.jpg" ?>" alt="Tkanina Icon" data-fabric-group="grupa2" loading="lazy">
-                <p class="fabric__image-title">79</p>
-              </div>
               
               <div class="fabric__image-box">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-2/Icon/Icon-81-ba0f2.jpg" ?>" alt="Tkanina Icon" data-fabric-group="grupa2" loading="lazy">
                 <p class="fabric__image-title">81</p>
               </div>
               
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-2/Icon/Icon-90-c9e7d.jpg" ?>" alt="Tkanina Icon" data-fabric-group="grupa2" loading="lazy">
-                <p class="fabric__image-title">90</p>
-              </div>
+              
               
               <div class="fabric__image-box">
                 <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-2/Icon/Icon-95-008dc.jpg" ?>" alt="Tkanina Icon" data-fabric-group="grupa2" loading="lazy">
                 <p class="fabric__image-title">95</p>
               </div>
               
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-2/Icon/Icon-99-12251.jpg" ?>" alt="Tkanina Icon" data-fabric-group="grupa2" loading="lazy">
-                <p class="fabric__image-title">99</p>
-              </div>
+            
               
             </div>
             <li data-tab-target="#fabric-tulia" class="fabric__tab">Tulia</li>
@@ -1027,138 +686,9 @@ error_reporting(E_ERROR | E_PARSE);
               </div>
               
             </div>
-            <li data-tab-target="#fabric-bloom" class="fabric__tab">Bloom</li>
-                <div id="fabric-bloom" data-tab-content>
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 01.jpeg" ?>" alt="Tkanina Bloom" data-fabric-group="grupa4" loading="lazy">
-                <p class="fabric__image-title">01</p>
-              </div>
+            
                 
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 02.jpeg" ?>" alt="Tkanina Bloom" data-fabric-group="grupa4" loading="lazy">
-                <p class="fabric__image-title">02</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 03.jpeg" ?>" alt="Tkanina Bloom" data-fabric-group="grupa4" loading="lazy">
-                <p class="fabric__image-title">03</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 04.jpeg" ?>" alt="Tkanina Bloom" data-fabric-group="grupa4" loading="lazy">
-                <p class="fabric__image-title">04</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 05.jpeg" ?>" alt="Tkanina Bloom" data-fabric-group="grupa4" loading="lazy">
-                <p class="fabric__image-title">05</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 06.jpeg" ?>" alt="Tkanina Bloom" data-fabric-group="grupa4" loading="lazy">
-                <p class="fabric__image-title">06</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 07.jpeg" ?>" alt="Tkanina Bloom" data-fabric-group="grupa4" loading="lazy">
-                <p class="fabric__image-title">07</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 08.jpeg" ?>" alt="Tkanina Bloom" data-fabric-group="grupa4" loading="lazy">
-                <p class="fabric__image-title">08</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 09.jpeg" ?>" alt="Tkanina Bloom" data-fabric-group="grupa4" loading="lazy">
-                <p class="fabric__image-title">09</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-4/Bloom/Bloom 10.jpeg" ?>" alt="Tkanina Bloom" data-fabric-group="grupa4" loading="lazy">
-                <p class="fabric__image-title">10</p>
-              </div>
-              
-            </div>
-                
-                <!-- <li data-tab-target="#fabric-dream" class="fabric__tab">Dream velvet - Dzianina </li>
-                <div id="fabric-dream" data-tab-content>
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Dream-Velvet/Dream velvet 01.jpeg" ?>" alt="Tkanina Dream Velvet" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">01</p>
-              </div>
-                
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Dream-Velvet/Dream velvet 02.jpeg" ?>" alt="Tkanina Dream Velvet" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">02</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Dream-Velvet/Dream velvet 03.jpeg" ?>" alt="Tkanina Dream Velvet" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">03</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Dream-Velvet/Dream velvet 04.jpeg" ?>" alt="Tkanina Dream Velvet" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">04</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Dream-Velvet/Dream velvet 06.jpeg" ?>" alt="Tkanina Dream Velvet" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">06</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Dream-Velvet/Dream velvet 07.jpeg" ?>" alt="Tkanina Dream Velvet" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">07</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Dream-Velvet/Dream velvet 13.jpeg" ?>" alt="Tkanina Dream Velvet" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">13</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Dream-Velvet/Dream velvet 14.jpeg" ?>" alt="Tkanina Dream Velvet" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">14</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Dream-Velvet/Dream velvet 18.jpeg" ?>" alt="Tkanina Dream Velvet" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">18</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Dream-Velvet/Dream velvet 23.jpeg" ?>" alt="Tkanina Dream Velvet" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">23</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Dream-Velvet/Dream velvet 24.jpeg" ?>" alt="Tkanina Dream Velvet" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">24</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Dream-Velvet/Dream velvet 27.jpeg" ?>" alt="Tkanina Dream Velvet" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">27</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Dream-Velvet/Dream velvet 31.jpeg" ?>" alt="Tkanina Dream Velvet" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">31</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Dream-Velvet/Dream velvet 36.jpeg" ?>" alt="Tkanina Dream Velvet" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">36</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Dream-Velvet/Dream velvet 37.jpeg" ?>" alt="Tkanina Dream Velvet" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">37</p>
-              </div>
-              
-            </div> -->
+               
                 
                 
                 
@@ -1648,84 +1178,7 @@ error_reporting(E_ERROR | E_PARSE);
               </div>
               
             </div>
-            <li data-tab-target="#fabric-vera" class="fabric__tab">Vera</li>
-                <div id="fabric-vera" data-tab-content>
-              <div class="fabric__image-box">
-              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Vera/Vera 1.jpeg" ?>" alt="Tkanina Vera" data-fabric-group="grupa3" loading="lazy">
-              <p class="fabric__image-title">01</p>
-              </div>
-                
-              <div class="fabric__image-box">
-              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Vera/Vera 02.jpeg" ?>" alt="Tkanina Vera" data-fabric-group="grupa3" loading="lazy">
-              <p class="fabric__image-title">02</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Vera/Vera 03.jpeg" ?>" alt="Tkanina Vera" data-fabric-group="grupa3" loading="lazy">
-              <p class="fabric__image-title">03</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Vera/Vera 04.jpeg" ?>" alt="Tkanina Vera" data-fabric-group="grupa3" loading="lazy">
-              <p class="fabric__image-title">04</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Vera/Vera 05.jpeg" ?>" alt="Tkanina Vera" data-fabric-group="grupa3" loading="lazy">
-              <p class="fabric__image-title">05</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Vera/Vera 06.jpeg" ?>" alt="Tkanina Vera" data-fabric-group="grupa3" loading="lazy">
-              <p class="fabric__image-title">06</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Vera/Vera 07.jpeg" ?>" alt="Tkanina Vera" data-fabric-group="grupa3" loading="lazy">
-              <p class="fabric__image-title">07</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Vera/Vera 08.jpeg" ?>" alt="Tkanina Vera" data-fabric-group="grupa3" loading="lazy">
-              <p class="fabric__image-title">08</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Vera/Vera 09.jpeg" ?>" alt="Tkanina Vera" data-fabric-group="grupa3" loading="lazy">
-              <p class="fabric__image-title">09</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Vera/Vera 10.jpeg" ?>" alt="Tkanina Vera" data-fabric-group="grupa3" loading="lazy">
-              <p class="fabric__image-title">10</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Vera/Vera 11.jpeg" ?>" alt="Tkanina Vera" data-fabric-group="grupa3" loading="lazy">
-              <p class="fabric__image-title">11</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Vera/Vera 12.jpeg" ?>" alt="Tkanina Vera" data-fabric-group="grupa3" loading="lazy">
-              <p class="fabric__image-title">12</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Vera/Vera 13.jpeg" ?>" alt="Tkanina Vera" data-fabric-group="grupa3" loading="lazy">
-              <p class="fabric__image-title">13</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Vera/Vera 14.jpeg" ?>" alt="Tkanina Vera" data-fabric-group="grupa3" loading="lazy">
-              <p class="fabric__image-title">14</p>  
-              </div>
-              
-              <div class="fabric__image-box">
-              <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Vera/Vera 15.jpeg" ?>" alt="Tkanina Vera" data-fabric-group="grupa3" loading="lazy">
-              <p class="fabric__image-title">15</p>  
-              </div>
-              
-            </div>
+            
                 
                 <li data-tab-target="#fabric-charles" class="fabric__tab">Charles</li>
                 <div id="fabric-charles" data-tab-content>
@@ -2059,112 +1512,8 @@ error_reporting(E_ERROR | E_PARSE);
               </div>
               
             </div>
-            <li data-tab-target="#fabric-now-never" class="fabric__tab">Now or Never</li>
-                <div id="fabric-now-never" data-tab-content>
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Now-or-Never/Now-or-never-01-9afb8.jpg" ?>" alt="Tkanina Now or Never" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">01</p>
-              </div>
-                
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Now-or-Never/Now-or-never-03-46e38.jpg" ?>" alt="Tkanina Now or Never" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">03</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Now-or-Never/Now-or-never-06-61b8f.jpg" ?>" alt="Tkanina Now or Never" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">06</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Now-or-Never/Now-or-never-16-e1d4c.jpg" ?>" alt="Tkanina Now or Never" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">16</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Now-or-Never/Now-or-never-83-4bfee.jpg" ?>" alt="Tkanina Now or Never" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">83</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Now-or-Never/Now-or-never-92-83f0e.jpg" ?>" alt="Tkanina Now or Never" data-fabric-group="grupa3" loading="lazy">
-                <p class="fabric__image-title">92</p>
-              </div>
-              
-            </div>
-                <li data-tab-target="#fabric-angola" class="fabric__tab">Angola</li>
-                <div id="fabric-angola" data-tab-content>
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 01.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
-                <p class="fabric__image-title">01</p>
-              </div>
-                
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 02.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
-                <p class="fabric__image-title">02</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 03.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
-                <p class="fabric__image-title">03</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 04.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
-                <p class="fabric__image-title">04</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 05.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
-                <p class="fabric__image-title">05</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 06.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
-                <p class="fabric__image-title">06</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 07.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
-                <p class="fabric__image-title">07</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 08.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
-                <p class="fabric__image-title">08</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 09.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
-                <p class="fabric__image-title">09</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 10.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
-                <p class="fabric__image-title">10</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 11.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
-                <p class="fabric__image-title">11</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 12.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
-                <p class="fabric__image-title">12</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 13.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
-                <p class="fabric__image-title">13</p>
-              </div>
-              
-              <div class="fabric__image-box">
-                <img class="fabric__image" src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-5/Angola/Angola 14.jpeg" ?>" alt="Tkanina Angola" data-fabric-group="grupa5" loading="lazy">
-                <p class="fabric__image-title">14</p>
-              </div>
-              
-            </div>
+           
+               
             <li data-tab-target="#fabric-presence" class="fabric__tab">Presence</li>
                 <div id="fabric-presence" data-tab-content>
               <div class="fabric__image-box">
@@ -2610,3 +1959,38 @@ function custom_woocommerce_breadcrumbs() {
 
 
 
+
+function custom_widgets_init() {
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Shop Sidebar', 'sirius' ),
+			'id'            => 'sidebar-shop',
+			'description'   => esc_html__( 'Add widgets here.', 'sirius' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h4>',
+			'after_title'   => '</h4>',
+		)
+	);
+} 
+add_action( 'widgets_init', 'custom_widgets_init' );
+
+
+
+ 
+function custom_mini_cart() {
+  echo '<a href="#" class="dropdown-back" data-toggle="dropdown"> ';
+  echo '<i class="fa fa-shopping-cart" aria-hidden="true"></i>';
+  echo '<div class="basket-item-count" style="display: inline;">';
+  echo '<span class="cart-items-count count">';
+  echo WC()->cart->get_cart_contents_count();
+  echo '</span>';
+  echo '</div>';
+  echo '</a>';
+  echo '<ul class="dropdown-menu dropdown-menu-mini-cart">';
+  echo '<li> <div class="widget_shopping_cart_content">';
+  woocommerce_mini_cart();
+  echo '</div></li></ul>';
+  
+  }
+  add_shortcode( 'quadlayers-mini-cart', 'custom_mini_cart' );

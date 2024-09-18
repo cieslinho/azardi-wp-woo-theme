@@ -1,0 +1,30 @@
+aside.aside {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	width: 100%;
+
+	.wc-block-product-categories-list.wc-block-product-categories-list--depth-0 > li:first-child {
+		display: none;
+	}
+
+	ul.wc-block-product-categories-list.wc-block-product-categories-list {
+		li {
+			margin-bottom: 0.5em;
+
+			a {
+				color: rgba(51, 53, 51, 0.6);
+			}
+		}
+
+		li.active-category > a {
+			color: $text-color;
+		}
+
+		&--depth-1,
+		&--depth-2 {
+			margin-block: 0.5em;
+			margin-left: 1em;
+		}
+	}
+}
