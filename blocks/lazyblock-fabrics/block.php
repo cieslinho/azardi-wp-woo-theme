@@ -28,6 +28,54 @@
                   <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Boss/Boss_04.jpg" ?>" data-group-id="04" alt="Tkanina Boss" class="fabrics__images-img">
                   
                 </div>
+                <div class="fabrics__images-box" data-group-images="group-25">
+                    <div class="fabrics__images-info">
+                        <p class="fabrics__images-type">Plecionka</p>
+                        <p class="fabrics__images-title">Storm</p>
+                    </div>
+                  <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Tkanina - STORM/Storm_02-1f0d4.jpg" ?>" data-group-id="02" alt="Tkanina Storm" class="fabrics__images-img">
+                  
+                </div>
+                <div class="fabrics__images-box" data-group-images="group-26">
+                    <div class="fabrics__images-info">
+                        <p class="fabrics__images-type">Plecionka</p>
+                        <p class="fabrics__images-title">Moly</p>
+                    </div>
+                  <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Tkanina - Moly/Moly_02-c49ae.jpg" ?>" data-group-id="02" alt="Tkanina Moly" class="fabrics__images-img">
+                  
+                </div>
+                <div class="fabrics__images-box" data-group-images="group-27">
+                    <div class="fabrics__images-info">
+                        <p class="fabrics__images-type">Plecionka</p>
+                        <p class="fabrics__images-title">Diosa</p>
+                    </div>
+                  <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Tkanina - Diosa/Diosa-01-e784d.jpg" ?>" data-group-id="01" alt="Tkanina Diosa" class="fabrics__images-img">
+                  
+                </div>
+                <div class="fabrics__images-box" data-group-images="group-28">
+                    <div class="fabrics__images-info">
+                        <p class="fabrics__images-type">Plecionka</p>
+                        <p class="fabrics__images-title">Luis</p>
+                    </div>
+                  <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Tkanina - Luis/Luis_16-83d50.jpg" ?>" data-group-id="16" alt="Tkanina Luis" class="fabrics__images-img">
+                  
+                </div>
+                <div class="fabrics__images-box" data-group-images="group-29">
+                    <div class="fabrics__images-info">
+                        <p class="fabrics__images-type">Plecionka</p>
+                        <p class="fabrics__images-title">Solid</p>
+                    </div>
+                  <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Tkanina - SOLID/Solid_66_plaskie-5d2b1.jpg" ?>" data-group-id="66" alt="Tkanina Solid" class="fabrics__images-img">
+                  
+                </div>
+                <div class="fabrics__images-box" data-group-images="group-30">
+                    <div class="fabrics__images-info">
+                        <p class="fabrics__images-type">Plecionka</p>
+                        <p class="fabrics__images-title">Hygge</p>
+                    </div>
+                  <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Tkanina - Hygge/2541.jpg" ?>" data-group-id="2541" alt="Tkanina Hygge" class="fabrics__images-img">
+                  
+                </div>
                 
                 
               </div>
@@ -60,6 +108,22 @@
                     
                     </div>
                   <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-2/Zoya/Zoya 01.jpeg" ?>" data-group-id="01" alt="Tkanina Zoya" class="fabrics__images-img">
+                </div>
+                <div class="fabrics__images-box" data-group-images="group-31">
+                    <div class="fabrics__images-info">
+                        <p class="fabrics__images-type">Dzianina</p>
+                        <p class="fabrics__images-title">Leo</p>
+                    </div>
+                    
+                  <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Tkanina - Leo/tekstura LEO 08.jpg" ?>" data-group-id="08" alt="Tkanina Leo" class="fabrics__images-img">
+                </div>
+                <div class="fabrics__images-box" data-group-images="group-32">
+                    <div class="fabrics__images-info">
+                        <p class="fabrics__images-type">Dzianina</p>
+                        <p class="fabrics__images-title">Forres</p>
+                    </div>
+                    
+                  <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Tkanina - Forres/forres04.jpg" ?>" data-group-id="04" alt="Tkanina Forres" class="fabrics__images-img">
                 </div>
                 
                </div>
@@ -155,6 +219,46 @@
                     </div>
                     <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Maya/Maya 01.jpeg" ?>" data-group-id="01" alt="Tkanina Maya" class="fabrics__images-img">
                 </div>
+                <div class="fabrics__images-box" data-group-images="group-33">
+                    <div class="fabrics__images-info">
+                        <p class="fabrics__images-type">velvet</p>
+                        <p class="fabrics__images-title">Napoli</p>
+                    </div>
+                    
+                    <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Tkanina - Napoli/napoli07.jpg" ?>" data-group-id="07" alt="Tkanina Napoli" class="fabrics__images-img">
+                </div>
+                <div class="fabrics__images-box" data-group-images="group-34">
+                    <div class="fabrics__images-info">
+                        <p class="fabrics__images-type">velvet</p>
+                        <p class="fabrics__images-title">Dream Velvet</p>
+                    </div>
+                    
+                    <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Tkanina - Dream Velvet/202.11.jpg" ?>" data-group-id="11" alt="Tkanina Dream Velvet" class="fabrics__images-img">
+                </div>
+                <div class="fabrics__images-box" data-group-images="group-35">
+                    <div class="fabrics__images-info">
+                        <p class="fabrics__images-type">velvet</p>
+                        <p class="fabrics__images-title">Magic Velvet</p>
+                    </div>
+                    
+                    <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Tkanina - Magic Velvet/2206.jpg" ?>" data-group-id="2206" alt="Tkanina Magic Velvet" class="fabrics__images-img">
+                </div>
+                <div class="fabrics__images-box" data-group-images="group-36">
+                    <div class="fabrics__images-info">
+                        <p class="fabrics__images-type">velvet</p>
+                        <p class="fabrics__images-title">Venus Velvet</p>
+                    </div>
+                    
+                    <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Tkanina - Venus Velvet/2911.jpg" ?>" data-group-id="2911" alt="Tkanina Venus Velvet" class="fabrics__images-img">
+                </div>
+                <div class="fabrics__images-box" data-group-images="group-37">
+                    <div class="fabrics__images-info">
+                        <p class="fabrics__images-type">velvet</p>
+                        <p class="fabrics__images-title">Chill Me</p>
+                    </div>
+                    
+                    <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Tkanina - chill me/chill_me_10.jpg" ?>" data-group-id="10" alt="Tkanina Chill Me" class="fabrics__images-img">
+                </div>
                 
                 
               </div>
@@ -180,6 +284,14 @@
                     </div>
                     
                     <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-3/Presence/Presence-08-65e25.jpg" ?>" data-group-id="08" alt="Tkanina Presence" class="fabrics__images-img">
+                </div>
+                <div class="fabrics__images-box" data-group-images="group-18">
+                    <div class="fabrics__images-info">
+                        <p class="fabrics__images-type">boucle</p>
+                        <p class="fabrics__images-title">Mansila</p>
+                    </div>
+                    
+                    <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Tkanina - Mansila/mansila-06.jpg" ?>" data-group-id="06" alt="Tkanina mansila" class="fabrics__images-img">
                 </div>
               </div>
           </div>
@@ -220,6 +332,364 @@
            <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Boss/Boss_14.jpg" ?>" alt="Tkanina Boss" data-group-id="14" class="fabrics__popup-color">
            <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Boss/boss_15.jpg" ?>" alt="Tkanina Boss" data-group-id="15" class="fabrics__popup-color">
           </div>
+          <div class="fabrics__popup-colors" id="group-25">
+          <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - STORM/Storm_02-1f0d4.jpg'; ?>" alt="Tkanina Storm" data-group-id="02" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - STORM/Storm_06-d5a5d.jpg'; ?>" alt="Tkanina Storm" data-group-id="06" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - STORM/Storm_09-621ec.jpg'; ?>" alt="Tkanina Storm" data-group-id="09" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - STORM/Storm_18-124a6.jpg'; ?>" alt="Tkanina Storm" data-group-id="18" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - STORM/Storm_37-e729f.jpg'; ?>" alt="Tkanina Storm" data-group-id="37" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - STORM/Storm_39-342a0.jpg'; ?>" alt="Tkanina Storm" data-group-id="39" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - STORM/Storm_48-c678d.jpg'; ?>" alt="Tkanina Storm" data-group-id="48" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - STORM/Storm_54-09678.jpg'; ?>" alt="Tkanina Storm" data-group-id="54" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - STORM/Storm_63-abc98.jpg'; ?>" alt="Tkanina Storm" data-group-id="63" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - STORM/Storm_70-b14f5.jpg'; ?>" alt="Tkanina Storm" data-group-id="70" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - STORM/Storm_71-12332.jpg'; ?>" alt="Tkanina Storm" data-group-id="71" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - STORM/Storm_72-d02b3.jpg'; ?>" alt="Tkanina Storm" data-group-id="72" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - STORM/Storm_77-66ea6.jpg'; ?>" alt="Tkanina Storm" data-group-id="77" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - STORM/Storm_85-b605f.jpg'; ?>" alt="Tkanina Storm" data-group-id="85" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - STORM/Storm_97-cddbd.jpg'; ?>" alt="Tkanina Storm" data-group-id="97" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - STORM/Storm_99-5f08e.jpg'; ?>" alt="Tkanina Storm" data-group-id="99" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - STORM/Strom_59-be845.jpg'; ?>" alt="Tkanina Storm" data-group-id="59" class="fabrics__popup-color">
+
+          </div>
+          <div class="fabrics__popup-colors" id="group-29">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - SOLID/Solid_03_plaskie-693aa.jpg'; ?>" alt="Tkanina Solid" data-group-id="03" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - SOLID/Solid_06_plaskie-2fa8f.jpg'; ?>" alt="Tkanina Solid" data-group-id="06" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - SOLID/Solid_09_plaskie-89d5c.jpg'; ?>" alt="Tkanina Solid" data-group-id="09" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - SOLID/Solid_11_plaskie-aa58d.jpg'; ?>" alt="Tkanina Solid" data-group-id="11" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - SOLID/Solid_30_plaskie-3a1d1.jpg'; ?>" alt="Tkanina Solid" data-group-id="30" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - SOLID/Solid_33_plaskie-11365.jpg'; ?>" alt="Tkanina Solid" data-group-id="33" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - SOLID/Solid_39_plaskie-ffe3f.jpg'; ?>" alt="Tkanina Solid" data-group-id="39" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - SOLID/Solid_60_plaskie-82f45.jpg'; ?>" alt="Tkanina Solid" data-group-id="60" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - SOLID/Solid_61_plaskie-c999d.jpg'; ?>" alt="Tkanina Solid" data-group-id="61" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - SOLID/Solid_66_plaskie-5d2b1.jpg'; ?>" alt="Tkanina Solid" data-group-id="66" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - SOLID/Solid_72_plaskie-819d1.jpg'; ?>" alt="Tkanina Solid" data-group-id="72" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - SOLID/Solid_73_plaskie-33c24.jpg'; ?>" alt="Tkanina Solid" data-group-id="73" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - SOLID/Solid_74_plaskie-81541.jpg'; ?>" alt="Tkanina Solid" data-group-id="74" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - SOLID/Solid_77_plaskie-450f7.jpg'; ?>" alt="Tkanina Solid" data-group-id="77" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - SOLID/Solid_79_plaskie-8286c.jpg'; ?>" alt="Tkanina Solid" data-group-id="79" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - SOLID/Solid_80_plaskie-e0d95.jpg'; ?>" alt="Tkanina Solid" data-group-id="80" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - SOLID/Solid_83_plaskie-1f749.jpg'; ?>" alt="Tkanina Solid" data-group-id="83" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - SOLID/Solid_84_plaskie-fcb28.jpg'; ?>" alt="Tkanina Solid" data-group-id="84" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - SOLID/Solid_89_plaskie-65be3.jpg'; ?>" alt="Tkanina Solid" data-group-id="89" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - SOLID/Solid_90_plaskie-a97ca.jpg'; ?>" alt="Tkanina Solid" data-group-id="90" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - SOLID/Solid_99_plaskie-82e23.jpg'; ?>" alt="Tkanina Solid" data-group-id="99" class="fabrics__popup-color">
+</div>
+
+          <div class="fabrics__popup-colors" id="group-26">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Moly/Moly_02-c49ae.jpg'; ?>" alt="Tkanina Moly" data-group-id="02" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Moly/Moly_03-74316.jpg'; ?>" alt="Tkanina Moly" data-group-id="03" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Moly/Moly_04-22a34.jpg'; ?>" alt="Tkanina Moly" data-group-id="04" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Moly/Moly_11-2c5c6.jpg'; ?>" alt="Tkanina Moly" data-group-id="11" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Moly/Moly_37-e9757.jpg'; ?>" alt="Tkanina Moly" data-group-id="37" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Moly/Moly_38-892b8.jpg'; ?>" alt="Tkanina Moly" data-group-id="38" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Moly/Moly_46-7ba01.jpg'; ?>" alt="Tkanina Moly" data-group-id="46" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Moly/Moly_51-741d2.jpg'; ?>" alt="Tkanina Moly" data-group-id="51" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Moly/Moly_54-7b8c7.jpg'; ?>" alt="Tkanina Moly" data-group-id="54" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Moly/Moly_55-c74cb.jpg'; ?>" alt="Tkanina Moly" data-group-id="55" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Moly/Moly_59-6b437.jpg'; ?>" alt="Tkanina Moly" data-group-id="59" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Moly/Moly_63-b776b.jpg'; ?>" alt="Tkanina Moly" data-group-id="63" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Moly/Moly_70-6bf4c.jpg'; ?>" alt="Tkanina Moly" data-group-id="70" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Moly/Moly_74-30430.jpg'; ?>" alt="Tkanina Moly" data-group-id="74" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Moly/Moly_77-32b8a.jpg'; ?>" alt="Tkanina Moly" data-group-id="77" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Moly/Moly_79-861c5.jpg'; ?>" alt="Tkanina Moly" data-group-id="79" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Moly/Moly_80-05a2e.jpg'; ?>" alt="Tkanina Moly" data-group-id="80" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Moly/Moly_85-a0b13.jpg'; ?>" alt="Tkanina Moly" data-group-id="85" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Moly/Moly_97-d02af.jpg'; ?>" alt="Tkanina Moly" data-group-id="97" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Moly/Moly_99-518cb.jpg'; ?>" alt="Tkanina Moly" data-group-id="99" class="fabrics__popup-color">
+</div>
+<div class="fabrics__popup-colors" id="group-27">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Diosa/Diosa-01-e784d.jpg'; ?>" alt="Tkanina Diosa" data-group-id="01" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Diosa/Diosa-03-c93fe.jpg'; ?>" alt="Tkanina Diosa" data-group-id="03" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Diosa/Diosa-08-86737.jpg'; ?>" alt="Tkanina Diosa" data-group-id="08" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Diosa/Diosa-11-200ef.jpg'; ?>" alt="Tkanina Diosa" data-group-id="11" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Diosa/Diosa_16-5ffff.jpg'; ?>" alt="Tkanina Diosa" data-group-id="16" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Diosa/Diosa_19-97d3d.jpg'; ?>" alt="Tkanina Diosa" data-group-id="19" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Diosa/Diosa-34-b3ebb.jpg'; ?>" alt="Tkanina Diosa" data-group-id="34" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Diosa/Diosa-41-22a6a.jpg'; ?>" alt="Tkanina Diosa" data-group-id="41" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Diosa/Diosa-45-c5a2a.jpg'; ?>" alt="Tkanina Diosa" data-group-id="45" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Diosa/Diosa-52-5bf6a.jpg'; ?>" alt="Tkanina Diosa" data-group-id="52" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Diosa/Diosa-56-66009.jpg'; ?>" alt="Tkanina Diosa" data-group-id="56" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Diosa/Diosa-60-51f01.jpg'; ?>" alt="Tkanina Diosa" data-group-id="60" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Diosa/Diosa-61-17080.jpg'; ?>" alt="Tkanina Diosa" data-group-id="61" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Diosa/Diosa-64-5eb96.jpg'; ?>" alt="Tkanina Diosa" data-group-id="64" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Diosa/Diosa-70-23fc4.jpg'; ?>" alt="Tkanina Diosa" data-group-id="70" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Diosa/Diosa-71-33e4b.jpg'; ?>" alt="Tkanina Diosa" data-group-id="71" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Diosa/Diosa-74-b193e.jpg'; ?>" alt="Tkanina Diosa" data-group-id="74" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Diosa/Diosa-75-a2701.jpg'; ?>" alt="Tkanina Diosa" data-group-id="75" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Diosa/Diosa-77-44d6e.jpg'; ?>" alt="Tkanina Diosa" data-group-id="77" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Diosa/Diosa-84-e23d9.jpg'; ?>" alt="Tkanina Diosa" data-group-id="84" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Diosa/Diosa-85-7f0c4.jpg'; ?>" alt="Tkanina Diosa" data-group-id="85" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Diosa/Diosa-89-1bd21.jpg'; ?>" alt="Tkanina Diosa" data-group-id="89" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Diosa/Diosa-93-27c91.jpg'; ?>" alt="Tkanina Diosa" data-group-id="93" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Diosa/Diosa-99-8d96a.jpg'; ?>" alt="Tkanina Diosa" data-group-id="99" class="fabrics__popup-color">
+</div>
+<div class="fabrics__popup-colors" id="group-28">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Luis/Luis_02-88d27.jpg'; ?>" alt="Tkanina Luis" data-group-id="02" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Luis/Luis_03-1534c.jpg'; ?>" alt="Tkanina Luis" data-group-id="03" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Luis/Luis_04-f6f1b.jpg'; ?>" alt="Tkanina Luis" data-group-id="04" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Luis/Luis_13-afce5.jpg'; ?>" alt="Tkanina Luis" data-group-id="13" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Luis/Luis_16-83d50.jpg'; ?>" alt="Tkanina Luis" data-group-id="16" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Luis/Luis_17-01a17.jpg'; ?>" alt="Tkanina Luis" data-group-id="17" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Luis/Luis_34-a94f8.jpg'; ?>" alt="Tkanina Luis" data-group-id="34" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Luis/Luis_39-c3140.jpg'; ?>" alt="Tkanina Luis" data-group-id="39" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Luis/Luis_48-c857e.jpg'; ?>" alt="Tkanina Luis" data-group-id="48" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Luis/Luis_52-e0f79.jpg'; ?>" alt="Tkanina Luis" data-group-id="52" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Luis/Luis_59-fb614.jpg'; ?>" alt="Tkanina Luis" data-group-id="59" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Luis/Luis_63-c9f49.jpg'; ?>" alt="Tkanina Luis" data-group-id="63" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Luis/Luis_68-eb3c0.jpg'; ?>" alt="Tkanina Luis" data-group-id="68" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Luis/Luis_70-b1196.jpg'; ?>" alt="Tkanina Luis" data-group-id="70" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Luis/Luis_74-ffbb7.jpg'; ?>" alt="Tkanina Luis" data-group-id="74" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Luis/Luis_75-cad09.jpg'; ?>" alt="Tkanina Luis" data-group-id="75" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Luis/Luis_77-39159.jpg'; ?>" alt="Tkanina Luis" data-group-id="77" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Luis/Luis_80-f98d1.jpg'; ?>" alt="Tkanina Luis" data-group-id="80" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Luis/Luis_83-e822f.jpg'; ?>" alt="Tkanina Luis" data-group-id="83" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Luis/Luis_85-149cc.jpg'; ?>" alt="Tkanina Luis" data-group-id="85" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Luis/Luis_90-1c7c6.jpg'; ?>" alt="Tkanina Luis" data-group-id="90" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Luis/Luis_97-ae796.jpg'; ?>" alt="Tkanina Luis" data-group-id="97" class="fabrics__popup-color">
+</div>
+<div class="fabrics__popup-colors" id="group-30">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2531.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2531" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2532.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2532" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2533.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2533" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2534.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2534" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2535.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2535" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2536.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2536" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2537.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2537" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2538.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2538" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2539.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2539" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2540.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2540" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2541.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2541" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2542.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2542" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2543.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2543" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2544.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2544" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2545.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2545" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2546.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2546" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2547.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2547" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2548.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2548" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2549.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2549" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2550.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2550" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2551.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2551" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2552.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2552" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2553.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2553" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2554.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2554" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2555.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2555" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2556.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2556" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2557.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2557" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2558.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2558" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Hygge/2559.jpg'; ?>" alt="Tkanina Hygge" data-group-id="2559" class="fabrics__popup-color">
+</div>
+<div class="fabrics__popup-colors" id="group-31">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Leo/tekstura LEO 01.jpg'; ?>" alt="Tkanina Leo" data-group-id="01" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Leo/tekstura LEO 02.jpg'; ?>" alt="Tkanina Leo" data-group-id="02" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Leo/tekstura LEO 03.jpg'; ?>" alt="Tkanina Leo" data-group-id="03" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Leo/tekstura LEO 04.jpg'; ?>" alt="Tkanina Leo" data-group-id="04" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Leo/tekstura LEO 05.jpg'; ?>" alt="Tkanina Leo" data-group-id="05" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Leo/tekstura LEO 06.jpg'; ?>" alt="Tkanina Leo" data-group-id="06" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Leo/tekstura LEO 07.jpg'; ?>" alt="Tkanina Leo" data-group-id="07" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Leo/tekstura LEO 08.jpg'; ?>" alt="Tkanina Leo" data-group-id="08" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Leo/tekstura LEO 09.jpg'; ?>" alt="Tkanina Leo" data-group-id="09" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Leo/tekstura LEO 10.jpg'; ?>" alt="Tkanina Leo" data-group-id="10" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Leo/tekstura LEO 11.jpg'; ?>" alt="Tkanina Leo" data-group-id="11" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Leo/tekstura LEO 12.jpg'; ?>" alt="Tkanina Leo" data-group-id="12" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Leo/tekstura LEO 13.jpg'; ?>" alt="Tkanina Leo" data-group-id="13" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Leo/tekstura LEO 14.jpg'; ?>" alt="Tkanina Leo" data-group-id="14" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Leo/tekstura LEO 15.jpg'; ?>" alt="Tkanina Leo" data-group-id="15" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Leo/tekstura LEO 16.jpg'; ?>" alt="Tkanina Leo" data-group-id="16" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Leo/tekstura LEO 17.jpg'; ?>" alt="Tkanina Leo" data-group-id="17" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Leo/tekstura LEO 18.jpg'; ?>" alt="Tkanina Leo" data-group-id="18" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Leo/tekstura LEO 19.jpg'; ?>" alt="Tkanina Leo" data-group-id="19" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Leo/tekstura LEO 20.jpg'; ?>" alt="Tkanina Leo" data-group-id="20" class="fabrics__popup-color">
+</div>
+<div class="fabrics__popup-colors" id="group-32">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres01.jpg'; ?>" alt="Tkanina Forres" data-group-id="01" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres02.jpg'; ?>" alt="Tkanina Forres" data-group-id="02" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres03.jpg'; ?>" alt="Tkanina Forres" data-group-id="03" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres04.jpg'; ?>" alt="Tkanina Forres" data-group-id="04" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres05.jpg'; ?>" alt="Tkanina Forres" data-group-id="05" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres06.jpg'; ?>" alt="Tkanina Forres" data-group-id="06" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres07.jpg'; ?>" alt="Tkanina Forres" data-group-id="07" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres08.jpg'; ?>" alt="Tkanina Forres" data-group-id="08" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres09.jpg'; ?>" alt="Tkanina Forres" data-group-id="09" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres10.jpg'; ?>" alt="Tkanina Forres" data-group-id="10" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres11.jpg'; ?>" alt="Tkanina Forres" data-group-id="11" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres12.jpg'; ?>" alt="Tkanina Forres" data-group-id="12" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres13.jpg'; ?>" alt="Tkanina Forres" data-group-id="13" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres14.jpg'; ?>" alt="Tkanina Forres" data-group-id="14" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres15.jpg'; ?>" alt="Tkanina Forres" data-group-id="15" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres16.jpg'; ?>" alt="Tkanina Forres" data-group-id="16" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres17.jpg'; ?>" alt="Tkanina Forres" data-group-id="17" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres18.jpg'; ?>" alt="Tkanina Forres" data-group-id="18" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres19.jpg'; ?>" alt="Tkanina Forres" data-group-id="19" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres20.jpg'; ?>" alt="Tkanina Forres" data-group-id="20" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres21.jpg'; ?>" alt="Tkanina Forres" data-group-id="21" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres22.jpg'; ?>" alt="Tkanina Forres" data-group-id="22" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres23.jpg'; ?>" alt="Tkanina Forres" data-group-id="23" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres24.jpg'; ?>" alt="Tkanina Forres" data-group-id="24" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres25.jpg'; ?>" alt="Tkanina Forres" data-group-id="25" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres26.jpg'; ?>" alt="Tkanina Forres" data-group-id="26" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres27.jpg'; ?>" alt="Tkanina Forres" data-group-id="27" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Forres/forres28.jpg'; ?>" alt="Tkanina Forres" data-group-id="28" class="fabrics__popup-color">
+</div>
+<div class="fabrics__popup-colors" id="group-33">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Napoli/napoli01.jpg'; ?>" alt="Tkanina Napoli" data-group-id="01" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Napoli/napoli02.jpg'; ?>" alt="Tkanina Napoli" data-group-id="02" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Napoli/napoli03.jpg'; ?>" alt="Tkanina Napoli" data-group-id="03" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Napoli/napoli04.jpg'; ?>" alt="Tkanina Napoli" data-group-id="04" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Napoli/napoli06.jpg'; ?>" alt="Tkanina Napoli" data-group-id="06" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Napoli/napoli07.jpg'; ?>" alt="Tkanina Napoli" data-group-id="07" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Napoli/napoli08.jpg'; ?>" alt="Tkanina Napoli" data-group-id="08" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Napoli/napoli09.jpg'; ?>" alt="Tkanina Napoli" data-group-id="09" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Napoli/napoli10.jpg'; ?>" alt="Tkanina Napoli" data-group-id="10" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Napoli/napoli11.jpg'; ?>" alt="Tkanina Napoli" data-group-id="11" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Napoli/napoli12_1.jpg'; ?>" alt="Tkanina Napoli" data-group-id="12_1" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Napoli/napoli13.jpg'; ?>" alt="Tkanina Napoli" data-group-id="13" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Napoli/napoli14.jpg'; ?>" alt="Tkanina Napoli" data-group-id="14" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Napoli/napoli15.jpg'; ?>" alt="Tkanina Napoli" data-group-id="15" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Napoli/napoli16.jpg'; ?>" alt="Tkanina Napoli" data-group-id="16" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Napoli/napoli17.jpg'; ?>" alt="Tkanina Napoli" data-group-id="17" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Napoli/napoli18.jpg'; ?>" alt="Tkanina Napoli" data-group-id="18" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Napoli/napoli19.jpg'; ?>" alt="Tkanina Napoli" data-group-id="19" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Napoli/napoli20.jpg'; ?>" alt="Tkanina Napoli" data-group-id="20" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Napoli/napoli21.jpg'; ?>" alt="Tkanina Napoli" data-group-id="21" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Napoli/napoli22_1.jpg'; ?>" alt="Tkanina Napoli" data-group-id="22_1" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Napoli/napoli23_1.jpg'; ?>" alt="Tkanina Napoli" data-group-id="23_1" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Napoli/napoli24_1.jpg'; ?>" alt="Tkanina Napoli" data-group-id="24_1" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Napoli/napoli25_1.jpg'; ?>" alt="Tkanina Napoli" data-group-id="25_1" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Napoli/napoli26_1.jpg'; ?>" alt="Tkanina Napoli" data-group-id="26_1" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Napoli/napoli27_1.jpg'; ?>" alt="Tkanina Napoli" data-group-id="27_1" class="fabrics__popup-color">
+</div>
+<div class="fabrics__popup-colors" id="group-34">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.01.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20201" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.02.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20202" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.03.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20203" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.04.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20204" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.05.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20205" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.06.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20206" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.07.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20207" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.08.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20208" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.09.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20209" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.10.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20210" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.11.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20211" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.12.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20212" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.13.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20213" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.14.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20214" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.15.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20215" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.16.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20216" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.17.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20217" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.18.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20218" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.19.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20219" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.20.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20220" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.21.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20221" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.22.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20222" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.23.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20223" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.24.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20224" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.25.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20225" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.26.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20226" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.27.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20227" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.28.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20228" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.29.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20229" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.30.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20230" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.31.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20231" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.32.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20232" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.33.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20233" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.34.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20234" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.35.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20235" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.36.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20236" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.37.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20237" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.38.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20238" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.39.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20239" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.40.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20240" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.41.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20241" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.42.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20242" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.43.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20243" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Dream Velvet/202.44.jpg'; ?>" alt="Tkanina Dream Velvet" data-group-id="20244" class="fabrics__popup-color">
+</div>
+<div class="fabrics__popup-colors" id="group-35">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2200.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2200" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2201.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2201" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2202.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2202" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2204.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2204" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2205.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2205" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2206.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2206" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2207.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2207" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2208.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2208" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2209.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2209" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2210.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2210" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2213.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2213" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2214.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2214" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2216.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2216" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2217.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2217" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2218.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2218" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2219.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2219" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2229.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2229" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2239.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2239" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2241.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2241" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2256.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2256" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2262.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2262" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2270.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2270" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2271.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2271" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2272.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2272" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2273.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2273" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2274.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2274" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2292.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2292" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Magic Velvet/2295.jpg'; ?>" alt="Tkanina Magic Velvet" data-group-id="2295" class="fabrics__popup-color">
+</div>
+<div class="fabrics__popup-colors" id="group-36">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Venus Velvet/2911.jpg'; ?>" alt="Tkanina Venus Velvet" data-group-id="2911" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Venus Velvet/2914.jpg'; ?>" alt="Tkanina Venus Velvet" data-group-id="2914" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Venus Velvet/2917.jpg'; ?>" alt="Tkanina Venus Velvet" data-group-id="2917" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Venus Velvet/2918.jpg'; ?>" alt="Tkanina Venus Velvet" data-group-id="2918" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Venus Velvet/2919.jpg'; ?>" alt="Tkanina Venus Velvet" data-group-id="2919" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Venus Velvet/2921.jpg'; ?>" alt="Tkanina Venus Velvet" data-group-id="2921" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Venus Velvet/2922.jpg'; ?>" alt="Tkanina Venus Velvet" data-group-id="2922" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Venus Velvet/2924.jpg'; ?>" alt="Tkanina Venus Velvet" data-group-id="2924" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Venus Velvet/2925.jpg'; ?>" alt="Tkanina Venus Velvet" data-group-id="2925" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Venus Velvet/2927.jpg'; ?>" alt="Tkanina Venus Velvet" data-group-id="2927" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Venus Velvet/2928.jpg'; ?>" alt="Tkanina Venus Velvet" data-group-id="2928" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Venus Velvet/2929.jpg'; ?>" alt="Tkanina Venus Velvet" data-group-id="2929" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Venus Velvet/2930.jpg'; ?>" alt="Tkanina Venus Velvet" data-group-id="2930" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Venus Velvet/2931.jpg'; ?>" alt="Tkanina Venus Velvet" data-group-id="2931" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Venus Velvet/2937.jpg'; ?>" alt="Tkanina Venus Velvet" data-group-id="2937" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Venus Velvet/venus-velvet-2923.jpg'; ?>" alt="Tkanina Venus Velvet" data-group-id="2923" class="fabrics__popup-color">
+</div>
+<div class="fabrics__popup-colors" id="group-37">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - chill me/chill_me_01.jpg'; ?>" alt="Tkanina Chill Me" data-group-id="01" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - chill me/chill_me_02.jpg'; ?>" alt="Tkanina Chill Me" data-group-id="02" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - chill me/chill_me_03.jpg'; ?>" alt="Tkanina Chill Me" data-group-id="03" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - chill me/chill_me_04.jpg'; ?>" alt="Tkanina Chill Me" data-group-id="04" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - chill me/chill_me_05.jpg'; ?>" alt="Tkanina Chill Me" data-group-id="05" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - chill me/chill_me_06.jpg'; ?>" alt="Tkanina Chill Me" data-group-id="06" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - chill me/chill_me_07.jpg'; ?>" alt="Tkanina Chill Me" data-group-id="07" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - chill me/chill_me_08.jpg'; ?>" alt="Tkanina Chill Me" data-group-id="08" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - chill me/chill_me_09.jpg'; ?>" alt="Tkanina Chill Me" data-group-id="09" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - chill me/chill_me_10.jpg'; ?>" alt="Tkanina Chill Me" data-group-id="10" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - chill me/chill_me_11.jpg'; ?>" alt="Tkanina Chill Me" data-group-id="11" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - chill me/chill_me_12.jpg'; ?>" alt="Tkanina Chill Me" data-group-id="12" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - chill me/chill_me_13.jpg'; ?>" alt="Tkanina Chill Me" data-group-id="13" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - chill me/chill_me_14.jpg'; ?>" alt="Tkanina Chill Me" data-group-id="14" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - chill me/chill_me_15.jpg'; ?>" alt="Tkanina Chill Me" data-group-id="15" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - chill me/chill_me_16.jpg'; ?>" alt="Tkanina Chill Me" data-group-id="16" class="fabrics__popup-color">
+</div>
+<div class="fabrics__popup-colors" id="group-38">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Mansila/mansila-01.jpg'; ?>" alt="Tkanina Mansila" data-group-id="M01" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Mansila/mansila-02.jpg'; ?>" alt="Tkanina Mansila" data-group-id="M02" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Mansila/mansila-03.jpg'; ?>" alt="Tkanina Mansila" data-group-id="M03" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Mansila/mansila-04.jpg'; ?>" alt="Tkanina Mansila" data-group-id="M04" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Mansila/mansila-05.jpg'; ?>" alt="Tkanina Mansila" data-group-id="M05" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Mansila/mansila-06.jpg'; ?>" alt="Tkanina Mansila" data-group-id="M06" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Mansila/mansila-07.jpg'; ?>" alt="Tkanina Mansila" data-group-id="M07" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Mansila/mansila-08.jpg'; ?>" alt="Tkanina Mansila" data-group-id="M08" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Mansila/mansila-09.jpg'; ?>" alt="Tkanina Mansila" data-group-id="M09" class="fabrics__popup-color">
+   <img src="<?php echo get_template_directory_uri() . '/assets/images/fabric/Tkanina - Mansila/mansila-10.jpg'; ?>" alt="Tkanina Mansila" data-group-id="M10" class="fabrics__popup-color">
+</div>
+
+
+
+
+
+
+
           <div class="fabrics__popup-colors" id="group-2">
            <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Magic-Velvet/Magic-Velvet-2203.jpeg" ?>" data-group-id="2203" alt="Tkanina Magic Velvet" class="fabrics__popup-color">
            <img src="<?php echo get_template_directory_uri() . "/assets/images/fabric/Grupa-1/Magic-Velvet/Magic-Velvet-2218.jpeg" ?>" data-group-id="2218" alt="Tkanina Magic Velvet" class="fabrics__popup-color">

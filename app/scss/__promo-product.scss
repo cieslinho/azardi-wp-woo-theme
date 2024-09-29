@@ -1,0 +1,38 @@
+body.term-promocje {
+	ul.products {
+		li.product_cat-promocje {
+			position: relative;
+
+			&::after {
+				position: absolute;
+				top: 0;
+				right: 0;
+				box-shadow: 0 0 3px $red;
+				border-radius: 5px;
+				background-color: $red;
+				padding: 0.3em 0.6em;
+				content: 'PROMOCJA';
+				color: $bg-color;
+				font-weight: 700;
+				font-size: 1.3rem;
+			}
+
+			a {
+				// gap: 0.5em;
+
+				h2 {
+					margin-top: 0.5em !important;
+				}
+			}
+		}
+	}
+}
+
+.product_cat-promocje {
+	.caraty-product p.price:nth-child(2) {
+		display: unset !important;
+	}
+	// .caraty-product p.price:nth-child(1) {
+	// 	display: none !important;
+	// }
+}

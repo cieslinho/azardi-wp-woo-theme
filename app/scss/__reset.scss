@@ -17,12 +17,12 @@
 }
 
 html {
+	background-color: $bg-color;
 	scroll-behavior: smooth;
 	font-size: 62.5%;
-	background-color: $bg-color;
 }
 
 body {
 	font-size: 1.6rem;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }

@@ -53,6 +53,84 @@ jQuery(document).ready(function ($) {
 		})
 })
 
+function applyStylesBasedOnWindowSize() {
+	// Pobieramy element <div> z id "tab-description"
+	const container = document.getElementById('tab-description')
+
+	if (container) {
+		// Pobieramy wszystkie elementy <p> wewnątrz kontenera
+		const paragraphs = container.querySelectorAll('p')
+
+		// Sprawdzamy szerokość okna przeglądarki
+		if (window.innerWidth > 992) {
+			let hasImage = false
+
+			// Sprawdzamy, czy któryś z paragrafów zawiera obraz <img>
+			paragraphs.forEach(paragraph => {
+				if (paragraph.querySelector('img')) {
+					hasImage = true
+				}
+			})
+
+			if (hasImage) {
+				// Jeśli przynajmniej jeden <p> zawiera obraz <img>, dodajemy style do wszystkich <p>
+				paragraphs.forEach(paragraph => {
+					paragraph.style.width = '50%'
+				})
+
+				// Dodajemy style do obrazów
+				paragraphs.forEach(paragraph => {
+					const img = paragraph.querySelector('img')
+					if (img) {
+						img.style.position = 'absolute'
+						img.style.right = '0'
+						img.style.top = '0'
+						img.style.width = '47%'
+					}
+				})
+
+				// Dodajemy style do kontenera z id "tab-description"
+				container.style.position = 'relative'
+				container.style.minHeight = 'auto' // Ustawiamy minimalną wysokość na auto
+				container.style.marginBottom = '8em'
+			} else {
+				// Jeśli nie ma obrazów, usuwamy style ze wszystkich <p>
+				paragraphs.forEach(paragraph => {
+					paragraph.style.width = ''
+				})
+
+				container.style.position = ''
+				container.style.minHeight = ''
+				container.style.marginBottom = '3em'
+			}
+		} else {
+			// Usuwamy style poniżej 992px
+			paragraphs.forEach(paragraph => {
+				paragraph.style.width = ''
+
+				const img = paragraph.querySelector('img')
+				if (img) {
+					img.style.position = ''
+					img.style.right = ''
+					img.style.top = ''
+					img.style.width = ''
+				}
+			})
+
+			// Resetujemy style kontenera
+			container.style.position = ''
+			container.style.minHeight = ''
+			container.style.marginBottom = '3em'
+		}
+	}
+}
+
+// Wywołujemy funkcję, gdy dokument jest załadowany
+document.addEventListener('DOMContentLoaded', applyStylesBasedOnWindowSize)
+
+// Dodajemy nasłuchiwanie na zdarzenie zmiany rozmiaru okna
+window.addEventListener('resize', applyStylesBasedOnWindowSize)
+
 window.onscroll = function () {
 	// pageYOffset or scrollY
 	if (window.pageYOffset > 0) {
